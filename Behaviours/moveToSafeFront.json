@@ -1,0 +1,76 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 128,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "unit"
+	}, {
+		"command": "Variable",
+		"name": "lineId"
+	} ],
+	"outputs": [],
+	"properties": {
+		"45nI5f7mS0S2VolzWCN4NxvMyvpkqSJx": {
+			"height": 92,
+			"title": "nota_houska_hlaaExam.moveGroupAlongPath",
+			"width": 378,
+			"x": 578,
+			"y": -47
+		},
+		"oJa3F7j1kAvwVCFnC94uWtQy4v6IIlpf": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 591,
+			"y": 80
+		},
+		"xMuqK9fbxEpLJaXHx1t4L468ZOZILuyO": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 297,
+			"y": -23
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "45nI5f7mS0S2VolzWCN4NxvMyvpkqSJx",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "unitsToMove",
+				"value": "{unit}"
+			}, {
+				"name": "path",
+				"value": "{bb.lanes[lineId].fLoc}"
+			}, {
+				"name": "scriptName",
+				"value": "nota_houska_hlaaExam.moveGroupAlongPath"
+			} ],
+			"scriptName": "nota_houska_hlaaExam.moveGroupAlongPath"
+		}, {
+			"children": [],
+			"id": "oJa3F7j1kAvwVCFnC94uWtQy4v6IIlpf",
+			"nodeType": "success",
+			"parameters": []
+		} ],
+		"id": "xMuqK9fbxEpLJaXHx1t4L468ZOZILuyO",
+		"nodeType": "luaCondition",
+		"parameters": [ {
+			"name": "expression",
+			"value": "unit ~= nil"
+		}, {
+			"name": "repeat",
+			"value": "true"
+		} ]
+	}
+}
