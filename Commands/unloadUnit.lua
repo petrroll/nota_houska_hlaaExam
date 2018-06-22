@@ -35,7 +35,7 @@ function Run(self, units, parameter)
     local radius = parameter.radius
     local transport = parameter.transporter
 
-	local isTransporting = SpringGetUnitIsTransporting(transport) ~= nil
+	local isTransporting = (SpringGetUnitIsTransporting(transport) ~= nil and #SpringGetUnitIsTransporting(transport) > 0)
     if isTransporting == false then return SUCCESS end
 
     if #SpringGetUnitCommands(transport) > 0 then
