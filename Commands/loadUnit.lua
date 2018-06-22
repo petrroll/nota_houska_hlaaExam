@@ -27,13 +27,16 @@ local SpringGetUnitIsTransporting = Spring.GetUnitIsTransporting
 
 function Run(self, units, parameter)
     local target_unit = parameter.unit
-    local transport = transporter
+    local transport = parameter.transporter
 
-    if #SpringGetUnitCommands(transport, 1) > 0 then
+	local isTransporting = SpringGetUnitIsTransporting(transport) ~= nil
+	if isTransporting then return SUCCESS end
+
+	if #SpringGetUnitCommands(transport) > 0 then
         return RUNNING
     end
 
-    if not SpringGetUnitIsTransporting(transport) then
+	if isTransporting == false then
         SpringGiveOrderToUnit(transport, CMD.LOAD_UNITS, { target_unit }, CMD.OPT_SHIFT)
         return RUNNING
     end

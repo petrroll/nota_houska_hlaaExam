@@ -33,13 +33,16 @@ local SpringGetUnitIsTransporting = Spring.GetUnitIsTransporting
 function Run(self, units, parameter)
     local target = parameter.target
     local radius = parameter.radius
-    local transport = transporter
+    local transport = parameter.transporter
 
-    if #SpringGetUnitCommands(transport, 1) > 0 then
+	local isTransporting = SpringGetUnitIsTransporting(transport) ~= nil
+    if isTransporting == false then return SUCCESS end
+
+    if #SpringGetUnitCommands(transport) > 0 then
         return RUNNING
     end
 
-    if SpringGetUnitIsTransporting(transport) ~= nil then
+    if isTransporting then
         SpringGiveOrderToUnit(transport, CMD.UNLOAD_UNITS, { target.x, target.y, target.z, radius }, CMD.OPT_SHIFT)
         SpringGiveOrderToUnit(transport, CMD.MOVE, target:AsSpringVector(), CMD.OPT_SHIFT)
         return RUNNING
