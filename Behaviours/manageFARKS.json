@@ -105,7 +105,7 @@
 				"nodeType": "luaCondition",
 				"parameters": [ {
 					"name": "expression",
-					"value": "#farcks.uids >= 3"
+					"value": "#bb.farcks.uids >= 3"
 				}, {
 					"name": "repeat",
 					"value": "false"

@@ -15,7 +15,7 @@
 		"F6jX3B2Zu6O5Nl1mVUgF6brIz4JMrIxx": {
 			"height": 90,
 			"title": "luaCondition",
-			"width": 237,
+			"width": 259,
 			"x": 423,
 			"y": 13
 		},
@@ -29,14 +29,14 @@
 		"Z6JaKs9iQNHAWZIYbZqFCnMxWuOAlAEA": {
 			"height": 151,
 			"title": "reference",
-			"width": 367,
+			"width": 389,
 			"x": 932,
 			"y": 54
 		},
 		"ijqhI9LnbjgXZEDz8Rj1i8ofit6GeS3R": {
 			"height": 94,
 			"title": "store",
-			"width": 345,
+			"width": 389,
 			"x": 933,
 			"y": -50
 		},
@@ -68,7 +68,7 @@
 					"nodeType": "luaCommand",
 					"parameters": [ {
 						"name": "var",
-						"value": "bb.farcks.laneAss[bb.farcks.uids[farkIndex]]"
+						"value": "bb.farcks.laneAss[farkIndex]"
 					}, {
 						"name": "value",
 						"value": "(farkIndex % 3) + 1 "
@@ -87,10 +87,10 @@
 					} ],
 					"referenceInputs": [ {
 						"name": "farckUID",
-						"value": "bb.farcks.uids[laneId]"
+						"value": "bb.farcks.uids[farkIndex]"
 					}, {
 						"name": "lane",
-						"value": "bb.farcks.laneAss[bb.farcks.uids[farkIndex]]"
+						"value": "bb.farcks.laneAss[farkIndex]"
 					} ],
 					"referenceOutputs": []
 				} ],
