@@ -1,0 +1,120 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 128,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "farkIndex"
+	} ],
+	"outputs": [],
+	"properties": {
+		"4nLijNSWOAQL53mgbDT4GTrNtgKoAPL5": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 259,
+			"y": 24
+		},
+		"SoTE19Yxu2yJQzYb9iCWUm2dzLvF9JIv": {
+			"height": 151,
+			"title": "reference",
+			"width": 367,
+			"x": 932,
+			"y": 54
+		},
+		"Ws9PB7I5NIUP5dyIgqcLPHuhG6xKnO1P": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 237,
+			"x": 423,
+			"y": 13
+		},
+		"eFE1TOtAhRz2kD1VwVapeB2byc1wTkoN": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 694,
+			"y": 24
+		},
+		"jWhn6tyFLTBNULeklCD7K4pgxnKMfo8G": {
+			"height": 94,
+			"title": "store",
+			"width": 345,
+			"x": 933,
+			"y": -50
+		},
+		"sSMwI8EYr4oCyOrd4QiIcHgg56rb6TBG": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 694,
+			"y": 165
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [ {
+					"children": [],
+					"id": "jWhn6tyFLTBNULeklCD7K4pgxnKMfo8G",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "bb.farcks.laneAss[bb.farcks.uids[farkIndex]]"
+					}, {
+						"name": "value",
+						"value": "(farkIndex % 3) + 1 "
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "SoTE19Yxu2yJQzYb9iCWUm2dzLvF9JIv",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.harvestLane"
+					} ],
+					"referenceInputs": [ {
+						"name": "farckUID",
+						"value": "bb.farcks.uids[laneId]"
+					}, {
+						"name": "lane",
+						"value": "bb.farcks.laneAss[bb.farcks.uids[farkIndex]]"
+					} ],
+					"referenceOutputs": []
+				} ],
+				"id": "eFE1TOtAhRz2kD1VwVapeB2byc1wTkoN",
+				"nodeType": "sequence",
+				"parameters": []
+			}, {
+				"children": [],
+				"id": "sSMwI8EYr4oCyOrd4QiIcHgg56rb6TBG",
+				"nodeType": "success",
+				"parameters": []
+			} ],
+			"id": "Ws9PB7I5NIUP5dyIgqcLPHuhG6xKnO1P",
+			"nodeType": "luaCondition",
+			"parameters": [ {
+				"name": "expression",
+				"value": "bb.farcks.uids[farkIndex] ~= nil"
+			}, {
+				"name": "repeat",
+				"value": "false"
+			} ]
+		} ],
+		"id": "4nLijNSWOAQL53mgbDT4GTrNtgKoAPL5",
+		"nodeType": "repeat",
+		"parameters": []
+	}
+}
