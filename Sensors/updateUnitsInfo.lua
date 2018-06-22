@@ -43,5 +43,5 @@ return function()
 		end
 	end
 
-	return {my = myUnits, allied=allied, enemy=enemyUnits}
+	bb.unitsInfo = {my = myUnits, allied=allied, enemy=enemyUnits} 
 end

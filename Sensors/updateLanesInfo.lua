@@ -112,9 +112,11 @@ function updateLanePressure(lanesInfo, i, strongholds, notCountedEnemyUnits)
 end
 
 -- @description tst
-return function(unitsInfo, paths, strongholds)
+return function(paths, strongholds)
+	
 	if bb.lanesInfo == nil then bb.lanesInfo = initLanesInfo(paths) end
 	local lanesInfo = bb.lanesInfo
+    local unitsInfo = bb.unitsInfo
 
 	local notCountedEnemyUnits = shallowCopy(unitsInfo.enemy)
 
