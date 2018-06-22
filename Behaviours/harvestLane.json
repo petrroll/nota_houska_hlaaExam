@@ -1,0 +1,102 @@
+{
+	"additionalNodes": [ {
+		"children": [],
+		"id": "08CmFtvGYc4EqLMSDpW8VR2bsKiDjAh1",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "x"
+		}, {
+			"name": "value",
+			"value": "nil"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	} ],
+	"additionalParameters": {
+		"root": {
+			"height": 128,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "farckUID"
+	}, {
+		"command": "Variable",
+		"name": "lane"
+	} ],
+	"outputs": [],
+	"properties": {
+		"08CmFtvGYc4EqLMSDpW8VR2bsKiDjAh1": {
+			"height": 92,
+			"title": "TODO: Add danger -> retreat behaviour",
+			"width": 334,
+			"x": 465,
+			"y": -149
+		},
+		"hITNCet8KdWAiEq6N9zHRox5uBm03cyp": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 248,
+			"y": 24
+		},
+		"sOjjP5nxyI2VgfYVBVoI6Pxr9x1MS2au": {
+			"height": 92,
+			"title": "collectMetalInLane",
+			"width": 293,
+			"x": 459,
+			"y": 60
+		},
+		"zlY9m2QaDFyx7zVBjzc09tqFwj4b0FUX": {
+			"height": 94,
+			"title": "storeLocWithMetalInLane",
+			"width": 409,
+			"x": 461,
+			"y": -50
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "zlY9m2QaDFyx7zVBjzc09tqFwj4b0FUX",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "place"
+			}, {
+				"name": "value",
+				"value": "nota_houska_hlaaExam.findMetalSpotInLane(lane)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "sOjjP5nxyI2VgfYVBVoI6Pxr9x1MS2au",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "unit",
+				"value": "farckUID"
+			}, {
+				"name": "place",
+				"value": "place"
+			}, {
+				"name": "scriptName",
+				"value": "nota_houska_hlaaExam.collectMetal"
+			} ],
+			"scriptName": "nota_houska_hlaaExam.collectMetal"
+		} ],
+		"id": "hITNCet8KdWAiEq6N9zHRox5uBm03cyp",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}
