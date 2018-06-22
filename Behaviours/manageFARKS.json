@@ -47,6 +47,13 @@
 			"x": 1027,
 			"y": -105
 		},
+		"Ve326WwArLa7D4cKTUAB4yDYnP3uMvX7": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 581,
+			"y": -198
+		},
 		"YKQqYmYxV5oeB3ZHopIlD8eE1dMcDpAM": {
 			"height": 90,
 			"title": "luaCondition",
@@ -60,6 +67,13 @@
 			"width": 202,
 			"x": 549,
 			"y": 101
+		},
+		"bdiETdRpH7a4SDixLLtBYs0phZFsAm98": {
+			"height": 94,
+			"title": "store",
+			"width": 358,
+			"x": 757,
+			"y": -210
 		},
 		"lMvFtEaoaMR8ob5b9PzOVMaZJFlyOjEu": {
 			"height": 70,
@@ -82,6 +96,26 @@
 	} ],
 	"root": {
 		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "bdiETdRpH7a4SDixLLtBYs0phZFsAm98",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "x"
+				}, {
+					"name": "value",
+					"value": "nota_houska_hlaaExam.updateFARKS()"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			} ],
+			"id": "Ve326WwArLa7D4cKTUAB4yDYnP3uMvX7",
+			"nodeType": "repeat",
+			"parameters": []
+		}, {
 			"children": [ {
 				"children": [ {
 					"children": [],
@@ -108,7 +142,7 @@
 					"value": "#bb.farcks.uids >= 3"
 				}, {
 					"name": "repeat",
-					"value": "false"
+					"value": "true"
 				} ]
 			} ],
 			"id": "EIDTamXBZAxQSjDuXg9Wqza2ttPtIUEW",
