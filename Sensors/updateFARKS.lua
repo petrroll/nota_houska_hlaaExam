@@ -36,17 +36,21 @@ return function()
 
 		local uid = myUnits[i]
 		local defID = SpringGetUnitDefID(uid)
-		if UnitDefs[defID].humanName == "FARCK" then
-			nfo.uidToIndex[uid] = index
-			nfo.indexToUid[index] = uid
-			index = index + 1
-		
-			-- farck is still alive, copy previous state else is new
-			if bb.farcks.uidToIndex[uid] ~= nil then 
-				nfo.laneAss[uid] = bb.farcks.laneAss[uid] 
-			else 
-				nfo.laneAss[uid] = 0 
-			end
+		if defID ~= nil then
+
+			if UnitDefs[defID].humanName == "FARCK" then
+				nfo.uidToIndex[uid] = index
+				nfo.indexToUid[index] = uid
+				index = index + 1
+			
+				-- farck is still alive, copy previous state else is new
+				if bb.farcks.uidToIndex[uid] ~= nil then 
+					nfo.laneAss[uid] = bb.farcks.laneAss[uid] 
+				else 
+					nfo.laneAss[uid] = 0 
+				end
+			end	
+			
 		end
 
 	end

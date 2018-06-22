@@ -1,20 +1,5 @@
 {
-	"additionalNodes": [ {
-		"children": [],
-		"id": "8Xvsh6cafkZcs6qCghSTxIP8ghT9iVNr",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "var",
-			"value": "x"
-		}, {
-			"name": "value",
-			"value": "nota_houska_hlaaExam.updateUnitsInfo()"
-		}, {
-			"name": "scriptName",
-			"value": "store"
-		} ],
-		"scriptName": "store"
-	} ],
+	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
 			"height": 128,
@@ -24,96 +9,117 @@
 	"inputs": [],
 	"outputs": [],
 	"properties": {
-		"8Xvsh6cafkZcs6qCghSTxIP8ghT9iVNr": {
-			"height": 94,
-			"title": "store",
-			"width": 358,
-			"x": 979,
-			"y": -320
-		},
 		"BhXViaTehnwPcasfCLAR3dr3y7A5loUp": {
 			"height": 151,
 			"title": "reference",
 			"width": 381,
-			"x": 806,
-			"y": 377
+			"x": 1056,
+			"y": 404
+		},
+		"FluA4wxX94CWOaeTg2JYHokW9P1XfI2V": {
+			"height": 151,
+			"title": "reference",
+			"width": 381,
+			"x": 1066,
+			"y": 746
+		},
+		"IlkRZfQsbQtKY9nBVtjRdTHeXLMSDgIv": {
+			"height": 72,
+			"title": "nota_houska_hlaaExam.buyUnit",
+			"width": 266,
+			"x": 1600,
+			"y": 7
 		},
 		"MOiG18PIrwUllqxKTD4F39dQon8p7w1T": {
 			"height": 151,
 			"title": "reference",
 			"width": 381,
-			"x": 802,
-			"y": 80
+			"x": 1052,
+			"y": 107
 		},
 		"Q29CwR9Rcyz33ZU7QnGjtZzKalW0jmtc": {
 			"height": 151,
 			"title": "reference",
 			"width": 381,
-			"x": 806,
-			"y": 222
+			"x": 1056,
+			"y": 249
+		},
+		"Qv2Li5wFNkxcZS60efsQI4dkaQBtC32S": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 241,
+			"y": 11
+		},
+		"ROcu9qOtkYG5fd1X7S1F1IWlkR97piSx": {
+			"height": 151,
+			"title": "reference",
+			"width": 381,
+			"x": 1066,
+			"y": 911
 		},
 		"UAiJUPrGmPret8OMxSs4jtJMdnl9XeUa": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1385,
-			"y": -86
+			"x": 1634,
+			"y": -59
 		},
 		"Ve326WwArLa7D4cKTUAB4yDYnP3uMvX7": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 577,
-			"y": -108
+			"x": 827,
+			"y": -81
+		},
+		"XQB1dgLc451gXsbS3zTPvbW4ETTdpo6q": {
+			"height": 72,
+			"title": "waitBeforeFrontsEstablish",
+			"width": 246,
+			"x": 443,
+			"y": -90
 		},
 		"YKQqYmYxV5oeB3ZHopIlD8eE1dMcDpAM": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 228,
-			"x": 990,
-			"y": -88
+			"x": 1240,
+			"y": -61
 		},
 		"ZciAofbbGL5ZbyeJn64OYKMGiaYd4y87": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 548,
-			"y": 101
+			"x": 798,
+			"y": 128
 		},
 		"bdiETdRpH7a4SDixLLtBYs0phZFsAm98": {
 			"height": 94,
 			"title": "store",
 			"width": 358,
-			"x": 984,
-			"y": -210
+			"x": 1234,
+			"y": -183
 		},
 		"lMvFtEaoaMR8ob5b9PzOVMaZJFlyOjEu": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 291,
-			"y": -5
+			"x": 540,
+			"y": 22
 		},
 		"tZ84ln6DOFlXJmSSjOSFStzwI4dDMWXY": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 767,
-			"y": -226
-		},
-		"tpFyVarYJBxRHzVYT9cI6JcY73dRMkBR": {
-			"height": 86,
-			"title": "echo",
-			"width": 192,
-			"x": 1374,
-			"y": -10
+			"x": 1017,
+			"y": -199
 		},
 		"uooEx2lDCTrZm7Q5viXHijvSCis8Hodr": {
 			"height": 151,
 			"title": "reference",
 			"width": 381,
-			"x": 804,
-			"y": 558
+			"x": 1054,
+			"y": 585
 		}
 	},
 	"roles": [ {
@@ -122,124 +128,163 @@
 	} ],
 	"root": {
 		"children": [ {
-			"children": [ {
-				"children": [ {
-					"children": [],
-					"id": "bdiETdRpH7a4SDixLLtBYs0phZFsAm98",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "var",
-						"value": "x"
-					}, {
-						"name": "value",
-						"value": "nota_houska_hlaaExam.updateFARKS()"
-					}, {
-						"name": "scriptName",
-						"value": "store"
-					} ],
-					"scriptName": "store"
-				}, {
-					"children": [ {
-						"children": [],
-						"id": "UAiJUPrGmPret8OMxSs4jtJMdnl9XeUa",
-						"nodeType": "success",
-						"parameters": []
-					}, {
-						"children": [],
-						"id": "tpFyVarYJBxRHzVYT9cI6JcY73dRMkBR",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "msg",
-							"value": "\"BUY farcks\""
-						}, {
-							"name": "scriptName",
-							"value": "echo"
-						} ],
-						"scriptName": "echo"
-					} ],
-					"id": "YKQqYmYxV5oeB3ZHopIlD8eE1dMcDpAM",
-					"nodeType": "luaCondition",
-					"parameters": [ {
-						"name": "expression",
-						"value": "(#bb.farcks.indexToUid) >= 3"
-					}, {
-						"name": "repeat",
-						"value": "true"
-					} ]
-				} ],
-				"id": "tZ84ln6DOFlXJmSSjOSFStzwI4dDMWXY",
-				"nodeType": "sequence",
-				"parameters": []
-			} ],
-			"id": "Ve326WwArLa7D4cKTUAB4yDYnP3uMvX7",
-			"nodeType": "repeat",
-			"parameters": []
+			"children": [],
+			"id": "XQB1dgLc451gXsbS3zTPvbW4ETTdpo6q",
+			"nodeType": "wait",
+			"parameters": [ {
+				"name": "time",
+				"value": 0
+			} ]
 		}, {
 			"children": [ {
-				"children": [],
-				"id": "MOiG18PIrwUllqxKTD4F39dQon8p7w1T",
-				"nodeType": "reference",
-				"parameters": [ {
-					"name": "behaviourName",
-					"value": "nota_houska_hlaaExam.manageHarvestingLine"
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "bdiETdRpH7a4SDixLLtBYs0phZFsAm98",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "x"
+						}, {
+							"name": "value",
+							"value": "nota_houska_hlaaExam.updateFARKS()"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [ {
+							"children": [],
+							"id": "UAiJUPrGmPret8OMxSs4jtJMdnl9XeUa",
+							"nodeType": "success",
+							"parameters": []
+						}, {
+							"children": [],
+							"id": "IlkRZfQsbQtKY9nBVtjRdTHeXLMSDgIv",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "unitName",
+								"value": "'armfark'"
+							}, {
+								"name": "scriptName",
+								"value": "nota_houska_hlaaExam.buyUnit"
+							} ],
+							"scriptName": "nota_houska_hlaaExam.buyUnit"
+						} ],
+						"id": "YKQqYmYxV5oeB3ZHopIlD8eE1dMcDpAM",
+						"nodeType": "luaCondition",
+						"parameters": [ {
+							"name": "expression",
+							"value": "(#bb.farcks.indexToUid) >= 3"
+						}, {
+							"name": "repeat",
+							"value": "true"
+						} ]
+					} ],
+					"id": "tZ84ln6DOFlXJmSSjOSFStzwI4dDMWXY",
+					"nodeType": "sequence",
+					"parameters": []
 				} ],
-				"referenceInputs": [ {
-					"name": "farkIndex",
-					"value": "1"
-				} ],
-				"referenceOutputs": []
+				"id": "Ve326WwArLa7D4cKTUAB4yDYnP3uMvX7",
+				"nodeType": "repeat",
+				"parameters": []
 			}, {
-				"children": [],
-				"id": "Q29CwR9Rcyz33ZU7QnGjtZzKalW0jmtc",
-				"nodeType": "reference",
+				"children": [ {
+					"children": [],
+					"id": "MOiG18PIrwUllqxKTD4F39dQon8p7w1T",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageHarvestingLine"
+					} ],
+					"referenceInputs": [ {
+						"name": "farkIndex",
+						"value": "1"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "Q29CwR9Rcyz33ZU7QnGjtZzKalW0jmtc",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageHarvestingLine"
+					} ],
+					"referenceInputs": [ {
+						"name": "farkIndex",
+						"value": "2"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "BhXViaTehnwPcasfCLAR3dr3y7A5loUp",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageHarvestingLine"
+					} ],
+					"referenceInputs": [ {
+						"name": "farkIndex",
+						"value": "3"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "uooEx2lDCTrZm7Q5viXHijvSCis8Hodr",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageHarvestingLine"
+					} ],
+					"referenceInputs": [ {
+						"name": "farkIndex",
+						"value": "4"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "FluA4wxX94CWOaeTg2JYHokW9P1XfI2V",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageHarvestingLine"
+					} ],
+					"referenceInputs": [ {
+						"name": "farkIndex",
+						"value": "5"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "ROcu9qOtkYG5fd1X7S1F1IWlkR97piSx",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageHarvestingLine"
+					} ],
+					"referenceInputs": [ {
+						"name": "farkIndex",
+						"value": "6"
+					} ],
+					"referenceOutputs": []
+				} ],
+				"id": "ZciAofbbGL5ZbyeJn64OYKMGiaYd4y87",
+				"nodeType": "parallel",
 				"parameters": [ {
-					"name": "behaviourName",
-					"value": "nota_houska_hlaaExam.manageHarvestingLine"
-				} ],
-				"referenceInputs": [ {
-					"name": "farkIndex",
-					"value": "2"
-				} ],
-				"referenceOutputs": []
-			}, {
-				"children": [],
-				"id": "BhXViaTehnwPcasfCLAR3dr3y7A5loUp",
-				"nodeType": "reference",
-				"parameters": [ {
-					"name": "behaviourName",
-					"value": "nota_houska_hlaaExam.manageHarvestingLine"
-				} ],
-				"referenceInputs": [ {
-					"name": "farkIndex",
-					"value": "3"
-				} ],
-				"referenceOutputs": []
-			}, {
-				"children": [],
-				"id": "uooEx2lDCTrZm7Q5viXHijvSCis8Hodr",
-				"nodeType": "reference",
-				"parameters": [ {
-					"name": "behaviourName",
-					"value": "nota_houska_hlaaExam.manageHarvestingLine"
-				} ],
-				"referenceInputs": [ {
-					"name": "farkIndex",
-					"value": "4"
-				} ],
-				"referenceOutputs": []
+					"name": "mode",
+					"value": "all-success"
+				} ]
 			} ],
-			"id": "ZciAofbbGL5ZbyeJn64OYKMGiaYd4y87",
+			"id": "lMvFtEaoaMR8ob5b9PzOVMaZJFlyOjEu",
 			"nodeType": "parallel",
 			"parameters": [ {
 				"name": "mode",
 				"value": "all-success"
 			} ]
 		} ],
-		"id": "lMvFtEaoaMR8ob5b9PzOVMaZJFlyOjEu",
-		"nodeType": "parallel",
-		"parameters": [ {
-			"name": "mode",
-			"value": "all-success"
-		} ]
+		"id": "Qv2Li5wFNkxcZS60efsQI4dkaQBtC32S",
+		"nodeType": "sequence",
+		"parameters": []
 	}
 }
