@@ -29,7 +29,7 @@
 		"Ws9PB7I5NIUP5dyIgqcLPHuhG6xKnO1P": {
 			"height": 90,
 			"title": "luaCondition",
-			"width": 237,
+			"width": 261,
 			"x": 423,
 			"y": 13
 		},
@@ -68,7 +68,7 @@
 					"nodeType": "luaCommand",
 					"parameters": [ {
 						"name": "var",
-						"value": "bb.farcks.laneAss[bb.farcks.uids[farkIndex]]"
+						"value": "farcks.laneAss[farkIndex]"
 					}, {
 						"name": "value",
 						"value": "(farkIndex % 3) + 1 "
@@ -87,10 +87,10 @@
 					} ],
 					"referenceInputs": [ {
 						"name": "farckUID",
-						"value": "bb.farcks.uids[laneId]"
+						"value": "farcks.uids[farkIndex]"
 					}, {
 						"name": "lane",
-						"value": "bb.farcks.laneAss[bb.farcks.uids[farkIndex]]"
+						"value": "farcks.laneAss[farkIndex]"
 					} ],
 					"referenceOutputs": []
 				} ],
@@ -107,7 +107,7 @@
 			"nodeType": "luaCondition",
 			"parameters": [ {
 				"name": "expression",
-				"value": "bb.farcks.uids[farkIndex] ~= nil"
+				"value": "farcks.laneAss[farkIndex] ~= nil"
 			}, {
 				"name": "repeat",
 				"value": "false"
