@@ -25,8 +25,8 @@
 			"height": 92,
 			"title": "nota_houska_hlaaExam.loadUnit",
 			"width": 290,
-			"x": 475,
-			"y": -87
+			"x": 469,
+			"y": -170
 		},
 		"aDo69y0qibFvq8QTAlQDh72ewoaxh6aB": {
 			"height": 112,
@@ -34,6 +34,13 @@
 			"width": 306,
 			"x": 473,
 			"y": 19
+		},
+		"d5kBEz1qnel4VVSLnG6WgLfjKEwW6ewn": {
+			"height": 94,
+			"title": "store",
+			"width": 384,
+			"x": 535,
+			"y": -70
 		},
 		"lfJ1DJWdKmwACWXv1InufR90z9f7uiYK": {
 			"height": 60,
@@ -72,6 +79,21 @@
 			"scriptName": "nota_houska_hlaaExam.loadUnit"
 		}, {
 			"children": [],
+			"id": "d5kBEz1qnel4VVSLnG6WgLfjKEwW6ewn",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "x"
+			}, {
+				"name": "value",
+				"value": "#Spring.GetUnitIsTransporting(transport) "
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
 			"id": "aDo69y0qibFvq8QTAlQDh72ewoaxh6aB",
 			"nodeType": "luaCommand",
 			"parameters": [ {
@@ -97,7 +119,7 @@
 				"value": "{transport}"
 			}, {
 				"name": "path",
-				"value": "baseLoc"
+				"value": "{baseLoc}"
 			}, {
 				"name": "scriptName",
 				"value": "nota_houska_hlaaExam.moveGroupAlongPath"
