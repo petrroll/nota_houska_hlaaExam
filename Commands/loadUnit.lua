@@ -29,7 +29,7 @@ function Run(self, units, parameter)
     local target_unit = parameter.unit
     local transport = parameter.transporter
 
-	local isTransporting = SpringGetUnitIsTransporting(transport) ~= nil
+	local isTransporting = (SpringGetUnitIsTransporting(transport) ~= nil)
 	if isTransporting then return SUCCESS end
 
 	if #SpringGetUnitCommands(transport) > 0 then

@@ -1,0 +1,275 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 128,
+			"width": 216
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"7aaJR1AekfczdehrH9xhcVanQZRRNooj": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 268,
+			"y": 25
+		},
+		"8sri0M16oJcBuiHXuCIt3ZG0EKa0fCzM": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 713,
+			"y": 4
+		},
+		"9wH6jgmxdhoRtLipyqnThmSfr6frr2WX": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1279,
+			"y": 33
+		},
+		"H0uvtQDZU8atc1YXTNdvDwVHnLEA9hYt": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 1019,
+			"y": 43
+		},
+		"JT6aNjEdbBbbO3hdyoaYnvhDKuqAjx6V": {
+			"height": 94,
+			"title": "store",
+			"width": 450,
+			"x": 1510,
+			"y": -11
+		},
+		"NeCbhnfKENV2fldKmosNTNgs7Ttdgy6n": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 1281,
+			"y": 102
+		},
+		"PEktbfZSG2N23brQp7gYTKDtFyTlUXpg": {
+			"height": 214,
+			"title": "reference",
+			"width": 385,
+			"x": 1526,
+			"y": 257
+		},
+		"c6VyMRucjPwJx7MUUiNeScGQhd7vMUck": {
+			"height": 94,
+			"title": "store",
+			"width": 363,
+			"x": 497,
+			"y": -222
+		},
+		"gXPdhmJUNDPQbVjcovzv3vHttY1yH3Up": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 744,
+			"y": -116
+		},
+		"h0kgIhrgBapsB1M9uMlyXNiR8jxYN0B4": {
+			"height": 92,
+			"title": "store",
+			"width": 240,
+			"x": 1500,
+			"y": 472
+		},
+		"mDDA4rMlCeFiLmGtfKqtC9zZfGUIhIfQ": {
+			"height": 94,
+			"title": "store",
+			"width": 666,
+			"x": 1505,
+			"y": 141
+		},
+		"s3btPXL1X9FbGRsa8MoI7UAGUwFhag9W": {
+			"height": 92,
+			"title": "store",
+			"width": 240,
+			"x": 1012,
+			"y": -165
+		},
+		"shdkxGSZldzZtw5Y82YzcslZReruTJr1": {
+			"height": 94,
+			"title": "store",
+			"width": 349,
+			"x": 1011,
+			"y": -65
+		},
+		"yV23mCUFyEOu99nX0lR5wfetIVqrV2N3": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 486,
+			"y": -110
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "c6VyMRucjPwJx7MUUiNeScGQhd7vMUck",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "transport "
+			}, {
+				"name": "value",
+				"value": "nota_houska_hlaaExam.getFreeTransport()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [ {
+				"children": [ {
+					"children": [],
+					"id": "s3btPXL1X9FbGRsa8MoI7UAGUwFhag9W",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "bb.transports[transport] "
+					}, {
+						"name": "value",
+						"value": "\"busy\""
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "shdkxGSZldzZtw5Y82YzcslZReruTJr1",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "unitToAirlift"
+					}, {
+						"name": "value",
+						"value": "nota_houska_hlaaExam.getUnitForAirlift()"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [ {
+						"children": [ {
+							"children": [],
+							"id": "JT6aNjEdbBbbO3hdyoaYnvhDKuqAjx6V",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "bb.forTransport[unitToAirlift].dest"
+							}, {
+								"name": "value",
+								"value": "nota_houska_hlaaExam.getDestLaneForUnit(unitToAirlift)"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						}, {
+							"children": [],
+							"id": "mDDA4rMlCeFiLmGtfKqtC9zZfGUIhIfQ",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "transportLoc"
+							}, {
+								"name": "value",
+								"value": "nota_houska_hlaaExam.getDestLocForLane(unitToAirlift, bb.forTransport[unitToAirlift].dest)"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						}, {
+							"children": [],
+							"id": "PEktbfZSG2N23brQp7gYTKDtFyTlUXpg",
+							"nodeType": "reference",
+							"parameters": [ {
+								"name": "behaviourName",
+								"value": "nota_houska_hlaaExam.transportAndComeBack"
+							} ],
+							"referenceInputs": [ {
+								"name": "baseLoc",
+								"value": "bb.baseLoc"
+							}, {
+								"name": "transport",
+								"value": "transport"
+							}, {
+								"name": "unitToAirlift",
+								"value": "unitToAirlift"
+							}, {
+								"name": "transportLoc",
+								"value": "transportLoc"
+							} ],
+							"referenceOutputs": []
+						}, {
+							"children": [],
+							"id": "h0kgIhrgBapsB1M9uMlyXNiR8jxYN0B4",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "bb.transports[transport] "
+							}, {
+								"name": "value",
+								"value": "\"free\""
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						} ],
+						"id": "9wH6jgmxdhoRtLipyqnThmSfr6frr2WX",
+						"nodeType": "sequence",
+						"parameters": []
+					}, {
+						"children": [],
+						"id": "NeCbhnfKENV2fldKmosNTNgs7Ttdgy6n",
+						"nodeType": "success",
+						"parameters": []
+					} ],
+					"id": "H0uvtQDZU8atc1YXTNdvDwVHnLEA9hYt",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "unitToAirlift  ~= nil"
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				} ],
+				"id": "gXPdhmJUNDPQbVjcovzv3vHttY1yH3Up",
+				"nodeType": "sequence",
+				"parameters": []
+			}, {
+				"children": [],
+				"id": "8sri0M16oJcBuiHXuCIt3ZG0EKa0fCzM",
+				"nodeType": "success",
+				"parameters": []
+			} ],
+			"id": "yV23mCUFyEOu99nX0lR5wfetIVqrV2N3",
+			"nodeType": "luaCondition",
+			"parameters": [ {
+				"name": "expression",
+				"value": "transport  ~= nil"
+			}, {
+				"name": "repeat",
+				"value": "false"
+			} ]
+		} ],
+		"id": "7aaJR1AekfczdehrH9xhcVanQZRRNooj",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

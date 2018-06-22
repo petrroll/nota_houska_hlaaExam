@@ -1,0 +1,111 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 168,
+			"width": 232
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "baseLoc"
+	}, {
+		"command": "Variable",
+		"name": "transport"
+	}, {
+		"command": "Variable",
+		"name": "unitToAirlift"
+	}, {
+		"command": "Variable",
+		"name": "transportLoc"
+	} ],
+	"outputs": [],
+	"properties": {
+		"JJfoOO4Yt4ggwtqCWpNBWhI0QjhRmwuj": {
+			"height": 92,
+			"title": "nota_houska_hlaaExam.loadUnit",
+			"width": 290,
+			"x": 475,
+			"y": -87
+		},
+		"aDo69y0qibFvq8QTAlQDh72ewoaxh6aB": {
+			"height": 112,
+			"title": "nota_houska_hlaaExam.unloadUnit",
+			"width": 306,
+			"x": 473,
+			"y": 19
+		},
+		"lfJ1DJWdKmwACWXv1InufR90z9f7uiYK": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 272,
+			"y": 17
+		},
+		"vBqOYekWExaTWAfUbLPrRATsONXFFAwH": {
+			"height": 92,
+			"title": "nota_houska_hlaaExam.moveGroupAlongPath",
+			"width": 378,
+			"x": 470,
+			"y": 146
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "JJfoOO4Yt4ggwtqCWpNBWhI0QjhRmwuj",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "transporter",
+				"value": "transport"
+			}, {
+				"name": "unit",
+				"value": "unitToAirlift"
+			}, {
+				"name": "scriptName",
+				"value": "nota_houska_hlaaExam.loadUnit"
+			} ],
+			"scriptName": "nota_houska_hlaaExam.loadUnit"
+		}, {
+			"children": [],
+			"id": "aDo69y0qibFvq8QTAlQDh72ewoaxh6aB",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "transporter",
+				"value": "transport"
+			}, {
+				"name": "target",
+				"value": "transportLoc"
+			}, {
+				"name": "radius",
+				"value": "150"
+			}, {
+				"name": "scriptName",
+				"value": "nota_houska_hlaaExam.unloadUnit"
+			} ],
+			"scriptName": "nota_houska_hlaaExam.unloadUnit"
+		}, {
+			"children": [],
+			"id": "vBqOYekWExaTWAfUbLPrRATsONXFFAwH",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "unitsToMove",
+				"value": "{transport}"
+			}, {
+				"name": "path",
+				"value": "baseLoc"
+			}, {
+				"name": "scriptName",
+				"value": "nota_houska_hlaaExam.moveGroupAlongPath"
+			} ],
+			"scriptName": "nota_houska_hlaaExam.moveGroupAlongPath"
+		} ],
+		"id": "lfJ1DJWdKmwACWXv1InufR90z9f7uiYK",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}
