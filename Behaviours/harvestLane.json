@@ -73,7 +73,7 @@
 				"value": "place"
 			}, {
 				"name": "value",
-				"value": "nota_houska_hlaaExam.findMetalSpotInLane(lane)"
+				"value": "bb.lanes[lane].fLoc"
 			}, {
 				"name": "scriptName",
 				"value": "store"
