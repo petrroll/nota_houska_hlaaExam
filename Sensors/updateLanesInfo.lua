@@ -6,7 +6,7 @@ local sensorInfo = {
 	license = "notAlicense",
 }
 
-local EVAL_PERIOD_DEFAULT = -1 -- actual, no caching
+local EVAL_PERIOD_DEFAULT = 0 -- actual, no caching
 
 function getInfo()
 	return {
@@ -36,20 +36,25 @@ function initLanesInfo(paths)
 	lanesInfo.map = {}
 	lanesInfo.front = {}
 	lanesInfo.lanePressure = {}
+	lanesInfo.strongpoints = {}
 
 	for i = 1,3 do
 		-- init lane's map
 		lanesInfo.map[i] = {}
 		lanesInfo.front[i] = {}
 		lanesInfo.lanePressure[i] = {}
+		lanesInfo.strongpoints[i] = {}
 
 		local index = 1
 		for j=1, #paths[i] do
+			lanesInfo.map[i][index] = {}
 			lanesInfo.map[i][index].safe = true
 			lanesInfo.map[i][index].loc = paths[i][j]
 			index = index + 1
 		end
 	end
+
+	return lanesInfo
 end
 
 -- is location far enough from enemies
@@ -58,8 +63,12 @@ function isLocSafe(point, unitsInfo)
 	local enemies = unitsInfo.enemy
 
 	for i=1,#enemies do
-		if (Vec3(SpringGetUnitPosition(enemies[i])):Distance(point) < LOC_SAFE_RADIUS) then
-			return false
+		local enemyLoc = SpringGetUnitPosition(enemies[i])
+
+		if enemyLoc ~= nil then
+			if (Vec3(enemyLoc):Distance(point) < LOC_SAFE_RADIUS) then
+				return false
+			end	
 		end
 	end
 	return true
@@ -78,31 +87,37 @@ function updateLaneSafety(lanesInfo, i, unitsInfo)
 	for i=1, #path do
 
 		local loc = path[i].loc
-		if not dangerStarted and not isLocSafe(key, unitsInfo) then
+		if not dangerStarted and not isLocSafe(loc, unitsInfo) then
+			Spring.Echo("DANGER")
 			dangerStarted = true
 			front = i
 		end
 
-		path[i].safe = dangerStarted
+		path[i].safe = not dangerStarted
 		
 	end
 end
 
-local LANE_PRESSURE_RADIUS = 5000
-function updateLanePressure(lanesInfo, i, strongholds, notCountedEnemyUnits)
+local LANE_PRESSURE_RADIUS = 1600
+function updateLanePressure(lanesInfo, i, notCountedEnemyUnits)
 	lanesInfo.lanePressure[i] = 0
+	local strongholds = lanesInfo.strongpoints[i]
 
-	for si=1, #strongholds[si] do
-		local sLoc = strongholds[i][si]
+	for si=1, #strongholds do
+		local sLoc = strongholds[si]
 		for ei = 1, #notCountedEnemyUnits do 
 
 			--Not seen yet
 			local enemyUID = notCountedEnemyUnits[ei]
 			if enemyUID > 0 then 
-				
-				if (Vec3(SpringGetUnitPosition(enemyUID)):Distance(sLoc) < LANE_PRESSURE_RADIUS) then
-					lanesInfo.lanePressure[i] = lanesInfo.lanePressure[i] + 1 -- TODO: Do some units weighting 
-					notCountedEnemyUnits[ei] = -1
+				local enemyLoc = SpringGetUnitPosition(enemyUID)
+				if enemyLoc ~= nil then
+					Spring.Echo(Vec3(enemyLoc):Distance(sLoc))
+
+					if (Vec3(enemyLoc):Distance(sLoc) < LANE_PRESSURE_RADIUS) then
+						lanesInfo.lanePressure[i] = lanesInfo.lanePressure[i] + 1 -- TODO: Do some units weighting 
+						notCountedEnemyUnits[ei] = -1
+					end	
 				end
 				
 			end 
@@ -111,10 +126,33 @@ function updateLanePressure(lanesInfo, i, strongholds, notCountedEnemyUnits)
 	end
 end
 
+function processPaths(miPaths) 
+	local paths = {}
+	local strongpoints = {}
+
+	local i = 1
+	for _, miPath in pairs(miPaths) do
+		paths[i] = {}
+		strongpoints[i] = {}
+		for j = 1, #miPath.points do 
+			paths[i][j] = miPath.points[j].position
+			if miPath.points[j].isStrongpoint then strongpoints[i][#strongpoints[i] + 1] = miPath.points[j].position end
+		end
+
+		i = i + 1
+	end
+
+	return {p= paths, s=strongpoints}
+end
+
 -- @description tst
-return function(paths, strongholds)
+return function(corridors)
 	
-	if bb.lanesInfo == nil then bb.lanesInfo = initLanesInfo(paths) end
+	if bb.lanesInfo == nil then
+		transformedPaths = processPaths(corridors)
+		bb.lanesInfo = initLanesInfo(transformedPaths.p) 
+		bb.lanesInfo.strongpoints = transformedPaths.s
+	end
 	local lanesInfo = bb.lanesInfo
     local unitsInfo = bb.unitsInfo
 
@@ -122,7 +160,7 @@ return function(paths, strongholds)
 
 	for i=1,3 do
 		updateLaneSafety(lanesInfo, i, unitsInfo)
-		updateLanePressure(lanesInfo, i, strongholds, notCountedEnemyUnits)
+		updateLanePressure(lanesInfo, i, notCountedEnemyUnits)
 	end
 
 	return {}
