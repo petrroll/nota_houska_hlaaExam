@@ -1,0 +1,121 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "laneInfo"
+	} ],
+	"outputs": [],
+	"properties": {
+		"1F8Ueel5K9cC9e0KuqqPBiUkQuAVrz3W": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 513,
+			"y": -20
+		},
+		"IHf9b54AyvlAEAwvv0soPVx5t0ylr5WF": {
+			"height": 193,
+			"title": "ensureThereIsASeerAssigned (fails if there's none)",
+			"width": 404,
+			"x": 786,
+			"y": -193
+		},
+		"R1n4uTNZwTe3brQXocOnbAHs86S1azJY": {
+			"height": 112,
+			"title": "moveSeerToSafeSpot",
+			"width": 253,
+			"x": 787,
+			"y": 117
+		},
+		"oZvUULx4TCWH4Od39tLebG3VaPrdc82U": {
+			"height": 94,
+			"title": "getSpotForSeerBehindFront",
+			"width": 497,
+			"x": 791,
+			"y": 17
+		},
+		"vUMbLCyRiE8TMJa8JRN5gjVPsg1YHsHO": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 259,
+			"y": 17
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "IHf9b54AyvlAEAwvv0soPVx5t0ylr5WF",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_houska_hlaaExam.ensureNUnitsOnLane"
+				} ],
+				"referenceInputs": [ {
+					"name": "laneInfo",
+					"value": "laneInfo"
+				}, {
+					"name": "unitName",
+					"value": "\"armseer\""
+				}, {
+					"name": "numberOfUnits",
+					"value": "1"
+				}, {
+					"name": "severenity",
+					"value": "1"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "oZvUULx4TCWH4Od39tLebG3VaPrdc82U",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "safeSpot"
+				}, {
+					"name": "value",
+					"value": "nota_houska_hlaaExam.getPosRelativeToFront(laneInfo.info, -3)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "R1n4uTNZwTe3brQXocOnbAHs86S1azJY",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "unitsGroup",
+					"value": "laneInfo.armseer"
+				}, {
+					"name": "destination",
+					"value": "safeSpot"
+				}, {
+					"name": "spread",
+					"value": "128"
+				}, {
+					"name": "scriptName",
+					"value": "nota_houska_hlaaExam.move"
+				} ],
+				"scriptName": "nota_houska_hlaaExam.move"
+			} ],
+			"id": "1F8Ueel5K9cC9e0KuqqPBiUkQuAVrz3W",
+			"nodeType": "sequence",
+			"parameters": []
+		} ],
+		"id": "vUMbLCyRiE8TMJa8JRN5gjVPsg1YHsHO",
+		"nodeType": "repeat",
+		"parameters": []
+	}
+}

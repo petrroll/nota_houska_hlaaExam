@@ -17,14 +17,14 @@
 	"properties": {
 		"Cf3YxnkdqhlAqnWHrNysUoGu3YYb5R76": {
 			"height": 60,
-			"title": "repeat",
-			"width": 131,
+			"title": "updateLane",
+			"width": 157,
 			"x": 477,
 			"y": 24
 		},
 		"I3p4UliJTqka65W2WrA5piJLjokgbay4": {
 			"height": 90,
-			"title": "luaCondition",
+			"title": "initLanesInfo",
 			"width": 194,
 			"x": 686,
 			"y": -577
@@ -33,7 +33,7 @@
 			"height": 54,
 			"title": "success",
 			"width": 165,
-			"x": 968,
+			"x": 967,
 			"y": -632
 		},
 		"IwNfMYYLOHEeNB9S739VFXWZE8RTw14u": {
@@ -45,8 +45,8 @@
 		},
 		"X4MJ7cUtzKQoPSkH7yPFmvzWi4c9DzC5": {
 			"height": 92,
-			"title": "store",
-			"width": 160,
+			"title": "getBetterReferenceToLaneInfo",
+			"width": 278,
 			"x": 687,
 			"y": -371
 		},
@@ -54,28 +54,28 @@
 			"height": 92,
 			"title": "store",
 			"width": 131,
-			"x": 964,
+			"x": 963,
 			"y": -576
 		},
 		"YlKrFdVjeRO1JiPbaNehJh2xkMGHs4bL": {
 			"height": 94,
 			"title": "store",
 			"width": 446,
-			"x": 1093,
-			"y": -92
+			"x": 1181,
+			"y": -91
 		},
 		"ZGppCOQhU70Hp10T75TZCh8TukG0p4XI": {
 			"height": 92,
-			"title": "store",
-			"width": 146,
+			"title": "setLanesId",
+			"width": 151,
 			"x": 685,
 			"y": -470
 		},
 		"auA0sbv8v5ndNKpDzQw4ODNjETe5rxji": {
 			"height": 60,
-			"title": "sequence",
-			"width": 143,
-			"x": 911,
+			"title": "updateLaneData",
+			"width": 188,
+			"x": 910,
 			"y": -80
 		},
 		"g9OGyLbsLTjuITQVn4UWPL73Ymus9HAC": {
@@ -85,19 +85,19 @@
 			"x": 464,
 			"y": -438
 		},
-		"hCVS6DMDWJXz8aym0sRdCZH0tfVN8Pu3": {
-			"height": 94,
-			"title": "store",
-			"width": 467,
-			"x": 1097,
-			"y": 22
-		},
 		"j8ABE5UYBzRGCDCBdPT5CepnVnQiYtHn": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
 			"x": 659,
 			"y": 20
+		},
+		"zfc4RUeevJTshLyBfsxfsEFbb4zGK5YK": {
+			"height": 130,
+			"title": "manageRadarsForLane",
+			"width": 323,
+			"x": 950,
+			"y": 178
 		}
 	},
 	"roles": [ {
@@ -146,7 +146,7 @@
 					"value": "bb.lanes[lid]"
 				}, {
 					"name": "value",
-					"value": "{}"
+					"value": "{ID = lid}"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -189,25 +189,23 @@
 							"value": "store"
 						} ],
 						"scriptName": "store"
-					}, {
-						"children": [],
-						"id": "hCVS6DMDWJXz8aym0sRdCZH0tfVN8Pu3",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "var",
-							"value": "lane.frontPos"
-						}, {
-							"name": "value",
-							"value": "nota_houska_hlaaExam.getPosRelativeToFront(lane.info, 0)"
-						}, {
-							"name": "scriptName",
-							"value": "store"
-						} ],
-						"scriptName": "store"
 					} ],
 					"id": "auA0sbv8v5ndNKpDzQw4ODNjETe5rxji",
 					"nodeType": "sequence",
 					"parameters": []
+				}, {
+					"children": [],
+					"id": "zfc4RUeevJTshLyBfsxfsEFbb4zGK5YK",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageSeers"
+					} ],
+					"referenceInputs": [ {
+						"name": "laneInfo",
+						"value": "lane"
+					} ],
+					"referenceOutputs": []
 				} ],
 				"id": "j8ABE5UYBzRGCDCBdPT5CepnVnQiYtHn",
 				"nodeType": "parallel",

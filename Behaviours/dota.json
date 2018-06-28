@@ -1,0 +1,175 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"4hhrVKr3Y0YcKfmqHSvdvklCWXgFQOVt": {
+			"height": 193,
+			"title": "runTopLane",
+			"width": 295,
+			"x": 953,
+			"y": 57
+		},
+		"DHquPXBSWJaRaqwUdQQn3JuOVfTGfTME": {
+			"height": 60,
+			"title": "runUpdates",
+			"width": 155,
+			"x": 428,
+			"y": 10
+		},
+		"F9P2fQElNtV21xIQgJtxGQjrElJ8F96t": {
+			"height": 94,
+			"title": "storeMissionInfo",
+			"width": 198,
+			"x": 639,
+			"y": -665
+		},
+		"Kao8G9y00kSQbtOfUMGnQaCHIw11jvnY": {
+			"height": 92,
+			"title": "initLanes",
+			"width": 138,
+			"x": 648,
+			"y": -570
+		},
+		"LWquFFI6GdIJ72FlNSZgkTSfO1yjEZ0b": {
+			"height": 110,
+			"title": "runUnitsUpdatesAndManageOrders",
+			"width": 387,
+			"x": 955,
+			"y": -85
+		},
+		"VD8h0oLJcDmPLEbI5pvwn0mRjqfeUvxm": {
+			"height": 60,
+			"title": "initializeData",
+			"width": 173,
+			"x": 400,
+			"y": -269
+		},
+		"X8qZQBPHE2TxZ4ZXT0m7W4LcIYAPt0TB": {
+			"height": 94,
+			"title": "initUnits",
+			"width": 423,
+			"x": 642,
+			"y": -471
+		},
+		"cpDCnjdVBoaYXWyugWeMm9WcR8ae5dqb": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 614,
+			"y": 6
+		},
+		"kz7XBbxFySSDLN8mArZtVBBI9K5oVn0j": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 226,
+			"y": 10
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "F9P2fQElNtV21xIQgJtxGQjrElJ8F96t",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "bb.missionInfo"
+				}, {
+					"name": "value",
+					"value": "core.MissionInfo()"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "Kao8G9y00kSQbtOfUMGnQaCHIw11jvnY",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "bb.lanes"
+				}, {
+					"name": "value",
+					"value": "{}"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "X8qZQBPHE2TxZ4ZXT0m7W4LcIYAPt0TB",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "bb.units"
+				}, {
+					"name": "value",
+					"value": "nota_houska_hlaaExam.getuUnits({}, bb.lanes)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			} ],
+			"id": "VD8h0oLJcDmPLEbI5pvwn0mRjqfeUvxm",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [ {
+				"children": [ {
+					"children": [],
+					"id": "LWquFFI6GdIJ72FlNSZgkTSfO1yjEZ0b",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageUnitsAndOrders"
+					} ],
+					"referenceInputs": [],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "4hhrVKr3Y0YcKfmqHSvdvklCWXgFQOVt",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.lane"
+					} ],
+					"referenceInputs": [ {
+						"name": "corridor",
+						"value": "bb.missionInfo.corridors.Top"
+					}, {
+						"name": "lid",
+						"value": "1"
+					} ],
+					"referenceOutputs": []
+				} ],
+				"id": "cpDCnjdVBoaYXWyugWeMm9WcR8ae5dqb",
+				"nodeType": "parallel",
+				"parameters": [ {
+					"name": "mode",
+					"value": "all-success"
+				} ]
+			} ],
+			"id": "DHquPXBSWJaRaqwUdQQn3JuOVfTGfTME",
+			"nodeType": "repeat",
+			"parameters": []
+		} ],
+		"id": "kz7XBbxFySSDLN8mArZtVBBI9K5oVn0j",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}
