@@ -1,0 +1,76 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 148,
+			"width": 217
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "name"
+	}, {
+		"command": "Variable",
+		"name": "laneID"
+	}, {
+		"command": "Variable",
+		"name": "severenity"
+	} ],
+	"outputs": [],
+	"properties": {
+		"4fmgDk7XSWulIdW4csJwJzgkUE39YMXE": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 327,
+			"y": 17
+		},
+		"5BlSu8XV8t9DoPOg6qsm8vgRibO0PGmM": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 535,
+			"y": 58
+		},
+		"Nv97pDep0mRXiw5rtU8SM0jygqPbj6lQ": {
+			"height": 92,
+			"title": "store",
+			"width": 434,
+			"x": 530,
+			"y": -47
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "Nv97pDep0mRXiw5rtU8SM0jygqPbj6lQ",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "bb.units.orders[#bb.units.orders + 1]"
+			}, {
+				"name": "value",
+				"value": "{name=name, laneID = laneID, severenity = severenity}"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "5BlSu8XV8t9DoPOg6qsm8vgRibO0PGmM",
+			"nodeType": "wait",
+			"parameters": [ {
+				"name": "time",
+				"value": 2
+			} ]
+		} ],
+		"id": "4fmgDk7XSWulIdW4csJwJzgkUE39YMXE",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}
