@@ -1,0 +1,227 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 128,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "corridor"
+	}, {
+		"command": "Variable",
+		"name": "lid"
+	} ],
+	"outputs": [],
+	"properties": {
+		"Cf3YxnkdqhlAqnWHrNysUoGu3YYb5R76": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 477,
+			"y": 24
+		},
+		"I3p4UliJTqka65W2WrA5piJLjokgbay4": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 686,
+			"y": -577
+		},
+		"IrHBqc6xGAgdADVsYu3LNEHJhoq4YZdF": {
+			"height": 54,
+			"title": "success",
+			"width": 165,
+			"x": 968,
+			"y": -632
+		},
+		"IwNfMYYLOHEeNB9S739VFXWZE8RTw14u": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 248,
+			"y": 24
+		},
+		"X4MJ7cUtzKQoPSkH7yPFmvzWi4c9DzC5": {
+			"height": 92,
+			"title": "store",
+			"width": 160,
+			"x": 687,
+			"y": -371
+		},
+		"XHOkdBxcdIvIqJFlYtn3pfuwt1RiEB1p": {
+			"height": 92,
+			"title": "store",
+			"width": 131,
+			"x": 964,
+			"y": -576
+		},
+		"YlKrFdVjeRO1JiPbaNehJh2xkMGHs4bL": {
+			"height": 94,
+			"title": "store",
+			"width": 446,
+			"x": 1093,
+			"y": -92
+		},
+		"ZGppCOQhU70Hp10T75TZCh8TukG0p4XI": {
+			"height": 92,
+			"title": "store",
+			"width": 146,
+			"x": 685,
+			"y": -470
+		},
+		"auA0sbv8v5ndNKpDzQw4ODNjETe5rxji": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 911,
+			"y": -80
+		},
+		"g9OGyLbsLTjuITQVn4UWPL73Ymus9HAC": {
+			"height": 60,
+			"title": "initData",
+			"width": 143,
+			"x": 464,
+			"y": -438
+		},
+		"hCVS6DMDWJXz8aym0sRdCZH0tfVN8Pu3": {
+			"height": 94,
+			"title": "store",
+			"width": 467,
+			"x": 1097,
+			"y": 22
+		},
+		"j8ABE5UYBzRGCDCBdPT5CepnVnQiYtHn": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 659,
+			"y": 20
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [ {
+					"children": [],
+					"id": "IrHBqc6xGAgdADVsYu3LNEHJhoq4YZdF",
+					"nodeType": "success",
+					"parameters": []
+				}, {
+					"children": [],
+					"id": "XHOkdBxcdIvIqJFlYtn3pfuwt1RiEB1p",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "bb.lanes"
+					}, {
+						"name": "value",
+						"value": "{}"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				} ],
+				"id": "I3p4UliJTqka65W2WrA5piJLjokgbay4",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "bb.lanes ~= nil"
+				}, {
+					"name": "repeat",
+					"value": "false"
+				} ]
+			}, {
+				"children": [],
+				"id": "ZGppCOQhU70Hp10T75TZCh8TukG0p4XI",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "bb.lanes[lid]"
+				}, {
+					"name": "value",
+					"value": "{}"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "X4MJ7cUtzKQoPSkH7yPFmvzWi4c9DzC5",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "lane"
+				}, {
+					"name": "value",
+					"value": "bb.lanes[lid]"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			} ],
+			"id": "g9OGyLbsLTjuITQVn4UWPL73Ymus9HAC",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [ {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "YlKrFdVjeRO1JiPbaNehJh2xkMGHs4bL",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "lane.info"
+						}, {
+							"name": "value",
+							"value": "nota_houska_hlaaExam.getuLaneInfo(corridor, lane.info)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "hCVS6DMDWJXz8aym0sRdCZH0tfVN8Pu3",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "lane.frontPos"
+						}, {
+							"name": "value",
+							"value": "nota_houska_hlaaExam.getPosRelativeToFront(lane.info, 0)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					} ],
+					"id": "auA0sbv8v5ndNKpDzQw4ODNjETe5rxji",
+					"nodeType": "sequence",
+					"parameters": []
+				} ],
+				"id": "j8ABE5UYBzRGCDCBdPT5CepnVnQiYtHn",
+				"nodeType": "parallel",
+				"parameters": [ {
+					"name": "mode",
+					"value": "all-success"
+				} ]
+			} ],
+			"id": "Cf3YxnkdqhlAqnWHrNysUoGu3YYb5R76",
+			"nodeType": "repeat",
+			"parameters": []
+		} ],
+		"id": "IwNfMYYLOHEeNB9S739VFXWZE8RTw14u",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}
