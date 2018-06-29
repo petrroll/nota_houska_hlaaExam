@@ -9,68 +9,131 @@
 	"inputs": [],
 	"outputs": [],
 	"properties": {
-		"4hhrVKr3Y0YcKfmqHSvdvklCWXgFQOVt": {
+		"1hnibrMcLVf36KhrZDZi3OCLNl1HVYLC": {
 			"height": 193,
-			"title": "runTopLane",
-			"width": 295,
-			"x": 953,
-			"y": 57
+			"title": "runMidLane",
+			"width": 312,
+			"x": 1220,
+			"y": 323
 		},
-		"DHquPXBSWJaRaqwUdQQn3JuOVfTGfTME": {
-			"height": 60,
-			"title": "runUpdates",
-			"width": 155,
-			"x": 428,
-			"y": 10
+		"4aMEUbNd3lh1yGNIhTXZG2Gc50AdirN4": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 1054,
+			"y": 293
 		},
-		"F9P2fQElNtV21xIQgJtxGQjrElJ8F96t": {
+		"5HElee336UWTaWz8QCAaepVbADUFs6eM": {
 			"height": 94,
 			"title": "storeMissionInfo",
 			"width": 198,
 			"x": 639,
 			"y": -665
 		},
-		"Kao8G9y00kSQbtOfUMGnQaCHIw11jvnY": {
-			"height": 92,
-			"title": "initLanes",
-			"width": 138,
-			"x": 648,
-			"y": -570
-		},
-		"LWquFFI6GdIJ72FlNSZgkTSfO1yjEZ0b": {
-			"height": 110,
-			"title": "runUnitsUpdatesAndManageOrders",
-			"width": 387,
-			"x": 955,
-			"y": -85
-		},
-		"VD8h0oLJcDmPLEbI5pvwn0mRjqfeUvxm": {
-			"height": 60,
-			"title": "initializeData",
-			"width": 173,
-			"x": 400,
-			"y": -269
-		},
-		"X8qZQBPHE2TxZ4ZXT0m7W4LcIYAPt0TB": {
-			"height": 94,
-			"title": "initUnits",
-			"width": 423,
-			"x": 642,
-			"y": -471
-		},
-		"cpDCnjdVBoaYXWyugWeMm9WcR8ae5dqb": {
+		"ApTLkmSDmUkwjqleRUQuRfJzboKLIHja": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
 			"x": 614,
 			"y": 6
 		},
-		"kz7XBbxFySSDLN8mArZtVBBI9K5oVn0j": {
+		"Bs2RcQ6NESrAH8zo73hXSDeUOIGFCMHU": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
 			"x": 226,
 			"y": 10
+		},
+		"NA1G59eEylZPR1F2rQ0h7ovHMmwD0L9J": {
+			"height": 193,
+			"title": "runPushInMidLane",
+			"width": 312,
+			"x": 1220,
+			"y": 704
+		},
+		"QyYavs5XfMXGv7rktP36JoriXcGDYyKK": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 861,
+			"y": 342
+		},
+		"RWhaayJSIaZdm1hPNWaFzdamTyLd5F7b": {
+			"height": 193,
+			"title": "runTopLane",
+			"width": 295,
+			"x": 951,
+			"y": 57
+		},
+		"SCv2FgZTzYUIOz397iIAWoKcVYvlqdXc": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 858,
+			"y": 737
+		},
+		"ToLpPOvNlmkaGLUQLOP01ThqJg3GHMRd": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 1033,
+			"y": 701
+		},
+		"aPjkBRtqMBBxjwG4nEV8RLJINHqIuNMh": {
+			"height": 94,
+			"title": "initUnits",
+			"width": 423,
+			"x": 642,
+			"y": -471
+		},
+		"dGTMQZzgWC2lBapvauRwa5cEdtbRSJNl": {
+			"height": 193,
+			"title": "runMidLane",
+			"width": 315,
+			"x": 1221,
+			"y": 512
+		},
+		"fw5uWmNH8EfI16Q7SevjvdGGhDEx8ZKQ": {
+			"height": 110,
+			"title": "runUnitsUpdatesAndManageOrders",
+			"width": 387,
+			"x": 953,
+			"y": -85
+		},
+		"hy4VCB9nsr62vwV1qFtk0pXjDHvh4UNw": {
+			"height": 60,
+			"title": "runUpdates",
+			"width": 155,
+			"x": 428,
+			"y": 10
+		},
+		"p8jm4chfaekkxprgQpfafvNl074V06mL": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 1048,
+			"y": 487
+		},
+		"ptsStugouGoLIryt4g8w0chRAGaaSDd4": {
+			"height": 92,
+			"title": "initLanes",
+			"width": 138,
+			"x": 648,
+			"y": -570
+		},
+		"sz0TTV4mmeSafsKUDvhLEbGpAbICHMaJ": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 859,
+			"y": 527
+		},
+		"t5yDanEBpxlfgsl41rV9e29FAHsltgUF": {
+			"height": 60,
+			"title": "initializeData",
+			"width": 173,
+			"x": 400,
+			"y": -269
 		}
 	},
 	"roles": [ {
@@ -81,7 +144,7 @@
 		"children": [ {
 			"children": [ {
 				"children": [],
-				"id": "F9P2fQElNtV21xIQgJtxGQjrElJ8F96t",
+				"id": "5HElee336UWTaWz8QCAaepVbADUFs6eM",
 				"nodeType": "luaCommand",
 				"parameters": [ {
 					"name": "var",
@@ -96,7 +159,7 @@
 				"scriptName": "store"
 			}, {
 				"children": [],
-				"id": "Kao8G9y00kSQbtOfUMGnQaCHIw11jvnY",
+				"id": "ptsStugouGoLIryt4g8w0chRAGaaSDd4",
 				"nodeType": "luaCommand",
 				"parameters": [ {
 					"name": "var",
@@ -111,7 +174,7 @@
 				"scriptName": "store"
 			}, {
 				"children": [],
-				"id": "X8qZQBPHE2TxZ4ZXT0m7W4LcIYAPt0TB",
+				"id": "aPjkBRtqMBBxjwG4nEV8RLJINHqIuNMh",
 				"nodeType": "luaCommand",
 				"parameters": [ {
 					"name": "var",
@@ -125,14 +188,14 @@
 				} ],
 				"scriptName": "store"
 			} ],
-			"id": "VD8h0oLJcDmPLEbI5pvwn0mRjqfeUvxm",
+			"id": "t5yDanEBpxlfgsl41rV9e29FAHsltgUF",
 			"nodeType": "sequence",
 			"parameters": []
 		}, {
 			"children": [ {
 				"children": [ {
 					"children": [],
-					"id": "LWquFFI6GdIJ72FlNSZgkTSfO1yjEZ0b",
+					"id": "fw5uWmNH8EfI16Q7SevjvdGGhDEx8ZKQ",
 					"nodeType": "reference",
 					"parameters": [ {
 						"name": "behaviourName",
@@ -142,7 +205,7 @@
 					"referenceOutputs": []
 				}, {
 					"children": [],
-					"id": "4hhrVKr3Y0YcKfmqHSvdvklCWXgFQOVt",
+					"id": "RWhaayJSIaZdm1hPNWaFzdamTyLd5F7b",
 					"nodeType": "reference",
 					"parameters": [ {
 						"name": "behaviourName",
@@ -156,19 +219,106 @@
 						"value": "1"
 					} ],
 					"referenceOutputs": []
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "4aMEUbNd3lh1yGNIhTXZG2Gc50AdirN4",
+						"nodeType": "wait",
+						"parameters": [ {
+							"name": "time",
+							"value": 25
+						} ]
+					}, {
+						"children": [],
+						"id": "1hnibrMcLVf36KhrZDZi3OCLNl1HVYLC",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "nota_houska_hlaaExam.lane"
+						} ],
+						"referenceInputs": [ {
+							"name": "corridor",
+							"value": "bb.missionInfo.corridors.Middle"
+						}, {
+							"name": "lid",
+							"value": "2"
+						} ],
+						"referenceOutputs": []
+					} ],
+					"id": "QyYavs5XfMXGv7rktP36JoriXcGDYyKK",
+					"nodeType": "sequence",
+					"parameters": []
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "p8jm4chfaekkxprgQpfafvNl074V06mL",
+						"nodeType": "wait",
+						"parameters": [ {
+							"name": "time",
+							"value": "25*2"
+						} ]
+					}, {
+						"children": [],
+						"id": "dGTMQZzgWC2lBapvauRwa5cEdtbRSJNl",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "nota_houska_hlaaExam.push"
+						} ],
+						"referenceInputs": [ {
+							"name": "corridor",
+							"value": "bb.missionInfo.corridors.Bottom"
+						}, {
+							"name": "lid",
+							"value": "3"
+						} ],
+						"referenceOutputs": []
+					} ],
+					"id": "sz0TTV4mmeSafsKUDvhLEbGpAbICHMaJ",
+					"nodeType": "sequence",
+					"parameters": []
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "ToLpPOvNlmkaGLUQLOP01ThqJg3GHMRd",
+						"nodeType": "wait",
+						"parameters": [ {
+							"name": "time",
+							"value": "25*3"
+						} ]
+					}, {
+						"children": [],
+						"id": "NA1G59eEylZPR1F2rQ0h7ovHMmwD0L9J",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "nota_houska_hlaaExam.push"
+						} ],
+						"referenceInputs": [ {
+							"name": "corridor",
+							"value": "bb.missionInfo.corridors.Middle"
+						}, {
+							"name": "lid",
+							"value": "4"
+						} ],
+						"referenceOutputs": []
+					} ],
+					"id": "SCv2FgZTzYUIOz397iIAWoKcVYvlqdXc",
+					"nodeType": "sequence",
+					"parameters": []
 				} ],
-				"id": "cpDCnjdVBoaYXWyugWeMm9WcR8ae5dqb",
+				"id": "ApTLkmSDmUkwjqleRUQuRfJzboKLIHja",
 				"nodeType": "parallel",
 				"parameters": [ {
 					"name": "mode",
 					"value": "all-success"
 				} ]
 			} ],
-			"id": "DHquPXBSWJaRaqwUdQQn3JuOVfTGfTME",
+			"id": "hy4VCB9nsr62vwV1qFtk0pXjDHvh4UNw",
 			"nodeType": "repeat",
 			"parameters": []
 		} ],
-		"id": "kz7XBbxFySSDLN8mArZtVBBI9K5oVn0j",
+		"id": "Bs2RcQ6NESrAH8zo73hXSDeUOIGFCMHU",
 		"nodeType": "sequence",
 		"parameters": []
 	}
