@@ -1,5 +1,5 @@
 local sensorInfo = {
-    name = "getPosRelativeToFront",
+    name = "retPosRelativeToFront",
     desc = "Gets Position relative to the front on lane",
     author = "Petrroll",
     date = "2018-06-28",

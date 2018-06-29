@@ -92,7 +92,7 @@
 					"value": "safeSpot"
 				}, {
 					"name": "value",
-					"value": "nota_houska_hlaaExam.getPosRelativeToFront(laneInfo.info, -2)"
+					"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, -2)"
 				}, {
 					"name": "scriptName",
 					"value": "store"
