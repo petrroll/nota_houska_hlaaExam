@@ -19,7 +19,7 @@
 			"height": 130,
 			"title": "manageFarksRepairForLane",
 			"width": 373,
-			"x": 939,
+			"x": 938,
 			"y": 348
 		},
 		"Cf3YxnkdqhlAqnWHrNysUoGu3YYb5R76": {
@@ -40,7 +40,7 @@
 			"height": 54,
 			"title": "success",
 			"width": 165,
-			"x": 968,
+			"x": 967,
 			"y": -632
 		},
 		"IwNfMYYLOHEeNB9S739VFXWZE8RTw14u": {
@@ -50,18 +50,32 @@
 			"x": 248,
 			"y": 24
 		},
+		"ONljZwSyJoO1DTUttuJR4l45nnKPu0Em": {
+			"height": 256,
+			"title": "manageSpiesForLane",
+			"width": 441,
+			"x": 943,
+			"y": 757
+		},
+		"Osj0OlFcLYVa9gW3b6IhvcXI1ULjU39Q": {
+			"height": 256,
+			"title": "manageRadarsForLane",
+			"width": 441,
+			"x": 938,
+			"y": 492
+		},
 		"REcpW8Q9Dimp97v7fLQccX2qCBKeH3tY": {
 			"height": 94,
 			"title": "store",
 			"width": 456,
-			"x": 1359,
+			"x": 1358,
 			"y": -96
 		},
 		"RzWnNCUfs0HxYizfvLG9wnBY4AGJ8N3G": {
 			"height": 130,
 			"title": "manageFarksReclaimForLane",
 			"width": 373,
-			"x": 936,
+			"x": 935,
 			"y": 203
 		},
 		"X4MJ7cUtzKQoPSkH7yPFmvzWi4c9DzC5": {
@@ -75,14 +89,14 @@
 			"height": 92,
 			"title": "store",
 			"width": 131,
-			"x": 964,
+			"x": 963,
 			"y": -576
 		},
 		"YlKrFdVjeRO1JiPbaNehJh2xkMGHs4bL": {
 			"height": 94,
 			"title": "store",
 			"width": 446,
-			"x": 1362,
+			"x": 1361,
 			"y": -203
 		},
 		"ZGppCOQhU70Hp10T75TZCh8TukG0p4XI": {
@@ -96,7 +110,7 @@
 			"height": 60,
 			"title": "updateLaneData",
 			"width": 188,
-			"x": 1095,
+			"x": 1094,
 			"y": -143
 		},
 		"g9OGyLbsLTjuITQVn4UWPL73Ymus9HAC": {
@@ -117,15 +131,8 @@
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 921,
+			"x": 920,
 			"y": -143
-		},
-		"zfc4RUeevJTshLyBfsxfsEFbb4zGK5YK": {
-			"height": 130,
-			"title": "manageRadarsForLane",
-			"width": 323,
-			"x": 938,
-			"y": 65
 		}
 	},
 	"roles": [ {
@@ -243,19 +250,6 @@
 					"parameters": []
 				}, {
 					"children": [],
-					"id": "zfc4RUeevJTshLyBfsxfsEFbb4zGK5YK",
-					"nodeType": "reference",
-					"parameters": [ {
-						"name": "behaviourName",
-						"value": "nota_houska_hlaaExam.manageSeers"
-					} ],
-					"referenceInputs": [ {
-						"name": "laneInfo",
-						"value": "lane"
-					} ],
-					"referenceOutputs": []
-				}, {
-					"children": [],
 					"id": "RzWnNCUfs0HxYizfvLG9wnBY4AGJ8N3G",
 					"nodeType": "reference",
 					"parameters": [ {
@@ -278,6 +272,68 @@
 					"referenceInputs": [ {
 						"name": "laneInfo",
 						"value": "lane"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "Osj0OlFcLYVa9gW3b6IhvcXI1ULjU39Q",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageUnitStayRelativeToFront"
+					} ],
+					"referenceInputs": [ {
+						"name": "laneInfo",
+						"value": "lane"
+					}, {
+						"name": "unitName",
+						"value": "\"armseer\""
+					}, {
+						"name": "unitCategory",
+						"value": "\"armseer\""
+					}, {
+						"name": "amount",
+						"value": "1"
+					}, {
+						"name": "severenity",
+						"value": "1"
+					}, {
+						"name": "relativePositionToFront",
+						"value": "-2"
+					}, {
+						"name": "moveSpread",
+						"value": "128"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "ONljZwSyJoO1DTUttuJR4l45nnKPu0Em",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageUnitStayRelativeToFront"
+					} ],
+					"referenceInputs": [ {
+						"name": "laneInfo",
+						"value": "lane"
+					}, {
+						"name": "unitName",
+						"value": "\"armspy\""
+					}, {
+						"name": "unitCategory",
+						"value": "\"armspy\""
+					}, {
+						"name": "amount",
+						"value": "1"
+					}, {
+						"name": "severenity",
+						"value": "5"
+					}, {
+						"name": "relativePositionToFront",
+						"value": "0"
+					}, {
+						"name": "moveSpread",
+						"value": "128"
 					} ],
 					"referenceOutputs": []
 				} ],

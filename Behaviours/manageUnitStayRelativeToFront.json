@@ -2,57 +2,75 @@
 	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
-			"height": 108,
-			"width": 216
+			"height": 228,
+			"width": 299
 		}
 	},
 	"inputs": [ {
 		"command": "Variable",
 		"name": "laneInfo"
+	}, {
+		"command": "Variable",
+		"name": "unitName"
+	}, {
+		"command": "Variable",
+		"name": "unitCategory"
+	}, {
+		"command": "Variable",
+		"name": "amount"
+	}, {
+		"command": "Variable",
+		"name": "severenity"
+	}, {
+		"command": "Variable",
+		"name": "relativePositionToFront"
+	}, {
+		"command": "Variable",
+		"name": "moveSpread"
 	} ],
 	"outputs": [],
 	"properties": {
-		"1F8Ueel5K9cC9e0KuqqPBiUkQuAVrz3W": {
+		"74iPGJoJbNd1lYvvBYomXML1suL2RhcG": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 518,
-			"y": -19
+			"x": 604,
+			"y": 20
 		},
-		"IHf9b54AyvlAEAwvv0soPVx5t0ylr5WF": {
-			"height": 214,
-			"title": "ensureThereIsASeerAssigned (fails if there's none)",
-			"width": 404,
-			"x": 791,
-			"y": -192
-		},
-		"R1n4uTNZwTe3brQXocOnbAHs86S1azJY": {
-			"height": 112,
-			"title": "moveSeersOutsideFrontToSafeSpot",
-			"width": 291,
-			"x": 802,
-			"y": 263
-		},
-		"btsh5u3zwvtNyvxKLn1SDVwiWDsoQJGs": {
-			"height": 94,
-			"title": "getSeersThatNeedToMove",
-			"width": 656,
-			"x": 806,
-			"y": 150
-		},
-		"oZvUULx4TCWH4Od39tLebG3VaPrdc82U": {
-			"height": 94,
-			"title": "getSpotForSeerBehindFront",
-			"width": 497,
-			"x": 796,
-			"y": 18
-		},
-		"vUMbLCyRiE8TMJa8JRN5gjVPsg1YHsHO": {
+		"NouHHVCTh7cKv1LbQlmdZYQUwxJiW22B": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 264,
-			"y": 18
+			"x": 350,
+			"y": 57
+		},
+		"QXsSN2fHfPTfj1GfA4Z0Aut9NqB5j7sX": {
+			"height": 94,
+			"title": "getUnitsThatNeedToMove",
+			"width": 745,
+			"x": 878,
+			"y": 178
+		},
+		"TEbfjXf4YhApLFnw9Gtn7bCDvQy2LAfc": {
+			"height": 112,
+			"title": "moveUnitsOutsideInside",
+			"width": 291,
+			"x": 888,
+			"y": 302
+		},
+		"bzJDag7KNLpFpJ2cuDsYK2kqhMf3ZjAJ": {
+			"height": 94,
+			"title": "getSpotOnLaneForUnits",
+			"width": 628,
+			"x": 878,
+			"y": 74
+		},
+		"r40yNNbZTWyGbdyvwdhSMnQzGYyW9Ias": {
+			"height": 214,
+			"title": "ensureThereAreUnitsAssigned",
+			"width": 404,
+			"x": 877,
+			"y": -153
 		}
 	},
 	"roles": [ {
@@ -63,7 +81,7 @@
 		"children": [ {
 			"children": [ {
 				"children": [],
-				"id": "IHf9b54AyvlAEAwvv0soPVx5t0ylr5WF",
+				"id": "r40yNNbZTWyGbdyvwdhSMnQzGYyW9Ias",
 				"nodeType": "reference",
 				"parameters": [ {
 					"name": "behaviourName",
@@ -74,28 +92,28 @@
 					"value": "laneInfo"
 				}, {
 					"name": "unitName",
-					"value": "\"armseer\""
+					"value": "unitName"
 				}, {
 					"name": "numberOfUnits",
-					"value": "1"
+					"value": "amount"
 				}, {
 					"name": "severenity",
-					"value": "1"
+					"value": "severenity"
 				}, {
 					"name": "categoryInLaneInfo",
-					"value": "\"armseer\""
+					"value": "unitCategory"
 				} ],
 				"referenceOutputs": []
 			}, {
 				"children": [],
-				"id": "oZvUULx4TCWH4Od39tLebG3VaPrdc82U",
+				"id": "bzJDag7KNLpFpJ2cuDsYK2kqhMf3ZjAJ",
 				"nodeType": "luaCommand",
 				"parameters": [ {
 					"name": "var",
 					"value": "safeSpot"
 				}, {
 					"name": "value",
-					"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, -2)"
+					"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, relativePositionToFront)"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -103,14 +121,14 @@
 				"scriptName": "store"
 			}, {
 				"children": [],
-				"id": "btsh5u3zwvtNyvxKLn1SDVwiWDsoQJGs",
+				"id": "QXsSN2fHfPTfj1GfA4Z0Aut9NqB5j7sX",
 				"nodeType": "luaCommand",
 				"parameters": [ {
 					"name": "var",
 					"value": "seersOusideFront"
 				}, {
 					"name": "value",
-					"value": "nota_houska_hlaaExam.filterUnitsOutsideOfArea(laneInfo.units.armseer, safeSpot, 128*3)"
+					"value": "nota_houska_hlaaExam.filterUnitsOutsideOfArea(laneInfo.units[unitCategory], safeSpot, 3*moveSpread)"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -118,7 +136,7 @@
 				"scriptName": "store"
 			}, {
 				"children": [],
-				"id": "R1n4uTNZwTe3brQXocOnbAHs86S1azJY",
+				"id": "TEbfjXf4YhApLFnw9Gtn7bCDvQy2LAfc",
 				"nodeType": "luaCommand",
 				"parameters": [ {
 					"name": "unitsGroup",
@@ -128,18 +146,18 @@
 					"value": "safeSpot"
 				}, {
 					"name": "spread",
-					"value": "128"
+					"value": "moveSpread"
 				}, {
 					"name": "scriptName",
 					"value": "nota_houska_hlaaExam.move"
 				} ],
 				"scriptName": "nota_houska_hlaaExam.move"
 			} ],
-			"id": "1F8Ueel5K9cC9e0KuqqPBiUkQuAVrz3W",
+			"id": "74iPGJoJbNd1lYvvBYomXML1suL2RhcG",
 			"nodeType": "sequence",
 			"parameters": []
 		} ],
-		"id": "vUMbLCyRiE8TMJa8JRN5gjVPsg1YHsHO",
+		"id": "NouHHVCTh7cKv1LbQlmdZYQUwxJiW22B",
 		"nodeType": "repeat",
 		"parameters": []
 	}
