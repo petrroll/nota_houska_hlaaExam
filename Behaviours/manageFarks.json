@@ -1,0 +1,118 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "laneInfo"
+	} ],
+	"outputs": [],
+	"properties": {
+		"9lKM4b27FQGTqVJ0KgKZ6XwRUFH9dSDY": {
+			"height": 193,
+			"title": "ensureThereIsASeerAssigned (fails if there's none)",
+			"width": 404,
+			"x": 787,
+			"y": -193
+		},
+		"9ptmjI1bW4zy7uW1Ro1N7HdTXvREz48u": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 513,
+			"y": -20
+		},
+		"PJpr90HPxqZfol8Y30fKwSIldeIAJpEZ": {
+			"height": 92,
+			"title": "nota_houska_hlaaExam.collectMetal",
+			"width": 293,
+			"x": 804,
+			"y": 139
+		},
+		"TLm9M6gJT5ZDzWvr6lPFQ2A6Mq5PbzQG": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 259,
+			"y": 17
+		},
+		"nuva42zEbErPyCKBVZka32i45ldKKhF7": {
+			"height": 94,
+			"title": "getSpotForSeerBehindFront",
+			"width": 497,
+			"x": 792,
+			"y": 17
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "9lKM4b27FQGTqVJ0KgKZ6XwRUFH9dSDY",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_houska_hlaaExam.ensureNUnitsOnLane"
+				} ],
+				"referenceInputs": [ {
+					"name": "laneInfo",
+					"value": "laneInfo"
+				}, {
+					"name": "unitName",
+					"value": "\"armfark\""
+				}, {
+					"name": "numberOfUnits",
+					"value": "1"
+				}, {
+					"name": "severenity",
+					"value": "1"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "nuva42zEbErPyCKBVZka32i45ldKKhF7",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "safeSpot"
+				}, {
+					"name": "value",
+					"value": "nota_houska_hlaaExam.getPosRelativeToFront(laneInfo.info, -2)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "PJpr90HPxqZfol8Y30fKwSIldeIAJpEZ",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "unit",
+					"value": "laneInfo.armfark[1]"
+				}, {
+					"name": "place",
+					"value": "safeSpot"
+				}, {
+					"name": "scriptName",
+					"value": "nota_houska_hlaaExam.collectMetal"
+				} ],
+				"scriptName": "nota_houska_hlaaExam.collectMetal"
+			} ],
+			"id": "9ptmjI1bW4zy7uW1Ro1N7HdTXvREz48u",
+			"nodeType": "sequence",
+			"parameters": []
+		} ],
+		"id": "TLm9M6gJT5ZDzWvr6lPFQ2A6Mq5PbzQG",
+		"nodeType": "repeat",
+		"parameters": []
+	}
+}
