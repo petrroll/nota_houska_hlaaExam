@@ -1,0 +1,127 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "laneInfo"
+	} ],
+	"outputs": [],
+	"properties": {
+		"QAXfXp3mvI1kaI9p6pizsOUV4dTGUN7t": {
+			"height": 214,
+			"title": "ensureThereIsASeerAssigned (fails if there's none)",
+			"width": 404,
+			"x": 797,
+			"y": -200
+		},
+		"UQ33BtewtXvfUEKEfmwkdCHSSnectkEQ": {
+			"height": 94,
+			"title": "getSpotForSeerBehindFront",
+			"width": 584,
+			"x": 802,
+			"y": 10
+		},
+		"WImkFOHYnZwvmukvdRNkl9xlbQjgty2n": {
+			"height": 132,
+			"title": "reclaimIfSomethingToReclaim",
+			"width": 363,
+			"x": 820,
+			"y": 115
+		},
+		"kUS8wDxm3VzWat8fCEtIaRimUMHx7Qo4": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 523,
+			"y": -27
+		},
+		"uEDWS8Kk2U1PcBYbINuiCVeLR8fxIIIt": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 269,
+			"y": 10
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "QAXfXp3mvI1kaI9p6pizsOUV4dTGUN7t",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_houska_hlaaExam.ensureNUnitsOnLane"
+				} ],
+				"referenceInputs": [ {
+					"name": "laneInfo",
+					"value": "laneInfo"
+				}, {
+					"name": "unitName",
+					"value": "\"armfark\""
+				}, {
+					"name": "numberOfUnits",
+					"value": "1"
+				}, {
+					"name": "severenity",
+					"value": "4"
+				}, {
+					"name": "categoryInLaneInfo",
+					"value": "\"repair\""
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "UQ33BtewtXvfUEKEfmwkdCHSSnectkEQ",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "safeSpot"
+				}, {
+					"name": "value",
+					"value": "nota_houska_hlaaExam.retFirstSafeReclaimableLocLane(laneInfo.info, 550, 1)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "WImkFOHYnZwvmukvdRNkl9xlbQjgty2n",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "unit",
+					"value": "laneInfo.units.repair[1]"
+				}, {
+					"name": "place",
+					"value": "safeSpot"
+				}, {
+					"name": "radius",
+					"value": "700"
+				}, {
+					"name": "cmd",
+					"value": "CMD.REPAIR"
+				}, {
+					"name": "scriptName",
+					"value": "nota_houska_hlaaExam.orderOnLocAndRadius"
+				} ],
+				"scriptName": "nota_houska_hlaaExam.orderOnLocAndRadius"
+			} ],
+			"id": "kUS8wDxm3VzWat8fCEtIaRimUMHx7Qo4",
+			"nodeType": "sequence",
+			"parameters": []
+		} ],
+		"id": "uEDWS8Kk2U1PcBYbINuiCVeLR8fxIIIt",
+		"nodeType": "repeat",
+		"parameters": []
+	}
+}

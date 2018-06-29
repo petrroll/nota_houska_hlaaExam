@@ -28,28 +28,28 @@
 			"height": 60,
 			"title": "dontHaveEnoughUnits -> tryToPlaceOrder & fail",
 			"width": 385,
-			"x": 1056,
+			"x": 1055,
 			"y": 40
 		},
 		"DOFNdvKX5aAvqDzlU7k3JQEtwVuxmN3n": {
 			"height": 54,
 			"title": "failure",
 			"width": 131,
-			"x": 2193,
+			"x": 2192,
 			"y": 51
 		},
 		"OoF9hgiAdi5fSR4jIpZE0Hj8RTyO7ZBP": {
 			"height": 193,
 			"title": "reference",
 			"width": 311,
-			"x": 2163,
+			"x": 2162,
 			"y": -169
 		},
 		"SjEGMczHBD4iXKcqfb4e7ibHzodVAwe0": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1186,
+			"x": 1185,
 			"y": -153
 		},
 		"VNiY4RDlYzEFOi1OuScp0Ezi6BUoUI2T": {
@@ -70,21 +70,21 @@
 			"height": 54,
 			"title": "failure",
 			"width": 131,
-			"x": 1512,
+			"x": 1511,
 			"y": 134
 		},
 		"dqwhqizoK6vxDpfpTo3NauRs2kl8c7hL": {
 			"height": 54,
 			"title": "haveEnoughUnits",
 			"width": 194,
-			"x": 1111,
+			"x": 1110,
 			"y": 182
 		},
 		"li6wXIfxuh7dK8XakKyezMUy1bZxdXKN": {
 			"height": 90,
 			"title": "ifEnoughMoney -> place an order",
 			"width": 559,
-			"x": 1489,
+			"x": 1488,
 			"y": -81
 		},
 		"ppHBuPLAmtNB5MQGdBPqNQ4agiwBiXhj": {
@@ -98,14 +98,14 @@
 			"height": 92,
 			"title": "store",
 			"width": 286,
-			"x": 1179,
+			"x": 1178,
 			"y": -246
 		},
 		"t1nogFAAyn5TTFpcGiFfYaJpshQG6Xxj": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 298,
-			"x": 766,
+			"x": 765,
 			"y": -200
 		}
 	},

@@ -15,6 +15,13 @@
 	} ],
 	"outputs": [],
 	"properties": {
+		"9yGi3t7l4h7SpVNhevyGxj7zyikTiUFf": {
+			"height": 130,
+			"title": "manageFarksRepairForLane",
+			"width": 373,
+			"x": 939,
+			"y": 348
+		},
 		"Cf3YxnkdqhlAqnWHrNysUoGu3YYb5R76": {
 			"height": 60,
 			"title": "updateLane",
@@ -52,8 +59,8 @@
 		},
 		"RzWnNCUfs0HxYizfvLG9wnBY4AGJ8N3G": {
 			"height": 130,
-			"title": "manageFarksForLane",
-			"width": 323,
+			"title": "manageFarksReclaimForLane",
+			"width": 373,
 			"x": 936,
 			"y": 203
 		},
@@ -253,7 +260,20 @@
 					"nodeType": "reference",
 					"parameters": [ {
 						"name": "behaviourName",
-						"value": "nota_houska_hlaaExam.manageFarks"
+						"value": "nota_houska_hlaaExam.manageFarksReclaim"
+					} ],
+					"referenceInputs": [ {
+						"name": "laneInfo",
+						"value": "lane"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "9yGi3t7l4h7SpVNhevyGxj7zyikTiUFf",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageFarksRepair"
 					} ],
 					"referenceInputs": [ {
 						"name": "laneInfo",

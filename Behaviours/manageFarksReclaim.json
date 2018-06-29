@@ -1,0 +1,173 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "laneInfo"
+	} ],
+	"outputs": [],
+	"properties": {
+		"F6a7AD8czwwr3bgULY5EpRxgZXs3wWVW": {
+			"height": 90,
+			"title": "reclaimOrHeal",
+			"width": 194,
+			"x": 816,
+			"y": 149
+		},
+		"FroiKNls3EwJEBVabuqvHgfmS7C8073r": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 269,
+			"y": 10
+		},
+		"VSHMCaVcYppiaROrGuc1V3ULaQqtz1zf": {
+			"height": 132,
+			"title": "healIfNothingToReclaim",
+			"width": 493,
+			"x": 1107,
+			"y": 277
+		},
+		"ez1cV6C1hyKivWUcnpRzAJ53ncgmWUEL": {
+			"height": 132,
+			"title": "reclaimIfSomethingToReclaim",
+			"width": 363,
+			"x": 1097,
+			"y": 131
+		},
+		"mST3CtD71fbDDKUTUhuKrc5pGfs1m6Bm": {
+			"height": 214,
+			"title": "ensureThereIsASeerAssigned (fails if there's none)",
+			"width": 404,
+			"x": 797,
+			"y": -200
+		},
+		"qgvkbbjvKtMmA92z6gw8xMMXqWeI4fnh": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 523,
+			"y": -27
+		},
+		"whHs3EnYjdroUHrflY4Wf2pMyZTLiiNl": {
+			"height": 94,
+			"title": "getSpotForSeerBehindFront",
+			"width": 584,
+			"x": 802,
+			"y": 10
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "mST3CtD71fbDDKUTUhuKrc5pGfs1m6Bm",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_houska_hlaaExam.ensureNUnitsOnLane"
+				} ],
+				"referenceInputs": [ {
+					"name": "laneInfo",
+					"value": "laneInfo"
+				}, {
+					"name": "unitName",
+					"value": "\"armfark\""
+				}, {
+					"name": "numberOfUnits",
+					"value": "1"
+				}, {
+					"name": "severenity",
+					"value": "1"
+				}, {
+					"name": "categoryInLaneInfo",
+					"value": "\"reclaim\""
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "whHs3EnYjdroUHrflY4Wf2pMyZTLiiNl",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "safeSpot"
+				}, {
+					"name": "value",
+					"value": "nota_houska_hlaaExam.retFirstSafeReclaimableLocLane(laneInfo.info, 550, 1)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [ {
+					"children": [],
+					"id": "ez1cV6C1hyKivWUcnpRzAJ53ncgmWUEL",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unit",
+						"value": "laneInfo.units.reclaim[1]"
+					}, {
+						"name": "place",
+						"value": "safeSpot"
+					}, {
+						"name": "radius",
+						"value": "550"
+					}, {
+						"name": "cmd",
+						"value": "CMD.RECLAIM"
+					}, {
+						"name": "scriptName",
+						"value": "nota_houska_hlaaExam.orderOnLocAndRadius"
+					} ],
+					"scriptName": "nota_houska_hlaaExam.orderOnLocAndRadius"
+				}, {
+					"children": [],
+					"id": "VSHMCaVcYppiaROrGuc1V3ULaQqtz1zf",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unit",
+						"value": "laneInfo.units.reclaim[1]"
+					}, {
+						"name": "place",
+						"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, -1)"
+					}, {
+						"name": "radius",
+						"value": "700"
+					}, {
+						"name": "cmd",
+						"value": "CMD.REPAIR"
+					}, {
+						"name": "scriptName",
+						"value": "nota_houska_hlaaExam.orderOnLocAndRadius"
+					} ],
+					"scriptName": "nota_houska_hlaaExam.orderOnLocAndRadius"
+				} ],
+				"id": "F6a7AD8czwwr3bgULY5EpRxgZXs3wWVW",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "safeSpot ~= nil"
+				}, {
+					"name": "repeat",
+					"value": "false"
+				} ]
+			} ],
+			"id": "qgvkbbjvKtMmA92z6gw8xMMXqWeI4fnh",
+			"nodeType": "sequence",
+			"parameters": []
+		} ],
+		"id": "FroiKNls3EwJEBVabuqvHgfmS7C8073r",
+		"nodeType": "repeat",
+		"parameters": []
+	}
+}
