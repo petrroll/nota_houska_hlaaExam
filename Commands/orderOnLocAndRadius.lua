@@ -39,6 +39,8 @@ local SpringGiveOrderToUnit = Spring.GiveOrderToUnit
 local SpringGetUnitCommands = Spring.GetUnitCommands
 
 function Run(self, units, parameter)
+	self.running = self.running or {}
+	
 	local place = parameter.place
     local unit = parameter.unit
 	local radius = parameter.radius
