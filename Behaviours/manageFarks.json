@@ -43,7 +43,7 @@
 		"nuva42zEbErPyCKBVZka32i45ldKKhF7": {
 			"height": 94,
 			"title": "getSpotForSeerBehindFront",
-			"width": 497,
+			"width": 568,
 			"x": 792,
 			"y": 17
 		}
@@ -85,7 +85,7 @@
 					"value": "safeSpot"
 				}, {
 					"name": "value",
-					"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, -2)"
+					"value": "nota_houska_hlaaExam.retFirstSafeReclaimableLocLane(laneInfo.info, 500)"
 				}, {
 					"name": "scriptName",
 					"value": "store"
