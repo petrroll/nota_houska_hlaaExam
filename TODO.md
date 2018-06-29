@@ -1,3 +1,4 @@
 - Do push differently: mass all types of units -> move them at once / artillery first
     - do high DPS targeting 
 - Higher priority for artilery 
+- Add DPS sensor, if bad -> retreat with farks & other units
