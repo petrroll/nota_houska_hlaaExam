@@ -16,36 +16,50 @@
 			"height": 193,
 			"title": "ensureThereIsASeerAssigned (fails if there's none)",
 			"width": 404,
-			"x": 787,
-			"y": -193
+			"x": 797,
+			"y": -200
 		},
 		"9ptmjI1bW4zy7uW1Ro1N7HdTXvREz48u": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 513,
-			"y": -20
+			"x": 523,
+			"y": -27
 		},
-		"PJpr90HPxqZfol8Y30fKwSIldeIAJpEZ": {
-			"height": 92,
-			"title": "nota_houska_hlaaExam.collectMetal",
-			"width": 293,
-			"x": 804,
-			"y": 139
+		"OxOKPMmBJSUGu8sQBXaHl8Q3cDsLJ5W5": {
+			"height": 132,
+			"title": "reclaimIfSomethingToReclaim",
+			"width": 363,
+			"x": 1097,
+			"y": 131
 		},
 		"TLm9M6gJT5ZDzWvr6lPFQ2A6Mq5PbzQG": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 259,
-			"y": 17
+			"x": 269,
+			"y": 10
+		},
+		"U4ht2OSB7D2VKXfmsUstQvM3PqekgX7x": {
+			"height": 90,
+			"title": "reclaimOrHeal",
+			"width": 194,
+			"x": 816,
+			"y": 149
 		},
 		"nuva42zEbErPyCKBVZka32i45ldKKhF7": {
 			"height": 94,
 			"title": "getSpotForSeerBehindFront",
-			"width": 568,
-			"x": 792,
-			"y": 17
+			"width": 584,
+			"x": 802,
+			"y": 10
+		},
+		"yuXY8ULgjRJk7IFj5wRzJghTihy3ScdN": {
+			"height": 132,
+			"title": "healIfNothingToReclaim",
+			"width": 493,
+			"x": 1107,
+			"y": 277
 		}
 	},
 	"roles": [ {
@@ -85,27 +99,65 @@
 					"value": "safeSpot"
 				}, {
 					"name": "value",
-					"value": "nota_houska_hlaaExam.retFirstSafeReclaimableLocLane(laneInfo.info, 500)"
+					"value": "nota_houska_hlaaExam.retFirstSafeReclaimableLocLane(laneInfo.info, 550, 1)"
 				}, {
 					"name": "scriptName",
 					"value": "store"
 				} ],
 				"scriptName": "store"
 			}, {
-				"children": [],
-				"id": "PJpr90HPxqZfol8Y30fKwSIldeIAJpEZ",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "unit",
-					"value": "laneInfo.units.armfark[1]"
+				"children": [ {
+					"children": [],
+					"id": "OxOKPMmBJSUGu8sQBXaHl8Q3cDsLJ5W5",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unit",
+						"value": "laneInfo.units.armfark[1]"
+					}, {
+						"name": "place",
+						"value": "safeSpot"
+					}, {
+						"name": "radius",
+						"value": "550"
+					}, {
+						"name": "cmd",
+						"value": "CMD.RECLAIM"
+					}, {
+						"name": "scriptName",
+						"value": "nota_houska_hlaaExam.orderOnLocAndRadius"
+					} ],
+					"scriptName": "nota_houska_hlaaExam.orderOnLocAndRadius"
 				}, {
-					"name": "place",
-					"value": "safeSpot"
-				}, {
-					"name": "scriptName",
-					"value": "nota_houska_hlaaExam.collectMetal"
+					"children": [],
+					"id": "yuXY8ULgjRJk7IFj5wRzJghTihy3ScdN",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unit",
+						"value": "laneInfo.units.armfark[1]"
+					}, {
+						"name": "place",
+						"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, -1)"
+					}, {
+						"name": "radius",
+						"value": "700"
+					}, {
+						"name": "cmd",
+						"value": "CMD.REPAIR"
+					}, {
+						"name": "scriptName",
+						"value": "nota_houska_hlaaExam.orderOnLocAndRadius"
+					} ],
+					"scriptName": "nota_houska_hlaaExam.orderOnLocAndRadius"
 				} ],
-				"scriptName": "nota_houska_hlaaExam.collectMetal"
+				"id": "U4ht2OSB7D2VKXfmsUstQvM3PqekgX7x",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "safeSpot ~= nil"
+				}, {
+					"name": "repeat",
+					"value": "false"
+				} ]
 			} ],
 			"id": "9ptmjI1bW4zy7uW1Ro1N7HdTXvREz48u",
 			"nodeType": "sequence",

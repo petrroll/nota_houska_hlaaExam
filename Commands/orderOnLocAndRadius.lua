@@ -1,4 +1,3 @@
-
 local giveOrderToUnit = Spring.GiveOrderToUnit
 
 function getInfo()
@@ -17,6 +16,18 @@ function getInfo()
 				variableType = "expression",
 				componentType = "editBox",
 				defaultValue = "",
+            },
+            { 
+				name = "radius",
+				variableType = "expression",
+				componentType = "editBox",
+				defaultValue = "500",
+			},
+            { 
+				name = "cmd",
+				variableType = "expression",
+				componentType = "editBox",
+				defaultValue = "CMD.HEAL",
 			}
 		
 		}
@@ -24,28 +35,23 @@ function getInfo()
 	}
 end
 
-running = {}
 local SpringGiveOrderToUnit = Spring.GiveOrderToUnit
 local SpringGetUnitCommands = Spring.GetUnitCommands
-local radius = 2000
-
 
 function Run(self, units, parameter)
-
 	local place = parameter.place
-	local unit = parameter.unit
+    local unit = parameter.unit
+	local radius = parameter.radius
 	
-	if unit == nil then return SUCCESS end
-	if place == nil then return SUCCESS end
-	
-    if running[unit] == nil then
-        
-        Spring.Echo("ORDER GIVEN")
+	local cmdID = parameter.cmd
 
-		running[unit] = true
-		local cmdID = CMD.RECLAIM
-		x,y,z = place["x"],place["y"],place["z"]
-        SpringGiveOrderToUnit(unit, cmdID,{x,y,z,radius},{})
+	if unit == nil then return SUCCESS end
+    if place == nil then return SUCCESS end
+	
+    if self.running[unit] == nil then
+        
+		self.running[unit] = true
+        SpringGiveOrderToUnit(unit, cmdID,{place.x, place.y, place.z, radius}, {})
         
         return RUNNING
 	end
@@ -59,5 +65,9 @@ function Run(self, units, parameter)
 end
 
 function Reset(self)
-	running = {}
+	self.running = {}
+end
+
+function New()
+    return {running = {}}
 end
