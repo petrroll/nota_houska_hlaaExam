@@ -19,7 +19,7 @@
 			"height": 130,
 			"title": "manageFarksRepairForLane",
 			"width": 373,
-			"x": 938,
+			"x": 937,
 			"y": 348
 		},
 		"Cf3YxnkdqhlAqnWHrNysUoGu3YYb5R76": {
@@ -33,14 +33,14 @@
 			"height": 90,
 			"title": "initLanesInfo",
 			"width": 194,
-			"x": 686,
+			"x": 685,
 			"y": -577
 		},
 		"IrHBqc6xGAgdADVsYu3LNEHJhoq4YZdF": {
 			"height": 54,
 			"title": "success",
 			"width": 165,
-			"x": 967,
+			"x": 966,
 			"y": -632
 		},
 		"IwNfMYYLOHEeNB9S739VFXWZE8RTw14u": {
@@ -54,63 +54,70 @@
 			"height": 256,
 			"title": "manageSpiesForLane",
 			"width": 441,
-			"x": 943,
+			"x": 942,
 			"y": 757
 		},
 		"Osj0OlFcLYVa9gW3b6IhvcXI1ULjU39Q": {
 			"height": 256,
 			"title": "manageRadarsForLane",
 			"width": 441,
-			"x": 938,
+			"x": 937,
 			"y": 492
 		},
 		"REcpW8Q9Dimp97v7fLQccX2qCBKeH3tY": {
 			"height": 94,
 			"title": "store",
 			"width": 456,
-			"x": 1358,
+			"x": 1357,
 			"y": -96
 		},
 		"RzWnNCUfs0HxYizfvLG9wnBY4AGJ8N3G": {
 			"height": 130,
 			"title": "manageFarksReclaimForLane",
 			"width": 373,
-			"x": 935,
+			"x": 934,
 			"y": 203
+		},
+		"VCDkcE1yUP8ygSeAzWifxc9bQXxZ0A7w": {
+			"height": 256,
+			"title": "manageSpiesForLane",
+			"width": 441,
+			"x": 947,
+			"y": 1030
 		},
 		"X4MJ7cUtzKQoPSkH7yPFmvzWi4c9DzC5": {
 			"height": 92,
 			"title": "getBetterReferenceToLaneInfo",
 			"width": 278,
-			"x": 687,
+			"x": 686,
 			"y": -371
 		},
 		"XHOkdBxcdIvIqJFlYtn3pfuwt1RiEB1p": {
 			"height": 92,
 			"title": "store",
 			"width": 131,
-			"x": 963,
+			"x": 962,
 			"y": -576
 		},
 		"YlKrFdVjeRO1JiPbaNehJh2xkMGHs4bL": {
 			"height": 94,
 			"title": "store",
 			"width": 446,
-			"x": 1361,
+			"x": 1360,
 			"y": -203
 		},
 		"ZGppCOQhU70Hp10T75TZCh8TukG0p4XI": {
 			"height": 92,
 			"title": "setLanesId",
 			"width": 202,
-			"x": 685,
+			"x": 684,
 			"y": -470
 		},
 		"auA0sbv8v5ndNKpDzQw4ODNjETe5rxji": {
 			"height": 60,
 			"title": "updateLaneData",
 			"width": 188,
-			"x": 1094,
+			"x": 1093,
 			"y": -143
 		},
 		"g9OGyLbsLTjuITQVn4UWPL73Ymus9HAC": {
@@ -124,14 +131,14 @@
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 659,
+			"x": 658,
 			"y": 20
 		},
 		"liWJ3CWPvVp5aMionqp7t8Kn12UKLU6H": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 920,
+			"x": 919,
 			"y": -143
 		}
 	},
@@ -331,6 +338,37 @@
 					}, {
 						"name": "relativePositionToFront",
 						"value": "0.5"
+					}, {
+						"name": "moveSpread",
+						"value": "128"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "VCDkcE1yUP8ygSeAzWifxc9bQXxZ0A7w",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageUnitStayRelativeToFront"
+					} ],
+					"referenceInputs": [ {
+						"name": "laneInfo",
+						"value": "lane"
+					}, {
+						"name": "unitName",
+						"value": "\"armmart\""
+					}, {
+						"name": "unitCategory",
+						"value": "\"armmart\""
+					}, {
+						"name": "amount",
+						"value": "2"
+					}, {
+						"name": "severenity",
+						"value": "5"
+					}, {
+						"name": "relativePositionToFront",
+						"value": "-0.85"
 					}, {
 						"name": "moveSpread",
 						"value": "128"
