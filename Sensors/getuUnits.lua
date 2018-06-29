@@ -30,14 +30,10 @@ SpringGetUnitDefID = Spring.GetUnitDefID
 function registerUnit(uid, orders, lanesInfo)
 
     local unitName = UnitDefs[SpringGetUnitDefID(uid)].name
-    Spring.Echo(unitName)
-    bb.tst = orders
     for k, order in pairs(orders) do 
-        Spring.Echo("unitName")
 
         -- order satisfied -> remove it, assign it in laneInfo, and return laneId
         if order.name == unitName then
-            Spring.Echo("Order satisfied")
             orders[k] = nil
             asssignUnitToLaneInfo(uid, unitName, lanesInfo[order.laneID]) 
             return order.laneID
