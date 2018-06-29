@@ -15,11 +15,7 @@ function getInfo()
 end
 
 
--- get madatory module operators
-VFS.Include("modules.lua") -- modules table
-VFS.Include(modules.attach.data.path .. modules.attach.data.head) -- attach lib module
-
-
+-- assign a unit to corresponding lane.units table 
 function asssignUnitToLaneInfo(uid, unitName, laneInfo) 
     local lanesUnits = laneInfo.units 
     lanesUnits[unitName] = lanesUnits[unitName] or {}
@@ -29,7 +25,7 @@ function asssignUnitToLaneInfo(uid, unitName, laneInfo)
 end
 
 -- finds lane that ordered this new unit -> returns laneID
-SpringGetUnitDefID = Spring.GetUnitDefID
+local SpringGetUnitDefID = Spring.GetUnitDefID
 function registerUnit(uid, orders, lanesInfo)
 
     local unitName = UnitDefs[SpringGetUnitDefID(uid)].name
