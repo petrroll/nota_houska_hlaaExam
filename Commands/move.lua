@@ -56,7 +56,7 @@ function Run(self, units, parameter)
 		local pointX, pointY, pointZ = SpringGetUnitPosition(uid)
 		local currUidLoc = Vec3(pointX, pointY, pointZ)
 
-		if currUidLoc:Distance(dest) > (spread * 4) then
+		if currUidLoc:Distance(dest) > (spread * 3) then
 			if SpringGetUnitHealth(uid) ~= nil then
 				return RUNNING
 			end
