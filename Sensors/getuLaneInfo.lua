@@ -17,7 +17,7 @@ end
 
 local SpringGetUnitsInRectangle = Spring.GetUnitsInRectangle
 local EnemyTeams = Sensors.core.EnemyTeamIDs()
-local DELTA = 500
+local DELTA = 400
 
 -- @description gets updated information about lane situation
 local myAllyID = Spring.GetMyAllyTeamID()
