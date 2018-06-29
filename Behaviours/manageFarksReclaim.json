@@ -29,7 +29,7 @@
 		"VSHMCaVcYppiaROrGuc1V3ULaQqtz1zf": {
 			"height": 132,
 			"title": "healIfNothingToReclaim",
-			"width": 493,
+			"width": 506,
 			"x": 1107,
 			"y": 277
 		},
@@ -139,7 +139,7 @@
 						"value": "laneInfo.units.reclaim[1]"
 					}, {
 						"name": "place",
-						"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, -1)"
+						"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, -0.5)"
 					}, {
 						"name": "radius",
 						"value": "700"
