@@ -29,7 +29,6 @@ local SpringGiveOrderToUnit = Spring.GiveOrderToUnit
 local SpringGetUnitPosition = Spring.GetUnitPosition
 local SpringGetUnitHealth = Spring.GetUnitHealth
 
-local commandsIssued = false
 function Run(self, units, parameter)
 
     local unitsGroup = parameter.unitsGroup
@@ -37,7 +36,8 @@ function Run(self, units, parameter)
     local spread = parameter.spread
 
     -- issue orders
-    if not commandsIssued then
+
+    if not self.commandsIssued then
         for i = 1, #unitsGroup do
             local uid = unitsGroup[i]
 
@@ -46,7 +46,7 @@ function Run(self, units, parameter)
 
             SpringGiveOrderToUnit(uid, CMD.MOVE, (dest + Vec3(spreadX, 0, spreadZ)):AsSpringVector(), {})
         end
-        commandsIssued = true
+        self.commandsIssued = true
         return RUNNING
     end
 
@@ -68,7 +68,10 @@ function Run(self, units, parameter)
     return SUCCESS
 end
 
+function New()
+    return {commandsIssued=false}
+end
 
 function Reset(self)
-    commandsIssued = false
+    self.commandsIssued = false
 end
