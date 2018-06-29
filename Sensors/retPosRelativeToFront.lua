@@ -14,14 +14,22 @@ function getInfo()
     }
 end
 
--- @description Gets Position relative to the front on lane
-return function(laneInfo, relativeIndex)
-
-    local posIndex = laneInfo.frontPosIndex + relativeIndex
-
-    if posIndex > #laneInfo.points then posIndex =  #laneInfo.points
+local function getPointForIndex(laneInfo, posIndex)
+    if posIndex > #laneInfo.points then posIndex = #laneInfo.points
     elseif posIndex < 1 then posIndex = 1 end
 
     return laneInfo.points[posIndex]
-    
+end
+
+-- @description Gets Position relative to the front on lane
+return function(laneInfo, relativeIndex)
+
+    local closerIndex = math.floor(relativeIndex) + laneInfo.frontPosIndex
+    local closerPoint = getPointForIndex(laneInfo, closerIndex)
+
+    local furtherIndex = math.ceil(relativeIndex) + laneInfo.frontPosIndex
+    local furtherPoint = getPointForIndex(laneInfo, furtherIndex)
+
+    local ratio = math.abs(math.floor(relativeIndex) - relativeIndex)
+    return closerPoint * (1-ratio) + furtherPoint * ratio
 end

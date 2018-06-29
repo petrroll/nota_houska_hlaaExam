@@ -299,7 +299,7 @@
 						"value": "1"
 					}, {
 						"name": "relativePositionToFront",
-						"value": "-2"
+						"value": "-1.5"
 					}, {
 						"name": "moveSpread",
 						"value": "128"
@@ -330,7 +330,7 @@
 						"value": "5"
 					}, {
 						"name": "relativePositionToFront",
-						"value": "0"
+						"value": "0.5"
 					}, {
 						"name": "moveSpread",
 						"value": "128"
