@@ -20,7 +20,7 @@
 			"y": -19
 		},
 		"IHf9b54AyvlAEAwvv0soPVx5t0ylr5WF": {
-			"height": 193,
+			"height": 214,
 			"title": "ensureThereIsASeerAssigned (fails if there's none)",
 			"width": 404,
 			"x": 791,
@@ -81,6 +81,9 @@
 				}, {
 					"name": "severenity",
 					"value": "1"
+				}, {
+					"name": "categoryInLaneInfo",
+					"value": "\"armseer\""
 				} ],
 				"referenceOutputs": []
 			}, {

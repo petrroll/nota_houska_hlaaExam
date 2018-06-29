@@ -2,8 +2,8 @@
 	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
-			"height": 148,
-			"width": 217
+			"height": 168,
+			"width": 275
 		}
 	},
 	"inputs": [ {
@@ -15,6 +15,9 @@
 	}, {
 		"command": "Variable",
 		"name": "severenity"
+	}, {
+		"command": "Variable",
+		"name": "categoryInLaneInfo"
 	} ],
 	"outputs": [],
 	"properties": {
@@ -35,7 +38,7 @@
 		"Nv97pDep0mRXiw5rtU8SM0jygqPbj6lQ": {
 			"height": 92,
 			"title": "store",
-			"width": 434,
+			"width": 637,
 			"x": 530,
 			"y": -47
 		}
@@ -54,7 +57,7 @@
 				"value": "bb.units.orders[#bb.units.orders + 1]"
 			}, {
 				"name": "value",
-				"value": "{name=name, laneID = laneID, severenity = severenity}"
+				"value": "{name=name, laneID = laneID, severenity = severenity, category = categoryInLaneInfo}"
 			}, {
 				"name": "scriptName",
 				"value": "store"

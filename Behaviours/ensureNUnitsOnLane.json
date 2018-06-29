@@ -2,8 +2,8 @@
 	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
-			"height": 168,
-			"width": 248
+			"height": 188,
+			"width": 275
 		}
 	},
 	"inputs": [ {
@@ -18,78 +18,95 @@
 	}, {
 		"command": "Variable",
 		"name": "severenity"
+	}, {
+		"command": "Variable",
+		"name": "categoryInLaneInfo"
 	} ],
 	"outputs": [],
 	"properties": {
 		"4NZP0bDmu49PAS1ZHCENeVxg8Fj32h66": {
 			"height": 60,
-			"title": "sequence",
-			"width": 143,
-			"x": 848,
-			"y": 33
+			"title": "dontHaveEnoughUnits -> tryToPlaceOrder & fail",
+			"width": 385,
+			"x": 1056,
+			"y": 40
+		},
+		"DOFNdvKX5aAvqDzlU7k3JQEtwVuxmN3n": {
+			"height": 54,
+			"title": "failure",
+			"width": 131,
+			"x": 2193,
+			"y": 51
 		},
 		"OoF9hgiAdi5fSR4jIpZE0Hj8RTyO7ZBP": {
-			"height": 172,
+			"height": 193,
 			"title": "reference",
-			"width": 293,
-			"x": 1056,
-			"y": -85
+			"width": 311,
+			"x": 2163,
+			"y": -169
 		},
 		"SjEGMczHBD4iXKcqfb4e7ibHzodVAwe0": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1056,
-			"y": -150
+			"x": 1186,
+			"y": -153
 		},
 		"VNiY4RDlYzEFOi1OuScp0Ezi6BUoUI2T": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 320,
-			"y": 38
+			"x": 366,
+			"y": 30
 		},
 		"ZWPjy3yr0i2BTsSEwPaRTpxTws9gMP4X": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 551,
-			"y": -176
+			"x": 552,
+			"y": -189
 		},
 		"c89hXqL2dtpNDUVkuynhqK8O3pTQPKMF": {
 			"height": 54,
 			"title": "failure",
 			"width": 131,
-			"x": 1067,
-			"y": 100
+			"x": 1512,
+			"y": 134
 		},
 		"dqwhqizoK6vxDpfpTo3NauRs2kl8c7hL": {
 			"height": 54,
-			"title": "success",
-			"width": 132,
-			"x": 833,
-			"y": 110
+			"title": "haveEnoughUnits",
+			"width": 194,
+			"x": 1111,
+			"y": 182
+		},
+		"li6wXIfxuh7dK8XakKyezMUy1bZxdXKN": {
+			"height": 90,
+			"title": "ifEnoughMoney -> place an order",
+			"width": 559,
+			"x": 1489,
+			"y": -81
 		},
 		"ppHBuPLAmtNB5MQGdBPqNQ4agiwBiXhj": {
 			"height": 90,
 			"title": "luaCondition",
-			"width": 318,
-			"x": 513,
-			"y": 25
+			"width": 380,
+			"x": 623,
+			"y": 33
 		},
 		"sbHsw2PJE3BlvGgvl5QWSRJteneosc0e": {
 			"height": 92,
 			"title": "store",
-			"width": 225,
-			"x": 1055,
-			"y": -240
+			"width": 286,
+			"x": 1179,
+			"y": -246
 		},
 		"t1nogFAAyn5TTFpcGiFfYaJpshQG6Xxj": {
 			"height": 90,
 			"title": "luaCondition",
-			"width": 236,
-			"x": 755,
-			"y": -188
+			"width": 298,
+			"x": 766,
+			"y": -200
 		}
 	},
 	"roles": [ {
@@ -105,7 +122,7 @@
 					"nodeType": "luaCommand",
 					"parameters": [ {
 						"name": "var",
-						"value": "laneInfo.units[unitName]"
+						"value": "laneInfo.units[categoryInLaneInfo]"
 					}, {
 						"name": "value",
 						"value": "{}"
@@ -124,7 +141,7 @@
 				"nodeType": "luaCondition",
 				"parameters": [ {
 					"name": "expression",
-					"value": "laneInfo.units[unitName] == nil"
+					"value": "laneInfo.units[categoryInLaneInfo] == nil"
 				}, {
 					"name": "repeat",
 					"value": "false"
@@ -136,24 +153,43 @@
 		}, {
 			"children": [ {
 				"children": [ {
-					"children": [],
-					"id": "OoF9hgiAdi5fSR4jIpZE0Hj8RTyO7ZBP",
-					"nodeType": "reference",
+					"children": [ {
+						"children": [],
+						"id": "OoF9hgiAdi5fSR4jIpZE0Hj8RTyO7ZBP",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "nota_houska_hlaaExam.orderUnit"
+						} ],
+						"referenceInputs": [ {
+							"name": "name",
+							"value": "unitName"
+						}, {
+							"name": "laneID",
+							"value": "laneInfo.ID"
+						}, {
+							"name": "severenity",
+							"value": "severenity"
+						}, {
+							"name": "categoryInLaneInfo",
+							"value": "categoryInLaneInfo"
+						} ],
+						"referenceOutputs": []
+					}, {
+						"children": [],
+						"id": "DOFNdvKX5aAvqDzlU7k3JQEtwVuxmN3n",
+						"nodeType": "failure",
+						"parameters": []
+					} ],
+					"id": "li6wXIfxuh7dK8XakKyezMUy1bZxdXKN",
+					"nodeType": "luaCondition",
 					"parameters": [ {
-						"name": "behaviourName",
-						"value": "nota_houska_hlaaExam.orderUnit"
-					} ],
-					"referenceInputs": [ {
-						"name": "name",
-						"value": "unitName"
+						"name": "expression",
+						"value": "nota_houska_hlaaExam.canAffordUnit(bb.missionInfo.buy, unitName, severenity)"
 					}, {
-						"name": "laneID",
-						"value": "laneInfo.ID"
-					}, {
-						"name": "severenity",
-						"value": "severenity"
-					} ],
-					"referenceOutputs": []
+						"name": "repeat",
+						"value": "false"
+					} ]
 				}, {
 					"children": [],
 					"id": "c89hXqL2dtpNDUVkuynhqK8O3pTQPKMF",
@@ -173,7 +209,7 @@
 			"nodeType": "luaCondition",
 			"parameters": [ {
 				"name": "expression",
-				"value": "#laneInfo.units[unitName] < numberOfUnits"
+				"value": "#laneInfo.units[categoryInLaneInfo] < numberOfUnits"
 			}, {
 				"name": "repeat",
 				"value": "false"

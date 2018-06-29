@@ -13,7 +13,7 @@
 	"outputs": [],
 	"properties": {
 		"9lKM4b27FQGTqVJ0KgKZ6XwRUFH9dSDY": {
-			"height": 193,
+			"height": 214,
 			"title": "ensureThereIsASeerAssigned (fails if there's none)",
 			"width": 404,
 			"x": 797,
@@ -88,6 +88,9 @@
 				}, {
 					"name": "severenity",
 					"value": "1"
+				}, {
+					"name": "categoryInLaneInfo",
+					"value": "\"armfark\""
 				} ],
 				"referenceOutputs": []
 			}, {

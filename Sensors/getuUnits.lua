@@ -16,11 +16,11 @@ end
 
 
 -- assign a unit to corresponding lane.units table 
-function asssignUnitToLaneInfo(uid, unitName, laneInfo) 
+function asssignUnitToLaneInfo(uid, category, laneInfo) 
     local lanesUnits = laneInfo.units 
-    lanesUnits[unitName] = lanesUnits[unitName] or {}
+    lanesUnits[category] = lanesUnits[category] or {}
 
-    currTypeOfUnitsInLane = lanesUnits[unitName]
+    currTypeOfUnitsInLane = lanesUnits[category]
     currTypeOfUnitsInLane[#currTypeOfUnitsInLane + 1] = uid
 end
 
@@ -34,7 +34,7 @@ function registerUnit(uid, orders, lanesInfo)
         -- order satisfied -> remove it, assign it in laneInfo, and return laneId
         if order.name == unitName then
             orders[k] = nil
-            asssignUnitToLaneInfo(uid, unitName, lanesInfo[order.laneID]) 
+            asssignUnitToLaneInfo(uid, order.category, lanesInfo[order.laneID]) 
             return order.laneID
         end
 
