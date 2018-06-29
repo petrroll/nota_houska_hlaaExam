@@ -347,7 +347,7 @@
 						"value": "0.5"
 					}, {
 						"name": "moveSpread",
-						"value": "128"
+						"value": "128+64"
 					} ],
 					"referenceOutputs": []
 				}, {
@@ -372,7 +372,7 @@
 						"value": "2"
 					}, {
 						"name": "severenity",
-						"value": "5"
+						"value": "2"
 					}, {
 						"name": "relativePositionToFront",
 						"value": "-0.8"
