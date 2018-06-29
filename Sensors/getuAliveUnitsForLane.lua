@@ -14,7 +14,7 @@ function getInfo()
 	}
 end
 
-SensorsIsUnitAlive =  Sensors.IsUnitAlive
+local SensorsIsUnitAlive = Sensors.IsUnitAlive
 return function(laneInfoUnits)
 
 	local aliveUnits = {}

@@ -15,14 +15,9 @@ function getInfo()
 end
 
 
--- get madatory module operators
-VFS.Include("modules.lua") -- modules table
-VFS.Include(modules.attach.data.path .. modules.attach.data.head) -- attach lib module
-
-SpringGetUnitsInRectangle = Spring.GetUnitsInRectangle
-EnemyTeams = Sensors.core.EnemyTeamIDs()
-
-DELTA = 500
+local SpringGetUnitsInRectangle = Spring.GetUnitsInRectangle
+local EnemyTeams = Sensors.core.EnemyTeamIDs()
+local DELTA = 500
 
 -- @description gets updated information about lane situation
 local myAllyID = Spring.GetMyAllyTeamID()
