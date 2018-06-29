@@ -33,7 +33,7 @@
 			"height": 54,
 			"title": "success",
 			"width": 165,
-			"x": 967,
+			"x": 968,
 			"y": -632
 		},
 		"IwNfMYYLOHEeNB9S739VFXWZE8RTw14u": {
@@ -42,6 +42,20 @@
 			"width": 143,
 			"x": 248,
 			"y": 24
+		},
+		"REcpW8Q9Dimp97v7fLQccX2qCBKeH3tY": {
+			"height": 94,
+			"title": "store",
+			"width": 456,
+			"x": 1359,
+			"y": -96
+		},
+		"RzWnNCUfs0HxYizfvLG9wnBY4AGJ8N3G": {
+			"height": 130,
+			"title": "manageFarksForLane",
+			"width": 323,
+			"x": 936,
+			"y": 203
 		},
 		"X4MJ7cUtzKQoPSkH7yPFmvzWi4c9DzC5": {
 			"height": 92,
@@ -54,20 +68,20 @@
 			"height": 92,
 			"title": "store",
 			"width": 131,
-			"x": 963,
+			"x": 964,
 			"y": -576
 		},
 		"YlKrFdVjeRO1JiPbaNehJh2xkMGHs4bL": {
 			"height": 94,
 			"title": "store",
 			"width": 446,
-			"x": 1181,
-			"y": -91
+			"x": 1362,
+			"y": -203
 		},
 		"ZGppCOQhU70Hp10T75TZCh8TukG0p4XI": {
 			"height": 92,
 			"title": "setLanesId",
-			"width": 151,
+			"width": 202,
 			"x": 685,
 			"y": -470
 		},
@@ -75,8 +89,8 @@
 			"height": 60,
 			"title": "updateLaneData",
 			"width": 188,
-			"x": 910,
-			"y": -80
+			"x": 1095,
+			"y": -143
 		},
 		"g9OGyLbsLTjuITQVn4UWPL73Ymus9HAC": {
 			"height": 60,
@@ -92,12 +106,19 @@
 			"x": 659,
 			"y": 20
 		},
+		"liWJ3CWPvVp5aMionqp7t8Kn12UKLU6H": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 921,
+			"y": -143
+		},
 		"zfc4RUeevJTshLyBfsxfsEFbb4zGK5YK": {
 			"height": 130,
 			"title": "manageRadarsForLane",
 			"width": 323,
-			"x": 950,
-			"y": 178
+			"x": 938,
+			"y": 65
 		}
 	},
 	"roles": [ {
@@ -146,7 +167,7 @@
 					"value": "bb.lanes[lid]"
 				}, {
 					"name": "value",
-					"value": "{ID = lid}"
+					"value": "{ID = lid, units = {}}"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -175,23 +196,43 @@
 			"children": [ {
 				"children": [ {
 					"children": [ {
-						"children": [],
-						"id": "YlKrFdVjeRO1JiPbaNehJh2xkMGHs4bL",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "var",
-							"value": "lane.info"
+						"children": [ {
+							"children": [],
+							"id": "YlKrFdVjeRO1JiPbaNehJh2xkMGHs4bL",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "lane.info"
+							}, {
+								"name": "value",
+								"value": "nota_houska_hlaaExam.getuLaneInfo(corridor, lane.info)"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
 						}, {
-							"name": "value",
-							"value": "nota_houska_hlaaExam.getuLaneInfo(corridor, lane.info)"
-						}, {
-							"name": "scriptName",
-							"value": "store"
+							"children": [],
+							"id": "REcpW8Q9Dimp97v7fLQccX2qCBKeH3tY",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "lane.units"
+							}, {
+								"name": "value",
+								"value": "nota_houska_hlaaExam.getuAliveUnitsForLane(lane.units)"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
 						} ],
-						"scriptName": "store"
+						"id": "auA0sbv8v5ndNKpDzQw4ODNjETe5rxji",
+						"nodeType": "sequence",
+						"parameters": []
 					} ],
-					"id": "auA0sbv8v5ndNKpDzQw4ODNjETe5rxji",
-					"nodeType": "sequence",
+					"id": "liWJ3CWPvVp5aMionqp7t8Kn12UKLU6H",
+					"nodeType": "repeat",
 					"parameters": []
 				}, {
 					"children": [],
@@ -200,6 +241,19 @@
 					"parameters": [ {
 						"name": "behaviourName",
 						"value": "nota_houska_hlaaExam.manageSeers"
+					} ],
+					"referenceInputs": [ {
+						"name": "laneInfo",
+						"value": "lane"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "RzWnNCUfs0HxYizfvLG9wnBY4AGJ8N3G",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageFarks"
 					} ],
 					"referenceInputs": [ {
 						"name": "laneInfo",

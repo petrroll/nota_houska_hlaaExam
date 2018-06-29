@@ -97,7 +97,7 @@
 				"nodeType": "luaCommand",
 				"parameters": [ {
 					"name": "unit",
-					"value": "laneInfo.armfark[1]"
+					"value": "laneInfo.units.armfark[1]"
 				}, {
 					"name": "place",
 					"value": "safeSpot"

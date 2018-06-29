@@ -73,21 +73,21 @@
 		"ppHBuPLAmtNB5MQGdBPqNQ4agiwBiXhj": {
 			"height": 90,
 			"title": "luaCondition",
-			"width": 284,
+			"width": 318,
 			"x": 513,
 			"y": 25
 		},
 		"sbHsw2PJE3BlvGgvl5QWSRJteneosc0e": {
 			"height": 92,
 			"title": "store",
-			"width": 190,
+			"width": 225,
 			"x": 1055,
 			"y": -240
 		},
 		"t1nogFAAyn5TTFpcGiFfYaJpshQG6Xxj": {
 			"height": 90,
 			"title": "luaCondition",
-			"width": 202,
+			"width": 236,
 			"x": 755,
 			"y": -188
 		}
@@ -105,7 +105,7 @@
 					"nodeType": "luaCommand",
 					"parameters": [ {
 						"name": "var",
-						"value": "laneInfo[unitName]"
+						"value": "laneInfo.units[unitName]"
 					}, {
 						"name": "value",
 						"value": "{}"
@@ -124,7 +124,7 @@
 				"nodeType": "luaCondition",
 				"parameters": [ {
 					"name": "expression",
-					"value": "laneInfo[unitName] == nil"
+					"value": "laneInfo.units[unitName] == nil"
 				}, {
 					"name": "repeat",
 					"value": "false"
@@ -173,7 +173,7 @@
 			"nodeType": "luaCondition",
 			"parameters": [ {
 				"name": "expression",
-				"value": "#laneInfo[unitName] < numberOfUnits"
+				"value": "#laneInfo.units[unitName] < numberOfUnits"
 			}, {
 				"name": "repeat",
 				"value": "false"

@@ -21,8 +21,11 @@ VFS.Include(modules.attach.data.path .. modules.attach.data.head) -- attach lib 
 
 
 function asssignUnitToLaneInfo(uid, unitName, laneInfo) 
-    local laneUnitsInfo = laneInfo[unitName] or {}
-    laneUnitsInfo[#laneUnitsInfo + 1] = uid
+    local lanesUnits = laneInfo.units 
+    lanesUnits[unitName] = lanesUnits[unitName] or {}
+
+    currTypeOfUnitsInLane = lanesUnits[unitName]
+    currTypeOfUnitsInLane[#currTypeOfUnitsInLane + 1] = uid
 end
 
 -- finds lane that ordered this new unit -> returns laneID

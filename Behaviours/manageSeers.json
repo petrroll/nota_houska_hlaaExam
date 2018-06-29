@@ -29,7 +29,7 @@
 		"R1n4uTNZwTe3brQXocOnbAHs86S1azJY": {
 			"height": 112,
 			"title": "moveSeerToSafeSpot",
-			"width": 253,
+			"width": 263,
 			"x": 787,
 			"y": 117
 		},
@@ -97,7 +97,7 @@
 				"nodeType": "luaCommand",
 				"parameters": [ {
 					"name": "unitsGroup",
-					"value": "laneInfo.armseer"
+					"value": "laneInfo.units.armseer"
 				}, {
 					"name": "destination",
 					"value": "safeSpot"
