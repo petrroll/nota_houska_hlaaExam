@@ -1,8 +1,8 @@
 local sensorInfo = {
-    name = "filterUnitsOutsideOfArea",
-    desc = "Returns units outside of an area",
+    name = "filterUnitsInDanger",
+    desc = "Returns units that aren't safe",
     author = "Petrroll",
-    date = "2018-06-29",
+    date = "2018-07-29",
     license = "notAlicense",
 }
 
@@ -14,16 +14,15 @@ function getInfo()
     }
 end
 
-local retUnitPosition = Sensors.retUnitPosition
 local utilSplitMapByPredicate = Sensors.utilSplitMapByPredicate
+local isInDanger = Sensors.isInDanger
 
--- @description returns units outside of an area
-return function(units, loc, distance)
+-- @description returns units that aren't safe
+return function(units, safeRadius, DPSTreshold)
     local outsideUnits = {}
 
     local predicate = function(uid) 
-        local pos = retUnitPosition(uid)
-        return (pos ~= nil and pos:Distance(loc) > distance)
+        return isInDanger(uid, safeRadius, DPSTreshold)
     end
 
     local splitResult = utilSplitMapByPredicate(units, predicate)

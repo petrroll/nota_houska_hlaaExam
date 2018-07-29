@@ -19,113 +19,113 @@
 			"height": 94,
 			"title": "store",
 			"width": 456,
-			"x": 1357,
+			"x": 1356,
 			"y": -96
 		},
 		"EGVA0lAtbJVNC6gJDcQTgTmsftWOV77o": {
 			"height": 92,
 			"title": "getBetterReferenceToLaneInfo",
 			"width": 278,
-			"x": 686,
+			"x": 685,
 			"y": -371
 		},
 		"EvAlD72jqpPY4G7x79msomcKuaP3cjRe": {
 			"height": 90,
 			"title": "initLanesInfo",
 			"width": 194,
-			"x": 685,
+			"x": 684,
 			"y": -577
 		},
 		"GABuXVhHFS6CEXJ4vKTJeVdME9FC9ZNe": {
 			"height": 60,
 			"title": "updateLane",
 			"width": 157,
-			"x": 477,
+			"x": 476,
 			"y": 24
 		},
 		"JhLJB41XmWhuqEQVkRL37ST406vkQCZm": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 248,
+			"x": 247,
 			"y": 24
 		},
 		"Kiig7FRRskJ67xy2gn0TpaITCbgU2VEX": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 919,
+			"x": 918,
 			"y": -143
 		},
 		"Ohfu3K71HVXyI5A0k7i5kuERT0J0x41x": {
-			"height": 277,
+			"height": 319,
 			"title": "manageArtileiesForLane",
 			"width": 441,
-			"x": 970,
-			"y": 298
+			"x": 979,
+			"y": 414
 		},
 		"azmGcP2QoxaqVBdB03Oby21NPiJTABYW": {
 			"height": 94,
 			"title": "store",
 			"width": 446,
-			"x": 1360,
+			"x": 1359,
 			"y": -203
 		},
 		"c3CvWcydzoR8k3nbUsF6mf3qLkHBIJx1": {
-			"height": 277,
+			"height": 319,
 			"title": "manageRadarsForLane",
 			"width": 441,
 			"x": 978,
-			"y": 28
+			"y": 100
 		},
 		"eSNbLyPR837QijVkbwcxuSJdUhWIjoTG": {
 			"height": 92,
 			"title": "setLanesId",
 			"width": 202,
-			"x": 684,
+			"x": 683,
 			"y": -470
 		},
 		"fq6NY3iBE4hbsylyeTfiYlXGa8dOTndR": {
 			"height": 60,
 			"title": "initData",
 			"width": 143,
-			"x": 464,
+			"x": 463,
 			"y": -438
 		},
 		"ilJ22UpIp6gGg753rkpFsvvrdHsUKeHf": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 658,
+			"x": 657,
 			"y": 20
 		},
 		"vd9RENEXAkRizIN9kwMTfODz23xuXMDn": {
 			"height": 60,
 			"title": "updateLaneData",
 			"width": 188,
-			"x": 1093,
+			"x": 1092,
 			"y": -143
 		},
 		"weyzXShZ6w9CMp0I4cGGwpsSkaky8VwR": {
 			"height": 92,
 			"title": "store",
 			"width": 131,
-			"x": 962,
+			"x": 961,
 			"y": -576
 		},
 		"wrxVwPj2InMjuh8G2utqtrpqqB4gJsGE": {
 			"height": 54,
 			"title": "success",
 			"width": 165,
-			"x": 966,
+			"x": 965,
 			"y": -632
 		},
 		"zaYUccG7TsZt7tbfbpVHl1UYG1G6Jkh1": {
-			"height": 277,
+			"height": 319,
 			"title": "manageZeusesForLane",
 			"width": 441,
-			"x": 964,
-			"y": 573
+			"x": 979,
+			"y": 738
 		}
 	},
 	"roles": [ {
@@ -273,6 +273,12 @@
 					}, {
 						"name": "moveViaAttack",
 						"value": "true"
+					}, {
+						"name": "dangerRadius",
+						"value": "400"
+					}, {
+						"name": "dangerDpsTreshold",
+						"value": "2"
 					} ],
 					"referenceOutputs": []
 				}, {
@@ -307,6 +313,12 @@
 					}, {
 						"name": "moveViaAttack",
 						"value": "true"
+					}, {
+						"name": "dangerRadius",
+						"value": "500"
+					}, {
+						"name": "dangerDpsTreshold",
+						"value": "2"
 					} ],
 					"referenceOutputs": []
 				}, {
@@ -341,6 +353,12 @@
 					}, {
 						"name": "moveViaAttack",
 						"value": "true"
+					}, {
+						"name": "dangerRadius",
+						"value": "500"
+					}, {
+						"name": "dangerDpsTreshold",
+						"value": "0.8"
 					} ],
 					"referenceOutputs": []
 				} ],
