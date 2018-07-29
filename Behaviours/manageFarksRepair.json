@@ -16,14 +16,14 @@
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 270,
+			"x": 271,
 			"y": 10
 		},
 		"7fE1UH5Ly6FYZ37xLpILafSHP4seRAT7": {
 			"height": 90,
 			"title": "reclaimOrHeal",
 			"width": 712,
-			"x": 790,
+			"x": 791,
 			"y": 233
 		},
 		"AHxA3nYIQ0tQQBosPPnYyIUBZ2YqDNQP": {
@@ -51,14 +51,14 @@
 			"height": 94,
 			"title": "getReclaimSpot",
 			"width": 584,
-			"x": 803,
+			"x": 804,
 			"y": 114
 		},
 		"Y3HiN2wLwBqxyC6mTrVVgteg5DkNHFbc": {
 			"height": 214,
 			"title": "ensureThereIsASeerAssigned (fails if there's none)",
 			"width": 404,
-			"x": 794,
+			"x": 795,
 			"y": -117
 		},
 		"iyw9KSfKdjMvaq1t295Y848uKheWbAF4": {
@@ -72,7 +72,7 @@
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 523,
+			"x": 524,
 			"y": -27
 		},
 		"rCFx4UUvX7UznxbSn1nTJq3iHlNOo9JC": {
@@ -111,7 +111,7 @@
 					"value": "2"
 				}, {
 					"name": "categoryInLaneInfo",
-					"value": "\"reclaim\""
+					"value": "\"repair\""
 				} ],
 				"referenceOutputs": []
 			}, {
@@ -136,7 +136,7 @@
 					"nodeType": "luaCommand",
 					"parameters": [ {
 						"name": "unit",
-						"value": "laneInfo.units.reclaim[1]"
+						"value": "laneInfo.units.repair[1]"
 					}, {
 						"name": "place",
 						"value": "repSpot"
@@ -194,7 +194,7 @@
 						"nodeType": "luaCommand",
 						"parameters": [ {
 							"name": "unit",
-							"value": "laneInfo.units.reclaim[1]"
+							"value": "laneInfo.units.repair[1]"
 						}, {
 							"name": "place",
 							"value": "safeSpot"
@@ -218,7 +218,7 @@
 				"nodeType": "luaCondition",
 				"parameters": [ {
 					"name": "expression",
-					"value": "safeSpot ~= nil and not nota_houska_hlaaExam.isInDanger(laneInfo.units.reclaim[1], 600, 3)"
+					"value": "safeSpot ~= nil and not nota_houska_hlaaExam.isInDanger(laneInfo.units.repair[1], 600, 3)"
 				}, {
 					"name": "repeat",
 					"value": "true"
