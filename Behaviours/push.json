@@ -58,7 +58,7 @@
 			"y": -143
 		},
 		"Ohfu3K71HVXyI5A0k7i5kuERT0J0x41x": {
-			"height": 256,
+			"height": 277,
 			"title": "manageArtileiesForLane",
 			"width": 441,
 			"x": 970,
@@ -72,7 +72,7 @@
 			"y": -203
 		},
 		"c3CvWcydzoR8k3nbUsF6mf3qLkHBIJx1": {
-			"height": 256,
+			"height": 277,
 			"title": "manageRadarsForLane",
 			"width": 441,
 			"x": 978,
@@ -121,7 +121,7 @@
 			"y": -632
 		},
 		"zaYUccG7TsZt7tbfbpVHl1UYG1G6Jkh1": {
-			"height": 256,
+			"height": 277,
 			"title": "manageZeusesForLane",
 			"width": 441,
 			"x": 964,
@@ -270,6 +270,9 @@
 					}, {
 						"name": "moveSpread",
 						"value": "128"
+					}, {
+						"name": "moveViaAttack",
+						"value": "true"
 					} ],
 					"referenceOutputs": []
 				}, {
@@ -301,6 +304,9 @@
 					}, {
 						"name": "moveSpread",
 						"value": "128"
+					}, {
+						"name": "moveViaAttack",
+						"value": "true"
 					} ],
 					"referenceOutputs": []
 				}, {
@@ -332,6 +338,9 @@
 					}, {
 						"name": "moveSpread",
 						"value": "64"
+					}, {
+						"name": "moveViaAttack",
+						"value": "true"
 					} ],
 					"referenceOutputs": []
 				} ],

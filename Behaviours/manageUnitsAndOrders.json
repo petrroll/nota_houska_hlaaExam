@@ -13,29 +13,15 @@
 			"height": 94,
 			"title": "updateUnitsDataAndHandleOrdersWithNotAssignedUnits",
 			"width": 441,
-			"x": 689,
+			"x": 690,
 			"y": -119
-		},
-		"5cyWrsMrDw2WDB1N295liVenrjdfCtfK": {
-			"height": 90,
-			"title": "ifEnoughMoney -> satisfy order with a buy",
-			"width": 610,
-			"x": 1190,
-			"y": 61
 		},
 		"B78AAigVVqAed1h6GKP7RttIKfLrkqWb": {
 			"height": 72,
 			"title": "buy the unit",
 			"width": 266,
-			"x": 1867,
-			"y": -3
-		},
-		"C9dBlIdaUJMmpHtMJrFbF1BjYrzwlbhW": {
-			"height": 54,
-			"title": "notEnoughMoney",
-			"width": 194,
-			"x": 1867,
-			"y": 87
+			"x": 1489,
+			"y": 52
 		},
 		"LW3rCgPGtCpqED6Iq8sXOnsL4uBorj5C": {
 			"height": 60,
@@ -48,15 +34,22 @@
 			"height": 90,
 			"title": "ifThereAreOrders -> handle",
 			"width": 256,
-			"x": 651,
+			"x": 652,
 			"y": -12
 		},
 		"T5uDx6wCzN3tXsS615ahNr3FzyqbJxF4": {
 			"height": 94,
 			"title": "popTopOrder",
-			"width": 272,
+			"width": 612,
 			"x": 1192,
 			"y": -47
+		},
+		"XdNsdg7bKlswcxYjSbpzlcF5olKy7Tgj": {
+			"height": 90,
+			"title": "if satisfiable order exists",
+			"width": 233,
+			"x": 1199,
+			"y": 58
 		},
 		"Zj6jRcfDkJq2mmEXcGVyLAHqkidVX70l": {
 			"height": 60,
@@ -65,19 +58,19 @@
 			"x": 246,
 			"y": 10
 		},
-		"ji0NImEAGja8yaSijdH2POaBO9dhqaoE": {
-			"height": 94,
-			"title": "putOrderBackIn (it would be better to peek the orders instead of popping, not sure how in lua)",
-			"width": 805,
-			"x": 1194,
-			"y": 166
-		},
 		"lY1euM6SSIUX48EBKmT36rZb1UrPziQW": {
 			"height": 54,
 			"title": "noOrders",
 			"width": 141,
 			"x": 943,
 			"y": 126
+		},
+		"qanS4F3HDPPNpkFPcWco2tBIO99OgDtY": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 1491,
+			"y": 127
 		},
 		"tLFaHlpzif8mckT0Cr6SkgbK4KkrTAfV": {
 			"height": 60,
@@ -119,7 +112,7 @@
 							"value": "order"
 						}, {
 							"name": "value",
-							"value": "table.remove(bb.units.orders)"
+							"value": "nota_houska_hlaaExam.osPopCheapestOrder(bb.units.orders, bb.missionInfo.buy)"
 						}, {
 							"name": "scriptName",
 							"value": "store"
@@ -140,34 +133,19 @@
 							"scriptName": "nota_houska_hlaaExam.buyUnit"
 						}, {
 							"children": [],
-							"id": "C9dBlIdaUJMmpHtMJrFbF1BjYrzwlbhW",
+							"id": "qanS4F3HDPPNpkFPcWco2tBIO99OgDtY",
 							"nodeType": "success",
 							"parameters": []
 						} ],
-						"id": "5cyWrsMrDw2WDB1N295liVenrjdfCtfK",
+						"id": "XdNsdg7bKlswcxYjSbpzlcF5olKy7Tgj",
 						"nodeType": "luaCondition",
 						"parameters": [ {
 							"name": "expression",
-							"value": "nota_houska_hlaaExam.canAffordUnit(bb.missionInfo.buy, order.name, order.severenity)"
+							"value": "order ~= nil"
 						}, {
 							"name": "repeat",
-							"value": "false"
+							"value": "true"
 						} ]
-					}, {
-						"children": [],
-						"id": "ji0NImEAGja8yaSijdH2POaBO9dhqaoE",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "var",
-							"value": "_"
-						}, {
-							"name": "value",
-							"value": "table.insert(bb.units.orders, order)"
-						}, {
-							"name": "scriptName",
-							"value": "store"
-						} ],
-						"scriptName": "store"
 					} ],
 					"id": "LW3rCgPGtCpqED6Iq8sXOnsL4uBorj5C",
 					"nodeType": "sequence",

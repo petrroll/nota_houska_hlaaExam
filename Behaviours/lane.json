@@ -23,7 +23,7 @@
 			"y": 348
 		},
 		"CDAbj2nDauFL8NBZDKaH7ZN0sGxUOaZY": {
-			"height": 256,
+			"height": 277,
 			"title": "manageZeusesForLane",
 			"width": 441,
 			"x": 949,
@@ -58,14 +58,14 @@
 			"y": 24
 		},
 		"ONljZwSyJoO1DTUttuJR4l45nnKPu0Em": {
-			"height": 256,
+			"height": 277,
 			"title": "manageSpiesForLane",
 			"width": 441,
 			"x": 942,
 			"y": 757
 		},
 		"Osj0OlFcLYVa9gW3b6IhvcXI1ULjU39Q": {
-			"height": 256,
+			"height": 277,
 			"title": "manageRadarsForLane",
 			"width": 441,
 			"x": 937,
@@ -86,7 +86,7 @@
 			"y": 203
 		},
 		"VCDkcE1yUP8ygSeAzWifxc9bQXxZ0A7w": {
-			"height": 256,
+			"height": 277,
 			"title": "manageArtileryForLane",
 			"width": 441,
 			"x": 947,
@@ -317,6 +317,9 @@
 					}, {
 						"name": "moveSpread",
 						"value": "128"
+					}, {
+						"name": "moveViaAttack",
+						"value": "false"
 					} ],
 					"referenceOutputs": []
 				}, {
@@ -348,6 +351,9 @@
 					}, {
 						"name": "moveSpread",
 						"value": "128+64"
+					}, {
+						"name": "moveViaAttack",
+						"value": "false"
 					} ],
 					"referenceOutputs": []
 				}, {
@@ -379,6 +385,9 @@
 					}, {
 						"name": "moveSpread",
 						"value": "128"
+					}, {
+						"name": "moveViaAttack",
+						"value": "true"
 					} ],
 					"referenceOutputs": []
 				}, {
@@ -410,6 +419,9 @@
 					}, {
 						"name": "moveSpread",
 						"value": "64"
+					}, {
+						"name": "moveViaAttack",
+						"value": "true"
 					} ],
 					"referenceOutputs": []
 				} ],

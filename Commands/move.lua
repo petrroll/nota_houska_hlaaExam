@@ -20,6 +20,12 @@ function getInfo()
                 variableType = "expression",
                 componentType = "editBox",
                 defaultValue = "128",
+            },
+            {
+                name = "moveViaAttack",
+                variableType = "expression",
+                componentType = "editBox",
+                defaultValue = "true",
             }
         }
     }
@@ -35,6 +41,9 @@ function Run(self, units, parameter)
     local dest = parameter.destination
     local spread = parameter.spread
 
+    local cmd = CMD.MOVE
+    if parameter.moveViaAttack == true then cmd = CMD.ATTACK end
+
     -- issue orders
 
     if not self.commandsIssued then
@@ -44,7 +53,7 @@ function Run(self, units, parameter)
             local spreadX = math.random(spread) - spread / 2
             local spreadZ = math.random(spread) - spread / 2
 
-            SpringGiveOrderToUnit(uid, CMD.MOVE, (dest + Vec3(spreadX, 0, spreadZ)):AsSpringVector(), {})
+            SpringGiveOrderToUnit(uid, cmd, (dest + Vec3(spreadX, 0, spreadZ)):AsSpringVector(), {})
         end
         self.commandsIssued = true
         return RUNNING

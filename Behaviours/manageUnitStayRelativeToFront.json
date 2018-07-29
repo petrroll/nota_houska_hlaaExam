@@ -2,7 +2,7 @@
 	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
-			"height": 228,
+			"height": 248,
 			"width": 299
 		}
 	},
@@ -27,6 +27,9 @@
 	}, {
 		"command": "Variable",
 		"name": "moveSpread"
+	}, {
+		"command": "Variable",
+		"name": "moveViaAttack"
 	} ],
 	"outputs": [],
 	"properties": {
@@ -34,42 +37,42 @@
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 604,
+			"x": 603,
 			"y": 20
 		},
 		"NouHHVCTh7cKv1LbQlmdZYQUwxJiW22B": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 350,
+			"x": 349,
 			"y": 57
 		},
 		"QXsSN2fHfPTfj1GfA4Z0Aut9NqB5j7sX": {
 			"height": 94,
 			"title": "getUnitsThatNeedToMove",
 			"width": 745,
-			"x": 878,
+			"x": 877,
 			"y": 178
 		},
 		"TEbfjXf4YhApLFnw9Gtn7bCDvQy2LAfc": {
-			"height": 112,
+			"height": 132,
 			"title": "moveUnitsOutsideInside",
 			"width": 291,
-			"x": 888,
+			"x": 887,
 			"y": 302
 		},
 		"bzJDag7KNLpFpJ2cuDsYK2kqhMf3ZjAJ": {
 			"height": 94,
 			"title": "getSpotOnLaneForUnits",
 			"width": 628,
-			"x": 878,
+			"x": 877,
 			"y": 74
 		},
 		"r40yNNbZTWyGbdyvwdhSMnQzGYyW9Ias": {
 			"height": 214,
 			"title": "ensureThereAreUnitsAssigned",
 			"width": 404,
-			"x": 877,
+			"x": 876,
 			"y": -153
 		}
 	},
@@ -147,6 +150,9 @@
 				}, {
 					"name": "spread",
 					"value": "moveSpread"
+				}, {
+					"name": "moveViaAttack",
+					"value": "moveViaAttack"
 				}, {
 					"name": "scriptName",
 					"value": "nota_houska_hlaaExam.move"
