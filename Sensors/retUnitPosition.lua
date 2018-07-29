@@ -18,5 +18,9 @@ local SpringGetUnitPosition = Spring.GetUnitPosition
 
 -- @description return Vec3 of unit's position
 return function(uid)
-    return Vec3(SpringGetUnitPosition(uid))
+    if uid ~= nil then
+        return Vec3(SpringGetUnitPosition(uid))
+    else
+        return Vec3(0, 0, 0)
+    end
 end

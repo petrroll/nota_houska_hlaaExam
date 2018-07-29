@@ -12,40 +12,68 @@
 	} ],
 	"outputs": [],
 	"properties": {
-		"QAXfXp3mvI1kaI9p6pizsOUV4dTGUN7t": {
+		"3Y88gjRzz1dXra4R5MNsN0kerPB6K96J": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 270,
+			"y": 10
+		},
+		"7fE1UH5Ly6FYZ37xLpILafSHP4seRAT7": {
+			"height": 90,
+			"title": "reclaimOrHeal",
+			"width": 712,
+			"x": 790,
+			"y": 233
+		},
+		"AHxA3nYIQ0tQQBosPPnYyIUBZ2YqDNQP": {
+			"height": 60,
+			"title": "getBackToSafeSpace",
+			"width": 218,
+			"x": 1544,
+			"y": 376
+		},
+		"Asq4RHQW6GTrOyFcXdiD2rfyTsjQghSb": {
+			"height": 132,
+			"title": "nota_houska_hlaaExam.orderOnLocAndRadius",
+			"width": 363,
+			"x": 1819,
+			"y": 460
+		},
+		"SZTFCildX0yIKWGcO3SHXNGlcsM4eTiT": {
+			"height": 94,
+			"title": "getSafeSpot",
+			"width": 584,
+			"x": 1801,
+			"y": 354
+		},
+		"VadyfOqrKAPdc1YacjHRsGO6stfviRMI": {
+			"height": 94,
+			"title": "getReclaimSpot",
+			"width": 584,
+			"x": 803,
+			"y": 114
+		},
+		"Y3HiN2wLwBqxyC6mTrVVgteg5DkNHFbc": {
 			"height": 214,
 			"title": "ensureThereIsASeerAssigned (fails if there's none)",
 			"width": 404,
-			"x": 797,
-			"y": -200
+			"x": 794,
+			"y": -117
 		},
-		"UQ33BtewtXvfUEKEfmwkdCHSSnectkEQ": {
-			"height": 94,
-			"title": "getSpotForSeerBehindFront",
-			"width": 584,
-			"x": 802,
-			"y": 10
-		},
-		"WImkFOHYnZwvmukvdRNkl9xlbQjgty2n": {
+		"iyw9KSfKdjMvaq1t295Y848uKheWbAF4": {
 			"height": 132,
-			"title": "reclaimIfSomethingToReclaim",
+			"title": "nota_houska_hlaaExam.orderOnLocAndRadius",
 			"width": 363,
-			"x": 820,
-			"y": 115
+			"x": 1783,
+			"y": 212
 		},
-		"kUS8wDxm3VzWat8fCEtIaRimUMHx7Qo4": {
+		"knzyykhnxnkiJw04vikninOnGuti7ks6": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
 			"x": 523,
 			"y": -27
-		},
-		"uEDWS8Kk2U1PcBYbINuiCVeLR8fxIIIt": {
-			"height": 60,
-			"title": "repeat",
-			"width": 131,
-			"x": 269,
-			"y": 10
 		}
 	},
 	"roles": [ {
@@ -56,7 +84,7 @@
 		"children": [ {
 			"children": [ {
 				"children": [],
-				"id": "QAXfXp3mvI1kaI9p6pizsOUV4dTGUN7t",
+				"id": "Y3HiN2wLwBqxyC6mTrVVgteg5DkNHFbc",
 				"nodeType": "reference",
 				"parameters": [ {
 					"name": "behaviourName",
@@ -73,54 +101,106 @@
 					"value": "1"
 				}, {
 					"name": "severenity",
-					"value": "4"
+					"value": "2"
 				}, {
 					"name": "categoryInLaneInfo",
-					"value": "\"repair\""
+					"value": "\"reclaim\""
 				} ],
 				"referenceOutputs": []
 			}, {
 				"children": [],
-				"id": "UQ33BtewtXvfUEKEfmwkdCHSSnectkEQ",
+				"id": "VadyfOqrKAPdc1YacjHRsGO6stfviRMI",
 				"nodeType": "luaCommand",
 				"parameters": [ {
 					"name": "var",
-					"value": "safeSpot"
+					"value": "repSpot"
 				}, {
 					"name": "value",
-					"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, -0.2)"
+					"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, 0)"
 				}, {
 					"name": "scriptName",
 					"value": "store"
 				} ],
 				"scriptName": "store"
 			}, {
-				"children": [],
-				"id": "WImkFOHYnZwvmukvdRNkl9xlbQjgty2n",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "unit",
-					"value": "laneInfo.units.repair[1]"
+				"children": [ {
+					"children": [],
+					"id": "iyw9KSfKdjMvaq1t295Y848uKheWbAF4",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unit",
+						"value": "laneInfo.units.reclaim[1]"
+					}, {
+						"name": "place",
+						"value": "repSpot"
+					}, {
+						"name": "radius",
+						"value": "600"
+					}, {
+						"name": "cmd",
+						"value": "CMD.REPAIR"
+					}, {
+						"name": "scriptName",
+						"value": "nota_houska_hlaaExam.orderOnLocAndRadius"
+					} ],
+					"scriptName": "nota_houska_hlaaExam.orderOnLocAndRadius"
 				}, {
-					"name": "place",
-					"value": "safeSpot"
-				}, {
-					"name": "radius",
-					"value": "700"
-				}, {
-					"name": "cmd",
-					"value": "CMD.REPAIR"
-				}, {
-					"name": "scriptName",
-					"value": "nota_houska_hlaaExam.orderOnLocAndRadius"
+					"children": [ {
+						"children": [],
+						"id": "SZTFCildX0yIKWGcO3SHXNGlcsM4eTiT",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "safeSpot"
+						}, {
+							"name": "value",
+							"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, -3)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "Asq4RHQW6GTrOyFcXdiD2rfyTsjQghSb",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unit",
+							"value": "laneInfo.units.reclaim[1]"
+						}, {
+							"name": "place",
+							"value": "safeSpot"
+						}, {
+							"name": "radius",
+							"value": "250"
+						}, {
+							"name": "cmd",
+							"value": "CMD.REPAIR"
+						}, {
+							"name": "scriptName",
+							"value": "nota_houska_hlaaExam.orderOnLocAndRadius"
+						} ],
+						"scriptName": "nota_houska_hlaaExam.orderOnLocAndRadius"
+					} ],
+					"id": "AHxA3nYIQ0tQQBosPPnYyIUBZ2YqDNQP",
+					"nodeType": "sequence",
+					"parameters": []
 				} ],
-				"scriptName": "nota_houska_hlaaExam.orderOnLocAndRadius"
+				"id": "7fE1UH5Ly6FYZ37xLpILafSHP4seRAT7",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "safeSpot ~= nil and not nota_houska_hlaaExam.isInDanger(laneInfo.units.reclaim[1], 600, 2)"
+				}, {
+					"name": "repeat",
+					"value": "true"
+				} ]
 			} ],
-			"id": "kUS8wDxm3VzWat8fCEtIaRimUMHx7Qo4",
+			"id": "knzyykhnxnkiJw04vikninOnGuti7ks6",
 			"nodeType": "sequence",
 			"parameters": []
 		} ],
-		"id": "uEDWS8Kk2U1PcBYbINuiCVeLR8fxIIIt",
+		"id": "3Y88gjRzz1dXra4R5MNsN0kerPB6K96J",
 		"nodeType": "repeat",
 		"parameters": []
 	}
