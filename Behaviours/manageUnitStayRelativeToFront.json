@@ -43,14 +43,14 @@
 			"height": 132,
 			"title": "moveUnitsToGoalPos",
 			"width": 295,
-			"x": 1779,
-			"y": 15
+			"x": 2193,
+			"y": -5
 		},
 		"6cIkULlZZ9CMOKAwCeCu1OiLFvd66F1U": {
-			"height": 90,
-			"title": "attackOrRetreat",
-			"width": 852,
-			"x": 857,
+			"height": 89,
+			"title": "attackOrRetreatDangerComputedForFistUnitInCategory",
+			"width": 909,
+			"x": 858,
 			"y": 123
 		},
 		"74iPGJoJbNd1lYvvBYomXML1suL2RhcG": {
@@ -64,43 +64,43 @@
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 349,
+			"x": 348,
 			"y": 57
 		},
 		"TEbfjXf4YhApLFnw9Gtn7bCDvQy2LAfc": {
 			"height": 132,
 			"title": "moveUnitsToRetreatSpot",
 			"width": 295,
-			"x": 2114,
-			"y": 312
+			"x": 2365,
+			"y": 318
 		},
 		"a37B4kRYPdddhp7QcMN9mTepAzSutaxz": {
 			"height": 60,
 			"title": "retreatSeq",
 			"width": 148,
-			"x": 1751,
-			"y": 233
+			"x": 2106,
+			"y": 259
 		},
 		"bzJDag7KNLpFpJ2cuDsYK2kqhMf3ZjAJ": {
 			"height": 94,
 			"title": "getGoalSpot",
 			"width": 628,
-			"x": 847,
+			"x": 846,
 			"y": 3
 		},
 		"r40yNNbZTWyGbdyvwdhSMnQzGYyW9Ias": {
 			"height": 214,
 			"title": "ensureThereAreUnitsAssigned",
 			"width": 404,
-			"x": 880,
+			"x": 879,
 			"y": -297
 		},
 		"uGbmI0EJ4ZZuJtg8ygjKWOt1g0D79lnp": {
 			"height": 94,
 			"title": "getSafeSpotOnLaneForUnits",
 			"width": 628,
-			"x": 2118,
-			"y": 220
+			"x": 2357,
+			"y": 226
 		}
 	},
 	"roles": [ {
@@ -217,7 +217,7 @@
 				"nodeType": "luaCondition",
 				"parameters": [ {
 					"name": "expression",
-					"value": "goalSpot ~= nil and not nota_houska_hlaaExam.isInDanger(laneInfo.units[unitCategory][1], dangerRadius, dangerDpsTreshold)"
+					"value": "goalSpot ~= nil and not nota_houska_hlaaExam.isGroupInDanger(laneInfo.units[unitCategory], dangerRadius, dangerDpsTreshold, 0.2)"
 				}, {
 					"name": "repeat",
 					"value": "true"
