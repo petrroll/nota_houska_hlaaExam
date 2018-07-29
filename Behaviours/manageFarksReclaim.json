@@ -72,7 +72,7 @@
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 523,
+			"x": 524,
 			"y": -27
 		},
 		"whHs3EnYjdroUHrflY4Wf2pMyZTLiiNl": {
@@ -218,7 +218,7 @@
 				"nodeType": "luaCondition",
 				"parameters": [ {
 					"name": "expression",
-					"value": "safeSpot ~= nil and not nota_houska_hlaaExam.isInDanger(laneInfo.units.reclaim[1], 600, 3)"
+					"value": "recSpot ~= nil and not nota_houska_hlaaExam.isInDanger(laneInfo.units.reclaim[1], 600, 3)"
 				}, {
 					"name": "repeat",
 					"value": "true"

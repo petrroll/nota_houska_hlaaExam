@@ -218,7 +218,7 @@
 				"nodeType": "luaCondition",
 				"parameters": [ {
 					"name": "expression",
-					"value": "safeSpot ~= nil and not nota_houska_hlaaExam.isInDanger(laneInfo.units.repair[1], 600, 3)"
+					"value": "repSpot ~= nil and not nota_houska_hlaaExam.isInDanger(laneInfo.units.repair[1], 600, 3)"
 				}, {
 					"name": "repeat",
 					"value": "true"
