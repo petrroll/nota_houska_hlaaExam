@@ -24,32 +24,11 @@
 	} ],
 	"outputs": [],
 	"properties": {
-		"4NZP0bDmu49PAS1ZHCENeVxg8Fj32h66": {
-			"height": 60,
-			"title": "dontHaveEnoughUnits -> tryToPlaceOrder & fail",
-			"width": 385,
-			"x": 1055,
-			"y": 40
-		},
-		"DOFNdvKX5aAvqDzlU7k3JQEtwVuxmN3n": {
-			"height": 54,
-			"title": "failure",
-			"width": 131,
-			"x": 2192,
-			"y": 51
-		},
-		"OoF9hgiAdi5fSR4jIpZE0Hj8RTyO7ZBP": {
-			"height": 193,
-			"title": "reference",
-			"width": 311,
-			"x": 2162,
-			"y": -169
-		},
 		"SjEGMczHBD4iXKcqfb4e7ibHzodVAwe0": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1185,
+			"x": 1186,
 			"y": -153
 		},
 		"VNiY4RDlYzEFOi1OuScp0Ezi6BUoUI2T": {
@@ -59,53 +38,46 @@
 			"x": 366,
 			"y": 30
 		},
+		"Xl2r5gQSB4FsdDCkCPCxPIxFJ4iQR874": {
+			"height": 152,
+			"title": "nota_houska_hlaaExam.osPlaceUnitOrder",
+			"width": 330,
+			"x": 1107,
+			"y": -12
+		},
 		"ZWPjy3yr0i2BTsSEwPaRTpxTws9gMP4X": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 552,
+			"x": 553,
 			"y": -189
-		},
-		"c89hXqL2dtpNDUVkuynhqK8O3pTQPKMF": {
-			"height": 54,
-			"title": "failure",
-			"width": 131,
-			"x": 1511,
-			"y": 134
 		},
 		"dqwhqizoK6vxDpfpTo3NauRs2kl8c7hL": {
 			"height": 54,
 			"title": "haveEnoughUnits",
 			"width": 194,
-			"x": 1110,
+			"x": 1112,
 			"y": 182
-		},
-		"li6wXIfxuh7dK8XakKyezMUy1bZxdXKN": {
-			"height": 90,
-			"title": "ifEnoughMoney -> place an order",
-			"width": 559,
-			"x": 1488,
-			"y": -81
 		},
 		"ppHBuPLAmtNB5MQGdBPqNQ4agiwBiXhj": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 380,
-			"x": 623,
+			"x": 624,
 			"y": 33
 		},
 		"sbHsw2PJE3BlvGgvl5QWSRJteneosc0e": {
 			"height": 92,
 			"title": "store",
 			"width": 286,
-			"x": 1178,
-			"y": -246
+			"x": 1182,
+			"y": -265
 		},
 		"t1nogFAAyn5TTFpcGiFfYaJpshQG6Xxj": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 298,
-			"x": 765,
+			"x": 766,
 			"y": -200
 		}
 	},
@@ -152,53 +124,29 @@
 			"parameters": []
 		}, {
 			"children": [ {
-				"children": [ {
-					"children": [ {
-						"children": [],
-						"id": "OoF9hgiAdi5fSR4jIpZE0Hj8RTyO7ZBP",
-						"nodeType": "reference",
-						"parameters": [ {
-							"name": "behaviourName",
-							"value": "nota_houska_hlaaExam.orderUnit"
-						} ],
-						"referenceInputs": [ {
-							"name": "name",
-							"value": "unitName"
-						}, {
-							"name": "laneID",
-							"value": "laneInfo.ID"
-						}, {
-							"name": "severenity",
-							"value": "severenity"
-						}, {
-							"name": "categoryInLaneInfo",
-							"value": "categoryInLaneInfo"
-						} ],
-						"referenceOutputs": []
-					}, {
-						"children": [],
-						"id": "DOFNdvKX5aAvqDzlU7k3JQEtwVuxmN3n",
-						"nodeType": "failure",
-						"parameters": []
-					} ],
-					"id": "li6wXIfxuh7dK8XakKyezMUy1bZxdXKN",
-					"nodeType": "luaCondition",
-					"parameters": [ {
-						"name": "expression",
-						"value": "nota_houska_hlaaExam.canAffordUnit(bb.missionInfo.buy, unitName, severenity)"
-					}, {
-						"name": "repeat",
-						"value": "false"
-					} ]
+				"children": [],
+				"id": "Xl2r5gQSB4FsdDCkCPCxPIxFJ4iQR874",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "unitName",
+					"value": "unitName"
 				}, {
-					"children": [],
-					"id": "c89hXqL2dtpNDUVkuynhqK8O3pTQPKMF",
-					"nodeType": "failure",
-					"parameters": []
+					"name": "laneID",
+					"value": "laneInfo.ID"
+				}, {
+					"name": "severenity",
+					"value": "severenity"
+				}, {
+					"name": "categoryInLane",
+					"value": "categoryInLaneInfo"
+				}, {
+					"name": "orders",
+					"value": "bb.units.orders"
+				}, {
+					"name": "scriptName",
+					"value": "nota_houska_hlaaExam.osPlaceUnitOrder"
 				} ],
-				"id": "4NZP0bDmu49PAS1ZHCENeVxg8Fj32h66",
-				"nodeType": "sequence",
-				"parameters": []
+				"scriptName": "nota_houska_hlaaExam.osPlaceUnitOrder"
 			}, {
 				"children": [],
 				"id": "dqwhqizoK6vxDpfpTo3NauRs2kl8c7hL",
