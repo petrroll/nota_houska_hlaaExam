@@ -42,22 +42,27 @@ function Run(self, units, parameter)
     local spread = parameter.spread
 
     local cmd = CMD.MOVE
-    if parameter.moveViaAttack == true then cmd = CMD.ATTACK end
+    if parameter.moveViaAttack == true then cmd = CMD.FIGHT end
 
     -- issue orders
 
-    if not self.commandsIssued then
-        for i = 1, #unitsGroup do
-            local uid = unitsGroup[i]
-
+    local issuedNewCommand = false
+    for i = 1, #unitsGroup do
+        local uid = unitsGroup[i]
+        if self.commandsIssued[uid] ~= true then 
             local spreadX = math.random(spread) - spread / 2
             local spreadZ = math.random(spread) - spread / 2
 
             SpringGiveOrderToUnit(uid, cmd, (dest + Vec3(spreadX, 0, spreadZ)):AsSpringVector(), {})
+            self.commandsIssued[uid] = true
+            issuedNewCommand = true
         end
-        self.commandsIssued = true
+    end
+        
+    if issuedNewCommand then
         return RUNNING
     end
+    
 
     -- if some unit not near (spreadwise) destination -> running
 	for i=1, #unitsGroup do
@@ -78,9 +83,9 @@ function Run(self, units, parameter)
 end
 
 function New()
-    return {commandsIssued=false}
+    return {commandsIssued={}}
 end
 
 function Reset(self)
-    self.commandsIssued = false
+    self.commandsIssued = {}
 end
