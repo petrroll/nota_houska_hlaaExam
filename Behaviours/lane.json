@@ -37,6 +37,9 @@
 		}, {
 			"name": "dangerDpsTreshold",
 			"value": "1"
+		}, {
+			"name": "minAmount",
+			"value": "1"
 		} ],
 		"referenceOutputs": []
 	} ],
@@ -63,11 +66,11 @@
 			"y": 348
 		},
 		"CDAbj2nDauFL8NBZDKaH7ZN0sGxUOaZY": {
-			"height": 319,
+			"height": 340,
 			"title": "manageZeusesForLane",
 			"width": 441,
 			"x": 945,
-			"y": 1471
+			"y": 1540
 		},
 		"Cf3YxnkdqhlAqnWHrNysUoGu3YYb5R76": {
 			"height": 60,
@@ -98,18 +101,18 @@
 			"y": 24
 		},
 		"ONljZwSyJoO1DTUttuJR4l45nnKPu0Em": {
-			"height": 319,
+			"height": 340,
 			"title": "manageSpiesForLane",
 			"width": 441,
-			"x": 944,
-			"y": 824
+			"x": 946,
+			"y": 873
 		},
 		"Osj0OlFcLYVa9gW3b6IhvcXI1ULjU39Q": {
-			"height": 319,
+			"height": 340,
 			"title": "manageRadarsForLane",
 			"width": 441,
 			"x": 941,
-			"y": 511
+			"y": 538
 		},
 		"REcpW8Q9Dimp97v7fLQccX2qCBKeH3tY": {
 			"height": 94,
@@ -126,11 +129,11 @@
 			"y": 203
 		},
 		"VCDkcE1yUP8ygSeAzWifxc9bQXxZ0A7w": {
-			"height": 319,
+			"height": 340,
 			"title": "manageArtileryForLane",
 			"width": 441,
-			"x": 947,
-			"y": 1131
+			"x": 944,
+			"y": 1204
 		},
 		"X4MJ7cUtzKQoPSkH7yPFmvzWi4c9DzC5": {
 			"height": 92,
@@ -366,6 +369,9 @@
 					}, {
 						"name": "dangerDpsTreshold",
 						"value": "2"
+					}, {
+						"name": "minAmount",
+						"value": "1"
 					} ],
 					"referenceOutputs": []
 				}, {
@@ -406,6 +412,9 @@
 					}, {
 						"name": "dangerDpsTreshold",
 						"value": "0.5"
+					}, {
+						"name": "minAmount",
+						"value": "1"
 					} ],
 					"referenceOutputs": []
 				}, {
@@ -446,6 +455,9 @@
 					}, {
 						"name": "dangerDpsTreshold",
 						"value": "2"
+					}, {
+						"name": "minAmount",
+						"value": "1"
 					} ],
 					"referenceOutputs": []
 				} ],

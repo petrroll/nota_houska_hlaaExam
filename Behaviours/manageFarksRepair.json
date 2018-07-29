@@ -55,7 +55,7 @@
 			"y": 114
 		},
 		"Y3HiN2wLwBqxyC6mTrVVgteg5DkNHFbc": {
-			"height": 214,
+			"height": 235,
 			"title": "ensureThereIsASeerAssigned (fails if there's none)",
 			"width": 404,
 			"x": 795,
@@ -112,6 +112,9 @@
 				}, {
 					"name": "categoryInLaneInfo",
 					"value": "\"repair\""
+				}, {
+					"name": "minNumberOfUnits",
+					"value": "1"
 				} ],
 				"referenceOutputs": []
 			}, {

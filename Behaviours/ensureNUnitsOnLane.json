@@ -2,7 +2,7 @@
 	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
-			"height": 188,
+			"height": 208,
 			"width": 275
 		}
 	},
@@ -21,64 +21,95 @@
 	}, {
 		"command": "Variable",
 		"name": "categoryInLaneInfo"
+	}, {
+		"command": "Variable",
+		"name": "minNumberOfUnits"
 	} ],
 	"outputs": [],
 	"properties": {
+		"4fVQ2RKFY0XWbl341nwisFIT39xupO63": {
+			"height": 54,
+			"title": "failure",
+			"width": 131,
+			"x": 1785,
+			"y": 61
+		},
 		"SjEGMczHBD4iXKcqfb4e7ibHzodVAwe0": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1186,
+			"x": 1185,
 			"y": -153
 		},
 		"VNiY4RDlYzEFOi1OuScp0Ezi6BUoUI2T": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 366,
+			"x": 369,
 			"y": 30
 		},
 		"Xl2r5gQSB4FsdDCkCPCxPIxFJ4iQR874": {
 			"height": 152,
 			"title": "nota_houska_hlaaExam.osPlaceUnitOrder",
 			"width": 330,
-			"x": 1107,
-			"y": -12
+			"x": 1288,
+			"y": -83
 		},
 		"ZWPjy3yr0i2BTsSEwPaRTpxTws9gMP4X": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 553,
+			"x": 556,
 			"y": -189
+		},
+		"cgm6znLiRH7DjzBFJ8CWwfWLnyUM0qjf": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 1780,
+			"y": 130
 		},
 		"dqwhqizoK6vxDpfpTo3NauRs2kl8c7hL": {
 			"height": 54,
 			"title": "haveEnoughUnits",
 			"width": 194,
-			"x": 1112,
-			"y": 182
+			"x": 1111,
+			"y": 246
+		},
+		"g69n44GPkNN9M2TzU68SMeiLY1Gq40CQ": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1061,
+			"y": 13
 		},
 		"ppHBuPLAmtNB5MQGdBPqNQ4agiwBiXhj": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 380,
-			"x": 624,
+			"x": 625,
 			"y": 33
 		},
 		"sbHsw2PJE3BlvGgvl5QWSRJteneosc0e": {
 			"height": 92,
 			"title": "store",
 			"width": 286,
-			"x": 1182,
+			"x": 1181,
 			"y": -265
 		},
 		"t1nogFAAyn5TTFpcGiFfYaJpshQG6Xxj": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 298,
-			"x": 766,
+			"x": 767,
 			"y": -200
+		},
+		"ybQ99pdmuc0CQjXWslohhvgT4II0dMJV": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 405,
+			"x": 1291,
+			"y": 75
 		}
 	},
 	"roles": [ {
@@ -124,29 +155,55 @@
 			"parameters": []
 		}, {
 			"children": [ {
-				"children": [],
-				"id": "Xl2r5gQSB4FsdDCkCPCxPIxFJ4iQR874",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "unitName",
-					"value": "unitName"
+				"children": [ {
+					"children": [],
+					"id": "Xl2r5gQSB4FsdDCkCPCxPIxFJ4iQR874",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unitName",
+						"value": "unitName"
+					}, {
+						"name": "laneID",
+						"value": "laneInfo.ID"
+					}, {
+						"name": "severenity",
+						"value": "severenity"
+					}, {
+						"name": "categoryInLane",
+						"value": "categoryInLaneInfo"
+					}, {
+						"name": "orders",
+						"value": "bb.units.orders"
+					}, {
+						"name": "scriptName",
+						"value": "nota_houska_hlaaExam.osPlaceUnitOrder"
+					} ],
+					"scriptName": "nota_houska_hlaaExam.osPlaceUnitOrder"
 				}, {
-					"name": "laneID",
-					"value": "laneInfo.ID"
-				}, {
-					"name": "severenity",
-					"value": "severenity"
-				}, {
-					"name": "categoryInLane",
-					"value": "categoryInLaneInfo"
-				}, {
-					"name": "orders",
-					"value": "bb.units.orders"
-				}, {
-					"name": "scriptName",
-					"value": "nota_houska_hlaaExam.osPlaceUnitOrder"
+					"children": [ {
+						"children": [],
+						"id": "4fVQ2RKFY0XWbl341nwisFIT39xupO63",
+						"nodeType": "failure",
+						"parameters": []
+					}, {
+						"children": [],
+						"id": "cgm6znLiRH7DjzBFJ8CWwfWLnyUM0qjf",
+						"nodeType": "success",
+						"parameters": []
+					} ],
+					"id": "ybQ99pdmuc0CQjXWslohhvgT4II0dMJV",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "#laneInfo.units[categoryInLaneInfo] < minNumberOfUnits"
+					}, {
+						"name": "repeat",
+						"value": "true"
+					} ]
 				} ],
-				"scriptName": "nota_houska_hlaaExam.osPlaceUnitOrder"
+				"id": "g69n44GPkNN9M2TzU68SMeiLY1Gq40CQ",
+				"nodeType": "sequence",
+				"parameters": []
 			}, {
 				"children": [],
 				"id": "dqwhqizoK6vxDpfpTo3NauRs2kl8c7hL",

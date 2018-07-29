@@ -55,7 +55,7 @@
 			"y": 587
 		},
 		"mST3CtD71fbDDKUTUhuKrc5pGfs1m6Bm": {
-			"height": 214,
+			"height": 235,
 			"title": "ensureThereIsASeerAssigned (fails if there's none)",
 			"width": 404,
 			"x": 793,
@@ -112,6 +112,9 @@
 				}, {
 					"name": "categoryInLaneInfo",
 					"value": "\"reclaim\""
+				}, {
+					"name": "minNumberOfUnits",
+					"value": "1"
 				} ],
 				"referenceOutputs": []
 			}, {
