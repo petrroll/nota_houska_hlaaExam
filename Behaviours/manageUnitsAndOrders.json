@@ -163,7 +163,7 @@
 					"value": "#bb.units.orders > 0"
 				}, {
 					"name": "repeat",
-					"value": "false"
+					"value": "true"
 				} ]
 			} ],
 			"id": "tLFaHlpzif8mckT0Cr6SkgbK4KkrTAfV",
