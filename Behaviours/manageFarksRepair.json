@@ -37,15 +37,15 @@
 			"height": 132,
 			"title": "nota_houska_hlaaExam.orderOnLocAndRadius",
 			"width": 363,
-			"x": 1819,
-			"y": 460
+			"x": 1807,
+			"y": 582
 		},
 		"SZTFCildX0yIKWGcO3SHXNGlcsM4eTiT": {
 			"height": 94,
 			"title": "getSafeSpot",
 			"width": 584,
-			"x": 1801,
-			"y": 354
+			"x": 1822,
+			"y": 350
 		},
 		"VadyfOqrKAPdc1YacjHRsGO6stfviRMI": {
 			"height": 94,
@@ -74,6 +74,13 @@
 			"width": 143,
 			"x": 523,
 			"y": -27
+		},
+		"rCFx4UUvX7UznxbSn1nTJq3iHlNOo9JC": {
+			"height": 132,
+			"title": "nota_houska_hlaaExam.move",
+			"width": 256,
+			"x": 1824,
+			"y": 449
 		}
 	},
 	"roles": [ {
@@ -162,6 +169,27 @@
 						"scriptName": "store"
 					}, {
 						"children": [],
+						"id": "rCFx4UUvX7UznxbSn1nTJq3iHlNOo9JC",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitsGroup",
+							"value": "laneInfo.units.reclaim"
+						}, {
+							"name": "destination",
+							"value": "safeSpot"
+						}, {
+							"name": "spread",
+							"value": "128"
+						}, {
+							"name": "moveViaAttack",
+							"value": "false"
+						}, {
+							"name": "scriptName",
+							"value": "nota_houska_hlaaExam.move"
+						} ],
+						"scriptName": "nota_houska_hlaaExam.move"
+					}, {
+						"children": [],
 						"id": "Asq4RHQW6GTrOyFcXdiD2rfyTsjQghSb",
 						"nodeType": "luaCommand",
 						"parameters": [ {
@@ -190,7 +218,7 @@
 				"nodeType": "luaCondition",
 				"parameters": [ {
 					"name": "expression",
-					"value": "safeSpot ~= nil and not nota_houska_hlaaExam.isInDanger(laneInfo.units.reclaim[1], 600, 2)"
+					"value": "safeSpot ~= nil and not nota_houska_hlaaExam.isInDanger(laneInfo.units.reclaim[1], 600, 3)"
 				}, {
 					"name": "repeat",
 					"value": "true"
