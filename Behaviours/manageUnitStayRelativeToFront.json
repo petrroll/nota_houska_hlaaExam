@@ -41,16 +41,23 @@
 	"properties": {
 		"2QS0GQgtfE2kWwwRwE11eNCZxNavTPiR": {
 			"height": 132,
-			"title": "moveUnitsOutsideInside",
-			"width": 291,
-			"x": 1347,
-			"y": 659
+			"title": "moveUnitsToGoalPos",
+			"width": 295,
+			"x": 1779,
+			"y": 15
+		},
+		"6cIkULlZZ9CMOKAwCeCu1OiLFvd66F1U": {
+			"height": 90,
+			"title": "attackOrRetreat",
+			"width": 852,
+			"x": 857,
+			"y": 123
 		},
 		"74iPGJoJbNd1lYvvBYomXML1suL2RhcG": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 603,
+			"x": 604,
 			"y": 20
 		},
 		"NouHHVCTh7cKv1LbQlmdZYQUwxJiW22B": {
@@ -60,75 +67,40 @@
 			"x": 349,
 			"y": 57
 		},
-		"QXsSN2fHfPTfj1GfA4Z0Aut9NqB5j7sX": {
-			"height": 94,
-			"title": "getUnitsThatNeedToMove",
-			"width": 974,
-			"x": 1258,
-			"y": 66
-		},
-		"QmzFPEIl8zLo71WeOveMf1XmYXqApFYq": {
-			"height": 94,
-			"title": "getUnitsThatNeedToMove",
-			"width": 1019,
-			"x": 1258,
-			"y": 166
-		},
 		"TEbfjXf4YhApLFnw9Gtn7bCDvQy2LAfc": {
 			"height": 132,
-			"title": "moveUnitsOutsideInside",
-			"width": 291,
-			"x": 1309,
-			"y": 411
+			"title": "moveUnitsToRetreatSpot",
+			"width": 295,
+			"x": 2114,
+			"y": 312
 		},
 		"a37B4kRYPdddhp7QcMN9mTepAzSutaxz": {
 			"height": 60,
-			"title": "sequence",
-			"width": 143,
-			"x": 1065,
-			"y": 122
-		},
-		"bFev5Jm3JueqAjV8i9gfuTLaPPqJvDRJ": {
-			"height": 70,
-			"title": "parallel",
-			"width": 202,
-			"x": 838,
-			"y": 402
+			"title": "retreatSeq",
+			"width": 148,
+			"x": 1751,
+			"y": 233
 		},
 		"bzJDag7KNLpFpJ2cuDsYK2kqhMf3ZjAJ": {
 			"height": 94,
-			"title": "getSpotOnLaneForUnits",
+			"title": "getGoalSpot",
 			"width": 628,
-			"x": 1471,
-			"y": -168
-		},
-		"iWGXHcDGqNBcQBHgfS0WIFlhBCVqEqn2": {
-			"height": 60,
-			"title": "sequence",
-			"width": 143,
-			"x": 1088,
-			"y": 386
+			"x": 847,
+			"y": 3
 		},
 		"r40yNNbZTWyGbdyvwdhSMnQzGYyW9Ias": {
 			"height": 214,
 			"title": "ensureThereAreUnitsAssigned",
 			"width": 404,
-			"x": 877,
-			"y": -153
+			"x": 880,
+			"y": -297
 		},
 		"uGbmI0EJ4ZZuJtg8ygjKWOt1g0D79lnp": {
 			"height": 94,
 			"title": "getSafeSpotOnLaneForUnits",
 			"width": 628,
-			"x": 1475,
-			"y": -57
-		},
-		"y0DqoLJmZHsQnoQc60t0RybdKpu9VpDg": {
-			"height": 60,
-			"title": "sequence",
-			"width": 143,
-			"x": 1095,
-			"y": 615
+			"x": 2118,
+			"y": 220
 		}
 	},
 	"roles": [ {
@@ -163,79 +135,65 @@
 				} ],
 				"referenceOutputs": []
 			}, {
-				"children": [ {
-					"children": [],
-					"id": "bzJDag7KNLpFpJ2cuDsYK2kqhMf3ZjAJ",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "var",
-						"value": "goalSpot"
-					}, {
-						"name": "value",
-						"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, relativePositionToFront)"
-					}, {
-						"name": "scriptName",
-						"value": "store"
-					} ],
-					"scriptName": "store"
+				"children": [],
+				"id": "bzJDag7KNLpFpJ2cuDsYK2kqhMf3ZjAJ",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "goalSpot"
 				}, {
-					"children": [],
-					"id": "uGbmI0EJ4ZZuJtg8ygjKWOt1g0D79lnp",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "var",
-						"value": "safeSpot"
-					}, {
-						"name": "value",
-						"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, -3)"
-					}, {
-						"name": "scriptName",
-						"value": "store"
-					} ],
-					"scriptName": "store"
+					"name": "value",
+					"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, relativePositionToFront)"
 				}, {
-					"children": [],
-					"id": "QXsSN2fHfPTfj1GfA4Z0Aut9NqB5j7sX",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "var",
-						"value": "unsafeUnits"
-					}, {
-						"name": "value",
-						"value": "nota_houska_hlaaExam.filterUnitsInDanger(laneInfo.units[unitCategory], dangerRadius, dangerDpsTreshold)"
-					}, {
-						"name": "scriptName",
-						"value": "store"
-					} ],
-					"scriptName": "store"
-				}, {
-					"children": [],
-					"id": "QmzFPEIl8zLo71WeOveMf1XmYXqApFYq",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "var",
-						"value": "outsideSafeUnits"
-					}, {
-						"name": "value",
-						"value": "nota_houska_hlaaExam.filterUnitsOutsideOfArea(unsafeUnits.f, goalSpot, 3*moveSpread)"
-					}, {
-						"name": "scriptName",
-						"value": "store"
-					} ],
-					"scriptName": "store"
+					"name": "scriptName",
+					"value": "store"
 				} ],
-				"id": "a37B4kRYPdddhp7QcMN9mTepAzSutaxz",
-				"nodeType": "sequence",
-				"parameters": []
+				"scriptName": "store"
 			}, {
 				"children": [ {
+					"children": [],
+					"id": "2QS0GQgtfE2kWwwRwE11eNCZxNavTPiR",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unitsGroup",
+						"value": "laneInfo.units[unitCategory]"
+					}, {
+						"name": "destination",
+						"value": "goalSpot"
+					}, {
+						"name": "spread",
+						"value": "moveSpread"
+					}, {
+						"name": "moveViaAttack",
+						"value": "moveViaAttack"
+					}, {
+						"name": "scriptName",
+						"value": "nota_houska_hlaaExam.move"
+					} ],
+					"scriptName": "nota_houska_hlaaExam.move"
+				}, {
 					"children": [ {
+						"children": [],
+						"id": "uGbmI0EJ4ZZuJtg8ygjKWOt1g0D79lnp",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "safeSpot"
+						}, {
+							"name": "value",
+							"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, -3)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
 						"children": [],
 						"id": "TEbfjXf4YhApLFnw9Gtn7bCDvQy2LAfc",
 						"nodeType": "luaCommand",
 						"parameters": [ {
 							"name": "unitsGroup",
-							"value": "unsafeUnits.t"
+							"value": "laneInfo.units[unitCategory]"
 						}, {
 							"name": "destination",
 							"value": "safeSpot"
@@ -244,48 +202,25 @@
 							"value": "moveSpread"
 						}, {
 							"name": "moveViaAttack",
-							"value": "moveViaAttack"
+							"value": "false"
 						}, {
 							"name": "scriptName",
 							"value": "nota_houska_hlaaExam.move"
 						} ],
 						"scriptName": "nota_houska_hlaaExam.move"
 					} ],
-					"id": "iWGXHcDGqNBcQBHgfS0WIFlhBCVqEqn2",
-					"nodeType": "sequence",
-					"parameters": []
-				}, {
-					"children": [ {
-						"children": [],
-						"id": "2QS0GQgtfE2kWwwRwE11eNCZxNavTPiR",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "unitsGroup",
-							"value": "outsideSafeUnits.t"
-						}, {
-							"name": "destination",
-							"value": "goalSpot"
-						}, {
-							"name": "spread",
-							"value": "moveSpread"
-						}, {
-							"name": "moveViaAttack",
-							"value": "moveViaAttack"
-						}, {
-							"name": "scriptName",
-							"value": "nota_houska_hlaaExam.move"
-						} ],
-						"scriptName": "nota_houska_hlaaExam.move"
-					} ],
-					"id": "y0DqoLJmZHsQnoQc60t0RybdKpu9VpDg",
+					"id": "a37B4kRYPdddhp7QcMN9mTepAzSutaxz",
 					"nodeType": "sequence",
 					"parameters": []
 				} ],
-				"id": "bFev5Jm3JueqAjV8i9gfuTLaPPqJvDRJ",
-				"nodeType": "parallel",
+				"id": "6cIkULlZZ9CMOKAwCeCu1OiLFvd66F1U",
+				"nodeType": "luaCondition",
 				"parameters": [ {
-					"name": "mode",
-					"value": "all-success"
+					"name": "expression",
+					"value": "goalSpot ~= nil and not nota_houska_hlaaExam.isInDanger(laneInfo.units[unitCategory][1], dangerRadius, dangerDpsTreshold)"
+				}, {
+					"name": "repeat",
+					"value": "true"
 				} ]
 			} ],
 			"id": "74iPGJoJbNd1lYvvBYomXML1suL2RhcG",
