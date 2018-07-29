@@ -1,5 +1,45 @@
 {
-	"additionalNodes": [],
+	"additionalNodes": [ {
+		"children": [],
+		"id": "CDAbj2nDauFL8NBZDKaH7ZN0sGxUOaZY",
+		"nodeType": "reference",
+		"parameters": [ {
+			"name": "behaviourName",
+			"value": "nota_houska_hlaaExam.manageUnitStayRelativeToFront"
+		} ],
+		"referenceInputs": [ {
+			"name": "laneInfo",
+			"value": "lane"
+		}, {
+			"name": "unitName",
+			"value": "\"armzeus\""
+		}, {
+			"name": "unitCategory",
+			"value": "\"armzeus\""
+		}, {
+			"name": "amount",
+			"value": "2"
+		}, {
+			"name": "severenity",
+			"value": "5"
+		}, {
+			"name": "relativePositionToFront",
+			"value": "-0.3"
+		}, {
+			"name": "moveSpread",
+			"value": "64"
+		}, {
+			"name": "moveViaAttack",
+			"value": "true"
+		}, {
+			"name": "dangerRadius",
+			"value": "300"
+		}, {
+			"name": "dangerDpsTreshold",
+			"value": "1"
+		} ],
+		"referenceOutputs": []
+	} ],
 	"additionalParameters": {
 		"root": {
 			"height": 128,
@@ -362,10 +402,10 @@
 						"value": "false"
 					}, {
 						"name": "dangerRadius",
-						"value": "0"
+						"value": "100"
 					}, {
 						"name": "dangerDpsTreshold",
-						"value": "0"
+						"value": "0.5"
 					} ],
 					"referenceOutputs": []
 				}, {
@@ -406,46 +446,6 @@
 					}, {
 						"name": "dangerDpsTreshold",
 						"value": "2"
-					} ],
-					"referenceOutputs": []
-				}, {
-					"children": [],
-					"id": "CDAbj2nDauFL8NBZDKaH7ZN0sGxUOaZY",
-					"nodeType": "reference",
-					"parameters": [ {
-						"name": "behaviourName",
-						"value": "nota_houska_hlaaExam.manageUnitStayRelativeToFront"
-					} ],
-					"referenceInputs": [ {
-						"name": "laneInfo",
-						"value": "lane"
-					}, {
-						"name": "unitName",
-						"value": "\"armzeus\""
-					}, {
-						"name": "unitCategory",
-						"value": "\"armzeus\""
-					}, {
-						"name": "amount",
-						"value": "2"
-					}, {
-						"name": "severenity",
-						"value": "5"
-					}, {
-						"name": "relativePositionToFront",
-						"value": "-0.3"
-					}, {
-						"name": "moveSpread",
-						"value": "64"
-					}, {
-						"name": "moveViaAttack",
-						"value": "true"
-					}, {
-						"name": "dangerRadius",
-						"value": "300"
-					}, {
-						"name": "dangerDpsTreshold",
-						"value": "1"
 					} ],
 					"referenceOutputs": []
 				} ],
