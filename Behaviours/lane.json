@@ -19,21 +19,28 @@
 			"height": 151,
 			"title": "keepLaneInfoUpdated",
 			"width": 372,
-			"x": 931,
+			"x": 932,
 			"y": 27
 		},
 		"9yGi3t7l4h7SpVNhevyGxj7zyikTiUFf": {
 			"height": 130,
 			"title": "manageFarksRepairForLane",
 			"width": 373,
-			"x": 939,
+			"x": 940,
 			"y": 348
+		},
+		"Ay1jj218qHISgGMvfOCLWXL4EVTppUdH": {
+			"height": 382,
+			"title": "manageArtileryForLane",
+			"width": 441,
+			"x": 958,
+			"y": 2121
 		},
 		"CDAbj2nDauFL8NBZDKaH7ZN0sGxUOaZY": {
 			"height": 340,
 			"title": "manageZeusesForLane",
 			"width": 441,
-			"x": 947,
+			"x": 948,
 			"y": 1540
 		},
 		"Cf3YxnkdqhlAqnWHrNysUoGu3YYb5R76": {
@@ -54,29 +61,36 @@
 			"height": 340,
 			"title": "manageSpiesForLane",
 			"width": 441,
-			"x": 948,
+			"x": 949,
 			"y": 873
 		},
 		"Osj0OlFcLYVa9gW3b6IhvcXI1ULjU39Q": {
 			"height": 340,
 			"title": "manageRadarsForLane",
 			"width": 441,
-			"x": 943,
+			"x": 944,
 			"y": 538
 		},
 		"RzWnNCUfs0HxYizfvLG9wnBY4AGJ8N3G": {
 			"height": 130,
 			"title": "manageFarksReclaimForLane",
 			"width": 373,
-			"x": 936,
+			"x": 937,
 			"y": 203
 		},
 		"VCDkcE1yUP8ygSeAzWifxc9bQXxZ0A7w": {
 			"height": 340,
 			"title": "manageArtileryForLane",
 			"width": 441,
-			"x": 946,
+			"x": 947,
 			"y": 1204
+		},
+		"YTB2LRgMbi5m1QuRpJN5k0XcAdhXs9MB": {
+			"height": 193,
+			"title": "reference",
+			"width": 361,
+			"x": 948,
+			"y": 1893
 		},
 		"b86mTktsxP5cVbPM6DemaP0eahfCvaQs": {
 			"height": 173,
@@ -89,7 +103,7 @@
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 660,
+			"x": 661,
 			"y": 20
 		}
 	},
@@ -328,6 +342,68 @@
 					}, {
 						"name": "minAmount",
 						"value": "1"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "YTB2LRgMbi5m1QuRpJN5k0XcAdhXs9MB",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageFightingSpy"
+					} ],
+					"referenceInputs": [ {
+						"name": "laneInfo",
+						"value": "lane"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "Ay1jj218qHISgGMvfOCLWXL4EVTppUdH",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageUnitFightAtFront"
+					} ],
+					"referenceInputs": [ {
+						"name": "laneInfo",
+						"value": "lane"
+					}, {
+						"name": "unitName",
+						"value": "\"armmart\""
+					}, {
+						"name": "unitCategory",
+						"value": "\"armmart2\""
+					}, {
+						"name": "amount",
+						"value": "4"
+					}, {
+						"name": "severenity",
+						"value": "2"
+					}, {
+						"name": "relativePositionToFront",
+						"value": "-0.8"
+					}, {
+						"name": "moveSpread",
+						"value": "128"
+					}, {
+						"name": "dangerRadius",
+						"value": "600"
+					}, {
+						"name": "dangerDpsTreshold",
+						"value": "2"
+					}, {
+						"name": "minAmount",
+						"value": "1"
+					}, {
+						"name": "groupRatioSafe",
+						"value": "0.2"
+					}, {
+						"name": "beforeFocusedFireThreshold",
+						"value": "1200"
+					}, {
+						"name": "highestDPSSeekRadius",
+						"value": "1800"
 					} ],
 					"referenceOutputs": []
 				} ],

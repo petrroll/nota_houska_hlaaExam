@@ -1,0 +1,424 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 348,
+			"width": 337
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "laneInfo"
+	}, {
+		"command": "Variable",
+		"name": "unitName"
+	}, {
+		"command": "Variable",
+		"name": "unitCategory"
+	}, {
+		"command": "Variable",
+		"name": "amount"
+	}, {
+		"command": "Variable",
+		"name": "severenity"
+	}, {
+		"command": "Variable",
+		"name": "relativePositionToFront"
+	}, {
+		"command": "Variable",
+		"name": "moveSpread"
+	}, {
+		"command": "Variable",
+		"name": "dangerRadius"
+	}, {
+		"command": "Variable",
+		"name": "dangerDpsTreshold"
+	}, {
+		"command": "Variable",
+		"name": "minAmount"
+	}, {
+		"command": "Variable",
+		"name": "groupRatioSafe"
+	}, {
+		"command": "Variable",
+		"name": "beforeFocusedFireThreshold"
+	}, {
+		"command": "Variable",
+		"name": "highestDPSSeekRadius"
+	} ],
+	"outputs": [],
+	"properties": {
+		"3WYc1ZiOs7oMjguY2OEZ3nbX4Fva47e5": {
+			"height": 152,
+			"title": "moveUnitsToGoalPos",
+			"width": 345,
+			"x": 2955,
+			"y": 386
+		},
+		"47CxR44i6hZnwsqVroEcmRzDSsrPJWyx": {
+			"height": 215,
+			"title": "retreatToSafeSpot",
+			"width": 351,
+			"x": 1795,
+			"y": 420
+		},
+		"5EOjwqJkK1lsaGjZm85bl0Mi78jGLzBT": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 2757,
+			"y": 410
+		},
+		"DCGRmKpdm15XKZG8huRwHHCXm467Lp06": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 804,
+			"y": 86
+		},
+		"DEkuVIVDORFCzXDRVwApRxkkhADYJMpB": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 625,
+			"y": -188
+		},
+		"OEjs6hZwbrzZ7FIAhGbuURdB0x0dWANy": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 620,
+			"y": 83
+		},
+		"R2mKVwDjrk89EnwnnZ69HU2TKbHNNJcV": {
+			"height": 320,
+			"title": "reference",
+			"width": 394,
+			"x": 843,
+			"y": -279
+		},
+		"Zqc7wpafCNzn8h8tSGZPD52MGsFUIQKV": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 2760,
+			"y": 281
+		},
+		"aAXObiXzDjaEntJvq27d9AdQS7CsuqYc": {
+			"height": 94,
+			"title": "getGoalSpot",
+			"width": 628,
+			"x": 1047,
+			"y": 51
+		},
+		"hovwVbNPGVo3tHNWG7xi8mIrvWeJikKx": {
+			"height": 94,
+			"title": "storeTarget",
+			"width": 1036,
+			"x": 2036,
+			"y": 62
+		},
+		"mBVDrCBFesmxL0A22zj55qNO31UNhzCy": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 365,
+			"y": 74
+		},
+		"mM01LpXWk15NmIGGzPTdkj9BOm0jYPvU": {
+			"height": 60,
+			"title": "fightSequence",
+			"width": 172,
+			"x": 1760,
+			"y": 150
+		},
+		"myU6QRX87uheSmmoef3t4XcoM0Cb7mfX": {
+			"height": 88,
+			"title": "moveToGoalOrRetreat",
+			"width": 636,
+			"x": 1049,
+			"y": 143
+		},
+		"nmAfURhd9JGGyBgFiHUCcsS8Kcih7N4f": {
+			"height": 94,
+			"title": "storeTarget",
+			"width": 1036,
+			"x": 2955,
+			"y": 255
+		},
+		"q6VsNWWzrZUDYjSOBEUh8amc8yqpSLdf": {
+			"height": 92,
+			"title": "attackHighDPSTarget",
+			"width": 295,
+			"x": 2381,
+			"y": 176
+		},
+		"wR568IHLgSJCMyD6d8IRz9qKazjc07Ep": {
+			"height": 70,
+			"title": "attackAllAndSeekHighDPSTarget",
+			"width": 290,
+			"x": 2389,
+			"y": 313
+		},
+		"y9dNh7uM2tixI8zOYSmSfjp2CvgeSSKU": {
+			"height": 88,
+			"title": "haveHighDPSTarget",
+			"width": 270,
+			"x": 2009,
+			"y": 271
+		},
+		"yo26FSBGgQbmrmYUt0ivP7CWWodQdcWk": {
+			"height": 152,
+			"title": "moveUnitsToGoalPos",
+			"width": 325,
+			"x": 2039,
+			"y": -104
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "R2mKVwDjrk89EnwnnZ69HU2TKbHNNJcV",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_houska_hlaaExam.groupSafeAndBigEnough"
+				} ],
+				"referenceInputs": [ {
+					"name": "laneInfo",
+					"value": "laneInfo"
+				}, {
+					"name": "unitName",
+					"value": "unitName"
+				}, {
+					"name": "unitCategory",
+					"value": "unitCategory"
+				}, {
+					"name": "amount",
+					"value": "amount"
+				}, {
+					"name": "severenity",
+					"value": "severenity"
+				}, {
+					"name": "dangerRadius",
+					"value": "dangerRadius"
+				}, {
+					"name": "dangerDpsTreshold",
+					"value": "dangerDpsTreshold"
+				}, {
+					"name": "minAmount",
+					"value": "minAmount"
+				}, {
+					"name": "groupRatioSafe",
+					"value": "groupRatioSafe"
+				} ],
+				"referenceOutputs": [ {
+					"name": "ready",
+					"value": "ready"
+				} ]
+			} ],
+			"id": "DEkuVIVDORFCzXDRVwApRxkkhADYJMpB",
+			"nodeType": "repeat",
+			"parameters": []
+		}, {
+			"children": [ {
+				"children": [ {
+					"children": [],
+					"id": "aAXObiXzDjaEntJvq27d9AdQS7CsuqYc",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "goalSpot"
+					}, {
+						"name": "value",
+						"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, relativePositionToFront)"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [ {
+						"children": [ {
+							"children": [],
+							"id": "yo26FSBGgQbmrmYUt0ivP7CWWodQdcWk",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "unitsGroup",
+								"value": "laneInfo.units[unitCategory]"
+							}, {
+								"name": "destination",
+								"value": "goalSpot"
+							}, {
+								"name": "spread",
+								"value": "moveSpread"
+							}, {
+								"name": "moveViaAttack",
+								"value": "true"
+							}, {
+								"name": "destThreshold",
+								"value": "beforeFocusedFireThreshold"
+							}, {
+								"name": "scriptName",
+								"value": "nota_houska_hlaaExam.move"
+							} ],
+							"scriptName": "nota_houska_hlaaExam.move"
+						}, {
+							"children": [],
+							"id": "hovwVbNPGVo3tHNWG7xi8mIrvWeJikKx",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "highestDPSTargetUid"
+							}, {
+								"name": "value",
+								"value": "nota_houska_hlaaExam.retEneHigestDPSUnitInArea(nota_houska_hlaaExam.retUnitPosition(laneInfo.units[unitCategory][1]), highestDPSSeekRadius)"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						}, {
+							"children": [ {
+								"children": [],
+								"id": "q6VsNWWzrZUDYjSOBEUh8amc8yqpSLdf",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "unitsGroup",
+									"value": "laneInfo.units[unitCategory]"
+								}, {
+									"name": "target",
+									"value": "highestDPSTargetUid"
+								}, {
+									"name": "scriptName",
+									"value": "nota_houska_hlaaExam.attack"
+								} ],
+								"scriptName": "nota_houska_hlaaExam.attack"
+							}, {
+								"children": [ {
+									"children": [ {
+										"children": [],
+										"id": "nmAfURhd9JGGyBgFiHUCcsS8Kcih7N4f",
+										"nodeType": "luaCommand",
+										"parameters": [ {
+											"name": "var",
+											"value": "highestDPSTargetUid"
+										}, {
+											"name": "value",
+											"value": "nota_houska_hlaaExam.retEneHigestDPSUnitInArea(nota_houska_hlaaExam.retUnitPosition(laneInfo.units[unitCategory][1]), highestDPSSeekRadius)"
+										}, {
+											"name": "scriptName",
+											"value": "store"
+										} ],
+										"scriptName": "store"
+									} ],
+									"id": "Zqc7wpafCNzn8h8tSGZPD52MGsFUIQKV",
+									"nodeType": "repeat",
+									"parameters": []
+								}, {
+									"children": [ {
+										"children": [],
+										"id": "3WYc1ZiOs7oMjguY2OEZ3nbX4Fva47e5",
+										"nodeType": "luaCommand",
+										"parameters": [ {
+											"name": "unitsGroup",
+											"value": "laneInfo.units[unitCategory]"
+										}, {
+											"name": "destination",
+											"value": "goalSpot"
+										}, {
+											"name": "spread",
+											"value": "moveSpread"
+										}, {
+											"name": "moveViaAttack",
+											"value": "true"
+										}, {
+											"name": "destThreshold",
+											"value": "false"
+										}, {
+											"name": "scriptName",
+											"value": "nota_houska_hlaaExam.move"
+										} ],
+										"scriptName": "nota_houska_hlaaExam.move"
+									} ],
+									"id": "5EOjwqJkK1lsaGjZm85bl0Mi78jGLzBT",
+									"nodeType": "repeat",
+									"parameters": []
+								} ],
+								"id": "wR568IHLgSJCMyD6d8IRz9qKazjc07Ep",
+								"nodeType": "parallel",
+								"parameters": [ {
+									"name": "mode",
+									"value": "all-success"
+								} ]
+							} ],
+							"id": "y9dNh7uM2tixI8zOYSmSfjp2CvgeSSKU",
+							"nodeType": "luaCondition",
+							"parameters": [ {
+								"name": "expression",
+								"value": "highestDPSTargetUid ~= nil"
+							}, {
+								"name": "repeat",
+								"value": "true"
+							} ]
+						} ],
+						"id": "mM01LpXWk15NmIGGzPTdkj9BOm0jYPvU",
+						"nodeType": "sequence",
+						"parameters": []
+					}, {
+						"children": [],
+						"id": "47CxR44i6hZnwsqVroEcmRzDSsrPJWyx",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "nota_houska_hlaaExam.retreatToSafeSpot"
+						} ],
+						"referenceInputs": [ {
+							"name": "laneInfo",
+							"value": "laneInfo"
+						}, {
+							"name": "safeDistance",
+							"value": "-3"
+						}, {
+							"name": "unitsGroup",
+							"value": "laneInfo.units[unitCategory]"
+						}, {
+							"name": "moveSpread",
+							"value": "moveSpread"
+						} ],
+						"referenceOutputs": [ {
+							"name": "safeSpot",
+							"value": "_"
+						} ]
+					} ],
+					"id": "myU6QRX87uheSmmoef3t4XcoM0Cb7mfX",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "ready"
+					}, {
+						"name": "repeat",
+						"value": "true"
+					} ]
+				} ],
+				"id": "DCGRmKpdm15XKZG8huRwHHCXm467Lp06",
+				"nodeType": "sequence",
+				"parameters": []
+			} ],
+			"id": "OEjs6hZwbrzZ7FIAhGbuURdB0x0dWANy",
+			"nodeType": "repeat",
+			"parameters": []
+		} ],
+		"id": "mBVDrCBFesmxL0A22zj55qNO31UNhzCy",
+		"nodeType": "parallel",
+		"parameters": [ {
+			"name": "mode",
+			"value": "all-success"
+		} ]
+	}
+}
