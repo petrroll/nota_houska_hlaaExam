@@ -21,6 +21,7 @@ local isEnemy = Sensors.isEnemy
 -- @description returns enemy unit with highest DPS in a given area
 return function(position, radius)
 
+    if position == nil then return nil end
     local unitsInSphere = SpringGetUnitsInSphere(position.x, position.y, position.z, radius)
     
     local maxDPS = 0

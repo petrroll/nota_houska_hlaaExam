@@ -19,6 +19,7 @@ local SpringGetUnitDefID = Spring.GetUnitDefID
 
 -- @description return current wind statistics
 return function(unit)
+    if unit == nil then return 0 end
 
     -- unit definition
     local unitDefId = SpringGetUnitDefID(unit)

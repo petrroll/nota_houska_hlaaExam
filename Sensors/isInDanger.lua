@@ -22,6 +22,7 @@ local SpringGetProjectilesInRectangle = Spring.GetProjectilesInRectangle
 -- @description returns whether unit is in danger
 return function(uid, radius, treshold)
     local unitLoc = retUnitPosition(uid)
+    if unitLoc == nil then return nil end
 
     local projectilesRec = 40
     local projectilesInArea = SpringGetProjectilesInRectangle(unitLoc.x - projectilesRec, unitLoc.z - projectilesRec, 

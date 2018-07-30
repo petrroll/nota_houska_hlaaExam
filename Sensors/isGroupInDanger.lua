@@ -23,9 +23,11 @@ return function(units, radius, dpsTreshold, unitsInDangerRatioTreshold)
     local unitsInDangerNB = 0
 
     for i = 1, #units do
-        if isInDanger(units[i], radius, dpsTreshold) then
-            unitsInDangerNB = unitsInDangerNB + 1
-        end
+        local inDangerResult = isInDanger(units[i], radius, dpsTreshold)
+
+        if inDangerResult == true then unitsInDangerNB = unitsInDangerNB + 1
+        elseif inDangerResult == nil then unitsNB = unitsNB - 1 end
+
     end
 
     return (unitsInDangerNB / unitsNB) > unitsInDangerRatioTreshold
