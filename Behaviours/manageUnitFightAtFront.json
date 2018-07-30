@@ -52,126 +52,133 @@
 			"height": 152,
 			"title": "moveUnitsToGoalPos",
 			"width": 345,
-			"x": 2955,
-			"y": 386
+			"x": 2746,
+			"y": 451
 		},
 		"47CxR44i6hZnwsqVroEcmRzDSsrPJWyx": {
 			"height": 215,
 			"title": "retreatToSafeSpot",
 			"width": 351,
-			"x": 1795,
-			"y": 420
+			"x": 1248,
+			"y": 295
 		},
 		"5EOjwqJkK1lsaGjZm85bl0Mi78jGLzBT": {
 			"height": 60,
-			"title": "repeat",
-			"width": 131,
-			"x": 2757,
-			"y": 410
+			"title": "moveToGoalState",
+			"width": 196,
+			"x": 2304,
+			"y": 407
 		},
-		"DCGRmKpdm15XKZG8huRwHHCXm467Lp06": {
-			"height": 60,
-			"title": "sequence",
-			"width": 143,
-			"x": 804,
-			"y": 86
+		"8AU3qIyLT15Y3hEqRKQGXMZ1hT69SNXF": {
+			"height": 94,
+			"title": "getGoalSpot",
+			"width": 628,
+			"x": 2739,
+			"y": 355
 		},
 		"DEkuVIVDORFCzXDRVwApRxkkhADYJMpB": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 625,
+			"x": 618,
 			"y": -188
 		},
 		"OEjs6hZwbrzZ7FIAhGbuURdB0x0dWANy": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 620,
+			"x": 621,
 			"y": 83
 		},
 		"R2mKVwDjrk89EnwnnZ69HU2TKbHNNJcV": {
 			"height": 320,
 			"title": "reference",
 			"width": 394,
-			"x": 843,
+			"x": 808,
 			"y": -279
 		},
 		"Zqc7wpafCNzn8h8tSGZPD52MGsFUIQKV": {
 			"height": 60,
-			"title": "repeat",
-			"width": 131,
-			"x": 2760,
-			"y": 281
+			"title": "keepFindingTarget",
+			"width": 201,
+			"x": 2296,
+			"y": 259
 		},
 		"aAXObiXzDjaEntJvq27d9AdQS7CsuqYc": {
 			"height": 94,
 			"title": "getGoalSpot",
 			"width": 628,
-			"x": 1047,
-			"y": 51
+			"x": 1543,
+			"y": -202
+		},
+		"dpIsV7agkt2Qdow9Ddakfmv1ZSWKyCZp": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 2551,
+			"y": 405
 		},
 		"hovwVbNPGVo3tHNWG7xi8mIrvWeJikKx": {
 			"height": 94,
 			"title": "storeTarget",
 			"width": 1036,
-			"x": 2036,
-			"y": 62
+			"x": 1546,
+			"y": 34
 		},
 		"mBVDrCBFesmxL0A22zj55qNO31UNhzCy": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 365,
+			"x": 367,
 			"y": 74
 		},
 		"mM01LpXWk15NmIGGzPTdkj9BOm0jYPvU": {
 			"height": 60,
 			"title": "fightSequence",
 			"width": 172,
-			"x": 1760,
-			"y": 150
+			"x": 1257,
+			"y": 46
 		},
 		"myU6QRX87uheSmmoef3t4XcoM0Cb7mfX": {
 			"height": 88,
 			"title": "moveToGoalOrRetreat",
-			"width": 636,
-			"x": 1049,
-			"y": 143
+			"width": 324,
+			"x": 833,
+			"y": 68
 		},
 		"nmAfURhd9JGGyBgFiHUCcsS8Kcih7N4f": {
 			"height": 94,
 			"title": "storeTarget",
 			"width": 1036,
-			"x": 2955,
-			"y": 255
+			"x": 2555,
+			"y": 211
 		},
 		"q6VsNWWzrZUDYjSOBEUh8amc8yqpSLdf": {
 			"height": 92,
 			"title": "attackHighDPSTarget",
 			"width": 295,
-			"x": 2381,
-			"y": 176
+			"x": 1927,
+			"y": 142
 		},
 		"wR568IHLgSJCMyD6d8IRz9qKazjc07Ep": {
 			"height": 70,
 			"title": "attackAllAndSeekHighDPSTarget",
 			"width": 290,
-			"x": 2389,
-			"y": 313
+			"x": 1931,
+			"y": 282
 		},
 		"y9dNh7uM2tixI8zOYSmSfjp2CvgeSSKU": {
 			"height": 88,
 			"title": "haveHighDPSTarget",
 			"width": 270,
-			"x": 2009,
-			"y": 271
+			"x": 1568,
+			"y": 181
 		},
 		"yo26FSBGgQbmrmYUt0ivP7CWWodQdcWk": {
 			"height": 152,
 			"title": "moveUnitsToGoalPos",
 			"width": 325,
-			"x": 2039,
+			"x": 1549,
 			"y": -104
 		}
 	},
@@ -228,100 +235,115 @@
 		}, {
 			"children": [ {
 				"children": [ {
-					"children": [],
-					"id": "aAXObiXzDjaEntJvq27d9AdQS7CsuqYc",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "var",
-						"value": "goalSpot"
-					}, {
-						"name": "value",
-						"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, relativePositionToFront)"
-					}, {
-						"name": "scriptName",
-						"value": "store"
-					} ],
-					"scriptName": "store"
-				}, {
 					"children": [ {
+						"children": [],
+						"id": "aAXObiXzDjaEntJvq27d9AdQS7CsuqYc",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "goalSpot"
+						}, {
+							"name": "value",
+							"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, relativePositionToFront)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "yo26FSBGgQbmrmYUt0ivP7CWWodQdcWk",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitsGroup",
+							"value": "laneInfo.units[unitCategory]"
+						}, {
+							"name": "destination",
+							"value": "goalSpot"
+						}, {
+							"name": "spread",
+							"value": "moveSpread"
+						}, {
+							"name": "moveViaAttack",
+							"value": "true"
+						}, {
+							"name": "destThreshold",
+							"value": "beforeFocusedFireThreshold"
+						}, {
+							"name": "scriptName",
+							"value": "nota_houska_hlaaExam.move"
+						} ],
+						"scriptName": "nota_houska_hlaaExam.move"
+					}, {
+						"children": [],
+						"id": "hovwVbNPGVo3tHNWG7xi8mIrvWeJikKx",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "highestDPSTargetUid"
+						}, {
+							"name": "value",
+							"value": "nota_houska_hlaaExam.retEneHigestDPSUnitInArea(nota_houska_hlaaExam.retUnitPosition(laneInfo.units[unitCategory][1]), highestDPSSeekRadius)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
 						"children": [ {
 							"children": [],
-							"id": "yo26FSBGgQbmrmYUt0ivP7CWWodQdcWk",
+							"id": "q6VsNWWzrZUDYjSOBEUh8amc8yqpSLdf",
 							"nodeType": "luaCommand",
 							"parameters": [ {
 								"name": "unitsGroup",
 								"value": "laneInfo.units[unitCategory]"
 							}, {
-								"name": "destination",
-								"value": "goalSpot"
-							}, {
-								"name": "spread",
-								"value": "moveSpread"
-							}, {
-								"name": "moveViaAttack",
-								"value": "true"
-							}, {
-								"name": "destThreshold",
-								"value": "beforeFocusedFireThreshold"
-							}, {
-								"name": "scriptName",
-								"value": "nota_houska_hlaaExam.move"
-							} ],
-							"scriptName": "nota_houska_hlaaExam.move"
-						}, {
-							"children": [],
-							"id": "hovwVbNPGVo3tHNWG7xi8mIrvWeJikKx",
-							"nodeType": "luaCommand",
-							"parameters": [ {
-								"name": "var",
+								"name": "target",
 								"value": "highestDPSTargetUid"
 							}, {
-								"name": "value",
-								"value": "nota_houska_hlaaExam.retEneHigestDPSUnitInArea(nota_houska_hlaaExam.retUnitPosition(laneInfo.units[unitCategory][1]), highestDPSSeekRadius)"
-							}, {
 								"name": "scriptName",
-								"value": "store"
+								"value": "nota_houska_hlaaExam.attack"
 							} ],
-							"scriptName": "store"
+							"scriptName": "nota_houska_hlaaExam.attack"
 						}, {
 							"children": [ {
-								"children": [],
-								"id": "q6VsNWWzrZUDYjSOBEUh8amc8yqpSLdf",
-								"nodeType": "luaCommand",
-								"parameters": [ {
-									"name": "unitsGroup",
-									"value": "laneInfo.units[unitCategory]"
-								}, {
-									"name": "target",
-									"value": "highestDPSTargetUid"
-								}, {
-									"name": "scriptName",
-									"value": "nota_houska_hlaaExam.attack"
+								"children": [ {
+									"children": [],
+									"id": "nmAfURhd9JGGyBgFiHUCcsS8Kcih7N4f",
+									"nodeType": "luaCommand",
+									"parameters": [ {
+										"name": "var",
+										"value": "highestDPSTargetUid"
+									}, {
+										"name": "value",
+										"value": "nota_houska_hlaaExam.retEneHigestDPSUnitInArea(nota_houska_hlaaExam.retUnitPosition(laneInfo.units[unitCategory][1]), highestDPSSeekRadius)"
+									}, {
+										"name": "scriptName",
+										"value": "store"
+									} ],
+									"scriptName": "store"
 								} ],
-								"scriptName": "nota_houska_hlaaExam.attack"
+								"id": "Zqc7wpafCNzn8h8tSGZPD52MGsFUIQKV",
+								"nodeType": "repeat",
+								"parameters": []
 							}, {
 								"children": [ {
 									"children": [ {
 										"children": [],
-										"id": "nmAfURhd9JGGyBgFiHUCcsS8Kcih7N4f",
+										"id": "8AU3qIyLT15Y3hEqRKQGXMZ1hT69SNXF",
 										"nodeType": "luaCommand",
 										"parameters": [ {
 											"name": "var",
-											"value": "highestDPSTargetUid"
+											"value": "goalSpot"
 										}, {
 											"name": "value",
-											"value": "nota_houska_hlaaExam.retEneHigestDPSUnitInArea(nota_houska_hlaaExam.retUnitPosition(laneInfo.units[unitCategory][1]), highestDPSSeekRadius)"
+											"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, relativePositionToFront)"
 										}, {
 											"name": "scriptName",
 											"value": "store"
 										} ],
 										"scriptName": "store"
-									} ],
-									"id": "Zqc7wpafCNzn8h8tSGZPD52MGsFUIQKV",
-									"nodeType": "repeat",
-									"parameters": []
-								}, {
-									"children": [ {
+									}, {
 										"children": [],
 										"id": "3WYc1ZiOs7oMjguY2OEZ3nbX4Fva47e5",
 										"nodeType": "luaCommand",
@@ -346,69 +368,69 @@
 										} ],
 										"scriptName": "nota_houska_hlaaExam.move"
 									} ],
-									"id": "5EOjwqJkK1lsaGjZm85bl0Mi78jGLzBT",
-									"nodeType": "repeat",
+									"id": "dpIsV7agkt2Qdow9Ddakfmv1ZSWKyCZp",
+									"nodeType": "sequence",
 									"parameters": []
 								} ],
-								"id": "wR568IHLgSJCMyD6d8IRz9qKazjc07Ep",
-								"nodeType": "parallel",
-								"parameters": [ {
-									"name": "mode",
-									"value": "all-success"
-								} ]
+								"id": "5EOjwqJkK1lsaGjZm85bl0Mi78jGLzBT",
+								"nodeType": "repeat",
+								"parameters": []
 							} ],
-							"id": "y9dNh7uM2tixI8zOYSmSfjp2CvgeSSKU",
-							"nodeType": "luaCondition",
+							"id": "wR568IHLgSJCMyD6d8IRz9qKazjc07Ep",
+							"nodeType": "parallel",
 							"parameters": [ {
-								"name": "expression",
-								"value": "highestDPSTargetUid ~= nil"
-							}, {
-								"name": "repeat",
-								"value": "true"
+								"name": "mode",
+								"value": "all-success"
 							} ]
 						} ],
-						"id": "mM01LpXWk15NmIGGzPTdkj9BOm0jYPvU",
-						"nodeType": "sequence",
-						"parameters": []
-					}, {
-						"children": [],
-						"id": "47CxR44i6hZnwsqVroEcmRzDSsrPJWyx",
-						"nodeType": "reference",
+						"id": "y9dNh7uM2tixI8zOYSmSfjp2CvgeSSKU",
+						"nodeType": "luaCondition",
 						"parameters": [ {
-							"name": "behaviourName",
-							"value": "nota_houska_hlaaExam.retreatToSafeSpot"
-						} ],
-						"referenceInputs": [ {
-							"name": "laneInfo",
-							"value": "laneInfo"
+							"name": "expression",
+							"value": "highestDPSTargetUid ~= nil"
 						}, {
-							"name": "safeDistance",
-							"value": "-3"
-						}, {
-							"name": "unitsGroup",
-							"value": "laneInfo.units[unitCategory]"
-						}, {
-							"name": "moveSpread",
-							"value": "moveSpread"
-						} ],
-						"referenceOutputs": [ {
-							"name": "safeSpot",
-							"value": "_"
+							"name": "repeat",
+							"value": "true"
 						} ]
 					} ],
-					"id": "myU6QRX87uheSmmoef3t4XcoM0Cb7mfX",
-					"nodeType": "luaCondition",
+					"id": "mM01LpXWk15NmIGGzPTdkj9BOm0jYPvU",
+					"nodeType": "sequence",
+					"parameters": []
+				}, {
+					"children": [],
+					"id": "47CxR44i6hZnwsqVroEcmRzDSsrPJWyx",
+					"nodeType": "reference",
 					"parameters": [ {
-						"name": "expression",
-						"value": "ready"
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.retreatToSafeSpot"
+					} ],
+					"referenceInputs": [ {
+						"name": "laneInfo",
+						"value": "laneInfo"
 					}, {
-						"name": "repeat",
-						"value": "true"
+						"name": "safeDistance",
+						"value": "-3"
+					}, {
+						"name": "unitsGroup",
+						"value": "laneInfo.units[unitCategory]"
+					}, {
+						"name": "moveSpread",
+						"value": "moveSpread"
+					} ],
+					"referenceOutputs": [ {
+						"name": "safeSpot",
+						"value": "_"
 					} ]
 				} ],
-				"id": "DCGRmKpdm15XKZG8huRwHHCXm467Lp06",
-				"nodeType": "sequence",
-				"parameters": []
+				"id": "myU6QRX87uheSmmoef3t4XcoM0Cb7mfX",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "ready"
+				}, {
+					"name": "repeat",
+					"value": "true"
+				} ]
 			} ],
 			"id": "OEjs6hZwbrzZ7FIAhGbuURdB0x0dWANy",
 			"nodeType": "repeat",
