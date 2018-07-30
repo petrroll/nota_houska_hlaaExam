@@ -382,13 +382,13 @@
 						"value": "2"
 					}, {
 						"name": "relativePositionToFront",
-						"value": "-0.8"
+						"value": "-0.3"
 					}, {
 						"name": "moveSpread",
 						"value": "128"
 					}, {
 						"name": "dangerRadius",
-						"value": "600"
+						"value": "700"
 					}, {
 						"name": "dangerDpsTreshold",
 						"value": "2"
@@ -400,10 +400,10 @@
 						"value": "0.2"
 					}, {
 						"name": "beforeFocusedFireThreshold",
-						"value": "1200"
+						"value": "1000"
 					}, {
 						"name": "highestDPSSeekRadius",
-						"value": "1800"
+						"value": "1200"
 					} ],
 					"referenceOutputs": []
 				} ],
