@@ -40,13 +40,6 @@
 			"x": 270,
 			"y": 10
 		},
-		"KG2xArKbbsGMbzPovWoWCUlOPYMFNBoz": {
-			"height": 94,
-			"title": "getSafeSpot",
-			"width": 584,
-			"x": 1800,
-			"y": 354
-		},
 		"NIKuv1bVAR8I1FjfJkWDiMCuhf9i6Z3b": {
 			"height": 60,
 			"title": "getBackToSafeSpace",
@@ -54,12 +47,19 @@
 			"x": 1543,
 			"y": 376
 		},
+		"NjJSJsvLWFZfUxy8chKOCs3WPfdK0GMe": {
+			"height": 215,
+			"title": "reference",
+			"width": 351,
+			"x": 1808,
+			"y": 390
+		},
 		"cGEh2KfgT8kq18XTBlLlnEditTvv1e0Y": {
 			"height": 132,
 			"title": "nota_houska_hlaaExam.orderOnLocAndRadius",
 			"width": 363,
-			"x": 1811,
-			"y": 587
+			"x": 1804,
+			"y": 612
 		},
 		"mST3CtD71fbDDKUTUhuKrc5pGfs1m6Bm": {
 			"height": 235,
@@ -67,13 +67,6 @@
 			"width": 404,
 			"x": 793,
 			"y": -117
-		},
-		"qQCIWXBKan2E2KUjvK7AduKJ8lhFWoRH": {
-			"height": 132,
-			"title": "nota_houska_hlaaExam.move",
-			"width": 256,
-			"x": 1817,
-			"y": 451
 		},
 		"qgvkbbjvKtMmA92z6gw8xMMXqWeI4fnh": {
 			"height": 60,
@@ -197,40 +190,29 @@
 				}, {
 					"children": [ {
 						"children": [],
-						"id": "KG2xArKbbsGMbzPovWoWCUlOPYMFNBoz",
-						"nodeType": "luaCommand",
+						"id": "NjJSJsvLWFZfUxy8chKOCs3WPfdK0GMe",
+						"nodeType": "reference",
 						"parameters": [ {
-							"name": "var",
-							"value": "safeSpot"
-						}, {
-							"name": "value",
-							"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, -3)"
-						}, {
-							"name": "scriptName",
-							"value": "store"
+							"name": "behaviourName",
+							"value": "nota_houska_hlaaExam.retreatToSafeSpot"
 						} ],
-						"scriptName": "store"
-					}, {
-						"children": [],
-						"id": "qQCIWXBKan2E2KUjvK7AduKJ8lhFWoRH",
-						"nodeType": "luaCommand",
-						"parameters": [ {
+						"referenceInputs": [ {
+							"name": "laneInfo",
+							"value": "laneInfo"
+						}, {
+							"name": "safeDistance",
+							"value": "-3"
+						}, {
 							"name": "unitsGroup",
 							"value": "laneInfo.units.reclaim"
 						}, {
-							"name": "destination",
-							"value": "safeSpot"
-						}, {
-							"name": "spread",
+							"name": "moveSpread",
 							"value": "128"
-						}, {
-							"name": "moveViaAttack",
-							"value": "false"
-						}, {
-							"name": "scriptName",
-							"value": "nota_houska_hlaaExam.move"
 						} ],
-						"scriptName": "nota_houska_hlaaExam.move"
+						"referenceOutputs": [ {
+							"name": "safeSpot",
+							"value": "safeSpot"
+						} ]
 					}, {
 						"children": [],
 						"id": "cGEh2KfgT8kq18XTBlLlnEditTvv1e0Y",
