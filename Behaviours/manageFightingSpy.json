@@ -23,8 +23,8 @@
 			"height": 235,
 			"title": "ensureThereAreUnitsAssigned",
 			"width": 404,
-			"x": 1059,
-			"y": -217
+			"x": 1055,
+			"y": -300
 		},
 		"Av3eiyasPDZJ3RcpodOUtu6ggSal3DTi": {
 			"height": 54,
@@ -33,18 +33,32 @@
 			"x": 2865,
 			"y": 573
 		},
+		"CxgrTYwHE4bLYQR4WikvZsZVQIyhPYUc": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1456,
+			"y": 488
+		},
 		"E4cXLXzPvsdOKmNrRjMDPTlvKM8OOpdE": {
-			"height": 132,
+			"height": 152,
 			"title": "move_to_target",
 			"width": 273,
 			"x": 2562,
 			"y": 204
 		},
+		"KcSyFwI8GIMdhTiH81VtEl4scObNiGFo": {
+			"height": 92,
+			"title": "handle reset -> set it to false",
+			"width": 271,
+			"x": 1652,
+			"y": 429
+		},
 		"L1jcKhkplZhzcjShOq5Op5SYXB0NNfus": {
 			"height": 94,
 			"title": "storeTargetLoc",
 			"width": 480,
-			"x": 1716,
+			"x": 1717,
 			"y": 223
 		},
 		"MUF8uTJ338s0LMO7gbppQdTpTWTvP6MT": {
@@ -58,7 +72,7 @@
 			"height": 94,
 			"title": "getGoalSpot",
 			"width": 628,
-			"x": 1066,
+			"x": 1067,
 			"y": 22
 		},
 		"QOEt0OabyP7sRGEtcLnBnk2rlJx9Sshb": {
@@ -79,21 +93,21 @@
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 1032,
+			"x": 1033,
 			"y": 291
 		},
 		"VobOsVQ8RXNwBgRNJlMxWHb4VvXFDep7": {
 			"height": 88,
 			"title": "moveToTargetIfNotNil",
 			"width": 380,
-			"x": 1732,
+			"x": 1733,
 			"y": 334
 		},
 		"Xn8d6Vbl7dC4ZPGhY3XgbBnFkkeIJy5e": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 1200,
+			"x": 1201,
 			"y": 280
 		},
 		"YwbDpY2ym5yGy6MIIMonTMvxe2GYIaP6": {
@@ -114,8 +128,8 @@
 			"height": 54,
 			"title": "failure",
 			"width": 131,
-			"x": 1430,
-			"y": 543
+			"x": 1657,
+			"y": 526
 		},
 		"kYyoqbau9uoJws1RvclqGLjT2vl11who": {
 			"height": 54,
@@ -125,17 +139,17 @@
 			"y": 415
 		},
 		"nBypDoKxRRge8zz1DjGa63UJ51blEY3J": {
-			"height": 132,
+			"height": 152,
 			"title": "moveUnitsToGoalPos",
 			"width": 295,
-			"x": 1057,
+			"x": 1058,
 			"y": 117
 		},
 		"p5yJHZ1Z0BlsHG2qcSRbVaISU23UC1I4": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1465,
+			"x": 1466,
 			"y": 286
 		},
 		"scenGFdKPjWHlwHsGGr4gyrRtjDc6pBP": {
@@ -144,6 +158,13 @@
 			"width": 143,
 			"x": 2868,
 			"y": 453
+		},
+		"tOfnZWHX59OZ3mFf3eGEkIf3EJwpjwRg": {
+			"height": 92,
+			"title": "newUnitsWereBought -> reset",
+			"width": 271,
+			"x": 1071,
+			"y": -68
 		},
 		"tgepTfVxvrHsgewkLLs2KmtlyEd5DD1W": {
 			"height": 72,
@@ -155,8 +176,8 @@
 		"vFcVfU225C9ctJuLfun3WnR3PkbvKclS": {
 			"height": 94,
 			"title": "storeTarget",
-			"width": 524,
-			"x": 1692,
+			"width": 900,
+			"x": 1693,
 			"y": 139
 		}
 	},
@@ -197,6 +218,21 @@
 					"referenceOutputs": []
 				}, {
 					"children": [],
+					"id": "tOfnZWHX59OZ3mFf3eGEkIf3EJwpjwRg",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "reset"
+					}, {
+						"name": "value",
+						"value": "true"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
 					"id": "OaLKDCUfUhM3w0Ms0r80Ys8qNFljm78E",
 					"nodeType": "luaCommand",
 					"parameters": [ {
@@ -227,6 +263,9 @@
 						"name": "moveViaAttack",
 						"value": "false"
 					}, {
+						"name": "destThreshold",
+						"value": "false"
+					}, {
 						"name": "scriptName",
 						"value": "nota_houska_hlaaExam.move"
 					} ],
@@ -243,7 +282,7 @@
 									"value": "highestDPSTargetUid"
 								}, {
 									"name": "value",
-									"value": "nota_houska_hlaaExam.retEneHigestDPSUnitInArea(goalSpot, 1500)"
+									"value": "nota_houska_hlaaExam.retEneHigestDPSUnitInArea(nota_houska_hlaaExam.retUnitPosition(laneInfo.units[\"fightspy\"][1]), 1500)"
 								}, {
 									"name": "scriptName",
 									"value": "store"
@@ -278,10 +317,13 @@
 											"value": "targetLoc"
 										}, {
 											"name": "spread",
-											"value": "128"
+											"value": "64"
 										}, {
 											"name": "moveViaAttack",
 											"value": "false"
+										}, {
+											"name": "destThreshold",
+											"value": "128"
 										}, {
 											"name": "scriptName",
 											"value": "nota_houska_hlaaExam.move"
@@ -359,9 +401,29 @@
 							"nodeType": "sequence",
 							"parameters": []
 						}, {
-							"children": [],
-							"id": "ho49NYllcUOOJyIGczvwpv0kIuExWBdi",
-							"nodeType": "failure",
+							"children": [ {
+								"children": [],
+								"id": "KcSyFwI8GIMdhTiH81VtEl4scObNiGFo",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "var",
+									"value": "reset"
+								}, {
+									"name": "value",
+									"value": "false"
+								}, {
+									"name": "scriptName",
+									"value": "store"
+								} ],
+								"scriptName": "store"
+							}, {
+								"children": [],
+								"id": "ho49NYllcUOOJyIGczvwpv0kIuExWBdi",
+								"nodeType": "failure",
+								"parameters": []
+							} ],
+							"id": "CxgrTYwHE4bLYQR4WikvZsZVQIyhPYUc",
+							"nodeType": "sequence",
 							"parameters": []
 						} ],
 						"id": "Xn8d6Vbl7dC4ZPGhY3XgbBnFkkeIJy5e",
