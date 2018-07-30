@@ -41,7 +41,7 @@
 			"y": 598
 		},
 		"HjU5HEY9CdXjMiG5EGNiqvbWaw6PvDa5": {
-			"height": 132,
+			"height": 152,
 			"title": "nota_houska_hlaaExam.move",
 			"width": 256,
 			"x": 1790,
@@ -158,6 +158,9 @@
 							"name": "moveViaAttack",
 							"value": "true"
 						}, {
+							"name": "destThreshold",
+							"value": "false"
+						}, {
 							"name": "scriptName",
 							"value": "nota_houska_hlaaExam.move"
 						} ],
@@ -243,7 +246,7 @@
 				"nodeType": "luaCondition",
 				"parameters": [ {
 					"name": "expression",
-					"value": "repSpot ~= nil and not nota_houska_hlaaExam.isInDanger(laneInfo.units.repair[1], 600, 3)"
+					"value": "repSpot ~= nil and not nota_houska_hlaaExam.isInDanger(laneInfo.units.repair[1], 500, 3)"
 				}, {
 					"name": "repeat",
 					"value": "true"
