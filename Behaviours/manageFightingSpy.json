@@ -1,0 +1,396 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 308,
+			"width": 299
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "laneInfo"
+	} ],
+	"outputs": [],
+	"properties": {
+		"1gNox6tkLr2bXzLPGshEXxuwsWIPt8lD": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 807,
+			"y": 86
+		},
+		"1miMFUfoRTGAJozuZmlryN811CNrZyQI": {
+			"height": 235,
+			"title": "ensureThereAreUnitsAssigned",
+			"width": 404,
+			"x": 1059,
+			"y": -217
+		},
+		"Av3eiyasPDZJ3RcpodOUtu6ggSal3DTi": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 2865,
+			"y": 573
+		},
+		"E4cXLXzPvsdOKmNrRjMDPTlvKM8OOpdE": {
+			"height": 132,
+			"title": "move_to_target",
+			"width": 273,
+			"x": 2562,
+			"y": 204
+		},
+		"L1jcKhkplZhzcjShOq5Op5SYXB0NNfus": {
+			"height": 94,
+			"title": "storeTargetLoc",
+			"width": 480,
+			"x": 1716,
+			"y": 223
+		},
+		"MUF8uTJ338s0LMO7gbppQdTpTWTvP6MT": {
+			"height": 60,
+			"title": "moveToTargetAndSuicideIfAttack",
+			"width": 293,
+			"x": 2205,
+			"y": 339
+		},
+		"OaLKDCUfUhM3w0Ms0r80Ys8qNFljm78E": {
+			"height": 94,
+			"title": "getGoalSpot",
+			"width": 628,
+			"x": 1066,
+			"y": 22
+		},
+		"QOEt0OabyP7sRGEtcLnBnk2rlJx9Sshb": {
+			"height": 92,
+			"title": "store",
+			"width": 131,
+			"x": 3139,
+			"y": 505
+		},
+		"SJ3WYwfBmuHDLWNm1mGnU7vHpQ9TIuCR": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 624,
+			"y": 83
+		},
+		"TNhUjpX0RlW0W3pjSmXGxQYVPebHSeId": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 1032,
+			"y": 291
+		},
+		"VobOsVQ8RXNwBgRNJlMxWHb4VvXFDep7": {
+			"height": 88,
+			"title": "moveToTargetIfNotNil",
+			"width": 380,
+			"x": 1732,
+			"y": 334
+		},
+		"Xn8d6Vbl7dC4ZPGhY3XgbBnFkkeIJy5e": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 1200,
+			"y": 280
+		},
+		"YwbDpY2ym5yGy6MIIMonTMvxe2GYIaP6": {
+			"height": 90,
+			"title": "suicideIfAttack",
+			"width": 198,
+			"x": 2599,
+			"y": 481
+		},
+		"g3wVENndFNoUifN73oX7R3khBV8sLV03": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 366,
+			"y": 74
+		},
+		"ho49NYllcUOOJyIGczvwpv0kIuExWBdi": {
+			"height": 54,
+			"title": "failure",
+			"width": 131,
+			"x": 1430,
+			"y": 543
+		},
+		"kYyoqbau9uoJws1RvclqGLjT2vl11who": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 2209,
+			"y": 415
+		},
+		"nBypDoKxRRge8zz1DjGa63UJ51blEY3J": {
+			"height": 132,
+			"title": "moveUnitsToGoalPos",
+			"width": 295,
+			"x": 1057,
+			"y": 117
+		},
+		"p5yJHZ1Z0BlsHG2qcSRbVaISU23UC1I4": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1465,
+			"y": 286
+		},
+		"scenGFdKPjWHlwHsGGr4gyrRtjDc6pBP": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 2868,
+			"y": 453
+		},
+		"tgepTfVxvrHsgewkLLs2KmtlyEd5DD1W": {
+			"height": 72,
+			"title": "nota_houska_hlaaExam.selfDestruct",
+			"width": 293,
+			"x": 3109,
+			"y": 416
+		},
+		"vFcVfU225C9ctJuLfun3WnR3PkbvKclS": {
+			"height": 94,
+			"title": "storeTarget",
+			"width": 524,
+			"x": 1692,
+			"y": 139
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [ {
+					"children": [],
+					"id": "1miMFUfoRTGAJozuZmlryN811CNrZyQI",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.ensureNUnitsOnLane"
+					} ],
+					"referenceInputs": [ {
+						"name": "laneInfo",
+						"value": "laneInfo"
+					}, {
+						"name": "unitName",
+						"value": "\"armspy\""
+					}, {
+						"name": "numberOfUnits",
+						"value": "1"
+					}, {
+						"name": "severenity",
+						"value": "2.5"
+					}, {
+						"name": "categoryInLaneInfo",
+						"value": "\"fightspy\""
+					}, {
+						"name": "minNumberOfUnits",
+						"value": "1"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "OaLKDCUfUhM3w0Ms0r80Ys8qNFljm78E",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "goalSpot"
+					}, {
+						"name": "value",
+						"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, 0.5)"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "nBypDoKxRRge8zz1DjGa63UJ51blEY3J",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unitsGroup",
+						"value": "laneInfo.units[\"fightspy\"]"
+					}, {
+						"name": "destination",
+						"value": "goalSpot"
+					}, {
+						"name": "spread",
+						"value": "256"
+					}, {
+						"name": "moveViaAttack",
+						"value": "false"
+					}, {
+						"name": "scriptName",
+						"value": "nota_houska_hlaaExam.move"
+					} ],
+					"scriptName": "nota_houska_hlaaExam.move"
+				}, {
+					"children": [ {
+						"children": [ {
+							"children": [ {
+								"children": [],
+								"id": "vFcVfU225C9ctJuLfun3WnR3PkbvKclS",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "var",
+									"value": "highestDPSTargetUid"
+								}, {
+									"name": "value",
+									"value": "nota_houska_hlaaExam.retEneHigestDPSUnitInArea(goalSpot, 1500)"
+								}, {
+									"name": "scriptName",
+									"value": "store"
+								} ],
+								"scriptName": "store"
+							}, {
+								"children": [],
+								"id": "L1jcKhkplZhzcjShOq5Op5SYXB0NNfus",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "var",
+									"value": "targetLoc"
+								}, {
+									"name": "value",
+									"value": "nota_houska_hlaaExam.retUnitPosition(highestDPSTargetUid)"
+								}, {
+									"name": "scriptName",
+									"value": "store"
+								} ],
+								"scriptName": "store"
+							}, {
+								"children": [ {
+									"children": [ {
+										"children": [],
+										"id": "E4cXLXzPvsdOKmNrRjMDPTlvKM8OOpdE",
+										"nodeType": "luaCommand",
+										"parameters": [ {
+											"name": "unitsGroup",
+											"value": "laneInfo.units[\"fightspy\"]"
+										}, {
+											"name": "destination",
+											"value": "targetLoc"
+										}, {
+											"name": "spread",
+											"value": "128"
+										}, {
+											"name": "moveViaAttack",
+											"value": "false"
+										}, {
+											"name": "scriptName",
+											"value": "nota_houska_hlaaExam.move"
+										} ],
+										"scriptName": "nota_houska_hlaaExam.move"
+									}, {
+										"children": [ {
+											"children": [ {
+												"children": [],
+												"id": "tgepTfVxvrHsgewkLLs2KmtlyEd5DD1W",
+												"nodeType": "luaCommand",
+												"parameters": [ {
+													"name": "uid",
+													"value": "laneInfo.units[\"fightspy\"][1]"
+												}, {
+													"name": "scriptName",
+													"value": "nota_houska_hlaaExam.selfDestruct"
+												} ],
+												"scriptName": "nota_houska_hlaaExam.selfDestruct"
+											}, {
+												"children": [],
+												"id": "QOEt0OabyP7sRGEtcLnBnk2rlJx9Sshb",
+												"nodeType": "luaCommand",
+												"parameters": [ {
+													"name": "var",
+													"value": "reset"
+												}, {
+													"name": "value",
+													"value": "true"
+												}, {
+													"name": "scriptName",
+													"value": "store"
+												} ],
+												"scriptName": "store"
+											} ],
+											"id": "scenGFdKPjWHlwHsGGr4gyrRtjDc6pBP",
+											"nodeType": "sequence",
+											"parameters": []
+										}, {
+											"children": [],
+											"id": "Av3eiyasPDZJ3RcpodOUtu6ggSal3DTi",
+											"nodeType": "success",
+											"parameters": []
+										} ],
+										"id": "YwbDpY2ym5yGy6MIIMonTMvxe2GYIaP6",
+										"nodeType": "luaCondition",
+										"parameters": [ {
+											"name": "expression",
+											"value": "not laneInfo.other.attack"
+										}, {
+											"name": "repeat",
+											"value": "false"
+										} ]
+									} ],
+									"id": "MUF8uTJ338s0LMO7gbppQdTpTWTvP6MT",
+									"nodeType": "sequence",
+									"parameters": []
+								}, {
+									"children": [],
+									"id": "kYyoqbau9uoJws1RvclqGLjT2vl11who",
+									"nodeType": "success",
+									"parameters": []
+								} ],
+								"id": "VobOsVQ8RXNwBgRNJlMxWHb4VvXFDep7",
+								"nodeType": "luaCondition",
+								"parameters": [ {
+									"name": "expression",
+									"value": "targetLoc ~= nil and laneInfo.units[\"fightspy\"][1] ~= nil"
+								}, {
+									"name": "repeat",
+									"value": "true"
+								} ]
+							} ],
+							"id": "p5yJHZ1Z0BlsHG2qcSRbVaISU23UC1I4",
+							"nodeType": "sequence",
+							"parameters": []
+						}, {
+							"children": [],
+							"id": "ho49NYllcUOOJyIGczvwpv0kIuExWBdi",
+							"nodeType": "failure",
+							"parameters": []
+						} ],
+						"id": "Xn8d6Vbl7dC4ZPGhY3XgbBnFkkeIJy5e",
+						"nodeType": "luaCondition",
+						"parameters": [ {
+							"name": "expression",
+							"value": "not reset"
+						}, {
+							"name": "repeat",
+							"value": "true"
+						} ]
+					} ],
+					"id": "TNhUjpX0RlW0W3pjSmXGxQYVPebHSeId",
+					"nodeType": "repeat",
+					"parameters": []
+				} ],
+				"id": "1gNox6tkLr2bXzLPGshEXxuwsWIPt8lD",
+				"nodeType": "sequence",
+				"parameters": []
+			} ],
+			"id": "SJ3WYwfBmuHDLWNm1mGnU7vHpQ9TIuCR",
+			"nodeType": "repeat",
+			"parameters": []
+		} ],
+		"id": "g3wVENndFNoUifN73oX7R3khBV8sLV03",
+		"nodeType": "parallel",
+		"parameters": [ {
+			"name": "mode",
+			"value": "all-success"
+		} ]
+	}
+}
