@@ -26,7 +26,13 @@ function getInfo()
                 variableType = "expression",
                 componentType = "editBox",
                 defaultValue = "true",
-            }
+            },
+            {
+                name = "destThreshold",
+                variableType = "expression",
+                componentType = "editBox",
+                defaultValue = "false",
+            },
         }
     }
 end
@@ -40,6 +46,7 @@ function Run(self, units, parameter)
     local unitsGroup = parameter.unitsGroup
     local dest = parameter.destination
     local spread = parameter.spread
+    local destThreshold = parameter.destThreshold or (spread * 3)
 
     local cmd = CMD.MOVE
     if parameter.moveViaAttack == true then cmd = CMD.FIGHT end
@@ -70,7 +77,7 @@ function Run(self, units, parameter)
 		local pointX, pointY, pointZ = SpringGetUnitPosition(uid)
 		local currUidLoc = Vec3(pointX, pointY, pointZ)
 
-		if currUidLoc:Distance(dest) > (spread * 3) then
+		if currUidLoc:Distance(dest) > destThreshold then
 			if SpringGetUnitHealth(uid) ~= nil then
 				return RUNNING
 			end
