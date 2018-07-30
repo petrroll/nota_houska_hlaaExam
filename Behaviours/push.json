@@ -15,26 +15,12 @@
 	} ],
 	"outputs": [],
 	"properties": {
-		"1e3NT7Oe8u1LFDc7ZgSYNWaoX9M6Aao5": {
-			"height": 94,
-			"title": "store",
-			"width": 456,
-			"x": 1356,
-			"y": -96
-		},
-		"EGVA0lAtbJVNC6gJDcQTgTmsftWOV77o": {
-			"height": 92,
-			"title": "getBetterReferenceToLaneInfo",
-			"width": 278,
-			"x": 685,
-			"y": -371
-		},
-		"EvAlD72jqpPY4G7x79msomcKuaP3cjRe": {
-			"height": 90,
-			"title": "initLanesInfo",
-			"width": 194,
-			"x": 684,
-			"y": -577
+		"47FzONogmmLacBVuen44XPzWNOXuyafJ": {
+			"height": 151,
+			"title": "keepLaneInfoUpdated",
+			"width": 372,
+			"x": 968,
+			"y": -57
 		},
 		"GABuXVhHFS6CEXJ4vKTJeVdME9FC9ZNe": {
 			"height": 60,
@@ -50,47 +36,26 @@
 			"x": 247,
 			"y": 24
 		},
-		"Kiig7FRRskJ67xy2gn0TpaITCbgU2VEX": {
-			"height": 60,
-			"title": "repeat",
-			"width": 131,
-			"x": 918,
-			"y": -143
-		},
 		"Ohfu3K71HVXyI5A0k7i5kuERT0J0x41x": {
-			"height": 319,
+			"height": 340,
 			"title": "manageArtileiesForLane",
 			"width": 441,
 			"x": 979,
 			"y": 414
 		},
-		"azmGcP2QoxaqVBdB03Oby21NPiJTABYW": {
-			"height": 94,
-			"title": "store",
-			"width": 446,
-			"x": 1359,
-			"y": -203
-		},
 		"c3CvWcydzoR8k3nbUsF6mf3qLkHBIJx1": {
-			"height": 319,
+			"height": 340,
 			"title": "manageRadarsForLane",
 			"width": 441,
 			"x": 978,
 			"y": 100
 		},
-		"eSNbLyPR837QijVkbwcxuSJdUhWIjoTG": {
-			"height": 92,
-			"title": "setLanesId",
-			"width": 202,
-			"x": 683,
-			"y": -470
-		},
-		"fq6NY3iBE4hbsylyeTfiYlXGa8dOTndR": {
-			"height": 60,
-			"title": "initData",
-			"width": 143,
-			"x": 463,
-			"y": -438
+		"i7VgxseyqHsgIQ5xBUSI6p26I1Hw46eE": {
+			"height": 173,
+			"title": "initLaneData",
+			"width": 308,
+			"x": 482,
+			"y": -159
 		},
 		"ilJ22UpIp6gGg753rkpFsvvrdHsUKeHf": {
 			"height": 70,
@@ -99,29 +64,8 @@
 			"x": 657,
 			"y": 20
 		},
-		"vd9RENEXAkRizIN9kwMTfODz23xuXMDn": {
-			"height": 60,
-			"title": "updateLaneData",
-			"width": 188,
-			"x": 1092,
-			"y": -143
-		},
-		"weyzXShZ6w9CMp0I4cGGwpsSkaky8VwR": {
-			"height": 92,
-			"title": "store",
-			"width": 131,
-			"x": 961,
-			"y": -576
-		},
-		"wrxVwPj2InMjuh8G2utqtrpqqB4gJsGE": {
-			"height": 54,
-			"title": "success",
-			"width": 165,
-			"x": 965,
-			"y": -632
-		},
 		"zaYUccG7TsZt7tbfbpVHl1UYG1G6Jkh1": {
-			"height": 319,
+			"height": 340,
 			"title": "manageZeusesForLane",
 			"width": 441,
 			"x": 979,
@@ -134,113 +78,39 @@
 	} ],
 	"root": {
 		"children": [ {
-			"children": [ {
-				"children": [ {
-					"children": [],
-					"id": "wrxVwPj2InMjuh8G2utqtrpqqB4gJsGE",
-					"nodeType": "success",
-					"parameters": []
-				}, {
-					"children": [],
-					"id": "weyzXShZ6w9CMp0I4cGGwpsSkaky8VwR",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "var",
-						"value": "bb.lanes"
-					}, {
-						"name": "value",
-						"value": "{}"
-					}, {
-						"name": "scriptName",
-						"value": "store"
-					} ],
-					"scriptName": "store"
-				} ],
-				"id": "EvAlD72jqpPY4G7x79msomcKuaP3cjRe",
-				"nodeType": "luaCondition",
-				"parameters": [ {
-					"name": "expression",
-					"value": "bb.lanes ~= nil"
-				}, {
-					"name": "repeat",
-					"value": "false"
-				} ]
-			}, {
-				"children": [],
-				"id": "eSNbLyPR837QijVkbwcxuSJdUhWIjoTG",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "var",
-					"value": "bb.lanes[lid]"
-				}, {
-					"name": "value",
-					"value": "{ID = lid, units = {}}"
-				}, {
-					"name": "scriptName",
-					"value": "store"
-				} ],
-				"scriptName": "store"
-			}, {
-				"children": [],
-				"id": "EGVA0lAtbJVNC6gJDcQTgTmsftWOV77o",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "var",
-					"value": "lane"
-				}, {
-					"name": "value",
-					"value": "bb.lanes[lid]"
-				}, {
-					"name": "scriptName",
-					"value": "store"
-				} ],
-				"scriptName": "store"
+			"children": [],
+			"id": "i7VgxseyqHsgIQ5xBUSI6p26I1Hw46eE",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "nota_houska_hlaaExam.laneInfoInit"
 			} ],
-			"id": "fq6NY3iBE4hbsylyeTfiYlXGa8dOTndR",
-			"nodeType": "sequence",
-			"parameters": []
+			"referenceInputs": [ {
+				"name": "lid",
+				"value": "lid"
+			} ],
+			"referenceOutputs": [ {
+				"name": "laneInfo",
+				"value": "lane"
+			} ]
 		}, {
 			"children": [ {
 				"children": [ {
-					"children": [ {
-						"children": [ {
-							"children": [],
-							"id": "azmGcP2QoxaqVBdB03Oby21NPiJTABYW",
-							"nodeType": "luaCommand",
-							"parameters": [ {
-								"name": "var",
-								"value": "lane.info"
-							}, {
-								"name": "value",
-								"value": "nota_houska_hlaaExam.getuLaneInfo(corridor, lane.info)"
-							}, {
-								"name": "scriptName",
-								"value": "store"
-							} ],
-							"scriptName": "store"
-						}, {
-							"children": [],
-							"id": "1e3NT7Oe8u1LFDc7ZgSYNWaoX9M6Aao5",
-							"nodeType": "luaCommand",
-							"parameters": [ {
-								"name": "var",
-								"value": "lane.units"
-							}, {
-								"name": "value",
-								"value": "nota_houska_hlaaExam.getuAliveUnitsForLane(lane.units)"
-							}, {
-								"name": "scriptName",
-								"value": "store"
-							} ],
-							"scriptName": "store"
-						} ],
-						"id": "vd9RENEXAkRizIN9kwMTfODz23xuXMDn",
-						"nodeType": "sequence",
-						"parameters": []
+					"children": [],
+					"id": "47FzONogmmLacBVuen44XPzWNOXuyafJ",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.laneInfoKeepUpdated"
 					} ],
-					"id": "Kiig7FRRskJ67xy2gn0TpaITCbgU2VEX",
-					"nodeType": "repeat",
-					"parameters": []
+					"referenceInputs": [ {
+						"name": "corridor",
+						"value": "corridor"
+					}, {
+						"name": "lane",
+						"value": "lane"
+					} ],
+					"referenceOutputs": []
 				}, {
 					"children": [],
 					"id": "c3CvWcydzoR8k3nbUsF6mf3qLkHBIJx1",

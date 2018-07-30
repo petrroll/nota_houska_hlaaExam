@@ -1,48 +1,5 @@
 {
-	"additionalNodes": [ {
-		"children": [],
-		"id": "CDAbj2nDauFL8NBZDKaH7ZN0sGxUOaZY",
-		"nodeType": "reference",
-		"parameters": [ {
-			"name": "behaviourName",
-			"value": "nota_houska_hlaaExam.manageUnitStayRelativeToFront"
-		} ],
-		"referenceInputs": [ {
-			"name": "laneInfo",
-			"value": "lane"
-		}, {
-			"name": "unitName",
-			"value": "\"armzeus\""
-		}, {
-			"name": "unitCategory",
-			"value": "\"armzeus\""
-		}, {
-			"name": "amount",
-			"value": "2"
-		}, {
-			"name": "severenity",
-			"value": "5"
-		}, {
-			"name": "relativePositionToFront",
-			"value": "-0.3"
-		}, {
-			"name": "moveSpread",
-			"value": "64"
-		}, {
-			"name": "moveViaAttack",
-			"value": "true"
-		}, {
-			"name": "dangerRadius",
-			"value": "300"
-		}, {
-			"name": "dangerDpsTreshold",
-			"value": "1"
-		}, {
-			"name": "minAmount",
-			"value": "1"
-		} ],
-		"referenceOutputs": []
-	} ],
+	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
 			"height": 128,
@@ -58,138 +15,82 @@
 	} ],
 	"outputs": [],
 	"properties": {
+		"7EXZBbaKWfYrVF0yNcJXuMPsiUjkpBuC": {
+			"height": 151,
+			"title": "keepLaneInfoUpdated",
+			"width": 372,
+			"x": 931,
+			"y": 27
+		},
 		"9yGi3t7l4h7SpVNhevyGxj7zyikTiUFf": {
 			"height": 130,
 			"title": "manageFarksRepairForLane",
 			"width": 373,
-			"x": 937,
+			"x": 939,
 			"y": 348
 		},
 		"CDAbj2nDauFL8NBZDKaH7ZN0sGxUOaZY": {
 			"height": 340,
 			"title": "manageZeusesForLane",
 			"width": 441,
-			"x": 945,
+			"x": 947,
 			"y": 1540
 		},
 		"Cf3YxnkdqhlAqnWHrNysUoGu3YYb5R76": {
 			"height": 60,
 			"title": "updateLane",
 			"width": 157,
-			"x": 478,
+			"x": 479,
 			"y": 24
-		},
-		"I3p4UliJTqka65W2WrA5piJLjokgbay4": {
-			"height": 90,
-			"title": "initLanesInfo",
-			"width": 194,
-			"x": 686,
-			"y": -577
-		},
-		"IrHBqc6xGAgdADVsYu3LNEHJhoq4YZdF": {
-			"height": 54,
-			"title": "success",
-			"width": 165,
-			"x": 966,
-			"y": -632
 		},
 		"IwNfMYYLOHEeNB9S739VFXWZE8RTw14u": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 249,
+			"x": 250,
 			"y": 24
 		},
 		"ONljZwSyJoO1DTUttuJR4l45nnKPu0Em": {
 			"height": 340,
 			"title": "manageSpiesForLane",
 			"width": 441,
-			"x": 946,
+			"x": 948,
 			"y": 873
 		},
 		"Osj0OlFcLYVa9gW3b6IhvcXI1ULjU39Q": {
 			"height": 340,
 			"title": "manageRadarsForLane",
 			"width": 441,
-			"x": 941,
+			"x": 943,
 			"y": 538
-		},
-		"REcpW8Q9Dimp97v7fLQccX2qCBKeH3tY": {
-			"height": 94,
-			"title": "store",
-			"width": 456,
-			"x": 1357,
-			"y": -96
 		},
 		"RzWnNCUfs0HxYizfvLG9wnBY4AGJ8N3G": {
 			"height": 130,
 			"title": "manageFarksReclaimForLane",
 			"width": 373,
-			"x": 934,
+			"x": 936,
 			"y": 203
 		},
 		"VCDkcE1yUP8ygSeAzWifxc9bQXxZ0A7w": {
 			"height": 340,
 			"title": "manageArtileryForLane",
 			"width": 441,
-			"x": 944,
+			"x": 946,
 			"y": 1204
 		},
-		"X4MJ7cUtzKQoPSkH7yPFmvzWi4c9DzC5": {
-			"height": 92,
-			"title": "getBetterReferenceToLaneInfo",
-			"width": 278,
-			"x": 687,
-			"y": -371
-		},
-		"XHOkdBxcdIvIqJFlYtn3pfuwt1RiEB1p": {
-			"height": 92,
-			"title": "store",
-			"width": 131,
-			"x": 962,
-			"y": -576
-		},
-		"YlKrFdVjeRO1JiPbaNehJh2xkMGHs4bL": {
-			"height": 94,
-			"title": "store",
-			"width": 446,
-			"x": 1360,
-			"y": -203
-		},
-		"ZGppCOQhU70Hp10T75TZCh8TukG0p4XI": {
-			"height": 92,
-			"title": "setLanesId",
-			"width": 202,
-			"x": 685,
-			"y": -470
-		},
-		"auA0sbv8v5ndNKpDzQw4ODNjETe5rxji": {
-			"height": 60,
-			"title": "updateLaneData",
-			"width": 188,
-			"x": 1093,
-			"y": -143
-		},
-		"g9OGyLbsLTjuITQVn4UWPL73Ymus9HAC": {
-			"height": 60,
-			"title": "initData",
-			"width": 143,
-			"x": 465,
-			"y": -438
+		"b86mTktsxP5cVbPM6DemaP0eahfCvaQs": {
+			"height": 173,
+			"title": "initLaneData",
+			"width": 308,
+			"x": 489,
+			"y": -186
 		},
 		"j8ABE5UYBzRGCDCBdPT5CepnVnQiYtHn": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 659,
+			"x": 660,
 			"y": 20
-		},
-		"liWJ3CWPvVp5aMionqp7t8Kn12UKLU6H": {
-			"height": 60,
-			"title": "repeat",
-			"width": 131,
-			"x": 919,
-			"y": -143
 		}
 	},
 	"roles": [ {
@@ -198,113 +99,39 @@
 	} ],
 	"root": {
 		"children": [ {
-			"children": [ {
-				"children": [ {
-					"children": [],
-					"id": "IrHBqc6xGAgdADVsYu3LNEHJhoq4YZdF",
-					"nodeType": "success",
-					"parameters": []
-				}, {
-					"children": [],
-					"id": "XHOkdBxcdIvIqJFlYtn3pfuwt1RiEB1p",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "var",
-						"value": "bb.lanes"
-					}, {
-						"name": "value",
-						"value": "{}"
-					}, {
-						"name": "scriptName",
-						"value": "store"
-					} ],
-					"scriptName": "store"
-				} ],
-				"id": "I3p4UliJTqka65W2WrA5piJLjokgbay4",
-				"nodeType": "luaCondition",
-				"parameters": [ {
-					"name": "expression",
-					"value": "bb.lanes ~= nil"
-				}, {
-					"name": "repeat",
-					"value": "false"
-				} ]
-			}, {
-				"children": [],
-				"id": "ZGppCOQhU70Hp10T75TZCh8TukG0p4XI",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "var",
-					"value": "bb.lanes[lid]"
-				}, {
-					"name": "value",
-					"value": "{ID = lid, units = {}}"
-				}, {
-					"name": "scriptName",
-					"value": "store"
-				} ],
-				"scriptName": "store"
-			}, {
-				"children": [],
-				"id": "X4MJ7cUtzKQoPSkH7yPFmvzWi4c9DzC5",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "var",
-					"value": "lane"
-				}, {
-					"name": "value",
-					"value": "bb.lanes[lid]"
-				}, {
-					"name": "scriptName",
-					"value": "store"
-				} ],
-				"scriptName": "store"
+			"children": [],
+			"id": "b86mTktsxP5cVbPM6DemaP0eahfCvaQs",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "nota_houska_hlaaExam.laneInfoInit"
 			} ],
-			"id": "g9OGyLbsLTjuITQVn4UWPL73Ymus9HAC",
-			"nodeType": "sequence",
-			"parameters": []
+			"referenceInputs": [ {
+				"name": "lid",
+				"value": "lid"
+			} ],
+			"referenceOutputs": [ {
+				"name": "laneInfo",
+				"value": "lane"
+			} ]
 		}, {
 			"children": [ {
 				"children": [ {
-					"children": [ {
-						"children": [ {
-							"children": [],
-							"id": "YlKrFdVjeRO1JiPbaNehJh2xkMGHs4bL",
-							"nodeType": "luaCommand",
-							"parameters": [ {
-								"name": "var",
-								"value": "lane.info"
-							}, {
-								"name": "value",
-								"value": "nota_houska_hlaaExam.getuLaneInfo(corridor, lane.info)"
-							}, {
-								"name": "scriptName",
-								"value": "store"
-							} ],
-							"scriptName": "store"
-						}, {
-							"children": [],
-							"id": "REcpW8Q9Dimp97v7fLQccX2qCBKeH3tY",
-							"nodeType": "luaCommand",
-							"parameters": [ {
-								"name": "var",
-								"value": "lane.units"
-							}, {
-								"name": "value",
-								"value": "nota_houska_hlaaExam.getuAliveUnitsForLane(lane.units)"
-							}, {
-								"name": "scriptName",
-								"value": "store"
-							} ],
-							"scriptName": "store"
-						} ],
-						"id": "auA0sbv8v5ndNKpDzQw4ODNjETe5rxji",
-						"nodeType": "sequence",
-						"parameters": []
+					"children": [],
+					"id": "7EXZBbaKWfYrVF0yNcJXuMPsiUjkpBuC",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.laneInfoKeepUpdated"
 					} ],
-					"id": "liWJ3CWPvVp5aMionqp7t8Kn12UKLU6H",
-					"nodeType": "repeat",
-					"parameters": []
+					"referenceInputs": [ {
+						"name": "corridor",
+						"value": "corridor"
+					}, {
+						"name": "lane",
+						"value": "lane"
+					} ],
+					"referenceOutputs": []
 				}, {
 					"children": [],
 					"id": "RzWnNCUfs0HxYizfvLG9wnBY4AGJ8N3G",
@@ -455,6 +282,49 @@
 					}, {
 						"name": "dangerDpsTreshold",
 						"value": "2"
+					}, {
+						"name": "minAmount",
+						"value": "1"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "CDAbj2nDauFL8NBZDKaH7ZN0sGxUOaZY",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageUnitStayRelativeToFront"
+					} ],
+					"referenceInputs": [ {
+						"name": "laneInfo",
+						"value": "lane"
+					}, {
+						"name": "unitName",
+						"value": "\"armzeus\""
+					}, {
+						"name": "unitCategory",
+						"value": "\"armzeus\""
+					}, {
+						"name": "amount",
+						"value": "2"
+					}, {
+						"name": "severenity",
+						"value": "5"
+					}, {
+						"name": "relativePositionToFront",
+						"value": "-0.3"
+					}, {
+						"name": "moveSpread",
+						"value": "64"
+					}, {
+						"name": "moveViaAttack",
+						"value": "true"
+					}, {
+						"name": "dangerRadius",
+						"value": "300"
+					}, {
+						"name": "dangerDpsTreshold",
+						"value": "1"
 					}, {
 						"name": "minAmount",
 						"value": "1"
