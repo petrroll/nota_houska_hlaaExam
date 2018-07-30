@@ -16,8 +16,15 @@
 			"height": 132,
 			"title": "nota_houska_hlaaExam.orderOnLocAndRadius",
 			"width": 363,
-			"x": 1556,
-			"y": 182
+			"x": 1858,
+			"y": 215
+		},
+		"CRnnqtbHdW7nR14ZKdnhzxPVLlgnzkwx": {
+			"height": 60,
+			"title": "reclaimSequence",
+			"width": 218,
+			"x": 1596,
+			"y": 225
 		},
 		"F6a7AD8czwwr3bgULY5EpRxgZXs3wWVW": {
 			"height": 90,
@@ -75,11 +82,18 @@
 			"x": 524,
 			"y": -27
 		},
+		"tnrVT5B2l9ubMZwpbxNhNBBlqiN6RDt7": {
+			"height": 132,
+			"title": "nota_houska_hlaaExam.move",
+			"width": 256,
+			"x": 1866,
+			"y": 70
+		},
 		"whHs3EnYjdroUHrflY4Wf2pMyZTLiiNl": {
 			"height": 94,
 			"title": "getReclaimSpot",
 			"width": 584,
-			"x": 801,
+			"x": 802,
 			"y": 114
 		}
 	},
@@ -134,26 +148,52 @@
 				"scriptName": "store"
 			}, {
 				"children": [ {
-					"children": [],
-					"id": "5rA6vsCaPjHWLVlvGyZltyt1EN8Sm4qH",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "unit",
-						"value": "laneInfo.units.reclaim[1]"
+					"children": [ {
+						"children": [],
+						"id": "tnrVT5B2l9ubMZwpbxNhNBBlqiN6RDt7",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitsGroup",
+							"value": "laneInfo.units.reclaim"
+						}, {
+							"name": "destination",
+							"value": "recSpot"
+						}, {
+							"name": "spread",
+							"value": "600"
+						}, {
+							"name": "moveViaAttack",
+							"value": "true"
+						}, {
+							"name": "scriptName",
+							"value": "nota_houska_hlaaExam.move"
+						} ],
+						"scriptName": "nota_houska_hlaaExam.move"
 					}, {
-						"name": "place",
-						"value": "recSpot"
-					}, {
-						"name": "radius",
-						"value": "600"
-					}, {
-						"name": "cmd",
-						"value": "CMD.RECLAIM"
-					}, {
-						"name": "scriptName",
-						"value": "nota_houska_hlaaExam.orderOnLocAndRadius"
+						"children": [],
+						"id": "5rA6vsCaPjHWLVlvGyZltyt1EN8Sm4qH",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unit",
+							"value": "laneInfo.units.reclaim[1]"
+						}, {
+							"name": "place",
+							"value": "recSpot"
+						}, {
+							"name": "radius",
+							"value": "600"
+						}, {
+							"name": "cmd",
+							"value": "CMD.RECLAIM"
+						}, {
+							"name": "scriptName",
+							"value": "nota_houska_hlaaExam.orderOnLocAndRadius"
+						} ],
+						"scriptName": "nota_houska_hlaaExam.orderOnLocAndRadius"
 					} ],
-					"scriptName": "nota_houska_hlaaExam.orderOnLocAndRadius"
+					"id": "CRnnqtbHdW7nR14ZKdnhzxPVLlgnzkwx",
+					"nodeType": "sequence",
+					"parameters": []
 				}, {
 					"children": [ {
 						"children": [],
