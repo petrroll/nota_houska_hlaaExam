@@ -1,5 +1,53 @@
 {
-	"additionalNodes": [],
+	"additionalNodes": [ {
+		"children": [],
+		"id": "6MSewbxhvku8btz18SFGryiEKufxTGqw",
+		"nodeType": "reference",
+		"parameters": [ {
+			"name": "behaviourName",
+			"value": "nota_houska_hlaaExam.push"
+		} ],
+		"referenceInputs": [ {
+			"name": "corridor",
+			"value": "bb.missionInfo.corridors.Middle"
+		}, {
+			"name": "lid",
+			"value": "4"
+		} ],
+		"referenceOutputs": []
+	}, {
+		"children": [],
+		"id": "RacEJ53nvX6BrHM3fjp9GVKRB0OfaKxy",
+		"nodeType": "reference",
+		"parameters": [ {
+			"name": "behaviourName",
+			"value": "nota_houska_hlaaExam.lane"
+		} ],
+		"referenceInputs": [ {
+			"name": "corridor",
+			"value": "bb.missionInfo.corridors.Middle"
+		}, {
+			"name": "lid",
+			"value": "2"
+		} ],
+		"referenceOutputs": []
+	}, {
+		"children": [],
+		"id": "8YdQKAPgY4It0TwQvBQt0lclm46qGlda",
+		"nodeType": "reference",
+		"parameters": [ {
+			"name": "behaviourName",
+			"value": "nota_houska_hlaaExam.lane"
+		} ],
+		"referenceInputs": [ {
+			"name": "corridor",
+			"value": "bb.missionInfo.corridors.Bottom"
+		}, {
+			"name": "lid",
+			"value": "3"
+		} ],
+		"referenceOutputs": []
+	} ],
 	"additionalParameters": {
 		"root": {
 			"height": 88,
@@ -228,22 +276,6 @@
 							"name": "time",
 							"value": 25
 						} ]
-					}, {
-						"children": [],
-						"id": "RacEJ53nvX6BrHM3fjp9GVKRB0OfaKxy",
-						"nodeType": "reference",
-						"parameters": [ {
-							"name": "behaviourName",
-							"value": "nota_houska_hlaaExam.lane"
-						} ],
-						"referenceInputs": [ {
-							"name": "corridor",
-							"value": "bb.missionInfo.corridors.Middle"
-						}, {
-							"name": "lid",
-							"value": "2"
-						} ],
-						"referenceOutputs": []
 					} ],
 					"id": "R32EUa81mNc7OqHnWvijsQj10Uz8dVz6",
 					"nodeType": "sequence",
@@ -257,22 +289,6 @@
 							"name": "time",
 							"value": "25*2"
 						} ]
-					}, {
-						"children": [],
-						"id": "8YdQKAPgY4It0TwQvBQt0lclm46qGlda",
-						"nodeType": "reference",
-						"parameters": [ {
-							"name": "behaviourName",
-							"value": "nota_houska_hlaaExam.lane"
-						} ],
-						"referenceInputs": [ {
-							"name": "corridor",
-							"value": "bb.missionInfo.corridors.Bottom"
-						}, {
-							"name": "lid",
-							"value": "3"
-						} ],
-						"referenceOutputs": []
 					} ],
 					"id": "d9PpYwmhXVwqMp6Vljm431UNhrqLDxev",
 					"nodeType": "sequence",
@@ -286,22 +302,6 @@
 							"name": "time",
 							"value": "25*3"
 						} ]
-					}, {
-						"children": [],
-						"id": "6MSewbxhvku8btz18SFGryiEKufxTGqw",
-						"nodeType": "reference",
-						"parameters": [ {
-							"name": "behaviourName",
-							"value": "nota_houska_hlaaExam.push"
-						} ],
-						"referenceInputs": [ {
-							"name": "corridor",
-							"value": "bb.missionInfo.corridors.Middle"
-						}, {
-							"name": "lid",
-							"value": "4"
-						} ],
-						"referenceOutputs": []
 					} ],
 					"id": "0k5lcum9qCCA0ljGomZJqxdHEeF4GaNV",
 					"nodeType": "sequence",
