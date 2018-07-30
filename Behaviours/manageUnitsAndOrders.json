@@ -20,20 +20,20 @@
 			"height": 72,
 			"title": "buy the unit",
 			"width": 266,
-			"x": 1489,
-			"y": 52
+			"x": 1612,
+			"y": 51
 		},
 		"LW3rCgPGtCpqED6Iq8sXOnsL4uBorj5C": {
 			"height": 60,
 			"title": "handleOrder",
 			"width": 161,
-			"x": 973,
-			"y": -13
+			"x": 1122,
+			"y": -5
 		},
 		"OLlm0HoAAWbaTulDp6jkF2r6NbrdwzwU": {
 			"height": 90,
 			"title": "ifThereAreOrders -> handle",
-			"width": 256,
+			"width": 401,
 			"x": 652,
 			"y": -12
 		},
@@ -41,15 +41,15 @@
 			"height": 94,
 			"title": "popTopOrder",
 			"width": 612,
-			"x": 1192,
-			"y": -47
+			"x": 1380,
+			"y": -78
 		},
 		"XdNsdg7bKlswcxYjSbpzlcF5olKy7Tgj": {
 			"height": 90,
 			"title": "if satisfiable order exists",
 			"width": 233,
-			"x": 1199,
-			"y": 58
+			"x": 1337,
+			"y": 74
 		},
 		"Zj6jRcfDkJq2mmEXcGVyLAHqkidVX70l": {
 			"height": 60,
@@ -62,15 +62,15 @@
 			"height": 54,
 			"title": "noOrders",
 			"width": 141,
-			"x": 943,
-			"y": 126
+			"x": 1089,
+			"y": 179
 		},
 		"qanS4F3HDPPNpkFPcWco2tBIO99OgDtY": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1491,
-			"y": 127
+			"x": 1642,
+			"y": 138
 		},
 		"tLFaHlpzif8mckT0Cr6SkgbK4KkrTAfV": {
 			"height": 60,
@@ -160,7 +160,7 @@
 				"nodeType": "luaCondition",
 				"parameters": [ {
 					"name": "expression",
-					"value": "#bb.units.orders > 0"
+					"value": "nota_houska_hlaaExam.utilMapAny(bb.units.orders)"
 				}, {
 					"name": "repeat",
 					"value": "true"
