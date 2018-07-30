@@ -46,21 +46,21 @@
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 619,
-			"y": 17
+			"x": 628,
+			"y": -188
 		},
 		"2QS0GQgtfE2kWwwRwE11eNCZxNavTPiR": {
-			"height": 132,
+			"height": 152,
 			"title": "moveUnitsToGoalPos",
 			"width": 295,
-			"x": 2568,
-			"y": 14
+			"x": 1892,
+			"y": 24
 		},
 		"6cIkULlZZ9CMOKAwCeCu1OiLFvd66F1U": {
-			"height": 89,
-			"title": "attackOrRetreatDangerComputedForFistUnitInCategory",
-			"width": 1213,
-			"x": 1158,
+			"height": 88,
+			"title": "moveToGoalOrRetreat",
+			"width": 636,
+			"x": 1159,
 			"y": 147
 		},
 		"74iPGJoJbNd1lYvvBYomXML1suL2RhcG": {
@@ -74,8 +74,8 @@
 			"height": 215,
 			"title": "retreatToSafeSpot",
 			"width": 351,
-			"x": 2580,
-			"y": 160
+			"x": 1880,
+			"y": 182
 		},
 		"NouHHVCTh7cKv1LbQlmdZYQUwxJiW22B": {
 			"height": 60,
@@ -95,15 +95,15 @@
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 366,
+			"x": 365,
 			"y": 74
 		},
-		"r40yNNbZTWyGbdyvwdhSMnQzGYyW9Ias": {
-			"height": 235,
-			"title": "ensureThereAreUnitsAssigned",
-			"width": 404,
-			"x": 953,
-			"y": -198
+		"wifNJiHVbEGXoMLtJZ41Vb73cDPRT4dP": {
+			"height": 320,
+			"title": "reference",
+			"width": 394,
+			"x": 844,
+			"y": -279
 		}
 	},
 	"roles": [ {
@@ -114,11 +114,11 @@
 		"children": [ {
 			"children": [ {
 				"children": [],
-				"id": "r40yNNbZTWyGbdyvwdhSMnQzGYyW9Ias",
+				"id": "wifNJiHVbEGXoMLtJZ41Vb73cDPRT4dP",
 				"nodeType": "reference",
 				"parameters": [ {
 					"name": "behaviourName",
-					"value": "nota_houska_hlaaExam.ensureNUnitsOnLane"
+					"value": "nota_houska_hlaaExam.groupSafeAndBigEnough"
 				} ],
 				"referenceInputs": [ {
 					"name": "laneInfo",
@@ -127,19 +127,31 @@
 					"name": "unitName",
 					"value": "unitName"
 				}, {
-					"name": "numberOfUnits",
+					"name": "unitCategory",
+					"value": "unitCategory"
+				}, {
+					"name": "amount",
 					"value": "amount"
 				}, {
 					"name": "severenity",
 					"value": "severenity"
 				}, {
-					"name": "categoryInLaneInfo",
-					"value": "unitCategory"
+					"name": "dangerRadius",
+					"value": "dangerRadius"
 				}, {
-					"name": "minNumberOfUnits",
+					"name": "dangerDpsTreshold",
+					"value": "dangerDpsTreshold"
+				}, {
+					"name": "minAmount",
 					"value": "minAmount"
+				}, {
+					"name": "groupRatioSafe",
+					"value": "0.2"
 				} ],
-				"referenceOutputs": []
+				"referenceOutputs": [ {
+					"name": "ready",
+					"value": "ready"
+				} ]
 			} ],
 			"id": "1SAakucnZ5aRpeIvAcUckJew3wCvShWA",
 			"nodeType": "repeat",
@@ -179,6 +191,9 @@
 							"name": "moveViaAttack",
 							"value": "moveViaAttack"
 						}, {
+							"name": "destThreshold",
+							"value": "false"
+						}, {
 							"name": "scriptName",
 							"value": "nota_houska_hlaaExam.move"
 						} ],
@@ -213,7 +228,7 @@
 					"nodeType": "luaCondition",
 					"parameters": [ {
 						"name": "expression",
-						"value": "goalSpot ~= nil and #laneInfo.units[unitCategory] >= minAmount and not nota_houska_hlaaExam.isGroupInDanger(laneInfo.units[unitCategory], dangerRadius, dangerDpsTreshold, 0.2)"
+						"value": "ready"
 					}, {
 						"name": "repeat",
 						"value": "true"

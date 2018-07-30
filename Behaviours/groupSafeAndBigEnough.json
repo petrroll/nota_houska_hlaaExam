@@ -1,0 +1,197 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 308,
+			"width": 299
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "laneInfo"
+	}, {
+		"command": "Variable",
+		"name": "unitName"
+	}, {
+		"command": "Variable",
+		"name": "unitCategory"
+	}, {
+		"command": "Variable",
+		"name": "amount"
+	}, {
+		"command": "Variable",
+		"name": "severenity"
+	}, {
+		"command": "Variable",
+		"name": "dangerRadius"
+	}, {
+		"command": "Variable",
+		"name": "dangerDpsTreshold"
+	}, {
+		"command": "Variable",
+		"name": "minAmount"
+	}, {
+		"command": "Variable",
+		"name": "groupRatioSafe"
+	} ],
+	"outputs": [ {
+		"name": "ready"
+	} ],
+	"properties": {
+		"4kM8DR39rhUg6u0Qtu32a3GSAwkWTmtJ": {
+			"height": 92,
+			"title": "storeLessThanMinNumberOfUnits",
+			"width": 300,
+			"x": 943,
+			"y": -181
+		},
+		"GffBr0mFGrgpUu9AHNKWpyWvq0oXgeo2": {
+			"height": 94,
+			"title": "storeIfDanger",
+			"width": 873,
+			"x": 846,
+			"y": 1
+		},
+		"SEVjOei62ZbS8khWpmPJFEDKgeMvISw5": {
+			"height": 70,
+			"title": "condition",
+			"width": 138,
+			"x": 700,
+			"y": -142
+		},
+		"coRlyde80SPFqMZC30w4RpTLr9sOGGZ0": {
+			"height": 92,
+			"title": "storeMoreThanMinNumberOfUnits",
+			"width": 300,
+			"x": 943,
+			"y": -90
+		},
+		"rZf9QB8t87T4q5DPTGYEL1Wfwwd1HBNC": {
+			"height": 92,
+			"title": "storeReady",
+			"width": 309,
+			"x": 849,
+			"y": 103
+		},
+		"tdeoZ5nzGh2p7OOt0Uej4QBKMMp5rwvB": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 515,
+			"y": 87
+		},
+		"wX8GzA8icxhHa6a1Hd1hw68XmdW2Ugik": {
+			"height": 235,
+			"title": "ensureThereAreUnitsAssigned",
+			"width": 404,
+			"x": 940,
+			"y": -421
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "wX8GzA8icxhHa6a1Hd1hw68XmdW2Ugik",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_houska_hlaaExam.ensureNUnitsOnLane"
+				} ],
+				"referenceInputs": [ {
+					"name": "laneInfo",
+					"value": "laneInfo"
+				}, {
+					"name": "unitName",
+					"value": "unitName"
+				}, {
+					"name": "numberOfUnits",
+					"value": "amount"
+				}, {
+					"name": "severenity",
+					"value": "severenity"
+				}, {
+					"name": "categoryInLaneInfo",
+					"value": "unitCategory"
+				}, {
+					"name": "minNumberOfUnits",
+					"value": "minAmount"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "4kM8DR39rhUg6u0Qtu32a3GSAwkWTmtJ",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "enoughUnits"
+				}, {
+					"name": "value",
+					"value": "true"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "coRlyde80SPFqMZC30w4RpTLr9sOGGZ0",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "enoughUnits"
+				}, {
+					"name": "value",
+					"value": "false"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			} ],
+			"id": "SEVjOei62ZbS8khWpmPJFEDKgeMvISw5",
+			"nodeType": "condition",
+			"parameters": [ {
+				"name": "repeat",
+				"value": "true"
+			} ]
+		}, {
+			"children": [],
+			"id": "GffBr0mFGrgpUu9AHNKWpyWvq0oXgeo2",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "unitsInDanger"
+			}, {
+				"name": "value",
+				"value": "nota_houska_hlaaExam.isGroupInDanger(laneInfo.units[unitCategory], dangerRadius, dangerDpsTreshold, groupRatioSafe)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "rZf9QB8t87T4q5DPTGYEL1Wfwwd1HBNC",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "ready"
+			}, {
+				"name": "value",
+				"value": "not unitsInDanger and enoughUnits"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		} ],
+		"id": "tdeoZ5nzGh2p7OOt0Uej4QBKMMp5rwvB",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}
