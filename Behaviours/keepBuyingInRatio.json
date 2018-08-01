@@ -1,0 +1,104 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 160,
+			"width": 241
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "laneInfo"
+	}, {
+		"command": "Variable",
+		"name": "severenity"
+	}, {
+		"command": "Variable",
+		"name": "ratioInfo"
+	} ],
+	"outputs": [],
+	"properties": {
+		"3ZTC8eqyTwFsfEDMzKtZuic9MsfC0kno": {
+			"height": 94,
+			"title": "store",
+			"width": 654,
+			"x": 670,
+			"y": -80
+		},
+		"TSlcA1g5UtpQIqihgIhbdGC9N1LbH7zT": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 466,
+			"y": 36
+		},
+		"eL4vvODBV9LKYuuQc1axft3lcfmIWyB3": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 297,
+			"y": 35
+		},
+		"uWqqMeTBWa6bFmBXJ4gXIfJe6jJYk36N": {
+			"height": 152,
+			"title": "nota_houska_hlaaExam.osPlaceUnitOrder",
+			"width": 330,
+			"x": 669,
+			"y": 23
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "3ZTC8eqyTwFsfEDMzKtZuic9MsfC0kno",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "order"
+				}, {
+					"name": "value",
+					"value": "nota_houska_hlaaExam.osGetUnitTypeForOrderToMaintainRatio(laneInfo.units, ratioInfo)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "uWqqMeTBWa6bFmBXJ4gXIfJe6jJYk36N",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "unitName",
+					"value": "order.unitName"
+				}, {
+					"name": "laneID",
+					"value": "laneInfo.ID"
+				}, {
+					"name": "severenity",
+					"value": "severenity"
+				}, {
+					"name": "categoryInLane",
+					"value": "order.categoryName"
+				}, {
+					"name": "orders",
+					"value": "bb.units.orders"
+				}, {
+					"name": "scriptName",
+					"value": "nota_houska_hlaaExam.osPlaceUnitOrder"
+				} ],
+				"scriptName": "nota_houska_hlaaExam.osPlaceUnitOrder"
+			} ],
+			"id": "TSlcA1g5UtpQIqihgIhbdGC9N1LbH7zT",
+			"nodeType": "sequence",
+			"parameters": []
+		} ],
+		"id": "eL4vvODBV9LKYuuQc1axft3lcfmIWyB3",
+		"nodeType": "repeat",
+		"parameters": []
+	}
+}

@@ -33,28 +33,14 @@
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 247,
+			"x": 248,
 			"y": 24
-		},
-		"Ohfu3K71HVXyI5A0k7i5kuERT0J0x41x": {
-			"height": 340,
-			"title": "manageArtileiesForLane",
-			"width": 441,
-			"x": 979,
-			"y": 414
-		},
-		"c3CvWcydzoR8k3nbUsF6mf3qLkHBIJx1": {
-			"height": 340,
-			"title": "manageRadarsForLane",
-			"width": 441,
-			"x": 978,
-			"y": 100
 		},
 		"i7VgxseyqHsgIQ5xBUSI6p26I1Hw46eE": {
 			"height": 173,
 			"title": "initLaneData",
 			"width": 308,
-			"x": 482,
+			"x": 483,
 			"y": -159
 		},
 		"ilJ22UpIp6gGg753rkpFsvvrdHsUKeHf": {
@@ -64,12 +50,12 @@
 			"x": 657,
 			"y": 20
 		},
-		"zaYUccG7TsZt7tbfbpVHl1UYG1G6Jkh1": {
-			"height": 340,
-			"title": "manageZeusesForLane",
-			"width": 441,
-			"x": 979,
-			"y": 738
+		"jCA0kGPBsxfZE9ib5CPGDXTFgY4ACtje": {
+			"height": 214,
+			"title": "buyArmyInRatio",
+			"width": 963,
+			"x": 969,
+			"y": 108
 		}
 	},
 	"roles": [ {
@@ -113,122 +99,21 @@
 					"referenceOutputs": []
 				}, {
 					"children": [],
-					"id": "c3CvWcydzoR8k3nbUsF6mf3qLkHBIJx1",
+					"id": "jCA0kGPBsxfZE9ib5CPGDXTFgY4ACtje",
 					"nodeType": "reference",
 					"parameters": [ {
 						"name": "behaviourName",
-						"value": "nota_houska_hlaaExam.manageUnitStayRelativeToFront"
+						"value": "nota_houska_hlaaExam.keepBuyingInRatio"
 					} ],
 					"referenceInputs": [ {
 						"name": "laneInfo",
 						"value": "lane"
 					}, {
-						"name": "unitName",
-						"value": "\"armseer\""
-					}, {
-						"name": "unitCategory",
-						"value": "\"armseer\""
-					}, {
-						"name": "amount",
-						"value": "1"
-					}, {
 						"name": "severenity",
-						"value": "1"
+						"value": "10"
 					}, {
-						"name": "relativePositionToFront",
-						"value": "-1"
-					}, {
-						"name": "moveSpread",
-						"value": "128"
-					}, {
-						"name": "moveViaAttack",
-						"value": "true"
-					}, {
-						"name": "dangerRadius",
-						"value": "400"
-					}, {
-						"name": "dangerDpsTreshold",
-						"value": "2"
-					} ],
-					"referenceOutputs": []
-				}, {
-					"children": [],
-					"id": "Ohfu3K71HVXyI5A0k7i5kuERT0J0x41x",
-					"nodeType": "reference",
-					"parameters": [ {
-						"name": "behaviourName",
-						"value": "nota_houska_hlaaExam.manageUnitStayRelativeToFront"
-					} ],
-					"referenceInputs": [ {
-						"name": "laneInfo",
-						"value": "lane"
-					}, {
-						"name": "unitName",
-						"value": "\"armmart\""
-					}, {
-						"name": "unitCategory",
-						"value": "\"armmart\""
-					}, {
-						"name": "amount",
-						"value": "4"
-					}, {
-						"name": "severenity",
-						"value": "3"
-					}, {
-						"name": "relativePositionToFront",
-						"value": "-0.7"
-					}, {
-						"name": "moveSpread",
-						"value": "128"
-					}, {
-						"name": "moveViaAttack",
-						"value": "true"
-					}, {
-						"name": "dangerRadius",
-						"value": "500"
-					}, {
-						"name": "dangerDpsTreshold",
-						"value": "2"
-					} ],
-					"referenceOutputs": []
-				}, {
-					"children": [],
-					"id": "zaYUccG7TsZt7tbfbpVHl1UYG1G6Jkh1",
-					"nodeType": "reference",
-					"parameters": [ {
-						"name": "behaviourName",
-						"value": "nota_houska_hlaaExam.manageUnitStayRelativeToFront"
-					} ],
-					"referenceInputs": [ {
-						"name": "laneInfo",
-						"value": "lane"
-					}, {
-						"name": "unitName",
-						"value": "\"armzeus\""
-					}, {
-						"name": "unitCategory",
-						"value": "\"armzeus\""
-					}, {
-						"name": "amount",
-						"value": "15"
-					}, {
-						"name": "severenity",
-						"value": "5"
-					}, {
-						"name": "relativePositionToFront",
-						"value": "-0.5"
-					}, {
-						"name": "moveSpread",
-						"value": "64"
-					}, {
-						"name": "moveViaAttack",
-						"value": "true"
-					}, {
-						"name": "dangerRadius",
-						"value": "500"
-					}, {
-						"name": "dangerDpsTreshold",
-						"value": "0.8"
+						"name": "ratioInfo",
+						"value": "{{ratio = 1, unitName = \"armzeus\", categoryName = \"zeusArmy\"}, {ratio = 1, unitName = \"armmart\", categoryName = \"artyArmy\"}}"
 					} ],
 					"referenceOutputs": []
 				} ],

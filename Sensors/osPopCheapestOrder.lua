@@ -25,12 +25,13 @@ return function(orders, prices)
     local minOrder = nil 
     local minOrderKey = nil
     local minOrderScore = 2147483647
-
+    local teamMetal = getTeamMetal()
 
     for key, order in pairs(orders) do
 
-        local orderScore = order.severenity * prices[order.name]
-        if orderScore < minOrderScore and orderScore < getTeamMetal() then
+        local orderPrice = prices[order.name]
+        local orderScore = order.severenity * orderPrice
+        if orderScore < minOrderScore and orderPrice < teamMetal  then
             minOrderScore = orderScore
             minOrderKey = key
             minOrder = order
