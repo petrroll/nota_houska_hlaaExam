@@ -29,14 +29,24 @@ local SpringGetUnitDefID = Spring.GetUnitDefID
 function registerUnit(uid, orders, lanesInfo)
 
     local unitName = UnitDefs[SpringGetUnitDefID(uid)].name
-    for k, order in pairs(orders) do 
+    local minMatchingSeverenity = 2147483647
+    local minMatchingOrderId = 0
 
-        -- order satisfied -> remove it, assign it in laneInfo, and return laneId
-        if order.name == unitName then
-            orders[k] = nil
-            asssignUnitToLaneInfo(uid, order.category, lanesInfo[order.laneID]) 
-            return order.laneID
+    -- select matching order with lowest severenity
+    for k, order in pairs(orders) do 
+        if order.name == unitName and order.severenity < minMatchingSeverenity then
+            minMatchingSeverenity = order.severenity
+            minMatchingOrderId = k
         end
+    end
+
+    -- order satisfied -> remove it, assign it in laneInfo, and return laneId
+    if minMatchingOrderId ~= 0 then
+        local order = orders[minMatchingOrderId]
+        orders[minMatchingOrderId] = nil
+
+        asssignUnitToLaneInfo(uid, order.category, lanesInfo[order.laneID]) 
+        return order.laneID
 
     end
 
