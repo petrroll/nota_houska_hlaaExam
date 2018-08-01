@@ -94,7 +94,7 @@
 			"height": 341,
 			"title": "reference",
 			"width": 394,
-			"x": 807,
+			"x": 808,
 			"y": -279
 		},
 		"Zqc7wpafCNzn8h8tSGZPD52MGsFUIQKV": {
@@ -143,7 +143,7 @@
 			"height": 88,
 			"title": "moveToGoalOrRetreat",
 			"width": 324,
-			"x": 832,
+			"x": 833,
 			"y": 68
 		},
 		"nmAfURhd9JGGyBgFiHUCcsS8Kcih7N4f": {
@@ -170,9 +170,9 @@
 		"y9dNh7uM2tixI8zOYSmSfjp2CvgeSSKU": {
 			"height": 88,
 			"title": "haveHighDPSTarget",
-			"width": 270,
-			"x": 1567,
-			"y": 181
+			"width": 620,
+			"x": 1262,
+			"y": 167
 		},
 		"yo26FSBGgQbmrmYUt0ivP7CWWodQdcWk": {
 			"height": 152,
@@ -387,7 +387,7 @@
 						"nodeType": "luaCondition",
 						"parameters": [ {
 							"name": "expression",
-							"value": "highestDPSTargetUid ~= nil"
+							"value": "highestDPSTargetUid ~= nil and nota_houska_hlaaExam.isUnitAlive(highestDPSTargetUid)"
 						}, {
 							"name": "repeat",
 							"value": "true"

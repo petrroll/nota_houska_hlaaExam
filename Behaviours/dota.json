@@ -1,20 +1,12 @@
 {
 	"additionalNodes": [ {
 		"children": [],
-		"id": "6MSewbxhvku8btz18SFGryiEKufxTGqw",
-		"nodeType": "reference",
+		"id": "U4gxLl6ZaQIhQBD8XKjb6qULFWv9wU9I",
+		"nodeType": "wait",
 		"parameters": [ {
-			"name": "behaviourName",
-			"value": "nota_houska_hlaaExam.push"
-		} ],
-		"referenceInputs": [ {
-			"name": "corridor",
-			"value": "bb.missionInfo.corridors.Middle"
-		}, {
-			"name": "lid",
-			"value": "4"
-		} ],
-		"referenceOutputs": []
+			"name": "time",
+			"value": "25*3"
+		} ]
 	}, {
 		"children": [],
 		"id": "RacEJ53nvX6BrHM3fjp9GVKRB0OfaKxy",
@@ -61,28 +53,28 @@
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 858,
+			"x": 859,
 			"y": 737
 		},
 		"6MSewbxhvku8btz18SFGryiEKufxTGqw": {
 			"height": 193,
 			"title": "runPushInMidLane",
 			"width": 312,
-			"x": 1220,
+			"x": 1221,
 			"y": 704
 		},
 		"8RWh8FVGXAMbHGFJpwhsQTyhbWzIm8zJ": {
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 1048,
+			"x": 1049,
 			"y": 487
 		},
 		"8YdQKAPgY4It0TwQvBQt0lclm46qGlda": {
 			"height": 193,
 			"title": "runBottomLane",
 			"width": 315,
-			"x": 1221,
+			"x": 1222,
 			"y": 512
 		},
 		"BmbxV7Turiq8MW4CwGxCRBRzFnQjOhiK": {
@@ -110,21 +102,21 @@
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 861,
+			"x": 862,
 			"y": 342
 		},
 		"RacEJ53nvX6BrHM3fjp9GVKRB0OfaKxy": {
 			"height": 193,
 			"title": "runMidLane",
 			"width": 312,
-			"x": 1220,
+			"x": 1221,
 			"y": 323
 		},
 		"U4gxLl6ZaQIhQBD8XKjb6qULFWv9wU9I": {
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 1033,
+			"x": 1034,
 			"y": 701
 		},
 		"Y7EFNoE14ddlGQexEwJGGMB2NJwj40qt": {
@@ -138,7 +130,7 @@
 			"height": 193,
 			"title": "runTopLane",
 			"width": 295,
-			"x": 951,
+			"x": 952,
 			"y": 57
 		},
 		"cILrujUndiBMmkMyJGLSuaXCGmO8gSOU": {
@@ -152,7 +144,7 @@
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 859,
+			"x": 860,
 			"y": 527
 		},
 		"lVNvvdfy9a4zGug2P587tQYI0ErpfK4k": {
@@ -166,14 +158,14 @@
 			"height": 110,
 			"title": "runUnitsUpdatesAndManageOrders",
 			"width": 387,
-			"x": 953,
+			"x": 954,
 			"y": -85
 		},
 		"sXkHoo238mqYs3qsBMOu3lGWl8IHqMPX": {
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 1054,
+			"x": 1055,
 			"y": 293
 		},
 		"yRQfunsHwEnVClGEMbzZ42pkH7YsWQqg": {
@@ -296,12 +288,20 @@
 				}, {
 					"children": [ {
 						"children": [],
-						"id": "U4gxLl6ZaQIhQBD8XKjb6qULFWv9wU9I",
-						"nodeType": "wait",
+						"id": "6MSewbxhvku8btz18SFGryiEKufxTGqw",
+						"nodeType": "reference",
 						"parameters": [ {
-							"name": "time",
-							"value": "25*3"
-						} ]
+							"name": "behaviourName",
+							"value": "nota_houska_hlaaExam.push"
+						} ],
+						"referenceInputs": [ {
+							"name": "corridor",
+							"value": "bb.missionInfo.corridors.Top"
+						}, {
+							"name": "lid",
+							"value": "4"
+						} ],
+						"referenceOutputs": []
 					} ],
 					"id": "0k5lcum9qCCA0ljGomZJqxdHEeF4GaNV",
 					"nodeType": "sequence",
