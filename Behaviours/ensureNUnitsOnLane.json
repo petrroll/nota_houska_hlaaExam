@@ -14,7 +14,7 @@
 		"name": "unitName"
 	}, {
 		"command": "Variable",
-		"name": "numberOfUnits"
+		"name": "buyNumberOfUnits"
 	}, {
 		"command": "Variable",
 		"name": "severenity"
@@ -31,14 +31,21 @@
 			"height": 54,
 			"title": "failure",
 			"width": 131,
-			"x": 1785,
+			"x": 1783,
 			"y": 61
+		},
+		"FX3nAWSOqPBvjhKcRFUq1Lupj8Yq9aEK": {
+			"height": 54,
+			"title": "notEnoughUnits",
+			"width": 182,
+			"x": 1603,
+			"y": 315
 		},
 		"SjEGMczHBD4iXKcqfb4e7ibHzodVAwe0": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1185,
+			"x": 1183,
 			"y": -153
 		},
 		"VNiY4RDlYzEFOi1OuScp0Ezi6BUoUI2T": {
@@ -52,7 +59,7 @@
 			"height": 152,
 			"title": "nota_houska_hlaaExam.osPlaceUnitOrder",
 			"width": 330,
-			"x": 1288,
+			"x": 1286,
 			"y": -83
 		},
 		"ZWPjy3yr0i2BTsSEwPaRTpxTws9gMP4X": {
@@ -66,49 +73,56 @@
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1780,
+			"x": 1778,
 			"y": 130
 		},
 		"dqwhqizoK6vxDpfpTo3NauRs2kl8c7hL": {
 			"height": 54,
 			"title": "haveEnoughUnits",
 			"width": 194,
-			"x": 1111,
-			"y": 246
+			"x": 1596,
+			"y": 382
 		},
 		"g69n44GPkNN9M2TzU68SMeiLY1Gq40CQ": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1061,
+			"x": 1059,
 			"y": 13
 		},
 		"ppHBuPLAmtNB5MQGdBPqNQ4agiwBiXhj": {
 			"height": 90,
 			"title": "luaCondition",
-			"width": 380,
-			"x": 625,
+			"width": 405,
+			"x": 624,
 			"y": 33
+		},
+		"r8MAQU5iqf3u7xL2FSdeEKHwdwmoSAO1": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 405,
+			"x": 1152,
+			"y": 305
 		},
 		"sbHsw2PJE3BlvGgvl5QWSRJteneosc0e": {
 			"height": 92,
 			"title": "store",
 			"width": 286,
-			"x": 1181,
+			"x": 1179,
 			"y": -265
 		},
 		"t1nogFAAyn5TTFpcGiFfYaJpshQG6Xxj": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 298,
-			"x": 767,
+			"x": 765,
 			"y": -200
 		},
 		"ybQ99pdmuc0CQjXWslohhvgT4II0dMJV": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 405,
-			"x": 1291,
+			"x": 1289,
 			"y": 75
 		}
 	},
@@ -205,16 +219,32 @@
 				"nodeType": "sequence",
 				"parameters": []
 			}, {
-				"children": [],
-				"id": "dqwhqizoK6vxDpfpTo3NauRs2kl8c7hL",
-				"nodeType": "success",
-				"parameters": []
+				"children": [ {
+					"children": [],
+					"id": "FX3nAWSOqPBvjhKcRFUq1Lupj8Yq9aEK",
+					"nodeType": "failure",
+					"parameters": []
+				}, {
+					"children": [],
+					"id": "dqwhqizoK6vxDpfpTo3NauRs2kl8c7hL",
+					"nodeType": "success",
+					"parameters": []
+				} ],
+				"id": "r8MAQU5iqf3u7xL2FSdeEKHwdwmoSAO1",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "#laneInfo.units[categoryInLaneInfo] < minNumberOfUnits"
+				}, {
+					"name": "repeat",
+					"value": "true"
+				} ]
 			} ],
 			"id": "ppHBuPLAmtNB5MQGdBPqNQ4agiwBiXhj",
 			"nodeType": "luaCondition",
 			"parameters": [ {
 				"name": "expression",
-				"value": "#laneInfo.units[categoryInLaneInfo] < numberOfUnits"
+				"value": "#laneInfo.units[categoryInLaneInfo] < buyNumberOfUnits"
 			}, {
 				"name": "repeat",
 				"value": "true"

@@ -17,7 +17,7 @@
 		"name": "unitCategory"
 	}, {
 		"command": "Variable",
-		"name": "amount"
+		"name": "buyUpToAmount"
 	}, {
 		"command": "Variable",
 		"name": "severenity"
@@ -42,49 +42,49 @@
 			"height": 92,
 			"title": "storeLessThanMinNumberOfUnits",
 			"width": 300,
-			"x": 943,
+			"x": 941,
 			"y": -181
 		},
 		"GffBr0mFGrgpUu9AHNKWpyWvq0oXgeo2": {
 			"height": 94,
 			"title": "storeIfDanger",
 			"width": 873,
-			"x": 846,
+			"x": 844,
 			"y": 1
 		},
 		"SEVjOei62ZbS8khWpmPJFEDKgeMvISw5": {
 			"height": 70,
 			"title": "condition",
 			"width": 138,
-			"x": 700,
+			"x": 698,
 			"y": -142
 		},
 		"coRlyde80SPFqMZC30w4RpTLr9sOGGZ0": {
 			"height": 92,
 			"title": "storeMoreThanMinNumberOfUnits",
 			"width": 300,
-			"x": 943,
+			"x": 941,
 			"y": -90
 		},
 		"rZf9QB8t87T4q5DPTGYEL1Wfwwd1HBNC": {
 			"height": 92,
 			"title": "storeReady",
 			"width": 309,
-			"x": 849,
+			"x": 847,
 			"y": 103
 		},
 		"tdeoZ5nzGh2p7OOt0Uej4QBKMMp5rwvB": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 515,
+			"x": 514,
 			"y": 87
 		},
 		"wX8GzA8icxhHa6a1Hd1hw68XmdW2Ugik": {
-			"height": 235,
+			"height": 256,
 			"title": "ensureThereAreUnitsAssigned",
 			"width": 404,
-			"x": 940,
+			"x": 938,
 			"y": -421
 		}
 	},
@@ -109,8 +109,8 @@
 					"name": "unitName",
 					"value": "unitName"
 				}, {
-					"name": "numberOfUnits",
-					"value": "amount"
+					"name": "buyNumberOfUnits",
+					"value": "buyUpToAmount"
 				}, {
 					"name": "severenity",
 					"value": "severenity"

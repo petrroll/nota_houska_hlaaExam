@@ -20,11 +20,11 @@
 			"y": 86
 		},
 		"1miMFUfoRTGAJozuZmlryN811CNrZyQI": {
-			"height": 235,
+			"height": 256,
 			"title": "ensureThereAreUnitsAssigned",
 			"width": 404,
-			"x": 1055,
-			"y": -300
+			"x": 1059,
+			"y": -325
 		},
 		"Av3eiyasPDZJ3RcpodOUtu6ggSal3DTi": {
 			"height": 54,
@@ -203,7 +203,7 @@
 						"name": "unitName",
 						"value": "\"armspy\""
 					}, {
-						"name": "numberOfUnits",
+						"name": "buyNumberOfUnits",
 						"value": "1"
 					}, {
 						"name": "severenity",

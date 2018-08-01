@@ -17,7 +17,7 @@
 		"name": "unitCategory"
 	}, {
 		"command": "Variable",
-		"name": "amount"
+		"name": "buyUpToAmount"
 	}, {
 		"command": "Variable",
 		"name": "severenity"
@@ -99,7 +99,7 @@
 			"y": 74
 		},
 		"wifNJiHVbEGXoMLtJZ41Vb73cDPRT4dP": {
-			"height": 320,
+			"height": 340,
 			"title": "reference",
 			"width": 394,
 			"x": 844,
@@ -130,8 +130,8 @@
 					"name": "unitCategory",
 					"value": "unitCategory"
 				}, {
-					"name": "amount",
-					"value": "amount"
+					"name": "buyUpToAmount",
+					"value": "buyUpToAmount"
 				}, {
 					"name": "severenity",
 					"value": "severenity"

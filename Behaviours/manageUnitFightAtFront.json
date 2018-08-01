@@ -17,7 +17,7 @@
 		"name": "unitCategory"
 	}, {
 		"command": "Variable",
-		"name": "amount"
+		"name": "buyUpToAmount"
 	}, {
 		"command": "Variable",
 		"name": "severenity"
@@ -52,133 +52,133 @@
 			"height": 152,
 			"title": "moveUnitsToGoalPos",
 			"width": 345,
-			"x": 2746,
+			"x": 2745,
 			"y": 451
 		},
 		"47CxR44i6hZnwsqVroEcmRzDSsrPJWyx": {
 			"height": 215,
 			"title": "retreatToSafeSpot",
 			"width": 351,
-			"x": 1248,
+			"x": 1247,
 			"y": 295
 		},
 		"5EOjwqJkK1lsaGjZm85bl0Mi78jGLzBT": {
 			"height": 60,
 			"title": "moveToGoalState",
 			"width": 196,
-			"x": 2304,
+			"x": 2303,
 			"y": 407
 		},
 		"8AU3qIyLT15Y3hEqRKQGXMZ1hT69SNXF": {
 			"height": 94,
 			"title": "getGoalSpot",
 			"width": 628,
-			"x": 2739,
+			"x": 2738,
 			"y": 355
 		},
 		"DEkuVIVDORFCzXDRVwApRxkkhADYJMpB": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 618,
+			"x": 617,
 			"y": -188
 		},
 		"OEjs6hZwbrzZ7FIAhGbuURdB0x0dWANy": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 621,
+			"x": 620,
 			"y": 83
 		},
 		"R2mKVwDjrk89EnwnnZ69HU2TKbHNNJcV": {
-			"height": 320,
+			"height": 341,
 			"title": "reference",
 			"width": 394,
-			"x": 808,
+			"x": 807,
 			"y": -279
 		},
 		"Zqc7wpafCNzn8h8tSGZPD52MGsFUIQKV": {
 			"height": 60,
 			"title": "keepFindingTarget",
 			"width": 201,
-			"x": 2296,
+			"x": 2295,
 			"y": 259
 		},
 		"aAXObiXzDjaEntJvq27d9AdQS7CsuqYc": {
 			"height": 94,
 			"title": "getGoalSpot",
 			"width": 628,
-			"x": 1543,
+			"x": 1542,
 			"y": -202
 		},
 		"dpIsV7agkt2Qdow9Ddakfmv1ZSWKyCZp": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 2551,
+			"x": 2550,
 			"y": 405
 		},
 		"hovwVbNPGVo3tHNWG7xi8mIrvWeJikKx": {
 			"height": 94,
 			"title": "storeTarget",
 			"width": 1036,
-			"x": 1546,
+			"x": 1545,
 			"y": 34
 		},
 		"mBVDrCBFesmxL0A22zj55qNO31UNhzCy": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 367,
+			"x": 366,
 			"y": 74
 		},
 		"mM01LpXWk15NmIGGzPTdkj9BOm0jYPvU": {
 			"height": 60,
 			"title": "fightSequence",
 			"width": 172,
-			"x": 1257,
+			"x": 1256,
 			"y": 46
 		},
 		"myU6QRX87uheSmmoef3t4XcoM0Cb7mfX": {
 			"height": 88,
 			"title": "moveToGoalOrRetreat",
 			"width": 324,
-			"x": 833,
+			"x": 832,
 			"y": 68
 		},
 		"nmAfURhd9JGGyBgFiHUCcsS8Kcih7N4f": {
 			"height": 94,
 			"title": "storeTarget",
 			"width": 1036,
-			"x": 2555,
+			"x": 2554,
 			"y": 211
 		},
 		"q6VsNWWzrZUDYjSOBEUh8amc8yqpSLdf": {
 			"height": 92,
 			"title": "attackHighDPSTarget",
 			"width": 295,
-			"x": 1927,
+			"x": 1926,
 			"y": 142
 		},
 		"wR568IHLgSJCMyD6d8IRz9qKazjc07Ep": {
 			"height": 70,
 			"title": "attackAllAndSeekHighDPSTarget",
 			"width": 290,
-			"x": 1931,
+			"x": 1930,
 			"y": 282
 		},
 		"y9dNh7uM2tixI8zOYSmSfjp2CvgeSSKU": {
 			"height": 88,
 			"title": "haveHighDPSTarget",
 			"width": 270,
-			"x": 1568,
+			"x": 1567,
 			"y": 181
 		},
 		"yo26FSBGgQbmrmYUt0ivP7CWWodQdcWk": {
 			"height": 152,
 			"title": "moveUnitsToGoalPos",
 			"width": 325,
-			"x": 1549,
+			"x": 1548,
 			"y": -104
 		}
 	},
@@ -206,8 +206,8 @@
 					"name": "unitCategory",
 					"value": "unitCategory"
 				}, {
-					"name": "amount",
-					"value": "amount"
+					"name": "buyUpToAmount",
+					"value": "buyUpToAmount"
 				}, {
 					"name": "severenity",
 					"value": "severenity"

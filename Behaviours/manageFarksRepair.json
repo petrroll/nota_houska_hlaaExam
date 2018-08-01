@@ -55,7 +55,7 @@
 			"y": 114
 		},
 		"Y3HiN2wLwBqxyC6mTrVVgteg5DkNHFbc": {
-			"height": 235,
+			"height": 256,
 			"title": "ensureThereIsASeerAssigned (fails if there's none)",
 			"width": 404,
 			"x": 795,
@@ -111,7 +111,7 @@
 					"name": "unitName",
 					"value": "\"armfark\""
 				}, {
-					"name": "numberOfUnits",
+					"name": "buyNumberOfUnits",
 					"value": "1"
 				}, {
 					"name": "severenity",

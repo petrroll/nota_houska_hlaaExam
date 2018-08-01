@@ -37,7 +37,7 @@
 			"y": 1637
 		},
 		"Ay1jj218qHISgGMvfOCLWXL4EVTppUdH": {
-			"height": 382,
+			"height": 403,
 			"title": "manageArtileryForLane",
 			"width": 441,
 			"x": 950,
@@ -58,14 +58,14 @@
 			"y": 24
 		},
 		"ONljZwSyJoO1DTUttuJR4l45nnKPu0Em": {
-			"height": 340,
+			"height": 361,
 			"title": "manageSpiesForLane",
 			"width": 441,
 			"x": 949,
 			"y": 873
 		},
 		"Osj0OlFcLYVa9gW3b6IhvcXI1ULjU39Q": {
-			"height": 340,
+			"height": 361,
 			"title": "manageRadarsForLane",
 			"width": 441,
 			"x": 944,
@@ -176,7 +176,7 @@
 						"name": "unitCategory",
 						"value": "\"armseer\""
 					}, {
-						"name": "amount",
+						"name": "buyUpToAmount",
 						"value": "1"
 					}, {
 						"name": "severenity",
@@ -219,7 +219,7 @@
 						"name": "unitCategory",
 						"value": "\"armspy\""
 					}, {
-						"name": "amount",
+						"name": "buyUpToAmount",
 						"value": "1"
 					}, {
 						"name": "severenity",
@@ -262,7 +262,7 @@
 						"name": "unitCategory",
 						"value": "\"armmart\""
 					}, {
-						"name": "amount",
+						"name": "buyUpToAmount",
 						"value": "2"
 					}, {
 						"name": "severenity",
@@ -311,7 +311,7 @@
 						"name": "unitCategory",
 						"value": "\"armzeus\""
 					}, {
-						"name": "amount",
+						"name": "buyUpToAmount",
 						"value": "2"
 					}, {
 						"name": "severenity",

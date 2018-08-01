@@ -19,7 +19,7 @@
 			"height": 151,
 			"title": "keepLaneInfoUpdated",
 			"width": 372,
-			"x": 968,
+			"x": 969,
 			"y": -57
 		},
 		"GABuXVhHFS6CEXJ4vKTJeVdME9FC9ZNe": {
@@ -35,6 +35,13 @@
 			"width": 143,
 			"x": 248,
 			"y": 24
+		},
+		"hATZ1E1eUCAIUf7e5gXuAb9d7BxoFkyD": {
+			"height": 403,
+			"title": "manageZeusesForLane",
+			"width": 441,
+			"x": 967,
+			"y": 322
 		},
 		"i7VgxseyqHsgIQ5xBUSI6p26I1Hw46eE": {
 			"height": 173,
@@ -54,8 +61,15 @@
 			"height": 214,
 			"title": "buyArmyInRatio",
 			"width": 963,
-			"x": 969,
+			"x": 970,
 			"y": 108
+		},
+		"mFaEbj9ZYtmGJ5o7nL2Ccm3pDOm5k1WV": {
+			"height": 403,
+			"title": "manageArtileryForLane",
+			"width": 441,
+			"x": 977,
+			"y": 733
 		}
 	},
 	"roles": [ {
@@ -114,6 +128,104 @@
 					}, {
 						"name": "ratioInfo",
 						"value": "{{ratio = 1, unitName = \"armzeus\", categoryName = \"zeusArmy\"}, {ratio = 1, unitName = \"armmart\", categoryName = \"artyArmy\"}}"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "hATZ1E1eUCAIUf7e5gXuAb9d7BxoFkyD",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageUnitFightAtFront"
+					} ],
+					"referenceInputs": [ {
+						"name": "laneInfo",
+						"value": "lane"
+					}, {
+						"name": "unitName",
+						"value": "\"armzeus\""
+					}, {
+						"name": "unitCategory",
+						"value": "\"zeusArmy\""
+					}, {
+						"name": "buyUpToAmount",
+						"value": "0"
+					}, {
+						"name": "severenity",
+						"value": "0"
+					}, {
+						"name": "relativePositionToFront",
+						"value": "0"
+					}, {
+						"name": "moveSpread",
+						"value": "64"
+					}, {
+						"name": "dangerRadius",
+						"value": "300"
+					}, {
+						"name": "dangerDpsTreshold",
+						"value": "1"
+					}, {
+						"name": "minAmount",
+						"value": "15"
+					}, {
+						"name": "groupRatioSafe",
+						"value": "1"
+					}, {
+						"name": "beforeFocusedFireThreshold",
+						"value": "500"
+					}, {
+						"name": "highestDPSSeekRadius",
+						"value": "500"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "mFaEbj9ZYtmGJ5o7nL2Ccm3pDOm5k1WV",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageUnitFightAtFront"
+					} ],
+					"referenceInputs": [ {
+						"name": "laneInfo",
+						"value": "lane"
+					}, {
+						"name": "unitName",
+						"value": "\"armmart\""
+					}, {
+						"name": "unitCategory",
+						"value": "\"artyArmy\""
+					}, {
+						"name": "buyUpToAmount",
+						"value": "0"
+					}, {
+						"name": "severenity",
+						"value": "2"
+					}, {
+						"name": "relativePositionToFront",
+						"value": "-0.3"
+					}, {
+						"name": "moveSpread",
+						"value": "128"
+					}, {
+						"name": "dangerRadius",
+						"value": "700"
+					}, {
+						"name": "dangerDpsTreshold",
+						"value": "2"
+					}, {
+						"name": "minAmount",
+						"value": "15"
+					}, {
+						"name": "groupRatioSafe",
+						"value": "0.2"
+					}, {
+						"name": "beforeFocusedFireThreshold",
+						"value": "1000"
+					}, {
+						"name": "highestDPSSeekRadius",
+						"value": "1200"
 					} ],
 					"referenceOutputs": []
 				} ],
