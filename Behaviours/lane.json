@@ -29,13 +29,6 @@
 			"x": 940,
 			"y": 348
 		},
-		"AAkZi2W0hgGxt9weWDol0lsXonOeSq84": {
-			"height": 403,
-			"title": "manageZeusesForLane",
-			"width": 441,
-			"x": 950,
-			"y": 1637
-		},
 		"Ay1jj218qHISgGMvfOCLWXL4EVTppUdH": {
 			"height": 403,
 			"title": "manageArtileryForLane",
@@ -291,55 +284,6 @@
 					}, {
 						"name": "highestDPSSeekRadius",
 						"value": "1200"
-					} ],
-					"referenceOutputs": []
-				}, {
-					"children": [],
-					"id": "AAkZi2W0hgGxt9weWDol0lsXonOeSq84",
-					"nodeType": "reference",
-					"parameters": [ {
-						"name": "behaviourName",
-						"value": "nota_houska_hlaaExam.manageUnitFightAtFront"
-					} ],
-					"referenceInputs": [ {
-						"name": "laneInfo",
-						"value": "lane"
-					}, {
-						"name": "unitName",
-						"value": "\"armzeus\""
-					}, {
-						"name": "unitCategory",
-						"value": "\"armzeus\""
-					}, {
-						"name": "buyUpToAmount",
-						"value": "2"
-					}, {
-						"name": "severenity",
-						"value": "5"
-					}, {
-						"name": "relativePositionToFront",
-						"value": "-0.3"
-					}, {
-						"name": "moveSpread",
-						"value": "64"
-					}, {
-						"name": "dangerRadius",
-						"value": "300"
-					}, {
-						"name": "dangerDpsTreshold",
-						"value": "1"
-					}, {
-						"name": "minAmount",
-						"value": "1"
-					}, {
-						"name": "groupRatioSafe",
-						"value": "1"
-					}, {
-						"name": "beforeFocusedFireThreshold",
-						"value": "500"
-					}, {
-						"name": "highestDPSSeekRadius",
-						"value": "500"
 					} ],
 					"referenceOutputs": []
 				} ],

@@ -22,6 +22,13 @@
 			"x": 969,
 			"y": -57
 		},
+		"5SJ3XnbJ46voRbe6NYPkvTmnDSasJXcO": {
+			"height": 403,
+			"title": "manageArtileryForLane",
+			"width": 441,
+			"x": 977,
+			"y": 1144
+		},
 		"GABuXVhHFS6CEXJ4vKTJeVdME9FC9ZNe": {
 			"height": 60,
 			"title": "updateLane",
@@ -60,7 +67,7 @@
 		"jCA0kGPBsxfZE9ib5CPGDXTFgY4ACtje": {
 			"height": 214,
 			"title": "buyArmyInRatio",
-			"width": 963,
+			"width": 1354,
 			"x": 970,
 			"y": 108
 		},
@@ -127,7 +134,7 @@
 						"value": "10"
 					}, {
 						"name": "ratioInfo",
-						"value": "{{ratio = 1, unitName = \"armzeus\", categoryName = \"zeusArmy\"}, {ratio = 1, unitName = \"armmart\", categoryName = \"artyArmy\"}}"
+						"value": "{{ratio = 1, unitName = \"armzeus\", categoryName = \"zeusArmy\"}, {ratio = 1, unitName = \"armmart\", categoryName = \"artyArmy\"}, {ratio = 1, unitName = \"armmav\", categoryName = \"mavArmy\"}}"
 					} ],
 					"referenceOutputs": []
 				}, {
@@ -161,22 +168,22 @@
 						"value": "64"
 					}, {
 						"name": "dangerRadius",
-						"value": "300"
+						"value": "900"
 					}, {
 						"name": "dangerDpsTreshold",
 						"value": "1"
 					}, {
 						"name": "minAmount",
-						"value": "15"
+						"value": "7"
 					}, {
 						"name": "groupRatioSafe",
 						"value": "1"
 					}, {
 						"name": "beforeFocusedFireThreshold",
-						"value": "500"
+						"value": "400"
 					}, {
 						"name": "highestDPSSeekRadius",
-						"value": "500"
+						"value": "400"
 					} ],
 					"referenceOutputs": []
 				}, {
@@ -210,22 +217,71 @@
 						"value": "128"
 					}, {
 						"name": "dangerRadius",
-						"value": "700"
+						"value": "600"
 					}, {
 						"name": "dangerDpsTreshold",
 						"value": "2"
 					}, {
 						"name": "minAmount",
-						"value": "15"
+						"value": "7"
 					}, {
 						"name": "groupRatioSafe",
 						"value": "0.2"
 					}, {
 						"name": "beforeFocusedFireThreshold",
-						"value": "1000"
+						"value": "800"
 					}, {
 						"name": "highestDPSSeekRadius",
-						"value": "1200"
+						"value": "1000"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "5SJ3XnbJ46voRbe6NYPkvTmnDSasJXcO",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageUnitFightAtFront"
+					} ],
+					"referenceInputs": [ {
+						"name": "laneInfo",
+						"value": "lane"
+					}, {
+						"name": "unitName",
+						"value": "\"armmav\""
+					}, {
+						"name": "unitCategory",
+						"value": "\"mavArmy\""
+					}, {
+						"name": "buyUpToAmount",
+						"value": "0"
+					}, {
+						"name": "severenity",
+						"value": "2"
+					}, {
+						"name": "relativePositionToFront",
+						"value": "-0.3"
+					}, {
+						"name": "moveSpread",
+						"value": "128"
+					}, {
+						"name": "dangerRadius",
+						"value": "800"
+					}, {
+						"name": "dangerDpsTreshold",
+						"value": "1"
+					}, {
+						"name": "minAmount",
+						"value": "7"
+					}, {
+						"name": "groupRatioSafe",
+						"value": "0.2"
+					}, {
+						"name": "beforeFocusedFireThreshold",
+						"value": "400"
+					}, {
+						"name": "highestDPSSeekRadius",
+						"value": "400"
 					} ],
 					"referenceOutputs": []
 				} ],
