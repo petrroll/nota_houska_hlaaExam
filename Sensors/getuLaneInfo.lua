@@ -21,10 +21,10 @@ local DELTA = 400
 
 -- @description gets updated information about lane situation
 local myAllyID = Spring.GetMyAllyTeamID()
-return function(corridor, lastLaneInfo) 
-    local enemyTeams = Sensors.core.EnemyTeamIDs()
+local enemyTeams = Sensors.core.EnemyTeamIDs()
 
-    local pressure = 0
+return function(corridor, lastLaneInfo) 
+
     local frontPosIndex = 0
 
     local points = {}
@@ -43,9 +43,11 @@ return function(corridor, lastLaneInfo)
             enemInRect = enemInRect + #SpringGetUnitsInRectangle(pos.x - DELTA, pos.z - DELTA, pos.x + DELTA, pos.z + DELTA, EnemyTeams[j])
         end
 
-        -- update pressure & index of last safe position
-        pressure = pressure + enemInRect
-        if enemInRect > 0 and frontPosIndex == 0 then frontPosIndex = i end
+        -- index of last safe position
+        if enemInRect > 0 then 
+            frontPosIndex = i
+            break 
+        end
 
     end
 
@@ -55,5 +57,5 @@ return function(corridor, lastLaneInfo)
         else frontPosIndex = lastLaneInfo.frontPosIndex end
     end
 
-	return {pressure=pressure, frontPosIndex = frontPosIndex, points = points}
+	return {frontPosIndex = frontPosIndex, points = points}
 end

@@ -2,19 +2,25 @@
 	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
-			"height": 88,
-			"width": 180
+			"height": 128,
+			"width": 216
 		}
 	},
-	"inputs": [],
+	"inputs": [ {
+		"command": "BETS_UNIT",
+		"name": "input0"
+	}, {
+		"command": "BETS_POSITION",
+		"name": "input1"
+	} ],
 	"outputs": [],
 	"properties": {
-		"CxZGZZktzclXoy09XkG7a4od8jmF9LgM": {
-			"height": 94,
-			"title": "store",
-			"width": 381,
-			"x": 230,
-			"y": 18
+		"xJ27sjOCyvfVQA027PXW7Z9IhkGf3OqZ": {
+			"height": 132,
+			"title": "nota_houska_hlaaExam.move",
+			"width": 253,
+			"x": 272,
+			"y": -35
 		}
 	},
 	"roles": [ {
@@ -23,18 +29,24 @@
 	} ],
 	"root": {
 		"children": [],
-		"id": "CxZGZZktzclXoy09XkG7a4od8jmF9LgM",
+		"id": "xJ27sjOCyvfVQA027PXW7Z9IhkGf3OqZ",
 		"nodeType": "luaCommand",
 		"parameters": [ {
-			"name": "var",
-			"value": "x"
+			"name": "unitsGroup",
+			"value": "input0"
 		}, {
-			"name": "value",
-			"value": "nota_houska_hlaaExam.GetPosition()"
+			"name": "destination",
+			"value": "input1"
+		}, {
+			"name": "spread",
+			"value": "128"
+		}, {
+			"name": "moveViaAttack",
+			"value": "true"
 		}, {
 			"name": "scriptName",
-			"value": "store"
+			"value": "nota_houska_hlaaExam.move"
 		} ],
-		"scriptName": "store"
+		"scriptName": "nota_houska_hlaaExam.move"
 	}
 }

@@ -19,22 +19,15 @@
 			"height": 151,
 			"title": "keepLaneInfoUpdated",
 			"width": 372,
-			"x": 932,
+			"x": 931,
 			"y": 27
-		},
-		"9yGi3t7l4h7SpVNhevyGxj7zyikTiUFf": {
-			"height": 130,
-			"title": "manageFarksRepairForLane",
-			"width": 373,
-			"x": 940,
-			"y": 348
 		},
 		"Ay1jj218qHISgGMvfOCLWXL4EVTppUdH": {
 			"height": 403,
 			"title": "manageArtileryForLane",
 			"width": 441,
-			"x": 950,
-			"y": 1258
+			"x": 931,
+			"y": 644
 		},
 		"Cf3YxnkdqhlAqnWHrNysUoGu3YYb5R76": {
 			"height": 60,
@@ -50,26 +43,19 @@
 			"x": 250,
 			"y": 24
 		},
-		"ONljZwSyJoO1DTUttuJR4l45nnKPu0Em": {
-			"height": 361,
-			"title": "manageSpiesForLane",
-			"width": 441,
-			"x": 949,
-			"y": 873
-		},
 		"Osj0OlFcLYVa9gW3b6IhvcXI1ULjU39Q": {
 			"height": 361,
 			"title": "manageRadarsForLane",
 			"width": 441,
-			"x": 944,
-			"y": 538
+			"x": 925,
+			"y": 290
 		},
 		"RzWnNCUfs0HxYizfvLG9wnBY4AGJ8N3G": {
 			"height": 130,
 			"title": "manageFarksReclaimForLane",
 			"width": 373,
-			"x": 939,
-			"y": 225
+			"x": 932,
+			"y": 168
 		},
 		"b86mTktsxP5cVbPM6DemaP0eahfCvaQs": {
 			"height": 173,
@@ -140,19 +126,6 @@
 					"referenceOutputs": []
 				}, {
 					"children": [],
-					"id": "9yGi3t7l4h7SpVNhevyGxj7zyikTiUFf",
-					"nodeType": "reference",
-					"parameters": [ {
-						"name": "behaviourName",
-						"value": "nota_houska_hlaaExam.manageFarksRepair"
-					} ],
-					"referenceInputs": [ {
-						"name": "laneInfo",
-						"value": "lane"
-					} ],
-					"referenceOutputs": []
-				}, {
-					"children": [],
 					"id": "Osj0OlFcLYVa9gW3b6IhvcXI1ULjU39Q",
 					"nodeType": "reference",
 					"parameters": [ {
@@ -189,49 +162,6 @@
 					}, {
 						"name": "dangerDpsTreshold",
 						"value": "2"
-					}, {
-						"name": "minAmount",
-						"value": "1"
-					} ],
-					"referenceOutputs": []
-				}, {
-					"children": [],
-					"id": "ONljZwSyJoO1DTUttuJR4l45nnKPu0Em",
-					"nodeType": "reference",
-					"parameters": [ {
-						"name": "behaviourName",
-						"value": "nota_houska_hlaaExam.manageUnitStayRelativeToFront"
-					} ],
-					"referenceInputs": [ {
-						"name": "laneInfo",
-						"value": "lane"
-					}, {
-						"name": "unitName",
-						"value": "\"armspy\""
-					}, {
-						"name": "unitCategory",
-						"value": "\"armspy\""
-					}, {
-						"name": "buyUpToAmount",
-						"value": "1"
-					}, {
-						"name": "severenity",
-						"value": "5"
-					}, {
-						"name": "relativePositionToFront",
-						"value": "0.5"
-					}, {
-						"name": "moveSpread",
-						"value": "128+64"
-					}, {
-						"name": "moveViaAttack",
-						"value": "false"
-					}, {
-						"name": "dangerRadius",
-						"value": "100"
-					}, {
-						"name": "dangerDpsTreshold",
-						"value": "0.5"
 					}, {
 						"name": "minAmount",
 						"value": "1"

@@ -51,18 +51,29 @@ function Run(self, units, parameter)
     local cmd = CMD.MOVE
     if parameter.moveViaAttack == true then cmd = CMD.FIGHT end
 
-    -- issue orders
+    if self.commandsIssued == nil then
+        self.commandsIssued = {}
+    end
+    
 
+    -- issue orders
     local issuedNewCommand = false
     for i = 1, #unitsGroup do
         local uid = unitsGroup[i]
-        if self.commandsIssued[uid] ~= true then 
-            local spreadX = math.random(spread) - spread / 2
-            local spreadZ = math.random(spread) - spread / 2
 
-            SpringGiveOrderToUnit(uid, cmd, (dest + Vec3(spreadX, 0, spreadZ)):AsSpringVector(), {})
+        if self.commandsIssued[uid] ~= true then 
+
+            local pointX, pointY, pointZ = SpringGetUnitPosition(uid)
+            local currUidLoc = Vec3(pointX, pointY, pointZ)
+            if currUidLoc:Distance(dest) > destThreshold then
+                local spreadX = math.random(spread) - spread / 2
+                local spreadZ = math.random(spread) - spread / 2
+    
+                SpringGiveOrderToUnit(uid, cmd, (dest + Vec3(spreadX, 0, spreadZ)):AsSpringVector(), {})    
+                issuedNewCommand = true
+            end
+
             self.commandsIssued[uid] = true
-            issuedNewCommand = true
         end
     end
         

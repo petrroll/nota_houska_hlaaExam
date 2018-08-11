@@ -23,15 +23,6 @@ local SpringGetProjectilesInRectangle = Spring.GetProjectilesInRectangle
 return function(uid, radius, treshold)
     local unitLoc = retUnitPosition(uid)
     if unitLoc == nil then return nil end
-
-    local projectilesRec = 40
-    local projectilesInArea = SpringGetProjectilesInRectangle(unitLoc.x - projectilesRec, unitLoc.z - projectilesRec, 
-                                                                unitLoc.x + projectilesRec, unitLoc.z + projectilesRec)
-
-    -- returned only a number 
-    if #projectilesInArea > 0 then
-        return true
-    end
     
     local DPSRatio = Sensors.retAreaDPSRatio(unitLoc, radius)
     return DPSRatio < treshold

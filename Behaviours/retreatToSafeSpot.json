@@ -31,7 +31,7 @@
 			"y": -30
 		},
 		"af1rbR3zKjMe46dlQ73eybNg442ZUdj0": {
-			"height": 132,
+			"height": 152,
 			"title": "moveToSafeSpot",
 			"width": 256,
 			"x": 584,
@@ -80,6 +80,9 @@
 				"value": "moveSpread"
 			}, {
 				"name": "moveViaAttack",
+				"value": "false"
+			}, {
+				"name": "destThreshold",
 				"value": "false"
 			}, {
 				"name": "scriptName",

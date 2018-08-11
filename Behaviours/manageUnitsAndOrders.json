@@ -27,7 +27,7 @@
 			"height": 60,
 			"title": "handleOrder",
 			"width": 161,
-			"x": 1122,
+			"x": 1123,
 			"y": -5
 		},
 		"OLlm0HoAAWbaTulDp6jkF2r6NbrdwzwU": {
@@ -41,14 +41,14 @@
 			"height": 94,
 			"title": "popTopOrder",
 			"width": 612,
-			"x": 1380,
+			"x": 1381,
 			"y": -78
 		},
 		"XdNsdg7bKlswcxYjSbpzlcF5olKy7Tgj": {
 			"height": 90,
 			"title": "if satisfiable order exists",
 			"width": 233,
-			"x": 1337,
+			"x": 1338,
 			"y": 74
 		},
 		"Zj6jRcfDkJq2mmEXcGVyLAHqkidVX70l": {
@@ -58,11 +58,25 @@
 			"x": 246,
 			"y": 10
 		},
+		"ktH38v4UlcN7AdIQpW2afOISovCZ5IT4": {
+			"height": 74,
+			"title": "wait",
+			"width": 202,
+			"x": 654,
+			"y": 83
+		},
+		"l6IamkKkVQkLwcsRb1pcCBI7nFoDB3IZ": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 1341,
+			"y": 187
+		},
 		"lY1euM6SSIUX48EBKmT36rZb1UrPziQW": {
 			"height": 54,
 			"title": "noOrders",
 			"width": 141,
-			"x": 1089,
+			"x": 1090,
 			"y": 179
 		},
 		"qanS4F3HDPPNpkFPcWco2tBIO99OgDtY": {
@@ -146,6 +160,14 @@
 							"name": "repeat",
 							"value": "true"
 						} ]
+					}, {
+						"children": [],
+						"id": "l6IamkKkVQkLwcsRb1pcCBI7nFoDB3IZ",
+						"nodeType": "wait",
+						"parameters": [ {
+							"name": "time",
+							"value": 2
+						} ]
 					} ],
 					"id": "LW3rCgPGtCpqED6Iq8sXOnsL4uBorj5C",
 					"nodeType": "sequence",
@@ -164,6 +186,14 @@
 				}, {
 					"name": "repeat",
 					"value": "true"
+				} ]
+			}, {
+				"children": [],
+				"id": "ktH38v4UlcN7AdIQpW2afOISovCZ5IT4",
+				"nodeType": "wait",
+				"parameters": [ {
+					"name": "time",
+					"value": "2+2*math.random()"
 				} ]
 			} ],
 			"id": "tLFaHlpzif8mckT0Cr6SkgbK4KkrTAfV",

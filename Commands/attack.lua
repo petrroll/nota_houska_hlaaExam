@@ -29,6 +29,10 @@ function Run(self, units, parameter)
 
     local cmd = CMD.ATTACK
 
+    if self.commandsIssued == nil then
+        self.commandsIssued = {}
+    end
+
     -- issue orders
     local issuedNewCommand = false
     for i = 1, #unitsGroup do

@@ -21,7 +21,7 @@ function getInfo()
 end
 local SpringGiveOrderToUnit = Spring.GiveOrderToUnit
 function Run(self, units, parameter)
-
+    
     local uid = parameter.uid
     SpringGiveOrderToUnit(uid, CMD.SELFD, {}, {})
 

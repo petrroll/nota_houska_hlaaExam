@@ -19,15 +19,22 @@
 			"height": 151,
 			"title": "keepLaneInfoUpdated",
 			"width": 372,
-			"x": 969,
+			"x": 973,
 			"y": -57
+		},
+		"4a72KlHIm1EkYbWC4RJZaJtYt3u3OiTx": {
+			"height": 361,
+			"title": "manageSpiesForLane",
+			"width": 441,
+			"x": 981,
+			"y": 1296
 		},
 		"5SJ3XnbJ46voRbe6NYPkvTmnDSasJXcO": {
 			"height": 403,
 			"title": "manageArtileryForLane",
 			"width": 441,
-			"x": 977,
-			"y": 1144
+			"x": 967,
+			"y": 740
 		},
 		"GABuXVhHFS6CEXJ4vKTJeVdME9FC9ZNe": {
 			"height": 60,
@@ -43,40 +50,40 @@
 			"x": 248,
 			"y": 24
 		},
-		"hATZ1E1eUCAIUf7e5gXuAb9d7BxoFkyD": {
-			"height": 403,
-			"title": "manageZeusesForLane",
-			"width": 441,
-			"x": 967,
-			"y": 322
+		"YRIpCnCKZA02EBpkRNGDsRVLe4HbFQDZ": {
+			"height": 130,
+			"title": "manageFarksRepairForLane",
+			"width": 373,
+			"x": 981,
+			"y": 1163
 		},
 		"i7VgxseyqHsgIQ5xBUSI6p26I1Hw46eE": {
 			"height": 173,
 			"title": "initLaneData",
 			"width": 308,
 			"x": 483,
-			"y": -159
+			"y": -222
 		},
 		"ilJ22UpIp6gGg753rkpFsvvrdHsUKeHf": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 657,
+			"x": 658,
 			"y": 20
 		},
 		"jCA0kGPBsxfZE9ib5CPGDXTFgY4ACtje": {
 			"height": 214,
 			"title": "buyArmyInRatio",
 			"width": 1354,
-			"x": 970,
+			"x": 974,
 			"y": 108
 		},
 		"mFaEbj9ZYtmGJ5o7nL2Ccm3pDOm5k1WV": {
 			"height": 403,
 			"title": "manageArtileryForLane",
 			"width": 441,
-			"x": 977,
-			"y": 733
+			"x": 975,
+			"y": 335
 		}
 	},
 	"roles": [ {
@@ -134,56 +141,7 @@
 						"value": "10"
 					}, {
 						"name": "ratioInfo",
-						"value": "{{ratio = 1, unitName = \"armzeus\", categoryName = \"zeusArmy\"}, {ratio = 1, unitName = \"armmart\", categoryName = \"artyArmy\"}, {ratio = 1, unitName = \"armmav\", categoryName = \"mavArmy\"}}"
-					} ],
-					"referenceOutputs": []
-				}, {
-					"children": [],
-					"id": "hATZ1E1eUCAIUf7e5gXuAb9d7BxoFkyD",
-					"nodeType": "reference",
-					"parameters": [ {
-						"name": "behaviourName",
-						"value": "nota_houska_hlaaExam.manageUnitFightAtFront"
-					} ],
-					"referenceInputs": [ {
-						"name": "laneInfo",
-						"value": "lane"
-					}, {
-						"name": "unitName",
-						"value": "\"armzeus\""
-					}, {
-						"name": "unitCategory",
-						"value": "\"zeusArmy\""
-					}, {
-						"name": "buyUpToAmount",
-						"value": "0"
-					}, {
-						"name": "severenity",
-						"value": "0"
-					}, {
-						"name": "relativePositionToFront",
-						"value": "0"
-					}, {
-						"name": "moveSpread",
-						"value": "64"
-					}, {
-						"name": "dangerRadius",
-						"value": "900"
-					}, {
-						"name": "dangerDpsTreshold",
-						"value": "1"
-					}, {
-						"name": "minAmount",
-						"value": "7"
-					}, {
-						"name": "groupRatioSafe",
-						"value": "1"
-					}, {
-						"name": "beforeFocusedFireThreshold",
-						"value": "400"
-					}, {
-						"name": "highestDPSSeekRadius",
-						"value": "400"
+						"value": "{{ratio = 1, unitName = \"armmart\", categoryName = \"artyArmy\"}, {ratio = 1, unitName = \"armmav\", categoryName = \"mainArmy\"}}"
 					} ],
 					"referenceOutputs": []
 				}, {
@@ -251,7 +209,7 @@
 						"value": "\"armmav\""
 					}, {
 						"name": "unitCategory",
-						"value": "\"mavArmy\""
+						"value": "\"mainArmy\""
 					}, {
 						"name": "buyUpToAmount",
 						"value": "0"
@@ -269,10 +227,10 @@
 						"value": "800"
 					}, {
 						"name": "dangerDpsTreshold",
-						"value": "1"
+						"value": "0.7"
 					}, {
 						"name": "minAmount",
-						"value": "7"
+						"value": "10"
 					}, {
 						"name": "groupRatioSafe",
 						"value": "0.2"
@@ -282,6 +240,62 @@
 					}, {
 						"name": "highestDPSSeekRadius",
 						"value": "400"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "YRIpCnCKZA02EBpkRNGDsRVLe4HbFQDZ",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageFarksRepair"
+					} ],
+					"referenceInputs": [ {
+						"name": "laneInfo",
+						"value": "lane"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "4a72KlHIm1EkYbWC4RJZaJtYt3u3OiTx",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.manageUnitStayRelativeToFront"
+					} ],
+					"referenceInputs": [ {
+						"name": "laneInfo",
+						"value": "lane"
+					}, {
+						"name": "unitName",
+						"value": "\"armspy\""
+					}, {
+						"name": "unitCategory",
+						"value": "\"armspy\""
+					}, {
+						"name": "buyUpToAmount",
+						"value": "1"
+					}, {
+						"name": "severenity",
+						"value": "5"
+					}, {
+						"name": "relativePositionToFront",
+						"value": "0.5"
+					}, {
+						"name": "moveSpread",
+						"value": "128+64"
+					}, {
+						"name": "moveViaAttack",
+						"value": "false"
+					}, {
+						"name": "dangerRadius",
+						"value": "100"
+					}, {
+						"name": "dangerDpsTreshold",
+						"value": "0.5"
+					}, {
+						"name": "minAmount",
+						"value": "1"
 					} ],
 					"referenceOutputs": []
 				} ],

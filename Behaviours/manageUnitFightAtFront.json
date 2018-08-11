@@ -52,134 +52,183 @@
 			"height": 152,
 			"title": "moveUnitsToGoalPos",
 			"width": 345,
-			"x": 2745,
-			"y": 451
+			"x": 2871,
+			"y": 445
 		},
 		"47CxR44i6hZnwsqVroEcmRzDSsrPJWyx": {
 			"height": 215,
 			"title": "retreatToSafeSpot",
 			"width": 351,
-			"x": 1247,
-			"y": 295
+			"x": 1375,
+			"y": 289
+		},
+		"4Raj6oRKTBQXSsR9D6oF99ho3a2R7eyg": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 851,
+			"y": -329
 		},
 		"5EOjwqJkK1lsaGjZm85bl0Mi78jGLzBT": {
 			"height": 60,
 			"title": "moveToGoalState",
 			"width": 196,
-			"x": 2303,
-			"y": 407
+			"x": 2429,
+			"y": 401
 		},
 		"8AU3qIyLT15Y3hEqRKQGXMZ1hT69SNXF": {
 			"height": 94,
 			"title": "getGoalSpot",
 			"width": 628,
-			"x": 2738,
-			"y": 355
+			"x": 2864,
+			"y": 349
+		},
+		"AAosCLHH7CrIRDZpuftqwiFc4Blfi5Uc": {
+			"height": 74,
+			"title": "wait",
+			"width": 202,
+			"x": 1153,
+			"y": -197
 		},
 		"DEkuVIVDORFCzXDRVwApRxkkhADYJMpB": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 617,
-			"y": -188
+			"x": 664,
+			"y": -336
+		},
+		"FSY4tUSae9HtpPzWWqqIAr8OfP8tVZBs": {
+			"height": 74,
+			"title": "wait",
+			"width": 190,
+			"x": 2864,
+			"y": 242
 		},
 		"OEjs6hZwbrzZ7FIAhGbuURdB0x0dWANy": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 620,
-			"y": 83
+			"x": 657,
+			"y": 102
 		},
 		"R2mKVwDjrk89EnwnnZ69HU2TKbHNNJcV": {
 			"height": 341,
 			"title": "reference",
 			"width": 394,
-			"x": 808,
-			"y": -279
+			"x": 1160,
+			"y": -544
 		},
 		"Zqc7wpafCNzn8h8tSGZPD52MGsFUIQKV": {
 			"height": 60,
 			"title": "keepFindingTarget",
 			"width": 201,
-			"x": 2295,
-			"y": 259
+			"x": 2421,
+			"y": 253
 		},
 		"aAXObiXzDjaEntJvq27d9AdQS7CsuqYc": {
 			"height": 94,
 			"title": "getGoalSpot",
 			"width": 628,
-			"x": 1542,
-			"y": -202
+			"x": 1671,
+			"y": -208
 		},
 		"dpIsV7agkt2Qdow9Ddakfmv1ZSWKyCZp": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 2550,
-			"y": 405
+			"x": 2676,
+			"y": 399
+		},
+		"fhw0IiuwLKU0wk71iBtCKwC1vZh4nXL0": {
+			"height": 74,
+			"title": "wait",
+			"width": 190,
+			"x": 1372,
+			"y": 521
 		},
 		"hovwVbNPGVo3tHNWG7xi8mIrvWeJikKx": {
 			"height": 94,
 			"title": "storeTarget",
 			"width": 1036,
-			"x": 1545,
-			"y": 34
+			"x": 1584,
+			"y": 30
 		},
 		"mBVDrCBFesmxL0A22zj55qNO31UNhzCy": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 366,
-			"y": 74
+			"x": 378,
+			"y": 97
 		},
 		"mM01LpXWk15NmIGGzPTdkj9BOm0jYPvU": {
 			"height": 60,
 			"title": "fightSequence",
 			"width": 172,
-			"x": 1256,
-			"y": 46
+			"x": 1192,
+			"y": 76
 		},
 		"myU6QRX87uheSmmoef3t4XcoM0Cb7mfX": {
-			"height": 88,
+			"height": 91,
 			"title": "moveToGoalOrRetreat",
-			"width": 324,
-			"x": 833,
-			"y": 68
+			"width": 227,
+			"x": 816,
+			"y": 80
+		},
+		"n9PUtqPU6VjwzI4eBBJhFhHqMewGvibZ": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1189,
+			"y": 410
 		},
 		"nmAfURhd9JGGyBgFiHUCcsS8Kcih7N4f": {
 			"height": 94,
 			"title": "storeTarget",
 			"width": 1036,
-			"x": 2554,
-			"y": 211
+			"x": 2854,
+			"y": 142
 		},
 		"q6VsNWWzrZUDYjSOBEUh8amc8yqpSLdf": {
 			"height": 92,
 			"title": "attackHighDPSTarget",
 			"width": 295,
-			"x": 1926,
-			"y": 142
+			"x": 2176,
+			"y": 130
+		},
+		"qjjrUQWSgjsG3qkCcpc4ScGwpYNHOIuz": {
+			"height": 74,
+			"title": "wait",
+			"width": 190,
+			"x": 2862,
+			"y": 610
+		},
+		"tncWoFqG4xo4zqwx4K39sorGtbDRWlVN": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 2668,
+			"y": 208
 		},
 		"wR568IHLgSJCMyD6d8IRz9qKazjc07Ep": {
 			"height": 70,
 			"title": "attackAllAndSeekHighDPSTarget",
 			"width": 290,
-			"x": 1930,
-			"y": 282
+			"x": 2120,
+			"y": 264
 		},
 		"y9dNh7uM2tixI8zOYSmSfjp2CvgeSSKU": {
 			"height": 88,
 			"title": "haveHighDPSTarget",
 			"width": 620,
-			"x": 1262,
-			"y": 167
+			"x": 1426,
+			"y": 138
 		},
 		"yo26FSBGgQbmrmYUt0ivP7CWWodQdcWk": {
 			"height": 152,
 			"title": "moveUnitsToGoalPos",
 			"width": 325,
-			"x": 1548,
-			"y": -104
+			"x": 1677,
+			"y": -110
 		}
 	},
 	"roles": [ {
@@ -189,45 +238,58 @@
 	"root": {
 		"children": [ {
 			"children": [ {
-				"children": [],
-				"id": "R2mKVwDjrk89EnwnnZ69HU2TKbHNNJcV",
-				"nodeType": "reference",
-				"parameters": [ {
-					"name": "behaviourName",
-					"value": "nota_houska_hlaaExam.groupSafeAndBigEnough"
+				"children": [ {
+					"children": [],
+					"id": "R2mKVwDjrk89EnwnnZ69HU2TKbHNNJcV",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_houska_hlaaExam.groupSafeAndBigEnough"
+					} ],
+					"referenceInputs": [ {
+						"name": "laneInfo",
+						"value": "laneInfo"
+					}, {
+						"name": "unitName",
+						"value": "unitName"
+					}, {
+						"name": "unitCategory",
+						"value": "unitCategory"
+					}, {
+						"name": "buyUpToAmount",
+						"value": "buyUpToAmount"
+					}, {
+						"name": "severenity",
+						"value": "severenity"
+					}, {
+						"name": "dangerRadius",
+						"value": "dangerRadius"
+					}, {
+						"name": "dangerDpsTreshold",
+						"value": "dangerDpsTreshold"
+					}, {
+						"name": "minAmount",
+						"value": "minAmount"
+					}, {
+						"name": "groupRatioSafe",
+						"value": "groupRatioSafe"
+					} ],
+					"referenceOutputs": [ {
+						"name": "ready",
+						"value": "ready"
+					} ]
+				}, {
+					"children": [],
+					"id": "AAosCLHH7CrIRDZpuftqwiFc4Blfi5Uc",
+					"nodeType": "wait",
+					"parameters": [ {
+						"name": "time",
+						"value": "1+2*math.random()"
+					} ]
 				} ],
-				"referenceInputs": [ {
-					"name": "laneInfo",
-					"value": "laneInfo"
-				}, {
-					"name": "unitName",
-					"value": "unitName"
-				}, {
-					"name": "unitCategory",
-					"value": "unitCategory"
-				}, {
-					"name": "buyUpToAmount",
-					"value": "buyUpToAmount"
-				}, {
-					"name": "severenity",
-					"value": "severenity"
-				}, {
-					"name": "dangerRadius",
-					"value": "dangerRadius"
-				}, {
-					"name": "dangerDpsTreshold",
-					"value": "dangerDpsTreshold"
-				}, {
-					"name": "minAmount",
-					"value": "minAmount"
-				}, {
-					"name": "groupRatioSafe",
-					"value": "groupRatioSafe"
-				} ],
-				"referenceOutputs": [ {
-					"name": "ready",
-					"value": "ready"
-				} ]
+				"id": "4Raj6oRKTBQXSsR9D6oF99ho3a2R7eyg",
+				"nodeType": "sequence",
+				"parameters": []
 			} ],
 			"id": "DEkuVIVDORFCzXDRVwApRxkkhADYJMpB",
 			"nodeType": "repeat",
@@ -308,20 +370,33 @@
 						}, {
 							"children": [ {
 								"children": [ {
-									"children": [],
-									"id": "nmAfURhd9JGGyBgFiHUCcsS8Kcih7N4f",
-									"nodeType": "luaCommand",
-									"parameters": [ {
-										"name": "var",
-										"value": "highestDPSTargetUid"
+									"children": [ {
+										"children": [],
+										"id": "nmAfURhd9JGGyBgFiHUCcsS8Kcih7N4f",
+										"nodeType": "luaCommand",
+										"parameters": [ {
+											"name": "var",
+											"value": "highestDPSTargetUid"
+										}, {
+											"name": "value",
+											"value": "nota_houska_hlaaExam.retEneHigestDPSUnitInArea(nota_houska_hlaaExam.retUnitPosition(laneInfo.units[unitCategory][1]), highestDPSSeekRadius)"
+										}, {
+											"name": "scriptName",
+											"value": "store"
+										} ],
+										"scriptName": "store"
 									}, {
-										"name": "value",
-										"value": "nota_houska_hlaaExam.retEneHigestDPSUnitInArea(nota_houska_hlaaExam.retUnitPosition(laneInfo.units[unitCategory][1]), highestDPSSeekRadius)"
-									}, {
-										"name": "scriptName",
-										"value": "store"
+										"children": [],
+										"id": "FSY4tUSae9HtpPzWWqqIAr8OfP8tVZBs",
+										"nodeType": "wait",
+										"parameters": [ {
+											"name": "time",
+											"value": "1+math.random()"
+										} ]
 									} ],
-									"scriptName": "store"
+									"id": "tncWoFqG4xo4zqwx4K39sorGtbDRWlVN",
+									"nodeType": "sequence",
+									"parameters": []
 								} ],
 								"id": "Zqc7wpafCNzn8h8tSGZPD52MGsFUIQKV",
 								"nodeType": "repeat",
@@ -367,6 +442,14 @@
 											"value": "nota_houska_hlaaExam.move"
 										} ],
 										"scriptName": "nota_houska_hlaaExam.move"
+									}, {
+										"children": [],
+										"id": "qjjrUQWSgjsG3qkCcpc4ScGwpYNHOIuz",
+										"nodeType": "wait",
+										"parameters": [ {
+											"name": "time",
+											"value": 5
+										} ]
 									} ],
 									"id": "dpIsV7agkt2Qdow9Ddakfmv1ZSWKyCZp",
 									"nodeType": "sequence",
@@ -397,30 +480,43 @@
 					"nodeType": "sequence",
 					"parameters": []
 				}, {
-					"children": [],
-					"id": "47CxR44i6hZnwsqVroEcmRzDSsrPJWyx",
-					"nodeType": "reference",
-					"parameters": [ {
-						"name": "behaviourName",
-						"value": "nota_houska_hlaaExam.retreatToSafeSpot"
+					"children": [ {
+						"children": [],
+						"id": "47CxR44i6hZnwsqVroEcmRzDSsrPJWyx",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "nota_houska_hlaaExam.retreatToSafeSpot"
+						} ],
+						"referenceInputs": [ {
+							"name": "laneInfo",
+							"value": "laneInfo"
+						}, {
+							"name": "safeDistance",
+							"value": "-3"
+						}, {
+							"name": "unitsGroup",
+							"value": "laneInfo.units[unitCategory]"
+						}, {
+							"name": "moveSpread",
+							"value": "moveSpread"
+						} ],
+						"referenceOutputs": [ {
+							"name": "safeSpot",
+							"value": "_"
+						} ]
+					}, {
+						"children": [],
+						"id": "fhw0IiuwLKU0wk71iBtCKwC1vZh4nXL0",
+						"nodeType": "wait",
+						"parameters": [ {
+							"name": "time",
+							"value": 6
+						} ]
 					} ],
-					"referenceInputs": [ {
-						"name": "laneInfo",
-						"value": "laneInfo"
-					}, {
-						"name": "safeDistance",
-						"value": "-3"
-					}, {
-						"name": "unitsGroup",
-						"value": "laneInfo.units[unitCategory]"
-					}, {
-						"name": "moveSpread",
-						"value": "moveSpread"
-					} ],
-					"referenceOutputs": [ {
-						"name": "safeSpot",
-						"value": "_"
-					} ]
+					"id": "n9PUtqPU6VjwzI4eBBJhFhHqMewGvibZ",
+					"nodeType": "sequence",
+					"parameters": []
 				} ],
 				"id": "myU6QRX87uheSmmoef3t4XcoM0Cb7mfX",
 				"nodeType": "luaCondition",

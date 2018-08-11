@@ -19,10 +19,10 @@ local isInDanger = Sensors.isInDanger
 
 -- @description Returns whether a group of units is in danger
 return function(units, radius, dpsTreshold, unitsInDangerRatioTreshold)
-    local unitsNB = #units
+    local unitsNB = math.min(#units, 5)
     local unitsInDangerNB = 0
 
-    for i = 1, #units do
+    for i = 1, math.min(#units, 5) do
         local inDangerResult = isInDanger(units[i], radius, dpsTreshold)
 
         if inDangerResult == true then unitsInDangerNB = unitsInDangerNB + 1
