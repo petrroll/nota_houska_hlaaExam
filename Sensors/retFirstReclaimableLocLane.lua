@@ -17,14 +17,14 @@ end
 -- @description returns first safe location at front with reclaimable metal.
 return function(laneInfo, radius, relIndexBeforeFront)
 
-    local pointsOnLane = laneInfo.points
+    local pointsOnLane = laneInfo.corridor.points
     local front = laneInfo.frontPosIndex
 
     for i = 1, #pointsOnLane do 
         if i + relIndexBeforeFront > front then break end
 
-        if Sensors.retReclaimableAtLoc(pointsOnLane[i], radius) > 0 then
-            return pointsOnLane[i]
+        if Sensors.retReclaimableAtLoc(pointsOnLane[i].position, radius) > 0 then
+            return pointsOnLane[i].position
         end
 
     end

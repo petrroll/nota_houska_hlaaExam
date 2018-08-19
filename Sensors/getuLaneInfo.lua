@@ -23,21 +23,27 @@ local DELTA = 400
 local myAllyID = Spring.GetMyAllyTeamID()
 local enemyTeams = Sensors.core.EnemyTeamIDs()
 
+local points = nil
+
 return function(corridor, lastLaneInfo) 
-
+    
     local frontPosIndex = 0
-
-    local points = {}
     local miPoints = corridor.points
+
+    if points == nil then
+        points = {}
+        Spring.Echo("Init points.")
+        for i = 1, #miPoints do 
+            local pos = miPoints[i].position
+            points[#points + 1] = pos    
+        end
+    end
 
     for i = 1, #miPoints do 
 
         local pos = miPoints[i].position
         local enemInRect = 0
-
-        -- add position to current lane's points 
-        points[#points + 1] = pos
-
+        
         -- add enemies from all enemy teams that are around given position
         for j=1, #EnemyTeams do
             enemInRect = enemInRect + #SpringGetUnitsInRectangle(pos.x - DELTA, pos.z - DELTA, pos.x + DELTA, pos.z + DELTA, EnemyTeams[j])
@@ -57,5 +63,5 @@ return function(corridor, lastLaneInfo)
         else frontPosIndex = lastLaneInfo.frontPosIndex end
     end
 
-	return {frontPosIndex = frontPosIndex, points = points}
+	return {frontPosIndex = frontPosIndex, corridor = corridor}
 end
