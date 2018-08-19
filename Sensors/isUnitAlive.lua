@@ -21,9 +21,9 @@ local SpringGetUnitHealth = Spring.GetUnitHealth
 
 return function(uid)
 
-	if uid == nil then return false end
-    if not SpringValidUnitID(uid) then return false end
-    if SpringGetUnitIsDead(uid) then return false end
+	--if uid == nil then return false end
+    --if not SpringValidUnitID(uid) then return false end
+    --if SpringGetUnitIsDead(uid) then return false end
     if SpringGetUnitHealth(uid) == nil then return false end
 
     return true
