@@ -7,7 +7,7 @@ attach.Module(modules, "message") -- communication backend load
 
 function getInfo()
     return {
-        onNoUnits = SUCCESS, -- instant success
+        onNoUnits = RUNNING,
         tooltip = "Buy unit in param",
         parameterDefs = {
             { 
