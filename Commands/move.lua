@@ -63,9 +63,8 @@ function Run(self, units, parameter)
 
         if self.commandsIssued[uid] ~= true then 
 
-            local pointX, pointY, pointZ = SpringGetUnitPosition(uid)
-            local currUidLoc = Vec3(pointX, pointY, pointZ)
-            if currUidLoc:Distance(dest) > destThreshold then
+            local currUidLoc = Vec3(SpringGetUnitPosition(uid))
+            if currUidLoc ~= nil and dest ~= nil and currUidLoc:Distance(dest) > destThreshold then
                 local spreadX = math.random(spread) - spread / 2
                 local spreadZ = math.random(spread) - spread / 2
     
@@ -73,7 +72,8 @@ function Run(self, units, parameter)
                 issuedNewCommand = true
             end
 
-            self.commandsIssued[uid] = true
+            self.commandsIssued[uid] = true    
+        
         end
     end
         
@@ -85,10 +85,9 @@ function Run(self, units, parameter)
     -- if some unit not near (spreadwise) destination -> running
 	for i=1, #unitsGroup do
 		local uid = unitsGroup[i]
-		local pointX, pointY, pointZ = SpringGetUnitPosition(uid)
-		local currUidLoc = Vec3(pointX, pointY, pointZ)
-
-		if currUidLoc:Distance(dest) > destThreshold then
+        local currUidLoc = Vec3(SpringGetUnitPosition(uid))
+        
+		if currUidLoc ~= nil and dest ~= nil and currUidLoc:Distance(dest) > destThreshold then
 			if SpringGetUnitHealth(uid) ~= nil then
 				return RUNNING
 			end
