@@ -13,49 +13,14 @@
 			"height": 94,
 			"title": "updateUnitsDataAndHandleOrdersWithNotAssignedUnits",
 			"width": 441,
-			"x": 690,
-			"y": -119
-		},
-		"B78AAigVVqAed1h6GKP7RttIKfLrkqWb": {
-			"height": 72,
-			"title": "buy the unit",
-			"width": 266,
-			"x": 1612,
-			"y": 51
-		},
-		"LW3rCgPGtCpqED6Iq8sXOnsL4uBorj5C": {
-			"height": 60,
-			"title": "handleOrder",
-			"width": 161,
-			"x": 1123,
-			"y": -5
-		},
-		"OLlm0HoAAWbaTulDp6jkF2r6NbrdwzwU": {
-			"height": 90,
-			"title": "ifThereAreOrders -> handle",
-			"width": 401,
-			"x": 652,
-			"y": -12
-		},
-		"T5uDx6wCzN3tXsS615ahNr3FzyqbJxF4": {
-			"height": 94,
-			"title": "popTopOrder",
-			"width": 612,
-			"x": 1381,
-			"y": -78
-		},
-		"XdNsdg7bKlswcxYjSbpzlcF5olKy7Tgj": {
-			"height": 90,
-			"title": "if satisfiable order exists",
-			"width": 233,
-			"x": 1338,
-			"y": 74
+			"x": 661,
+			"y": -208
 		},
 		"Zj6jRcfDkJq2mmEXcGVyLAHqkidVX70l": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 246,
+			"x": 245,
 			"y": 10
 		},
 		"ktH38v4UlcN7AdIQpW2afOISovCZ5IT4": {
@@ -65,33 +30,19 @@
 			"x": 654,
 			"y": 83
 		},
-		"l6IamkKkVQkLwcsRb1pcCBI7nFoDB3IZ": {
-			"height": 72,
-			"title": "wait",
-			"width": 131,
-			"x": 1341,
-			"y": 187
-		},
-		"lY1euM6SSIUX48EBKmT36rZb1UrPziQW": {
-			"height": 54,
-			"title": "noOrders",
-			"width": 141,
-			"x": 1090,
-			"y": 179
-		},
-		"qanS4F3HDPPNpkFPcWco2tBIO99OgDtY": {
-			"height": 54,
-			"title": "success",
-			"width": 132,
-			"x": 1642,
-			"y": 138
-		},
 		"tLFaHlpzif8mckT0Cr6SkgbK4KkrTAfV": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 454,
+			"x": 453,
 			"y": 10
+		},
+		"zrV9eJlQ4jMtF1HqbIGUHD39aHKfs4Qd": {
+			"height": 92,
+			"title": "nota_houska_hlaaExam.osHandleOrders",
+			"width": 322,
+			"x": 644,
+			"y": -44
 		}
 	},
 	"roles": [ {
@@ -116,77 +67,20 @@
 				} ],
 				"scriptName": "store"
 			}, {
-				"children": [ {
-					"children": [ {
-						"children": [],
-						"id": "T5uDx6wCzN3tXsS615ahNr3FzyqbJxF4",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "var",
-							"value": "order"
-						}, {
-							"name": "value",
-							"value": "nota_houska_hlaaExam.osPopCheapestOrder(bb.units.orders, bb.missionInfo.buy)"
-						}, {
-							"name": "scriptName",
-							"value": "store"
-						} ],
-						"scriptName": "store"
-					}, {
-						"children": [ {
-							"children": [],
-							"id": "B78AAigVVqAed1h6GKP7RttIKfLrkqWb",
-							"nodeType": "luaCommand",
-							"parameters": [ {
-								"name": "unitName",
-								"value": "order.name"
-							}, {
-								"name": "scriptName",
-								"value": "nota_houska_hlaaExam.buyUnit"
-							} ],
-							"scriptName": "nota_houska_hlaaExam.buyUnit"
-						}, {
-							"children": [],
-							"id": "qanS4F3HDPPNpkFPcWco2tBIO99OgDtY",
-							"nodeType": "success",
-							"parameters": []
-						} ],
-						"id": "XdNsdg7bKlswcxYjSbpzlcF5olKy7Tgj",
-						"nodeType": "luaCondition",
-						"parameters": [ {
-							"name": "expression",
-							"value": "order ~= nil"
-						}, {
-							"name": "repeat",
-							"value": "true"
-						} ]
-					}, {
-						"children": [],
-						"id": "l6IamkKkVQkLwcsRb1pcCBI7nFoDB3IZ",
-						"nodeType": "wait",
-						"parameters": [ {
-							"name": "time",
-							"value": 2
-						} ]
-					} ],
-					"id": "LW3rCgPGtCpqED6Iq8sXOnsL4uBorj5C",
-					"nodeType": "sequence",
-					"parameters": []
-				}, {
-					"children": [],
-					"id": "lY1euM6SSIUX48EBKmT36rZb1UrPziQW",
-					"nodeType": "success",
-					"parameters": []
-				} ],
-				"id": "OLlm0HoAAWbaTulDp6jkF2r6NbrdwzwU",
-				"nodeType": "luaCondition",
+				"children": [],
+				"id": "zrV9eJlQ4jMtF1HqbIGUHD39aHKfs4Qd",
+				"nodeType": "luaCommand",
 				"parameters": [ {
-					"name": "expression",
-					"value": "nota_houska_hlaaExam.utilMapAny(bb.units.orders)"
+					"name": "orders",
+					"value": "bb.units.orders"
 				}, {
-					"name": "repeat",
-					"value": "true"
-				} ]
+					"name": "buyInfo",
+					"value": "bb.missionInfo.buy"
+				}, {
+					"name": "scriptName",
+					"value": "nota_houska_hlaaExam.osHandleOrders"
+				} ],
+				"scriptName": "nota_houska_hlaaExam.osHandleOrders"
 			}, {
 				"children": [],
 				"id": "ktH38v4UlcN7AdIQpW2afOISovCZ5IT4",

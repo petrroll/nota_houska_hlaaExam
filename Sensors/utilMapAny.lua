@@ -14,14 +14,8 @@ function getInfo()
     }
 end
 
-local SensorsGetUnitPosition = Sensors.GetUnitPosition
-
+local next = next 
 -- @description Returns whether map is empty or not (#map > 0 wasn't always reliable)
 return function(map)
-
-    for _, _ in pairs(map) do
-        return true
-    end
-    
-    return false
+    return not (next(map) == nil) 
 end
