@@ -12,6 +12,13 @@
 	} ],
 	"outputs": [],
 	"properties": {
+		"0J8E6E6Lw8ASjTHBtQYLxXB69h0qaUfx": {
+			"height": 88,
+			"title": "isInDanger",
+			"width": 669,
+			"x": 1270,
+			"y": 75
+		},
 		"3pkPJVzo3fHRCyMyEiF9YVvIYHT7PCWh": {
 			"height": 132,
 			"title": "nota_houska_hlaaExam.orderOnLocAndRadius",
@@ -23,8 +30,8 @@
 			"height": 60,
 			"title": "reclaimSequence",
 			"width": 218,
-			"x": 1949,
-			"y": -7
+			"x": 1982,
+			"y": -12
 		},
 		"7nVCXa5hqERretIRSXALlQyfK086bhBw": {
 			"height": 92,
@@ -72,8 +79,8 @@
 			"height": 60,
 			"title": "getBackToSafeSpace",
 			"width": 218,
-			"x": 1946,
-			"y": 122
+			"x": 1981,
+			"y": 118
 		},
 		"W1rLE45afa6eoIwMeViJolUH79A3AMCL": {
 			"height": 152,
@@ -95,13 +102,6 @@
 			"width": 351,
 			"x": 2234,
 			"y": 39
-		},
-		"fhXnhe87FhceYhb8mA0uhAczVDOUTgjz": {
-			"height": 90,
-			"title": "isInDanger",
-			"width": 631,
-			"x": 1286,
-			"y": 72
 		},
 		"lZW9ujxPshv1N4gNNJc30zsV2UEXnJiL": {
 			"height": 60,
@@ -314,11 +314,11 @@
 								"nodeType": "sequence",
 								"parameters": []
 							} ],
-							"id": "fhXnhe87FhceYhb8mA0uhAczVDOUTgjz",
+							"id": "0J8E6E6Lw8ASjTHBtQYLxXB69h0qaUfx",
 							"nodeType": "luaCondition",
 							"parameters": [ {
 								"name": "expression",
-								"value": "recSpot ~= nil and Spring.GetUnitNearestEnemy(laneInfo.units.repair[1], 250, false) == nil"
+								"value": "recSpot ~= nil and not nota_houska_hlaaExam.isEnemyNearLazy(laneInfo.units.repair[1], 250, 4)"
 							}, {
 								"name": "repeat",
 								"value": "true"

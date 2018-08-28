@@ -37,7 +37,7 @@
 			"y": 24
 		},
 		"RR9hyj6uwUF387gJmzFF3xfzOeKMKRE3": {
-			"height": 266,
+			"height": 277,
 			"title": "manageRadarsForLane",
 			"width": 407,
 			"x": 939,
@@ -146,6 +146,9 @@
 					}, {
 						"name": "dangerRadius",
 						"value": "600"
+					}, {
+						"name": "dangerLazyTicks",
+						"value": "10"
 					} ],
 					"referenceOutputs": []
 				} ],

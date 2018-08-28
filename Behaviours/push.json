@@ -19,21 +19,21 @@
 			"height": 151,
 			"title": "keepLaneInfoUpdated",
 			"width": 372,
-			"x": 973,
+			"x": 974,
 			"y": -57
 		},
-		"4a72KlHIm1EkYbWC4RJZaJtYt3u3OiTx": {
-			"height": 361,
+		"49oKsuQfQysCereszuS2wOkgI7ooGmVg": {
+			"height": 277,
 			"title": "manageSpiesForLane",
-			"width": 441,
-			"x": 981,
-			"y": 1296
+			"width": 407,
+			"x": 986,
+			"y": 1292
 		},
 		"5SJ3XnbJ46voRbe6NYPkvTmnDSasJXcO": {
 			"height": 403,
 			"title": "manageArtileryForLane",
 			"width": 441,
-			"x": 967,
+			"x": 968,
 			"y": 740
 		},
 		"GABuXVhHFS6CEXJ4vKTJeVdME9FC9ZNe": {
@@ -54,7 +54,7 @@
 			"height": 130,
 			"title": "manageFarksRepairForLane",
 			"width": 373,
-			"x": 981,
+			"x": 982,
 			"y": 1163
 		},
 		"i7VgxseyqHsgIQ5xBUSI6p26I1Hw46eE": {
@@ -75,14 +75,14 @@
 			"height": 214,
 			"title": "buyArmyInRatio",
 			"width": 1354,
-			"x": 974,
+			"x": 975,
 			"y": 108
 		},
 		"mFaEbj9ZYtmGJ5o7nL2Ccm3pDOm5k1WV": {
 			"height": 403,
 			"title": "manageArtileryForLane",
 			"width": 441,
-			"x": 975,
+			"x": 976,
 			"y": 335
 		}
 	},
@@ -257,11 +257,11 @@
 					"referenceOutputs": []
 				}, {
 					"children": [],
-					"id": "4a72KlHIm1EkYbWC4RJZaJtYt3u3OiTx",
+					"id": "49oKsuQfQysCereszuS2wOkgI7ooGmVg",
 					"nodeType": "reference",
 					"parameters": [ {
 						"name": "behaviourName",
-						"value": "nota_houska_hlaaExam.manageUnitStayRelativeToFront"
+						"value": "nota_houska_hlaaExam.manageKeepUnitSafeFront"
 					} ],
 					"referenceInputs": [ {
 						"name": "laneInfo",
@@ -273,29 +273,20 @@
 						"name": "unitCategory",
 						"value": "\"armspy\""
 					}, {
-						"name": "buyUpToAmount",
-						"value": "1"
-					}, {
 						"name": "severenity",
 						"value": "5"
 					}, {
-						"name": "relativePositionToFront",
+						"name": "frontRelativeIndex",
 						"value": "0.5"
 					}, {
 						"name": "moveSpread",
 						"value": "128+64"
 					}, {
-						"name": "moveViaAttack",
-						"value": "false"
-					}, {
 						"name": "dangerRadius",
 						"value": "100"
 					}, {
-						"name": "dangerDpsTreshold",
-						"value": "0.5"
-					}, {
-						"name": "minAmount",
-						"value": "1"
+						"name": "dangerLazyTicks",
+						"value": "5"
 					} ],
 					"referenceOutputs": []
 				} ],

@@ -2,7 +2,7 @@
 	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
-			"height": 228,
+			"height": 248,
 			"width": 267
 		}
 	},
@@ -27,6 +27,9 @@
 	}, {
 		"command": "Variable",
 		"name": "dangerRadius"
+	}, {
+		"command": "Variable",
+		"name": "dangerLazyTicks"
 	} ],
 	"outputs": [],
 	"properties": {
@@ -34,92 +37,92 @@
 			"height": 74,
 			"title": "wait",
 			"width": 190,
-			"x": 2191,
-			"y": 243
+			"x": 2343,
+			"y": 285
 		},
 		"7yztAnviUfzqyipjqmdNDUEbDP3YSlik": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 337,
-			"y": 64
+			"x": 380,
+			"y": 106
 		},
 		"AQ8e81qW7jks461Hsg0APqFlLznrCTuG": {
 			"height": 92,
 			"title": "initUnitInfo",
 			"width": 244,
-			"x": 605,
-			"y": -190
-		},
-		"CO2I5ZXsTLhSsCQ6XVzUQlLZPcCzl3k2": {
-			"height": 94,
-			"title": "isInDanger",
-			"width": 605,
-			"x": 1216,
-			"y": 38
+			"x": 758,
+			"y": -148
 		},
 		"FB4JpnanxiRt0Tglg9DT8iYNbwb96h8p": {
 			"height": 152,
 			"title": "nota_houska_hlaaExam.osPlaceUnitOrder",
 			"width": 330,
-			"x": 1304,
-			"y": -246
+			"x": 1349,
+			"y": -82
 		},
 		"LOOaeyW9pvzYCGi8Nf6VORHwLQMjHaMJ": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 550,
-			"y": 62
+			"x": 580,
+			"y": 104
 		},
 		"Oqx8RILWBbJEsWtwdyVc2HhjTn102fxL": {
 			"height": 215,
 			"title": "reference",
 			"width": 351,
-			"x": 2184,
-			"y": -304
+			"x": 2366,
+			"y": -264
 		},
 		"VBngK2VgMtHAuV1pXBpuQ7onjafIOPLI": {
 			"height": 74,
 			"title": "wait",
 			"width": 190,
-			"x": 2182,
-			"y": -76
+			"x": 2360,
+			"y": -34
 		},
 		"eaTydgqc974UW1uHlHFkc6plK1JBUXfC": {
 			"height": 60,
 			"title": "getBackToSafeSpace",
 			"width": 218,
-			"x": 1881,
-			"y": 100
+			"x": 2074,
+			"y": 130
 		},
 		"eqE8Q2SrQQxOUlZ82eLHbyxps9zxjp7F": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 699,
-			"y": 63
+			"x": 744,
+			"y": 95
+		},
+		"gfJEezpAVR3vqdyGprCeJgK0ZMzXghT6": {
+			"height": 94,
+			"title": "isInDanger",
+			"width": 754,
+			"x": 1284,
+			"y": 102
 		},
 		"iXOKOFxmzeYx7Y5806OXePrWpWA93Qml": {
 			"height": 215,
 			"title": "reference",
 			"width": 351,
-			"x": 2189,
-			"y": 15
+			"x": 2341,
+			"y": 57
 		},
 		"uWAXExuIchUydv8mXS0rN4NF9Tc1QuBu": {
 			"height": 90,
 			"title": "haveEnoughUnits",
 			"width": 296,
-			"x": 868,
-			"y": 45
+			"x": 930,
+			"y": 82
 		},
 		"xUsIg2EE3DHLkyegQFpETAyOgKyjp4jO": {
 			"height": 60,
 			"title": "goToGoalPosition",
 			"width": 218,
-			"x": 1887,
-			"y": -12
+			"x": 2076,
+			"y": 5
 		}
 	},
 	"roles": [ {
@@ -247,11 +250,11 @@
 							"nodeType": "sequence",
 							"parameters": []
 						} ],
-						"id": "CO2I5ZXsTLhSsCQ6XVzUQlLZPcCzl3k2",
+						"id": "gfJEezpAVR3vqdyGprCeJgK0ZMzXghT6",
 						"nodeType": "luaCondition",
 						"parameters": [ {
 							"name": "expression",
-							"value": "Spring.GetUnitNearestEnemy(laneInfo.units[unitCategory][1], dangerRadius, false) == nil"
+							"value": "not nota_houska_hlaaExam.isEnemyNearLazy(laneInfo.units[unitCategory][1], dangerRadius, dangerLazyTicks)"
 						}, {
 							"name": "repeat",
 							"value": "true"

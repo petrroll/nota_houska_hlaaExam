@@ -54,13 +54,6 @@
 			"x": 2352,
 			"y": -82
 		},
-		"IxgCak41Fv9FyZKCOIAqdAV3fHjFagBT": {
-			"height": 90,
-			"title": "isInDanger",
-			"width": 631,
-			"x": 1364,
-			"y": 72
-		},
 		"NIKuv1bVAR8I1FjfJkWDiMCuhf9i6Z3b": {
 			"height": 60,
 			"title": "getBackToSafeSpace",
@@ -116,6 +109,13 @@
 			"width": 330,
 			"x": 1229,
 			"y": -232
+		},
+		"oVThSxBtnzsmw49ErfI3127I8nbzaW9T": {
+			"height": 88,
+			"title": "isInDanger",
+			"width": 594,
+			"x": 1388,
+			"y": 88
 		},
 		"tnrVT5B2l9ubMZwpbxNhNBBlqiN6RDt7": {
 			"height": 152,
@@ -314,11 +314,11 @@
 								"nodeType": "sequence",
 								"parameters": []
 							} ],
-							"id": "IxgCak41Fv9FyZKCOIAqdAV3fHjFagBT",
+							"id": "oVThSxBtnzsmw49ErfI3127I8nbzaW9T",
 							"nodeType": "luaCondition",
 							"parameters": [ {
 								"name": "expression",
-								"value": "recSpot ~= nil and Spring.GetUnitNearestEnemy(laneInfo.units.reclaim[1], 250, false) == nil"
+								"value": "not nota_houska_hlaaExam.isEnemyNearLazy(laneInfo.units.reclaim[1], 300, 3)"
 							}, {
 								"name": "repeat",
 								"value": "true"
