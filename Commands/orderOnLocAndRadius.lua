@@ -58,7 +58,7 @@ function Run(self, units, parameter)
         return RUNNING
 	end
     
-	if SpringGetUnitCommands(unit, -1) > 0 then
+	if SpringGetUnitCommands(unit, 0) > 0 then
         return RUNNING
     end
 
