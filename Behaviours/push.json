@@ -162,17 +162,11 @@
 						"name": "unitCategory",
 						"value": "\"artyArmy\""
 					}, {
-						"name": "buyUpToAmount",
-						"value": "0"
-					}, {
-						"name": "severenity",
-						"value": "2"
-					}, {
 						"name": "relativePositionToFront",
 						"value": "-0.3"
 					}, {
 						"name": "moveSpread",
-						"value": "128"
+						"value": "256+128"
 					}, {
 						"name": "dangerRadius",
 						"value": "600"
@@ -211,17 +205,11 @@
 						"name": "unitCategory",
 						"value": "\"mainArmy\""
 					}, {
-						"name": "buyUpToAmount",
-						"value": "0"
-					}, {
-						"name": "severenity",
-						"value": "2"
-					}, {
 						"name": "relativePositionToFront",
 						"value": "-0.3"
 					}, {
 						"name": "moveSpread",
-						"value": "128"
+						"value": "256+128"
 					}, {
 						"name": "dangerRadius",
 						"value": "800"

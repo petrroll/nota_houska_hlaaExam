@@ -17,12 +17,6 @@
 		"name": "unitCategory"
 	}, {
 		"command": "Variable",
-		"name": "buyUpToAmount"
-	}, {
-		"command": "Variable",
-		"name": "severenity"
-	}, {
-		"command": "Variable",
 		"name": "relativePositionToFront"
 	}, {
 		"command": "Variable",
@@ -59,21 +53,21 @@
 			"height": 215,
 			"title": "retreatToSafeSpot",
 			"width": 351,
-			"x": 1375,
+			"x": 1376,
 			"y": 289
 		},
 		"4Raj6oRKTBQXSsR9D6oF99ho3a2R7eyg": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 851,
+			"x": 852,
 			"y": -329
 		},
 		"5EOjwqJkK1lsaGjZm85bl0Mi78jGLzBT": {
 			"height": 60,
 			"title": "moveToGoalState",
 			"width": 196,
-			"x": 2429,
+			"x": 2428,
 			"y": 401
 		},
 		"8AU3qIyLT15Y3hEqRKQGXMZ1hT69SNXF": {
@@ -83,18 +77,25 @@
 			"x": 2864,
 			"y": 349
 		},
+		"8eTEWnyQkJQg35Dc19XjavuZXGllatcy": {
+			"height": 94,
+			"title": "storeIfDanger",
+			"width": 873,
+			"x": 1113,
+			"y": -359
+		},
 		"AAosCLHH7CrIRDZpuftqwiFc4Blfi5Uc": {
-			"height": 74,
+			"height": 76,
 			"title": "wait",
-			"width": 202,
-			"x": 1153,
-			"y": -197
+			"width": 227,
+			"x": 1122,
+			"y": -240
 		},
 		"DEkuVIVDORFCzXDRVwApRxkkhADYJMpB": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 664,
+			"x": 665,
 			"y": -336
 		},
 		"FSY4tUSae9HtpPzWWqqIAr8OfP8tVZBs": {
@@ -108,77 +109,77 @@
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 657,
+			"x": 658,
 			"y": 102
-		},
-		"R2mKVwDjrk89EnwnnZ69HU2TKbHNNJcV": {
-			"height": 341,
-			"title": "reference",
-			"width": 394,
-			"x": 1160,
-			"y": -544
 		},
 		"Zqc7wpafCNzn8h8tSGZPD52MGsFUIQKV": {
 			"height": 60,
 			"title": "keepFindingTarget",
 			"width": 201,
-			"x": 2421,
+			"x": 2420,
 			"y": 253
 		},
 		"aAXObiXzDjaEntJvq27d9AdQS7CsuqYc": {
 			"height": 94,
 			"title": "getGoalSpot",
 			"width": 628,
-			"x": 1671,
-			"y": -208
+			"x": 1481,
+			"y": -252
+		},
+		"arkTWMj1dvL2jQXNwGgiEI223Oiz7dpI": {
+			"height": 92,
+			"title": "storeEnoughUnits",
+			"width": 354,
+			"x": 1114,
+			"y": -457
 		},
 		"dpIsV7agkt2Qdow9Ddakfmv1ZSWKyCZp": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 2676,
+			"x": 2675,
 			"y": 399
 		},
 		"fhw0IiuwLKU0wk71iBtCKwC1vZh4nXL0": {
 			"height": 74,
 			"title": "wait",
 			"width": 190,
-			"x": 1372,
+			"x": 1373,
 			"y": 521
 		},
 		"hovwVbNPGVo3tHNWG7xi8mIrvWeJikKx": {
 			"height": 94,
 			"title": "storeTarget",
 			"width": 1036,
-			"x": 1584,
-			"y": 30
+			"x": 1460,
+			"y": 23
 		},
 		"mBVDrCBFesmxL0A22zj55qNO31UNhzCy": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 378,
+			"x": 380,
 			"y": 97
 		},
 		"mM01LpXWk15NmIGGzPTdkj9BOm0jYPvU": {
 			"height": 60,
 			"title": "fightSequence",
 			"width": 172,
-			"x": 1192,
+			"x": 1194,
 			"y": 76
 		},
 		"myU6QRX87uheSmmoef3t4XcoM0Cb7mfX": {
 			"height": 91,
 			"title": "moveToGoalOrRetreat",
-			"width": 227,
-			"x": 816,
+			"width": 269,
+			"x": 818,
 			"y": 80
 		},
 		"n9PUtqPU6VjwzI4eBBJhFhHqMewGvibZ": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1189,
+			"x": 1191,
 			"y": 410
 		},
 		"nmAfURhd9JGGyBgFiHUCcsS8Kcih7N4f": {
@@ -192,7 +193,7 @@
 			"height": 92,
 			"title": "attackHighDPSTarget",
 			"width": 295,
-			"x": 2176,
+			"x": 2175,
 			"y": 130
 		},
 		"qjjrUQWSgjsG3qkCcpc4ScGwpYNHOIuz": {
@@ -206,29 +207,29 @@
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 2668,
+			"x": 2667,
 			"y": 208
 		},
 		"wR568IHLgSJCMyD6d8IRz9qKazjc07Ep": {
 			"height": 70,
 			"title": "attackAllAndSeekHighDPSTarget",
 			"width": 290,
-			"x": 2120,
+			"x": 2119,
 			"y": 264
 		},
 		"y9dNh7uM2tixI8zOYSmSfjp2CvgeSSKU": {
 			"height": 88,
 			"title": "haveHighDPSTarget",
 			"width": 620,
-			"x": 1426,
+			"x": 1427,
 			"y": 138
 		},
 		"yo26FSBGgQbmrmYUt0ivP7CWWodQdcWk": {
 			"height": 152,
 			"title": "moveUnitsToGoalPos",
 			"width": 325,
-			"x": 1677,
-			"y": -110
+			"x": 1481,
+			"y": -146
 		}
 	},
 	"roles": [ {
@@ -240,51 +241,41 @@
 			"children": [ {
 				"children": [ {
 					"children": [],
-					"id": "R2mKVwDjrk89EnwnnZ69HU2TKbHNNJcV",
-					"nodeType": "reference",
+					"id": "arkTWMj1dvL2jQXNwGgiEI223Oiz7dpI",
+					"nodeType": "luaCommand",
 					"parameters": [ {
-						"name": "behaviourName",
-						"value": "nota_houska_hlaaExam.groupSafeAndBigEnough"
+						"name": "var",
+						"value": "enoughUnits"
+					}, {
+						"name": "value",
+						"value": "#laneInfo.units[unitCategory] > minAmount"
+					}, {
+						"name": "scriptName",
+						"value": "store"
 					} ],
-					"referenceInputs": [ {
-						"name": "laneInfo",
-						"value": "laneInfo"
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "8eTEWnyQkJQg35Dc19XjavuZXGllatcy",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "unitsInDanger"
 					}, {
-						"name": "unitName",
-						"value": "unitName"
+						"name": "value",
+						"value": "nota_houska_hlaaExam.isGroupInDanger(laneInfo.units[unitCategory], dangerRadius, dangerDpsTreshold, groupRatioSafe)"
 					}, {
-						"name": "unitCategory",
-						"value": "unitCategory"
-					}, {
-						"name": "buyUpToAmount",
-						"value": "buyUpToAmount"
-					}, {
-						"name": "severenity",
-						"value": "severenity"
-					}, {
-						"name": "dangerRadius",
-						"value": "dangerRadius"
-					}, {
-						"name": "dangerDpsTreshold",
-						"value": "dangerDpsTreshold"
-					}, {
-						"name": "minAmount",
-						"value": "minAmount"
-					}, {
-						"name": "groupRatioSafe",
-						"value": "groupRatioSafe"
+						"name": "scriptName",
+						"value": "store"
 					} ],
-					"referenceOutputs": [ {
-						"name": "ready",
-						"value": "ready"
-					} ]
+					"scriptName": "store"
 				}, {
 					"children": [],
 					"id": "AAosCLHH7CrIRDZpuftqwiFc4Blfi5Uc",
 					"nodeType": "wait",
 					"parameters": [ {
 						"name": "time",
-						"value": "1+2*math.random()"
+						"value": "2+3*math.random()"
 					} ]
 				} ],
 				"id": "4Raj6oRKTBQXSsR9D6oF99ho3a2R7eyg",
@@ -522,7 +513,7 @@
 				"nodeType": "luaCondition",
 				"parameters": [ {
 					"name": "expression",
-					"value": "ready"
+					"value": "enoughUnits and not unitsInDanger"
 				}, {
 					"name": "repeat",
 					"value": "true"
