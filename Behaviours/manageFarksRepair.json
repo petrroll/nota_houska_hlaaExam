@@ -318,7 +318,7 @@
 							"nodeType": "luaCondition",
 							"parameters": [ {
 								"name": "expression",
-								"value": "recSpot ~= nil and not nota_houska_hlaaExam.isEnemyNearLazy(laneInfo.units.repair[1], 250, 4)"
+								"value": "repSpot ~= nil and not nota_houska_hlaaExam.isEnemyNearLazy(laneInfo.units.repair[1], 250, 4)"
 							}, {
 								"name": "repeat",
 								"value": "true"
