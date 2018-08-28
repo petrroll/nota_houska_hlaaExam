@@ -19,7 +19,7 @@
 			"height": 151,
 			"title": "keepLaneInfoUpdated",
 			"width": 372,
-			"x": 931,
+			"x": 932,
 			"y": 27
 		},
 		"Cf3YxnkdqhlAqnWHrNysUoGu3YYb5R76": {
@@ -36,18 +36,18 @@
 			"x": 250,
 			"y": 24
 		},
-		"Osj0OlFcLYVa9gW3b6IhvcXI1ULjU39Q": {
-			"height": 361,
+		"RR9hyj6uwUF387gJmzFF3xfzOeKMKRE3": {
+			"height": 266,
 			"title": "manageRadarsForLane",
-			"width": 441,
-			"x": 925,
-			"y": 290
+			"width": 407,
+			"x": 939,
+			"y": 293
 		},
 		"RzWnNCUfs0HxYizfvLG9wnBY4AGJ8N3G": {
 			"height": 130,
 			"title": "manageFarksReclaimForLane",
 			"width": 373,
-			"x": 932,
+			"x": 933,
 			"y": 168
 		},
 		"b86mTktsxP5cVbPM6DemaP0eahfCvaQs": {
@@ -119,11 +119,11 @@
 					"referenceOutputs": []
 				}, {
 					"children": [],
-					"id": "Osj0OlFcLYVa9gW3b6IhvcXI1ULjU39Q",
+					"id": "RR9hyj6uwUF387gJmzFF3xfzOeKMKRE3",
 					"nodeType": "reference",
 					"parameters": [ {
 						"name": "behaviourName",
-						"value": "nota_houska_hlaaExam.manageUnitStayRelativeToFront"
+						"value": "nota_houska_hlaaExam.manageKeepUnitSafeFront"
 					} ],
 					"referenceInputs": [ {
 						"name": "laneInfo",
@@ -135,29 +135,17 @@
 						"name": "unitCategory",
 						"value": "\"armseer\""
 					}, {
-						"name": "buyUpToAmount",
-						"value": "1"
-					}, {
 						"name": "severenity",
 						"value": "1"
 					}, {
-						"name": "relativePositionToFront",
+						"name": "frontRelativeIndex",
 						"value": "-1.5"
 					}, {
 						"name": "moveSpread",
 						"value": "128"
 					}, {
-						"name": "moveViaAttack",
-						"value": "false"
-					}, {
 						"name": "dangerRadius",
 						"value": "600"
-					}, {
-						"name": "dangerDpsTreshold",
-						"value": "2"
-					}, {
-						"name": "minAmount",
-						"value": "1"
 					} ],
 					"referenceOutputs": []
 				} ],
