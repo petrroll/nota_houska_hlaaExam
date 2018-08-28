@@ -15,68 +15,40 @@
 	} ],
 	"outputs": [],
 	"properties": {
-		"6rzQi4dnqZRStIq0ED2L68A50txlv0Sz": {
-			"height": 74,
-			"title": "wait",
-			"width": 174,
-			"x": 983,
-			"y": -8
-		},
-		"DlmDgiYgayrZddFZp9UaIYiZCaf0ERue": {
-			"height": 60,
-			"title": "repeat",
-			"width": 131,
-			"x": 560,
-			"y": 170
-		},
 		"ECzvNHWIs3mW5dS9KHe37eu2IazZDdGP": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 554,
-			"y": 60
+			"x": 296,
+			"y": 34
 		},
 		"EdhRpvyowMQsFL6iqr2unAUM87lIl5U8": {
 			"height": 60,
 			"title": "updateLaneData",
 			"width": 188,
-			"x": 692,
-			"y": 60
+			"x": 434,
+			"y": 34
 		},
 		"QpjsXB8H7iD28ZfJHbOB5TPhzU2uxd0x": {
 			"height": 94,
 			"title": "store",
 			"width": 456,
-			"x": 977,
-			"y": -117
+			"x": 719,
+			"y": -143
 		},
 		"SJFqZ0BOB8XDq0z56yMzxKF1Schv457C": {
 			"height": 94,
 			"title": "store",
 			"width": 446,
-			"x": 970,
-			"y": 92
+			"x": 720,
+			"y": -46
 		},
 		"V1oJgSq7dvKtbphqXvH6XL9rT1pGNmpX": {
 			"height": 74,
 			"title": "wait",
-			"width": 199,
-			"x": 977,
-			"y": 188
-		},
-		"ZOHHhSsNhoS1P4MSZvtdcQS6kD65BlYT": {
-			"height": 70,
-			"title": "parallel",
-			"width": 202,
-			"x": 284,
-			"y": 43
-		},
-		"mthx9mjMo9TNDfb3F4YI2iUlaXk1Xrso": {
-			"height": 60,
-			"title": "updateLaneData",
-			"width": 188,
-			"x": 704,
-			"y": 164
+			"width": 218,
+			"x": 718,
+			"y": 64
 		}
 	},
 	"roles": [ {
@@ -86,76 +58,50 @@
 	"root": {
 		"children": [ {
 			"children": [ {
-				"children": [ {
-					"children": [],
-					"id": "QpjsXB8H7iD28ZfJHbOB5TPhzU2uxd0x",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "var",
-						"value": "lane.units"
-					}, {
-						"name": "value",
-						"value": "nota_houska_hlaaExam.getuAliveUnitsForLane(lane.units)"
-					}, {
-						"name": "scriptName",
-						"value": "store"
-					} ],
-					"scriptName": "store"
+				"children": [],
+				"id": "QpjsXB8H7iD28ZfJHbOB5TPhzU2uxd0x",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "lane.units"
 				}, {
-					"children": [],
-					"id": "6rzQi4dnqZRStIq0ED2L68A50txlv0Sz",
-					"nodeType": "wait",
-					"parameters": [ {
-						"name": "time",
-						"value": "math.random()"
-					} ]
-				} ],
-				"id": "EdhRpvyowMQsFL6iqr2unAUM87lIl5U8",
-				"nodeType": "sequence",
-				"parameters": []
-			} ],
-			"id": "ECzvNHWIs3mW5dS9KHe37eu2IazZDdGP",
-			"nodeType": "repeat",
-			"parameters": []
-		}, {
-			"children": [ {
-				"children": [ {
-					"children": [],
-					"id": "SJFqZ0BOB8XDq0z56yMzxKF1Schv457C",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "var",
-						"value": "lane.info"
-					}, {
-						"name": "value",
-						"value": "nota_houska_hlaaExam.getuLaneInfo(corridor, lane.info)"
-					}, {
-						"name": "scriptName",
-						"value": "store"
-					} ],
-					"scriptName": "store"
+					"name": "value",
+					"value": "nota_houska_hlaaExam.getuAliveUnitsForLane(lane.units)"
 				}, {
-					"children": [],
-					"id": "V1oJgSq7dvKtbphqXvH6XL9rT1pGNmpX",
-					"nodeType": "wait",
-					"parameters": [ {
-						"name": "time",
-						"value": "3* math.random()"
-					} ]
+					"name": "scriptName",
+					"value": "store"
 				} ],
-				"id": "mthx9mjMo9TNDfb3F4YI2iUlaXk1Xrso",
-				"nodeType": "sequence",
-				"parameters": []
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "SJFqZ0BOB8XDq0z56yMzxKF1Schv457C",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "lane.info"
+				}, {
+					"name": "value",
+					"value": "nota_houska_hlaaExam.getuLaneInfo(corridor, lane.info)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "V1oJgSq7dvKtbphqXvH6XL9rT1pGNmpX",
+				"nodeType": "wait",
+				"parameters": [ {
+					"name": "time",
+					"value": "1 + 2 * math.random()"
+				} ]
 			} ],
-			"id": "DlmDgiYgayrZddFZp9UaIYiZCaf0ERue",
-			"nodeType": "repeat",
+			"id": "EdhRpvyowMQsFL6iqr2unAUM87lIl5U8",
+			"nodeType": "sequence",
 			"parameters": []
 		} ],
-		"id": "ZOHHhSsNhoS1P4MSZvtdcQS6kD65BlYT",
-		"nodeType": "parallel",
-		"parameters": [ {
-			"name": "mode",
-			"value": "all-success"
-		} ]
+		"id": "ECzvNHWIs3mW5dS9KHe37eu2IazZDdGP",
+		"nodeType": "repeat",
+		"parameters": []
 	}
 }
