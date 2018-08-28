@@ -15,6 +15,12 @@ function getInfo()
                 componentType = "editBox",
                 defaultValue = "",
             }, 
+            {
+                name = "runningRatio",
+                variableType = "expression",
+                componentType = "editBox",
+                defaultValue = "0.25",
+            }, 
         }
     }
 end
@@ -26,11 +32,16 @@ function Run(self, units, parameter)
 
     local unitsGroup = parameter.unitsGroup
     local target = parameter.target
+    local runningRatio = parameter.runningRatio or 0.25
 
     local cmd = CMD.ATTACK
 
     if self.commandsIssued == nil then
         self.commandsIssued = {}
+    end
+
+    if #unitsGroup == 0 then
+        return SUCCESS
     end
 
     -- issue orders
@@ -52,15 +63,21 @@ function Run(self, units, parameter)
     
 
     -- if some unit not near (spreadwise) destination -> running
+    local runningNb = 0
 	for i=1, #unitsGroup do
 		local uid = unitsGroup[i]
-		if SpringGetUnitCommands(uid, 0) > 0  then
-			if SpringGetUnitHealth(uid) ~= nil then
-				return RUNNING
+        local cmds = SpringGetUnitCommands(uid, 0)
+        if cmds ~= nil and cmds > 0 then
+            if SpringGetUnitHealth(uid) ~= nil then
+				runningNb = runningNb + 1
 			end
 		end
 	
-	end
+    end
+    
+    if runningNb / #unitsGroup > runningRatio then 
+        return RUNNING
+    end
 
     -- else success
     return SUCCESS
