@@ -57,8 +57,9 @@ function Run(self, units, parameter)
         
         return RUNNING
 	end
-    
-	if SpringGetUnitCommands(unit, 0) > 0 then
+	
+	local cmds = SpringGetUnitCommands(unit, 0)
+	if cmds ~= nil and cmds > 0 then
         return RUNNING
     end
 

@@ -38,8 +38,9 @@ function Run(self, units, parameter)
 	local isTransporting = (SpringGetUnitIsTransporting(transport) ~= nil and #SpringGetUnitIsTransporting(transport) > 0)
     if isTransporting == false then return SUCCESS end
 
-    if SpringGetUnitCommands(transport, 0) > 0 then
-        return RUNNING
+	local cmds = SpringGetUnitCommands(transport, 0)
+	if cmds ~= nil and cmds > 0 then
+	return RUNNING
     end
 
     if isTransporting then

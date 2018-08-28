@@ -4,7 +4,6 @@ VFS.Include(modules.attach.data.path .. modules.attach.data.head) -- attach lib 
 
 -- get other madatory dependencies
 attach.Module(modules, "message") -- communication backend load
-attach.Module(modules, "Sensors") -- communication backend load
 
 local next = next 
 
