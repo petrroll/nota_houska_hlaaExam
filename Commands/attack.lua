@@ -54,7 +54,7 @@ function Run(self, units, parameter)
     -- if some unit not near (spreadwise) destination -> running
 	for i=1, #unitsGroup do
 		local uid = unitsGroup[i]
-		if #SpringGetUnitCommands(uid) > 0  then
+		if SpringGetUnitCommands(uid, -1) > 0  then
 			if SpringGetUnitHealth(uid) ~= nil then
 				return RUNNING
 			end

@@ -58,8 +58,7 @@ function Run(self, units, parameter)
         return RUNNING
 	end
     
-    local cmdQ = SpringGetUnitCommands(unit)
-	if (cmdQ ~= nil and #cmdQ > 0) then
+	if SpringGetUnitCommands(unit, -1) > 0 then
         return RUNNING
     end
 
