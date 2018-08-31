@@ -54,13 +54,15 @@ function registerUnit(uid, orders, lanesInfo)
 end
 
 -- @description updates unit info
+MyTeamId = Spring.GetMyTeamID()
+SpringGetTeamUnits = Spring.GetTeamUnits 
 return function(unitsInfo, lanesInfo)
     local oldReg = unitsInfo.unitToLine or {}
     local newReg = {}
 
     local orders = unitsInfo.orders or {}
 
-    local myUnits = Spring.GetTeamUnits(Spring.GetMyTeamID())
+    local myUnits = SpringGetTeamUnits(MyTeamId)
     local newUnitsInfo = {}
 
     -- either copy unit's lane assignment from previous data or register it

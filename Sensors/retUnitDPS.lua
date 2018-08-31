@@ -17,10 +17,15 @@ end
 
 local SpringGetUnitDefID = Spring.GetUnitDefID
 local dpsPerUnitDefId = {}
+local dpsPerUnitId = {}
 
 -- @description return current wind statistics
 return function(unit)
     if unit == nil then return 0 end
+
+    if dpsPerUnitId[unit] ~= nil then
+        return dpsPerUnitId[unit]
+    end
 
     -- unit definition
     local unitDefId = SpringGetUnitDefID(unit)
@@ -28,7 +33,10 @@ return function(unit)
         return UNKNOWN_EST
     end
 
+
+
     if dpsPerUnitDefId[unitDefId] ~= nil then
+        dpsPerUnitId[unit] = dpsPerUnitDefId[unitDefId]
         return dpsPerUnitDefId[unitDefId]
     end
 
@@ -36,23 +44,28 @@ return function(unit)
     local unitDef = UnitDefs[unitDefId]
     if not unitDef.weapons or #unitDef.weapons < 1 then 
         dpsPerUnitDefId[unitDefId] = 0
-        return dpsPerUnitDefId[unitDefId]
+        dpsPerUnitId[unit] = 0
+        return 0
     end
 
     -- weapon definition
     local weaponDefId = unitDef.weapons[1].weaponDef 
     if not weaponDefId then 
         dpsPerUnitDefId[unitDefId] = 0
-        return dpsPerUnitDefId[unitDefId]
+        dpsPerUnitId[unit] = 0
+        return 0
     end
 
     -- weapon properties
     local weapon = WeaponDefs[weaponDefId]
     if not weapon then 
         dpsPerUnitDefId[unitDefId] = UNKNOWN_EST
-        return dpsPerUnitDefId[unitDefId]
+        dpsPerUnitId[unit] = UNKNOWN_EST
+        return UNKNOWN_EST
     end
 
     dpsPerUnitDefId[unitDefId] = weapon.damages[0] / weapon.reload
-    return dpsPerUnitDefId[unitDefId]
+    dpsPerUnitId[unit] = dpsPerUnitDefId[unitDefId]
+
+    return dpsPerUnitId[unit]
 end
