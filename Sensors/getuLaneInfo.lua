@@ -55,5 +55,5 @@ return function(lastLaneInfo)
         else frontPosIndex = lastLaneInfo.frontPosIndex end
     end
 
-	return {frontPosIndex = frontPosIndex, safePoint = retPosRelativeToFront(lastLaneInfo, -3), corridor = corridor}
+	return {frontPosIndex = frontPosIndex, safePoint = retPosRelativeToFront(lastLaneInfo, -4), corridor = corridor}
 end

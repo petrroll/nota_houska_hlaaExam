@@ -207,7 +207,7 @@
 							"value": "laneInfo.units[unitCategory]"
 						}, {
 							"name": "destination",
-							"value": "laneInfo.safePoint"
+							"value": "laneInfo.info.safePoint"
 						}, {
 							"name": "spread",
 							"value": "moveSpread"

@@ -50,7 +50,7 @@
 		"I6CO9GZ40EYPulifwaFP6d3kx7rY9AXN": {
 			"height": 172,
 			"title": "moveToSafeSpot",
-			"width": 256,
+			"width": 261,
 			"x": 1903,
 			"y": 65
 		},
@@ -221,10 +221,10 @@
 							"value": "laneInfo.units.reclaim"
 						}, {
 							"name": "destination",
-							"value": "laneInfo.safePoint"
+							"value": "laneInfo.info.safePoint"
 						}, {
 							"name": "spread",
-							"value": "600"
+							"value": "125"
 						}, {
 							"name": "moveViaAttack",
 							"value": "false"
@@ -277,7 +277,7 @@
 				"nodeType": "luaCondition",
 				"parameters": [ {
 					"name": "expression",
-					"value": "not nota_houska_hlaaExam.isEnemyNearLazy(laneInfo.units.reclaim[1], 300, 3)"
+					"value": "not nota_houska_hlaaExam.isEnemyNearLazy(laneInfo.units.reclaim[1], 300, 2)"
 				}, {
 					"name": "repeat",
 					"value": "true"
