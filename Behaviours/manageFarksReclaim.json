@@ -224,7 +224,7 @@
 							"value": "laneInfo.safePoint"
 						}, {
 							"name": "spread",
-							"value": "moveSpread"
+							"value": "600"
 						}, {
 							"name": "moveViaAttack",
 							"value": "false"

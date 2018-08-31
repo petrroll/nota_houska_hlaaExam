@@ -244,7 +244,7 @@
 				"value": "bb.lanes[1]"
 			}, {
 				"name": "value",
-				"value": "{ID = 1, units = {}, other = {}, info= {frontPosIndex = 0, corridor = bb.missionInfo.corridors.Top}}"
+				"value": "{ID = 1, units = {}, other = {}, info= {frontPosIndex = 5, corridor = bb.missionInfo.corridors.Top}}"
 			}, {
 				"name": "scriptName",
 				"value": "store"
@@ -259,7 +259,7 @@
 				"value": "bb.lanes[2]"
 			}, {
 				"name": "value",
-				"value": "{ID = 2, units = {}, other = {}, info = {frontPosIndex = 0, corridor = bb.missionInfo.corridors.Middle}}"
+				"value": "{ID = 2, units = {}, other = {}, info = {frontPosIndex = 5, corridor = bb.missionInfo.corridors.Middle}}"
 			}, {
 				"name": "scriptName",
 				"value": "store"
@@ -274,7 +274,7 @@
 				"value": "bb.lanes[3]"
 			}, {
 				"name": "value",
-				"value": "{ID = 3, units = {}, other = {}, info = {frontPosIndex = 0, corridor = bb.missionInfo.corridors.Bottom}}"
+				"value": "{ID = 3, units = {}, other = {}, info = {frontPosIndex = 5, corridor = bb.missionInfo.corridors.Bottom}}"
 			}, {
 				"name": "scriptName",
 				"value": "store"
