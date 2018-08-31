@@ -15,13 +15,6 @@
 	} ],
 	"outputs": [],
 	"properties": {
-		"47FzONogmmLacBVuen44XPzWNOXuyafJ": {
-			"height": 151,
-			"title": "keepLaneInfoUpdated",
-			"width": 372,
-			"x": 974,
-			"y": -57
-		},
 		"49oKsuQfQysCereszuS2wOkgI7ooGmVg": {
 			"height": 277,
 			"title": "manageSpiesForLane",
@@ -57,13 +50,6 @@
 			"x": 982,
 			"y": 1163
 		},
-		"i7VgxseyqHsgIQ5xBUSI6p26I1Hw46eE": {
-			"height": 173,
-			"title": "initLaneData",
-			"width": 308,
-			"x": 483,
-			"y": -222
-		},
 		"ilJ22UpIp6gGg753rkpFsvvrdHsUKeHf": {
 			"height": 70,
 			"title": "parallel",
@@ -75,15 +61,22 @@
 			"height": 214,
 			"title": "buyArmyInRatio",
 			"width": 1354,
-			"x": 975,
-			"y": 108
+			"x": 959,
+			"y": -36
+		},
+		"lGDRuouNQSmlUyvUMQ9LYGxn6zDe4duS": {
+			"height": 92,
+			"title": "retrieveLaneInfo",
+			"width": 185,
+			"x": 490,
+			"y": -94
 		},
 		"mFaEbj9ZYtmGJ5o7nL2Ccm3pDOm5k1WV": {
 			"height": 403,
 			"title": "manageArtileryForLane",
 			"width": 441,
-			"x": 976,
-			"y": 335
+			"x": 986,
+			"y": 177
 		}
 	},
 	"roles": [ {
@@ -93,39 +86,22 @@
 	"root": {
 		"children": [ {
 			"children": [],
-			"id": "i7VgxseyqHsgIQ5xBUSI6p26I1Hw46eE",
-			"nodeType": "reference",
+			"id": "lGDRuouNQSmlUyvUMQ9LYGxn6zDe4duS",
+			"nodeType": "luaCommand",
 			"parameters": [ {
-				"name": "behaviourName",
-				"value": "nota_houska_hlaaExam.laneInfoInit"
-			} ],
-			"referenceInputs": [ {
-				"name": "lid",
-				"value": "lid"
-			} ],
-			"referenceOutputs": [ {
-				"name": "laneInfo",
+				"name": "var",
 				"value": "lane"
-			} ]
+			}, {
+				"name": "value",
+				"value": "bb.lanes[lid]"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
 		}, {
 			"children": [ {
 				"children": [ {
-					"children": [],
-					"id": "47FzONogmmLacBVuen44XPzWNOXuyafJ",
-					"nodeType": "reference",
-					"parameters": [ {
-						"name": "behaviourName",
-						"value": "nota_houska_hlaaExam.laneInfoKeepUpdated"
-					} ],
-					"referenceInputs": [ {
-						"name": "corridor",
-						"value": "corridor"
-					}, {
-						"name": "lane",
-						"value": "lane"
-					} ],
-					"referenceOutputs": []
-				}, {
 					"children": [],
 					"id": "jCA0kGPBsxfZE9ib5CPGDXTFgY4ACtje",
 					"nodeType": "reference",
