@@ -1,0 +1,180 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 248,
+			"width": 267
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "laneInfo"
+	}, {
+		"command": "Variable",
+		"name": "unitName"
+	}, {
+		"command": "Variable",
+		"name": "unitCategory"
+	}, {
+		"command": "Variable",
+		"name": "severenity"
+	}, {
+		"command": "Variable",
+		"name": "frontRelativeIndex"
+	}, {
+		"command": "Variable",
+		"name": "moveSpread"
+	} ],
+	"outputs": [],
+	"properties": {
+		"HcUPoRaVu0hmB87Q7XKb3IWVxWE6qUhv": {
+			"height": 172,
+			"title": "moveToSafeSpot",
+			"width": 632,
+			"x": 1509,
+			"y": 127
+		},
+		"UHYPSmTaW2v8AmOlIeP6Qd0hduQt2RKR": {
+			"height": 74,
+			"title": "wait",
+			"width": 190,
+			"x": 1488,
+			"y": 296
+		},
+		"amEFeyvwvVEF6NRjcEZcfIgPMCvMgZix": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 322,
+			"y": 75
+		},
+		"e42KTDlLvTpHeYhzioIYLvcahFef5jLc": {
+			"height": 60,
+			"title": "goToGoalPosition",
+			"width": 218,
+			"x": 1203,
+			"y": 160
+		},
+		"rFqgxKbk4niegBIgXcQdmePtnrFRAiPV": {
+			"height": 94,
+			"title": "store",
+			"width": 596,
+			"x": 1542,
+			"y": -1
+		},
+		"rzUhXwANcyBnTu0LpCehm4vLc7J2pCBz": {
+			"height": 90,
+			"title": "haveEnoughUnits",
+			"width": 494,
+			"x": 529,
+			"y": 46
+		},
+		"zYtRv3Owonylg5PInfSjEh1vxLohHq7B": {
+			"height": 152,
+			"title": "nota_houska_hlaaExam.osPlaceUnitOrder",
+			"width": 330,
+			"x": 1103,
+			"y": -131
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "zYtRv3Owonylg5PInfSjEh1vxLohHq7B",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "unitName",
+					"value": "unitName"
+				}, {
+					"name": "laneID",
+					"value": "laneInfo.ID"
+				}, {
+					"name": "severenity",
+					"value": "severenity"
+				}, {
+					"name": "categoryInLane",
+					"value": "unitCategory"
+				}, {
+					"name": "orders",
+					"value": "bb.units.orders"
+				}, {
+					"name": "scriptName",
+					"value": "nota_houska_hlaaExam.osPlaceUnitOrder"
+				} ],
+				"scriptName": "nota_houska_hlaaExam.osPlaceUnitOrder"
+			}, {
+				"children": [ {
+					"children": [],
+					"id": "rFqgxKbk4niegBIgXcQdmePtnrFRAiPV",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "goalPos"
+					}, {
+						"name": "value",
+						"value": "nota_houska_hlaaExam.retPosRelativeToFront(laneInfo.info, frontRelativeIndex)"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "HcUPoRaVu0hmB87Q7XKb3IWVxWE6qUhv",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unitsGroup",
+						"value": "laneInfo.units[unitCategory]"
+					}, {
+						"name": "destination",
+						"value": "goalPos"
+					}, {
+						"name": "spread",
+						"value": "moveSpread"
+					}, {
+						"name": "moveViaAttack",
+						"value": "false"
+					}, {
+						"name": "destThreshold",
+						"value": "false"
+					}, {
+						"name": "runningRatio",
+						"value": "0.25"
+					}, {
+						"name": "scriptName",
+						"value": "nota_houska_hlaaExam.move"
+					} ],
+					"scriptName": "nota_houska_hlaaExam.move"
+				}, {
+					"children": [],
+					"id": "UHYPSmTaW2v8AmOlIeP6Qd0hduQt2RKR",
+					"nodeType": "wait",
+					"parameters": [ {
+						"name": "time",
+						"value": 5
+					} ]
+				} ],
+				"id": "e42KTDlLvTpHeYhzioIYLvcahFef5jLc",
+				"nodeType": "sequence",
+				"parameters": []
+			} ],
+			"id": "rzUhXwANcyBnTu0LpCehm4vLc7J2pCBz",
+			"nodeType": "luaCondition",
+			"parameters": [ {
+				"name": "expression",
+				"value": "laneInfo.units[unitCategory] == nil or #laneInfo.units[unitCategory] < 1"
+			}, {
+				"name": "repeat",
+				"value": "true"
+			} ]
+		} ],
+		"id": "amEFeyvwvVEF6NRjcEZcfIgPMCvMgZix",
+		"nodeType": "repeat",
+		"parameters": []
+	}
+}

@@ -12,33 +12,26 @@
 	} ],
 	"outputs": [],
 	"properties": {
-		"Cf3YxnkdqhlAqnWHrNysUoGu3YYb5R76": {
-			"height": 60,
-			"title": "updateLane",
-			"width": 157,
-			"x": 262,
-			"y": 33
-		},
 		"RR9hyj6uwUF387gJmzFF3xfzOeKMKRE3": {
 			"height": 277,
 			"title": "manageRadarsForLane",
 			"width": 407,
-			"x": 725,
-			"y": 88
+			"x": 542,
+			"y": 100
 		},
 		"RzWnNCUfs0HxYizfvLG9wnBY4AGJ8N3G": {
 			"height": 130,
 			"title": "manageFarksReclaimForLane",
 			"width": 373,
-			"x": 729,
-			"y": -31
+			"x": 553,
+			"y": -37
 		},
 		"j8ABE5UYBzRGCDCBdPT5CepnVnQiYtHn": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 444,
-			"y": 29
+			"x": 268,
+			"y": 23
 		}
 	},
 	"roles": [ {
@@ -47,63 +40,52 @@
 	} ],
 	"root": {
 		"children": [ {
-			"children": [ {
-				"children": [],
-				"id": "RzWnNCUfs0HxYizfvLG9wnBY4AGJ8N3G",
-				"nodeType": "reference",
-				"parameters": [ {
-					"name": "behaviourName",
-					"value": "nota_houska_hlaaExam.manageFarksReclaim"
-				} ],
-				"referenceInputs": [ {
-					"name": "laneInfo",
-					"value": "lane"
-				} ],
-				"referenceOutputs": []
-			}, {
-				"children": [],
-				"id": "RR9hyj6uwUF387gJmzFF3xfzOeKMKRE3",
-				"nodeType": "reference",
-				"parameters": [ {
-					"name": "behaviourName",
-					"value": "nota_houska_hlaaExam.manageKeepUnitSafeFront"
-				} ],
-				"referenceInputs": [ {
-					"name": "laneInfo",
-					"value": "lane"
-				}, {
-					"name": "unitName",
-					"value": "\"armseer\""
-				}, {
-					"name": "unitCategory",
-					"value": "\"armseer\""
-				}, {
-					"name": "severenity",
-					"value": "1"
-				}, {
-					"name": "frontRelativeIndex",
-					"value": "-1.5"
-				}, {
-					"name": "moveSpread",
-					"value": "128"
-				}, {
-					"name": "dangerRadius",
-					"value": "600"
-				}, {
-					"name": "dangerLazyTicks",
-					"value": "10"
-				} ],
-				"referenceOutputs": []
-			} ],
-			"id": "j8ABE5UYBzRGCDCBdPT5CepnVnQiYtHn",
-			"nodeType": "parallel",
+			"children": [],
+			"id": "RzWnNCUfs0HxYizfvLG9wnBY4AGJ8N3G",
+			"nodeType": "reference",
 			"parameters": [ {
-				"name": "mode",
-				"value": "all-success"
-			} ]
+				"name": "behaviourName",
+				"value": "nota_houska_hlaaExam.manageFarksReclaim"
+			} ],
+			"referenceInputs": [ {
+				"name": "laneInfo",
+				"value": "lane"
+			} ],
+			"referenceOutputs": []
+		}, {
+			"children": [],
+			"id": "RR9hyj6uwUF387gJmzFF3xfzOeKMKRE3",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "nota_houska_hlaaExam.manageKeepUnitFront"
+			} ],
+			"referenceInputs": [ {
+				"name": "laneInfo",
+				"value": "lane"
+			}, {
+				"name": "unitName",
+				"value": "\"armseer\""
+			}, {
+				"name": "unitCategory",
+				"value": "\"armseer\""
+			}, {
+				"name": "severenity",
+				"value": "1"
+			}, {
+				"name": "frontRelativeIndex",
+				"value": "-1.5"
+			}, {
+				"name": "moveSpread",
+				"value": "128"
+			} ],
+			"referenceOutputs": []
 		} ],
-		"id": "Cf3YxnkdqhlAqnWHrNysUoGu3YYb5R76",
-		"nodeType": "repeat",
-		"parameters": []
+		"id": "j8ABE5UYBzRGCDCBdPT5CepnVnQiYtHn",
+		"nodeType": "parallel",
+		"parameters": [ {
+			"name": "mode",
+			"value": "all-success"
+		} ]
 	}
 }
