@@ -16,7 +16,6 @@ end
 
 local SensorsIsUnitAlive = Sensors.IsUnitAlive
 return function(laneInfoUnits)
-
 	local aliveUnits = {}
 	for key,value in pairs(laneInfoUnits) do
 

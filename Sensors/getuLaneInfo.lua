@@ -23,21 +23,13 @@ local DELTA = 400
 local myAllyID = Spring.GetMyAllyTeamID()
 local enemyTeams = Sensors.core.EnemyTeamIDs()
 
-local points = nil
+retPosRelativeToFront = Sensors.retPosRelativeToFront
 
-return function(corridor, lastLaneInfo) 
-    
+return function(lastLaneInfo) 
+
+    local corridor = lastLaneInfo.corridor
     local frontPosIndex = 0
     local miPoints = corridor.points
-
-    if points == nil then
-        points = {}
-        Spring.Echo("Init points.")
-        for i = 1, #miPoints do 
-            local pos = miPoints[i].position
-            points[#points + 1] = pos    
-        end
-    end
 
     for i = 1, #miPoints do 
 
@@ -63,5 +55,5 @@ return function(corridor, lastLaneInfo)
         else frontPosIndex = lastLaneInfo.frontPosIndex end
     end
 
-	return {frontPosIndex = frontPosIndex, corridor = corridor}
+	return {frontPosIndex = frontPosIndex, safePoint = retPosRelativeToFront(lastLaneInfo, -3), corridor = corridor}
 end

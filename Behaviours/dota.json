@@ -9,61 +9,152 @@
 	"inputs": [],
 	"outputs": [],
 	"properties": {
+		"2yBqjhY28i87JrnKoRU40kkR1LTQ56on": {
+			"height": 94,
+			"title": "store",
+			"width": 595,
+			"x": 1220,
+			"y": 0
+		},
+		"5S5nXuQergbqzqGYWckl0MeM6ytB1xEQ": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 773,
+			"y": -21
+		},
+		"5ZSI81Ebf2aaA7MAmmsYV7oyY6Odnk43": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 1229,
+			"y": -155
+		},
 		"6MSewbxhvku8btz18SFGryiEKufxTGqw": {
-			"height": 193,
+			"height": 134,
 			"title": "runPushInMidLane",
-			"width": 312,
-			"x": 763,
-			"y": 628
+			"width": 314,
+			"x": 710,
+			"y": 496
+		},
+		"8Kvrpm9TxB66A7GNCpwfXy4GHqo4TAoC": {
+			"height": 94,
+			"title": "store",
+			"width": 499,
+			"x": 1231,
+			"y": 186
 		},
 		"8YdQKAPgY4It0TwQvBQt0lclm46qGlda": {
-			"height": 193,
+			"height": 151,
 			"title": "runBottomLane",
-			"width": 315,
-			"x": 766,
-			"y": 444
+			"width": 335,
+			"x": 709,
+			"y": 360
 		},
 		"BmbxV7Turiq8MW4CwGxCRBRzFnQjOhiK": {
 			"height": 94,
 			"title": "initUnits",
 			"width": 423,
-			"x": 431,
-			"y": -134
+			"x": 502,
+			"y": -429
+		},
+		"E6vapUJSmjpyl4xFYQFSV1ELrvbxGVRP": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 1240,
+			"y": 366
+		},
+		"HY4iGcrmUVLL8vDaiPLSylsxbzLwy9ZW": {
+			"height": 94,
+			"title": "store",
+			"width": 649,
+			"x": 1225,
+			"y": 539
+		},
+		"HuLx9LtMFyRxI7890HsyRqPlfHHuG3NA": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1005,
+			"y": -54
 		},
 		"IhbtIRrhErg3YyR91iRiiRv7nAPKLL2E": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 427,
+			"x": 426,
 			"y": 7
+		},
+		"Lpm6YMkKYb5UbFgRI8DmGT2XDcwOMN6o": {
+			"height": 92,
+			"title": "setLanesId",
+			"width": 707,
+			"x": 446,
+			"y": -148
 		},
 		"P4FzldIm9ryTunQbVTBIQSxEot4R2xnX": {
 			"height": 94,
 			"title": "storeMissionInfo",
 			"width": 198,
-			"x": 433,
-			"y": -295
+			"x": 498,
+			"y": -587
+		},
+		"Pg37SgUXwdGRnD8lxdR4UNZ8eC5rAHFf": {
+			"height": 94,
+			"title": "store",
+			"width": 499,
+			"x": 1228,
+			"y": 444
+		},
+		"Q2YvRrL5e80b7YB4cbEIgG0cJGdWDMHn": {
+			"height": 92,
+			"title": "nota_houska_hlaaExam.osHandleOrders",
+			"width": 322,
+			"x": 1234,
+			"y": -245
+		},
+		"QWtceM0JQqWa3wG2FQYqF54V3EdZdvzv": {
+			"height": 94,
+			"title": "updateUnitsDataAndHandleOrdersWithNotAssignedUnits",
+			"width": 441,
+			"x": 1234,
+			"y": -327
 		},
 		"RacEJ53nvX6BrHM3fjp9GVKRB0OfaKxy": {
-			"height": 193,
+			"height": 156,
 			"title": "runMidLane",
-			"width": 312,
-			"x": 771,
-			"y": 255
+			"width": 333,
+			"x": 704,
+			"y": 213
+		},
+		"Ux6xNDRUtxOPfUxbjp2D1hXLHMldosa3": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 1231,
+			"y": 104
 		},
 		"Y7EFNoE14ddlGQexEwJGGMB2NJwj40qt": {
 			"height": 92,
 			"title": "initLanes",
 			"width": 138,
-			"x": 435,
-			"y": -216
+			"x": 502,
+			"y": -508
 		},
 		"YPXNZFgP0mlFnsn0MJWW117IkwohaltT": {
-			"height": 193,
+			"height": 151,
 			"title": "runTopLane",
-			"width": 295,
-			"x": 788,
-			"y": 65
+			"width": 300,
+			"x": 713,
+			"y": 73
+		},
+		"aUYarsYNuJ5aOOM1duwZ0WdH7bsH9vVM": {
+			"height": 92,
+			"title": "setLanesId",
+			"width": 704,
+			"x": 444,
+			"y": -232
 		},
 		"cILrujUndiBMmkMyJGLSuaXCGmO8gSOU": {
 			"height": 60,
@@ -72,12 +163,26 @@
 			"x": 225,
 			"y": 10
 		},
-		"q2sio5YauO8bYzegpWQVSwpSAXqy7xEv": {
-			"height": 110,
-			"title": "runUnitsUpdatesAndManageOrders",
-			"width": 387,
-			"x": 962,
-			"y": -75
+		"jDLJnKCRDWXZLeIiO4RgINnfUlnWRgYd": {
+			"height": 94,
+			"title": "store",
+			"width": 612,
+			"x": 1228,
+			"y": 269
+		},
+		"ttmZDe9SSGrGIQKAKKagEU8cbWt7YQV4": {
+			"height": 94,
+			"title": "store",
+			"width": 499,
+			"x": 1218,
+			"y": -88
+		},
+		"xtdEYRJWZKyOKbKeiCgysIBHJuAO9Sy3": {
+			"height": 92,
+			"title": "setLanesId",
+			"width": 700,
+			"x": 442,
+			"y": -329
 		}
 	},
 	"roles": [ {
@@ -131,16 +236,205 @@
 			} ],
 			"scriptName": "store"
 		}, {
+			"children": [],
+			"id": "xtdEYRJWZKyOKbKeiCgysIBHJuAO9Sy3",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "bb.lanes[1]"
+			}, {
+				"name": "value",
+				"value": "{ID = 1, units = {}, other = {}, info= {frontPosIndex = 0, corridor = bb.missionInfo.corridors.Top}}"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "aUYarsYNuJ5aOOM1duwZ0WdH7bsH9vVM",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "bb.lanes[2]"
+			}, {
+				"name": "value",
+				"value": "{ID = 2, units = {}, other = {}, info = {frontPosIndex = 0, corridor = bb.missionInfo.corridors.Middle}}"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "Lpm6YMkKYb5UbFgRI8DmGT2XDcwOMN6o",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "bb.lanes[3]"
+			}, {
+				"name": "value",
+				"value": "{ID = 3, units = {}, other = {}, info = {frontPosIndex = 0, corridor = bb.missionInfo.corridors.Bottom}}"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
 			"children": [ {
-				"children": [],
-				"id": "q2sio5YauO8bYzegpWQVSwpSAXqy7xEv",
-				"nodeType": "reference",
-				"parameters": [ {
-					"name": "behaviourName",
-					"value": "nota_houska_hlaaExam.manageUnitsAndOrders"
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "QWtceM0JQqWa3wG2FQYqF54V3EdZdvzv",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "bb.units"
+						}, {
+							"name": "value",
+							"value": "nota_houska_hlaaExam.getuUnits(bb.units, bb.lanes)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "Q2YvRrL5e80b7YB4cbEIgG0cJGdWDMHn",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "orders",
+							"value": "bb.units.orders"
+						}, {
+							"name": "buyInfo",
+							"value": "bb.missionInfo.buy"
+						}, {
+							"name": "scriptName",
+							"value": "nota_houska_hlaaExam.osHandleOrders"
+						} ],
+						"scriptName": "nota_houska_hlaaExam.osHandleOrders"
+					}, {
+						"children": [],
+						"id": "5ZSI81Ebf2aaA7MAmmsYV7oyY6Odnk43",
+						"nodeType": "wait",
+						"parameters": [ {
+							"name": "time",
+							"value": 1
+						} ]
+					}, {
+						"children": [],
+						"id": "ttmZDe9SSGrGIQKAKKagEU8cbWt7YQV4",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "bb.lanes[1].units"
+						}, {
+							"name": "value",
+							"value": "nota_houska_hlaaExam.getuAliveUnitsForLane(bb.lanes[1].units)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "2yBqjhY28i87JrnKoRU40kkR1LTQ56on",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "bb.lanes[1].info"
+						}, {
+							"name": "value",
+							"value": "nota_houska_hlaaExam.getuLaneInfo(bb.lanes[1].info)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "Ux6xNDRUtxOPfUxbjp2D1hXLHMldosa3",
+						"nodeType": "wait",
+						"parameters": [ {
+							"name": "time",
+							"value": 1
+						} ]
+					}, {
+						"children": [],
+						"id": "8Kvrpm9TxB66A7GNCpwfXy4GHqo4TAoC",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "bb.lanes[2].units"
+						}, {
+							"name": "value",
+							"value": "nota_houska_hlaaExam.getuAliveUnitsForLane(bb.lanes[2].units)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "jDLJnKCRDWXZLeIiO4RgINnfUlnWRgYd",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "bb.lanes[2].info"
+						}, {
+							"name": "value",
+							"value": "nota_houska_hlaaExam.getuLaneInfo(bb.lanes[2].info)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "E6vapUJSmjpyl4xFYQFSV1ELrvbxGVRP",
+						"nodeType": "wait",
+						"parameters": [ {
+							"name": "time",
+							"value": 1
+						} ]
+					}, {
+						"children": [],
+						"id": "Pg37SgUXwdGRnD8lxdR4UNZ8eC5rAHFf",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "bb.lanes[3].units"
+						}, {
+							"name": "value",
+							"value": "nota_houska_hlaaExam.getuAliveUnitsForLane(bb.lanes[3].units)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "HY4iGcrmUVLL8vDaiPLSylsxbzLwy9ZW",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "bb.lanes[3].info"
+						}, {
+							"name": "value",
+							"value": "nota_houska_hlaaExam.getuLaneInfo(bb.lanes[3].info)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					} ],
+					"id": "HuLx9LtMFyRxI7890HsyRqPlfHHuG3NA",
+					"nodeType": "sequence",
+					"parameters": []
 				} ],
-				"referenceInputs": [],
-				"referenceOutputs": []
+				"id": "5S5nXuQergbqzqGYWckl0MeM6ytB1xEQ",
+				"nodeType": "repeat",
+				"parameters": []
 			}, {
 				"children": [],
 				"id": "YPXNZFgP0mlFnsn0MJWW117IkwohaltT",
@@ -150,11 +444,8 @@
 					"value": "nota_houska_hlaaExam.lane"
 				} ],
 				"referenceInputs": [ {
-					"name": "corridor",
-					"value": "bb.missionInfo.corridors.Top"
-				}, {
-					"name": "lid",
-					"value": "1"
+					"name": "lane",
+					"value": "bb.lanes[1]"
 				} ],
 				"referenceOutputs": []
 			}, {
@@ -166,11 +457,8 @@
 					"value": "nota_houska_hlaaExam.lane"
 				} ],
 				"referenceInputs": [ {
-					"name": "corridor",
-					"value": "bb.missionInfo.corridors.Middle"
-				}, {
-					"name": "lid",
-					"value": "2"
+					"name": "lane",
+					"value": "bb.lanes[2]"
 				} ],
 				"referenceOutputs": []
 			}, {
@@ -182,11 +470,8 @@
 					"value": "nota_houska_hlaaExam.lane"
 				} ],
 				"referenceInputs": [ {
-					"name": "corridor",
-					"value": "bb.missionInfo.corridors.Bottom"
-				}, {
-					"name": "lid",
-					"value": "3"
+					"name": "lane",
+					"value": "bb.lanes[3]"
 				} ],
 				"referenceOutputs": []
 			}, {
@@ -198,11 +483,8 @@
 					"value": "nota_houska_hlaaExam.push"
 				} ],
 				"referenceInputs": [ {
-					"name": "corridor",
-					"value": "bb.missionInfo.corridors.Middle"
-				}, {
-					"name": "lid",
-					"value": "2"
+					"name": "lane",
+					"value": "bb.lanes[2]"
 				} ],
 				"referenceOutputs": []
 			} ],

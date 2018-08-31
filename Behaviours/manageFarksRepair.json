@@ -16,112 +16,112 @@
 			"height": 88,
 			"title": "isInDanger",
 			"width": 669,
-			"x": 1270,
+			"x": 1269,
 			"y": 75
 		},
 		"3pkPJVzo3fHRCyMyEiF9YVvIYHT7PCWh": {
 			"height": 132,
 			"title": "nota_houska_hlaaExam.orderOnLocAndRadius",
 			"width": 363,
-			"x": 2239,
+			"x": 2238,
 			"y": 248
 		},
 		"7YlLpBDmtztVo6cZDwguX4SwFOsnk3t1": {
 			"height": 60,
 			"title": "reclaimSequence",
 			"width": 218,
-			"x": 1982,
+			"x": 1981,
 			"y": -12
 		},
 		"7nVCXa5hqERretIRSXALlQyfK086bhBw": {
 			"height": 92,
 			"title": "initUnitInfo",
 			"width": 234,
-			"x": 431,
+			"x": 430,
 			"y": -227
 		},
 		"AR6grvcPkGt6e7Q1q3pVSd7Sc6kCMIGT": {
 			"height": 74,
 			"title": "wait",
 			"width": 190,
-			"x": 2272,
+			"x": 2271,
 			"y": -82
 		},
 		"ClHgtnI7BMBOycUwTw6xpz443oUMn98R": {
 			"height": 132,
 			"title": "nota_houska_hlaaExam.orderOnLocAndRadius",
 			"width": 363,
-			"x": 2268,
+			"x": 2267,
 			"y": -213
 		},
 		"Cse6uikebNx3rkyDmistkbtdj8DTY9aQ": {
 			"height": 90,
 			"title": "haveEnoughUnits",
 			"width": 235,
-			"x": 820,
+			"x": 819,
 			"y": 5
 		},
 		"EA0gTsIDRo3TAqaOSpWyVWBIENF7bmuB": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1116,
+			"x": 1115,
 			"y": 6
+		},
+		"HJ9SG771M7EOktIkJhmH8eJn0UM60hiM": {
+			"height": 172,
+			"title": "moveToSafeSpot",
+			"width": 263,
+			"x": 2251,
+			"y": 55
 		},
 		"JfBKuC1xM5z8VSuwiflrPFFcwL2OcHlb": {
 			"height": 74,
 			"title": "wait",
 			"width": 190,
-			"x": 2247,
+			"x": 2246,
 			"y": 384
 		},
 		"UMSdyhXhHzsspexsYrdv18FmfvZlPo7F": {
 			"height": 60,
 			"title": "getBackToSafeSpace",
 			"width": 218,
-			"x": 1981,
+			"x": 1980,
 			"y": 118
 		},
 		"W1rLE45afa6eoIwMeViJolUH79A3AMCL": {
-			"height": 152,
+			"height": 172,
 			"title": "nota_houska_hlaaExam.move",
 			"width": 256,
-			"x": 2271,
-			"y": -362
+			"x": 2273,
+			"y": -390
 		},
 		"cuoNqWHdItxgik0wdkVavom5REpYCARc": {
 			"height": 152,
 			"title": "nota_houska_hlaaExam.osPlaceUnitOrder",
 			"width": 330,
-			"x": 1151,
+			"x": 1150,
 			"y": -232
-		},
-		"fPLybj564ElVJBV8sLfvnZne92sh7EpZ": {
-			"height": 215,
-			"title": "reference",
-			"width": 351,
-			"x": 2234,
-			"y": 39
 		},
 		"lZW9ujxPshv1N4gNNJc30zsV2UEXnJiL": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 643,
+			"x": 642,
 			"y": 19
 		},
 		"tdLVj5IgNMpk6z9W2XdMmqhIksNoG1rh": {
 			"height": 94,
 			"title": "getRepairSpot",
 			"width": 584,
-			"x": 1297,
+			"x": 1296,
 			"y": -41
 		},
 		"wMfR3Me5aLwO2ebXp7fbp4hXGDL2Y6Ff": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 467,
+			"x": 466,
 			"y": 19
 		},
 		"wYaRCfKgwh5NKWWvrhWKBI6S1KW1cM2y": {
@@ -217,6 +217,9 @@
 										"name": "destThreshold",
 										"value": "false"
 									}, {
+										"name": "runningRatio",
+										"value": "0.25"
+									}, {
 										"name": "scriptName",
 										"value": "nota_houska_hlaaExam.move"
 									} ],
@@ -257,29 +260,31 @@
 							}, {
 								"children": [ {
 									"children": [],
-									"id": "fPLybj564ElVJBV8sLfvnZne92sh7EpZ",
-									"nodeType": "reference",
+									"id": "HJ9SG771M7EOktIkJhmH8eJn0UM60hiM",
+									"nodeType": "luaCommand",
 									"parameters": [ {
-										"name": "behaviourName",
-										"value": "nota_houska_hlaaExam.retreatToSafeSpot"
-									} ],
-									"referenceInputs": [ {
-										"name": "laneInfo",
-										"value": "laneInfo"
-									}, {
-										"name": "safeDistance",
-										"value": "-3"
-									}, {
 										"name": "unitsGroup",
 										"value": "laneInfo.units.repair"
 									}, {
-										"name": "moveSpread",
-										"value": "128"
+										"name": "destination",
+										"value": "laneInfo.safePoint"
+									}, {
+										"name": "spread",
+										"value": "moveSpread"
+									}, {
+										"name": "moveViaAttack",
+										"value": "false"
+									}, {
+										"name": "destThreshold",
+										"value": "false"
+									}, {
+										"name": "runningRatio",
+										"value": "0.25"
+									}, {
+										"name": "scriptName",
+										"value": "nota_houska_hlaaExam.move"
 									} ],
-									"referenceOutputs": [ {
-										"name": "safeSpot",
-										"value": "safeSpot"
-									} ]
+									"scriptName": "nota_houska_hlaaExam.move"
 								}, {
 									"children": [],
 									"id": "3pkPJVzo3fHRCyMyEiF9YVvIYHT7PCWh",

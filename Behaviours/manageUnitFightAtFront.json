@@ -49,13 +49,6 @@
 			"x": 2871,
 			"y": 445
 		},
-		"47CxR44i6hZnwsqVroEcmRzDSsrPJWyx": {
-			"height": 215,
-			"title": "retreatToSafeSpot",
-			"width": 351,
-			"x": 1376,
-			"y": 289
-		},
 		"4Raj6oRKTBQXSsR9D6oF99ho3a2R7eyg": {
 			"height": 60,
 			"title": "sequence",
@@ -76,6 +69,13 @@
 			"width": 628,
 			"x": 2864,
 			"y": 349
+		},
+		"8cF1MgeHPnRKcAiX1MO9uW8qC4pDTDjR": {
+			"height": 172,
+			"title": "moveToSafeSpot",
+			"width": 295,
+			"x": 1384,
+			"y": 338
 		},
 		"8eTEWnyQkJQg35Dc19XjavuZXGllatcy": {
 			"height": 94,
@@ -228,7 +228,7 @@
 			"height": 172,
 			"title": "moveUnitsToGoalPos",
 			"width": 325,
-			"x": 1480,
+			"x": 1481,
 			"y": -146
 		}
 	},
@@ -482,29 +482,31 @@
 				}, {
 					"children": [ {
 						"children": [],
-						"id": "47CxR44i6hZnwsqVroEcmRzDSsrPJWyx",
-						"nodeType": "reference",
+						"id": "8cF1MgeHPnRKcAiX1MO9uW8qC4pDTDjR",
+						"nodeType": "luaCommand",
 						"parameters": [ {
-							"name": "behaviourName",
-							"value": "nota_houska_hlaaExam.retreatToSafeSpot"
-						} ],
-						"referenceInputs": [ {
-							"name": "laneInfo",
-							"value": "laneInfo"
-						}, {
-							"name": "safeDistance",
-							"value": "-3"
-						}, {
 							"name": "unitsGroup",
 							"value": "laneInfo.units[unitCategory]"
 						}, {
-							"name": "moveSpread",
+							"name": "destination",
+							"value": "laneInfo.safePoint"
+						}, {
+							"name": "spread",
 							"value": "moveSpread"
+						}, {
+							"name": "moveViaAttack",
+							"value": "false"
+						}, {
+							"name": "destThreshold",
+							"value": "false"
+						}, {
+							"name": "runningRatio",
+							"value": "0.25"
+						}, {
+							"name": "scriptName",
+							"value": "nota_houska_hlaaExam.move"
 						} ],
-						"referenceOutputs": [ {
-							"name": "safeSpot",
-							"value": "_"
-						} ]
+						"scriptName": "nota_houska_hlaaExam.move"
 					}, {
 						"children": [],
 						"id": "fhw0IiuwLKU0wk71iBtCKwC1vZh4nXL0",
